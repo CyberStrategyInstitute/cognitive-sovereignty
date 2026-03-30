@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this framework in research or operational contexts, please cite as below."
+title: "Cognitive Sovereignty Framework v2.0: A Six-Domain Model for Human Resilience in the AI Era"
+authors:
+  - name: "Cyber Strategy Institute"
+    website: "https://cyberstrategyinstitute.com"
+version: "2.0.0"
+date-released: "2026-02-01"
+url: "https://github.com/CyberStrategyInstitute/cognitive-sovereignty-framework"
+repository-code: "https://github.com/CyberStrategyInstitute/cognitive-sovereignty-framework"
+abstract: >
+  The Cognitive Sovereignty Framework (CSF) is a six-domain resilience model designed to
+  protect human cognition against the full spectrum of AI-era threats. It addresses a
+  critical gap: every military branch in the Department of Defense operates a resilience
+  framework built for deployment-era stressors. None contain a domain for digital,
+  cognitive, or informational resilience. The CSF fills that gap and extends the model
+  to civilian populations, organizations, and society. The framework introduces Domain 6
+  (Digital & AI Symbiosis) as the missing pillar, backed by both human training and
+  technical enforcement architecture through the EFA paradigm and E7 Protocol Stack.
+keywords:
+  - cognitive security
+  - human resilience
+  - AI era threats
+  - cognitive sovereignty
+  - information operations
+  - cognitive warfare
+  - DoD resilience
+  - domain 6
+  - digital symbiosis
+  - agentic AI
+  - threat taxonomy
+license: "MIT AND CC-BY-SA-4.0"
+references:
+  - type: software
+    title: "AI SAFE² Framework"
+    authors:
+      - name: "Cyber Strategy Institute"
+    url: "https://github.com/CyberStrategyInstitute/ai-safe2-framework"
+  - type: report
+    title: "EFA Non-Delegation Playbook"
+    authors:
+      - family-names: "Rupp"
+    year: 2026
+    doi: "10.5281/zenodo.18390725"
+  - type: report
+    title: "EFA/AI-SAFE2 7-Layer Protocol Stack (E7)"
+    authors:
+      - family-names: "Rupp"
+    year: 2026
+    doi: "10.5281/zenodo.18304066"

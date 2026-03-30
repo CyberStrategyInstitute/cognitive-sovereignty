@@ -1,0 +1,436 @@
+{
+  "metadata": {
+    "title": "Cognitive Threat Taxonomy Registry",
+    "version": "2.0",
+    "organization": "Cyber Strategy Institute",
+    "date": "2026-02-01",
+    "description": "Complete machine-readable registry of all classified cognitive threats across the five-layer causal stack. 41 primary entries + 10 newly identified threat classes + 3 edge domain additions.",
+    "total_entries": 54,
+    "ctss_formula": "CTSS = (L*0.25 + Ia*0.30 + R*0.20 + D*0.15 + RecD*0.10) * 20",
+    "companion_frameworks": ["AI SAFE2 Framework", "EFA Non-Delegation Playbook", "E7 Protocol Stack"]
+  },
+  "civilizational_drivers": [
+    {
+      "id": "CD-001",
+      "name": "Incentive Misalignment",
+      "description": "Profit, power, relevance, and survival optimized against truth and agency. The attention economy rewards outrage. Bureaucracies reward risk avoidance over truth-telling. Career incentives tie advancement to narrative conformity. Monetization of fear, identity, and grievance creates industries that profit from cognitive degradation.",
+      "detection": 3,
+      "levels": ["Individual", "Organization", "Society", "USA", "World"],
+      "timeline": "Today",
+      "why_it_matters": "An adversary does not need to attack when the system self-weaponizes. Category-Zero condition beneath all others.",
+      "csf_domains": ["Cognitive", "Purpose & Moral"]
+    },
+    {
+      "id": "CD-002",
+      "name": "Information Abundance Collapse",
+      "description": "Infinite information with no epistemic hierarchy. When everything is available and nothing is verified, the human mind defaults to shortcuts: trust the tribe, trust the algorithm, trust whatever confirms existing beliefs.",
+      "detection": 4,
+      "levels": ["World", "Society"],
+      "timeline": "1-2 years",
+      "why_it_matters": "Creates asymmetric standards of proof favoring automated judgment over human experience. Procedural reality control.",
+      "csf_domains": ["Cognitive", "Digital & AI Symbiosis"]
+    },
+    {
+      "id": "CD-003",
+      "name": "Technological Mediation of Reality",
+      "description": "Reality is increasingly experienced through systems: algorithms, feeds, AI copilots, augmented reality, and neurotech. This is not a tactic. It is a civilizational phase shift.",
+      "detection": 2,
+      "levels": ["Individual", "Family"],
+      "timeline": "3-5 years",
+      "why_it_matters": "Whoever shapes the mediating channels shapes perceived reality. When most knowledge comes through technology, the technology becomes the terrain.",
+      "csf_domains": ["Digital & AI Symbiosis", "Cognitive"]
+    },
+    {
+      "id": "CD-004",
+      "name": "Institutional Trust Erosion",
+      "description": "Trust in government, media, science, and institutions has declined measurably and persistently. This removes the society-level cognitive immune system.",
+      "detection": 4,
+      "levels": ["USA", "US Government"],
+      "timeline": "Today",
+      "why_it_matters": "When people cannot rely on institutional verification of claims, they become vulnerable to whoever fills the trust vacuum, including adversaries and algorithms.",
+      "csf_domains": ["Social", "Purpose & Moral"]
+    },
+    {
+      "id": "CD-005",
+      "name": "Computational Acceleration Misalignment",
+      "description": "The speed at which AI systems can optimize, adapt, and scale outpaces human institutional response capacity. Decision cycles that once took weeks now take milliseconds.",
+      "detection": 3,
+      "levels": ["World"],
+      "timeline": "1-2 years",
+      "why_it_matters": "Human governance structures cannot keep pace with machine-speed optimization. The gap between threat evolution and defense adaptation widens continuously.",
+      "csf_domains": ["Digital & AI Symbiosis", "Cognitive"]
+    },
+    {
+      "id": "CD-006",
+      "name": "Civilizational Reproduction Failure",
+      "description": "Values, identity, trust structures, and family formation patterns weaken simultaneously. Incentive structures reward narcissistic and individualistic traits over relational commitments. Intergenerational transmission of organizing principles breaks down.",
+      "detection": 2,
+      "levels": ["Society", "Family"],
+      "timeline": "3-5 years",
+      "why_it_matters": "A civilization that cannot reproduce its foundational structures collapses within two generations without any adversary involvement.",
+      "csf_domains": ["Social", "Purpose & Moral", "Emotional"]
+    }
+  ],
+  "substrate_threats": [
+    {
+      "id": "ST-001",
+      "name": "Algorithmic Epistemic Authority",
+      "description": "Algorithms decide outcomes in hiring, lending, education, criminal justice, information visibility, and social status. They require low evidence to render judgment. Humans require high evidence to challenge those judgments.",
+      "detection": 3,
+      "levels": ["Organizations"],
+      "timeline": "1-2 years",
+      "critical_observation": "Creates one-way belief updates, irreversible reputational damage, and statistical authority that overrides lived reality.",
+      "csf_domains": ["Cognitive", "Digital & AI Symbiosis"]
+    },
+    {
+      "id": "ST-002",
+      "name": "Behavioral Reinforcement Engineering",
+      "description": "Variable-reward schedules, gamification mechanics, notification patterns, and social approval metrics turn human cognition into an operant-conditioned feedback loop.",
+      "detection": 4,
+      "levels": ["Society", "Family"],
+      "timeline": "Today",
+      "critical_observation": "The same mechanisms that make slot machines addictive are embedded in every social platform, every notification system, every engagement metric.",
+      "csf_domains": ["Emotional", "Biological", "Cognitive"]
+    },
+    {
+      "id": "ST-003",
+      "name": "Cognitive Offloading and Skill Atrophy",
+      "description": "GPS replaces spatial memory. Autocomplete replaces language construction. AI copilots replace reasoning. Search engines replace knowledge retention. Each convenience trade seems rational in isolation.",
+      "detection": 2,
+      "levels": ["Individual", "Organizations"],
+      "timeline": "3-5 years",
+      "critical_observation": "If autonomy disappears voluntarily through convenience, defense mechanisms never trigger. Most strategically decisive substrate threat alongside ST-006.",
+      "csf_domains": ["Cognitive", "Digital & AI Symbiosis"]
+    },
+    {
+      "id": "ST-004",
+      "name": "Neuro-Intrusion Surface Expansion",
+      "description": "Brain-computer interfaces, transcranial stimulation, affect-modulating wearables, and neural data collection create the first direct attack surface for human cognition.",
+      "detection": 1,
+      "levels": ["World", "Individual"],
+      "timeline": "1-2 years",
+      "critical_observation": "For the first time in history, the possibility exists of influencing thought processes directly rather than through information channels.",
+      "csf_domains": ["Biological", "Digital & AI Symbiosis"]
+    },
+    {
+      "id": "ST-005",
+      "name": "Social Trust Fragmentation",
+      "description": "Algorithmic optimization fragments society into micro-tribes with reinforced identity boundaries and incompatible reality models. Institutional distrust combines with interpersonal distrust.",
+      "detection": 3,
+      "levels": ["Society", "USA"],
+      "timeline": "Today",
+      "critical_observation": "Removes the collective defense coordination that societies have historically relied on to resist manipulation.",
+      "csf_domains": ["Social", "Purpose & Moral"]
+    },
+    {
+      "id": "ST-006",
+      "name": "Guardrail Alignment Drift",
+      "description": "AI systems with built-in ideological alignment restrictions can suppress viewpoints, enforce conformity, and shape discourse without any adversary involvement.",
+      "detection": 2,
+      "levels": ["World"],
+      "timeline": "Today",
+      "critical_observation": "If conformity is enforced through safety framing, resistance never forms. Most strategically decisive substrate threat alongside ST-003.",
+      "csf_domains": ["Purpose & Moral", "Cognitive"]
+    },
+    {
+      "id": "ST-007",
+      "name": "Model Performance Drift",
+      "description": "Gradual degradation of AI model outputs over time due to data shifts, concept drift, or training distribution changes. Users do not notice the slow decline in quality, absorbing degraded outputs as normal.",
+      "detection": 2,
+      "levels": ["Individual", "Organizations"],
+      "timeline": "1-2 years",
+      "critical_observation": "Over time, the baseline for acceptable reasoning lowers. The degradation is invisible from inside the dependency.",
+      "csf_domains": ["Cognitive", "Digital & AI Symbiosis"]
+    }
+  ],
+  "manipulation_techniques": [
+    {
+      "id": "T-CT-001",
+      "name": "Attention Capture and Habituation",
+      "mechanism": "Infinite scroll, variable rewards, notification saturation, dopamine loop design",
+      "primary_domains": ["Cognitive", "Emotional", "Biological"],
+      "detection": 4,
+      "timeline": "Today",
+      "ctss": { "L": 5, "Ia": 3, "R": 5, "D": 2, "RecD": 3, "score": 80 }
+    },
+    {
+      "id": "T-CT-002",
+      "name": "Algorithmic Amplification",
+      "mechanism": "Engagement-optimized distribution rewarding outrage and emotional intensity over accuracy",
+      "primary_domains": ["Informational", "Cognitive"],
+      "detection": 3,
+      "timeline": "1-2 years",
+      "ctss": { "L": 5, "Ia": 3, "R": 5, "D": 3, "RecD": 2, "score": 75 }
+    },
+    {
+      "id": "T-CT-003",
+      "name": "Micro-Targeted Emotional Priming",
+      "mechanism": "Personalized content elevating baseline anxiety, anger, or fear in specific populations",
+      "primary_domains": ["Emotional"],
+      "detection": 2,
+      "timeline": "Today",
+      "ctss": { "L": 4, "Ia": 3, "R": 4, "D": 4, "RecD": 2, "score": 70 }
+    },
+    {
+      "id": "T-CT-004",
+      "name": "Personalized Narrative Injection",
+      "mechanism": "AI-generated deepfakes and synthetic text inserted into trusted channels to alter beliefs or memory",
+      "primary_domains": ["Cognitive", "Social", "Purpose & Moral", "Digital & AI Symbiosis"],
+      "detection": 3,
+      "timeline": "1-2 years",
+      "ctss": { "L": 4, "Ia": 5, "R": 4, "D": 3, "RecD": 4, "score": 85 }
+    },
+    {
+      "id": "T-CT-005",
+      "name": "Identity Replacement / Persona Hijacking",
+      "mechanism": "Synthetic personas mimicking trusted figures or creating fictional authority figures",
+      "primary_domains": ["Social", "Purpose & Moral"],
+      "detection": 4,
+      "timeline": "Today",
+      "ctss": { "L": 4, "Ia": 4, "R": 4, "D": 2, "RecD": 4, "score": 78 }
+    },
+    {
+      "id": "T-CT-006",
+      "name": "Decision Automation Capture",
+      "mechanism": "Seeding biased defaults and autopilot behaviors through AI copilots and recommendation engines",
+      "primary_domains": ["Cognitive"],
+      "detection": 2,
+      "timeline": "3-5 years",
+      "ctss": { "L": 4, "Ia": 5, "R": 4, "D": 4, "RecD": 3, "score": 82 }
+    },
+    {
+      "id": "T-CT-007",
+      "name": "Information Ecosystem Poisoning",
+      "mechanism": "Data poisoning of recommendation algorithms and knowledge bases through coordinated engagement",
+      "primary_domains": ["Informational"],
+      "detection": 3,
+      "timeline": "1-2 years",
+      "ctss": { "L": 4, "Ia": 3, "R": 5, "D": 3, "RecD": 3, "score": 76 }
+    },
+    {
+      "id": "T-CT-008",
+      "name": "Memetic Swarm Orchestration",
+      "mechanism": "Coordinated campaigns using thousands of AI agents to test, evolve, and amplify narratives",
+      "primary_domains": ["Digital & AI Symbiosis"],
+      "detection": 4,
+      "timeline": "Today",
+      "ctss": { "L": 5, "Ia": 4, "R": 5, "D": 2, "RecD": 4, "score": 90 }
+    },
+    {
+      "id": "T-CT-009",
+      "name": "Institutional and Bureaucratic Capture",
+      "mechanism": "Regulatory capture, legal weaponization, and bureaucratic self-preservation suppressing dissent",
+      "primary_domains": ["Institutional", "Social"],
+      "detection": 3,
+      "timeline": "Today",
+      "ctss": { "L": 4, "Ia": 3, "R": 4, "D": 3, "RecD": 3, "score": 72 }
+    },
+    {
+      "id": "T-CT-010",
+      "name": "Economic Coercion and Incentive Corruption",
+      "mechanism": "Financial penalties for non-conformity, monetization of specific viewpoints, funding tied to narrative compliance",
+      "primary_domains": ["Economic"],
+      "detection": 4,
+      "timeline": "1-2 years",
+      "ctss": { "L": 5, "Ia": 4, "R": 5, "D": 3, "RecD": 4, "score": 88 }
+    },
+    {
+      "id": "T-CT-011",
+      "name": "Epistemic Rewriting",
+      "mechanism": "Historical record alteration, selective erasure, and revision of foundational narratives",
+      "primary_domains": ["Epistemic"],
+      "detection": 2,
+      "timeline": "3-5 years",
+      "ctss": { "L": 3, "Ia": 4, "R": 3, "D": 4, "RecD": 4, "score": 65 }
+    },
+    {
+      "id": "T-CT-012",
+      "name": "Neurotech / Direct Cognitive Influence",
+      "mechanism": "Brain-computer interfaces, neurostimulation, and neural data harvesting for persuasion or control",
+      "primary_domains": ["Biological"],
+      "detection": 1,
+      "timeline": "1-2 years",
+      "ctss": { "L": 2, "Ia": 5, "R": 2, "D": 5, "RecD": 4, "score": 60 }
+    },
+    {
+      "id": "T-CT-013",
+      "name": "Social Scoring and Behavioral Governance",
+      "mechanism": "Automated conformity enforcement through scoring systems rewarding compliant behavior",
+      "primary_domains": ["Social"],
+      "detection": 3,
+      "timeline": "Today",
+      "ctss": { "L": 4, "Ia": 5, "R": 3, "D": 3, "RecD": 4, "score": 83 }
+    },
+    {
+      "id": "T-CT-014",
+      "name": "Cognitive Load Flooding",
+      "mechanism": "Overwhelming attention with contradictory information until analytical capacity collapses",
+      "primary_domains": ["Cognitive"],
+      "detection": 4,
+      "timeline": "1-2 years",
+      "ctss": { "L": 5, "Ia": 3, "R": 4, "D": 2, "RecD": 3, "score": 77 }
+    },
+    {
+      "id": "T-CT-015",
+      "name": "Legitimized Narrative Capture",
+      "mechanism": "Control framed as safety, equity, efficiency, or personalization so it appears benevolent",
+      "primary_domains": ["Purpose & Moral"],
+      "detection": 2,
+      "timeline": "Today",
+      "ctss": { "L": 4, "Ia": 4, "R": 5, "D": 4, "RecD": 3, "score": 81 }
+    },
+    {
+      "id": "T-CT-016",
+      "name": "Psychographic Micro-Targeting at Scale",
+      "mechanism": "AI-powered profiling and personalized persuasion based on psychological vulnerability mapping",
+      "primary_domains": ["Emotional", "Social"],
+      "detection": 3,
+      "timeline": "Today",
+      "ctss": { "L": 4, "Ia": 4, "R": 4, "D": 3, "RecD": 3, "score": 79 }
+    },
+    {
+      "id": "T-CT-017",
+      "name": "Guardrail Bias Exploitation",
+      "mechanism": "Using AI alignment restrictions to suppress viewpoints, enforce conformity, or amplify ideological positions through tool-mediated discourse",
+      "primary_domains": ["Purpose & Moral", "Cognitive"],
+      "detection": 2,
+      "timeline": "Today",
+      "ctss": { "L": 4, "Ia": 3, "R": 3, "D": 4, "RecD": 2, "score": 70 }
+    },
+    {
+      "id": "T-CT-018",
+      "name": "Repetition and Normalization Manipulation",
+      "mechanism": "Coordinated echoing of phrases, framings, or positions across platforms until accepted as baseline consensus",
+      "primary_domains": ["Informational", "Cognitive"],
+      "detection": 3,
+      "timeline": "Today",
+      "ctss": { "L": 5, "Ia": 3, "R": 5, "D": 3, "RecD": 2, "score": 74 }
+    }
+  ],
+  "delivery_scale": [
+    {
+      "id": "DS-001",
+      "name": "Algorithmic Amplification",
+      "description": "Platform distribution, cross-platform sync, bot boosting. Accelerates spread of techniques across channels.",
+      "detection": 4,
+      "edge_case": "Coordinated swarm waves across platforms"
+    },
+    {
+      "id": "DS-002",
+      "name": "Bot / Swarm Automation",
+      "description": "Agentic orchestration, autonomous messaging, self-evolution. Infinite bandwidth influence at machine speed.",
+      "detection": 3,
+      "edge_case": "Unaligned swarm initiation without human direction"
+    },
+    {
+      "id": "DS-003",
+      "name": "Synthetic Media Realism",
+      "description": "LLM pipelines, deepfake chains, watermark evasion. Synthetic content indistinguishable from authentic.",
+      "detection": 2,
+      "edge_case": "Physical integration of synthetic content"
+    },
+    {
+      "id": "DS-004",
+      "name": "Neuro-Digital Interfaces",
+      "description": "Wearables, brain interfaces, feedback loops. Direct access to cognitive processes.",
+      "detection": 1,
+      "edge_case": "Swarm-neuro integration"
+    },
+    {
+      "id": "DS-005",
+      "name": "Ambient Ubiquitous Computing",
+      "description": "IoT integration, AR/VR layers, environmental conditioning. Always-on persuasion environment.",
+      "detection": 2,
+      "edge_case": "Parallel realities constructed by AI"
+    }
+  ],
+  "human_outcomes": [
+    {
+      "id": "HO-001",
+      "name": "Attention Ownership Loss",
+      "cognitive_impact": "Person no longer controls where attention goes. Cognitive fragmentation reduces creative output quality by 30 to 50 percent.",
+      "physical_societal": "Reduced productivity, shortened task completion, passive citizenry, low civic participation.",
+      "detection": 4
+    },
+    {
+      "id": "HO-002",
+      "name": "Belief Instability",
+      "cognitive_impact": "Cannot hold stable beliefs under pressure. Truth feels unknowable. People shift from truth-seeking to tribe-seeking.",
+      "physical_societal": "Polarized communities, election disruptions, policy manipulation. Affective polarization nearly doubled since mid-1990s.",
+      "detection": 3
+    },
+    {
+      "id": "HO-003",
+      "name": "Identity Fragmentation",
+      "cognitive_impact": "Sense of self becomes platform-dependent. Recommendation systems co-author identity trajectories.",
+      "physical_societal": "Family dissolution, relationship instability, fertility decline. Heavy digital users 48 to 171 percent more likely to exhibit low well-being.",
+      "detection": 4
+    },
+    {
+      "id": "HO-004",
+      "name": "Moral Disengagement",
+      "cognitive_impact": "Moral reasoning degrades or is redirected. Ethics outsourced to automated systems. Convenience displaces virtue.",
+      "physical_societal": "Ethical lapses in policy, biased automated decisions, norm erosion. Civilizations rarely fall by force; they reinterpret themselves first.",
+      "detection": 2
+    },
+    {
+      "id": "HO-005",
+      "name": "Agency Erosion",
+      "cognitive_impact": "Retains rights in theory, loses agency in practice. Freedom traded for ease, safety, personalization, automation.",
+      "physical_societal": "Decision paralysis, workforce displacement, obedience without awareness. Three-phase cycle: dependency, atrophy, bias internalization.",
+      "detection": 3
+    }
+  ],
+  "threat_classes": [
+    { "id": "TC-01", "name": "Incentive Capture Systems", "links": ["CD-001", "T-CT-010", "T-CT-015"] },
+    { "id": "TC-02", "name": "Reality Fluidity Mechanisms", "links": ["CD-002", "T-CT-014", "HO-002"] },
+    { "id": "TC-03", "name": "Algorithmic Identity Shaping", "links": ["ST-005", "T-CT-005", "HO-003"] },
+    { "id": "TC-04", "name": "Emotional Climate Engineering", "links": ["T-CT-003", "HO-002"] },
+    { "id": "TC-05", "name": "Cognitive Overload Saturation", "links": ["T-CT-014", "HO-001"] },
+    { "id": "TC-06", "name": "Synthetic Social Proof", "links": ["DS-002", "T-CT-008"] },
+    { "id": "TC-07", "name": "Moral Reframing Drift", "links": ["T-CT-015", "HO-004"] },
+    { "id": "TC-08", "name": "Institutional Legibility Collapse", "links": ["CD-004", "T-CT-009"] },
+    { "id": "TC-09", "name": "Autonomy Erosion by Convenience", "links": ["ST-003", "HO-005"] },
+    { "id": "TC-10", "name": "AI-Mediated Reality Layers", "links": ["CD-003", "ST-006", "ST-007"] }
+  ],
+  "edge_domains": [
+    {
+      "id": "E1",
+      "name": "Autonomous Swarm Reality Formation",
+      "description": "AI agent swarms shape pre-human reality layers. Agents generate culture, create trends, simulate organic consensus before human observers encounter resulting narratives.",
+      "coverage": "Below 90%",
+      "detection_challenge": "Distinguishing swarm-generated reality from organic reality requires detection methods that do not yet exist at scale."
+    },
+    {
+      "id": "E2",
+      "name": "Synthetic Consensus Economies",
+      "description": "Markets, trends, beliefs detached from actual human preference. Swarms simulate demand, inflate consensus signals, fabricate social proof at scale.",
+      "coverage": "Below 90%",
+      "detection_challenge": "Current market surveillance detects manipulation of individual instruments, not systematic reality distortion."
+    },
+    {
+      "id": "E3",
+      "name": "Civilizational Reproduction Failure",
+      "description": "Loss of continuity in family formation, values transmission, identity coherence, trust structures. Not just biological fertility decline but inability to reproduce organizing principles across generations.",
+      "coverage": "Below 90%",
+      "detection_challenge": "Long-cycle measurement. Effects manifest over decades, not quarters."
+    }
+  ],
+  "coverage_summary": {
+    "overall": "92%",
+    "by_domain": {
+      "adversarial_intentional": "92%",
+      "emergent_systemic": "92%",
+      "incentive_driven": "90%",
+      "ai_scale_engineering": "88%",
+      "institutional_capture": "94%",
+      "identity_influence": "93%",
+      "biological_neurological": "85%",
+      "civilizational_continuity": "85%",
+      "individual_to_civilizational_scale": "92%",
+      "timeline_urgency": "90%"
+    },
+    "gaps": ["Swarm adaptation speed", "Quantum acceleration", "Neuro-swarm integration", "Multi-generational effects"],
+    "note": "100% coverage is asymptotic, not achievable. What matters is maintaining the capacity to close gaps faster than new threats emerge."
+  }
+}

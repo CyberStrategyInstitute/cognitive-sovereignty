@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSF Command Center | Cyber Strategy Institute</title>
+<style>
+  :root {
+    --bg: #0a0c10;
+    --panel: #0f1318;
+    --border: #1e2530;
+    --accent: #c0392b;
+    --accent2: #e74c3c;
+    --gold: #f39c12;
+    --green: #27ae60;
+    --blue: #2980b9;
+    --purple: #8e44ad;
+    --text: #cdd3dc;
+    --muted: #5a6475;
+    --critical: #c0392b;
+    --high: #e67e22;
+    --elevated: #f39c12;
+    --font: 'Segoe UI', system-ui, sans-serif;
+    --mono: 'Cascadia Code', 'Fira Code', monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); overflow-x: hidden; }
+
+  /* TOP BAR */
+  header {
+    background: var(--panel);
+    border-bottom: 1px solid var(--accent);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .logo-shield { font-size: 24px; }
+  .logo-text { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: #fff; }
+  .logo-sub { font-size: 10px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; }
+  .header-badges { display: flex; gap: 8px; }
+  .badge { padding: 3px 10px; border-radius: 3px; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .badge-red { background: rgba(192,57,43,0.2); color: var(--accent2); border: 1px solid rgba(192,57,43,0.4); }
+  .badge-gold { background: rgba(243,156,18,0.15); color: var(--gold); border: 1px solid rgba(243,156,18,0.3); }
+  .badge-blue { background: rgba(41,128,185,0.15); color: #5dade2; border: 1px solid rgba(41,128,185,0.3); }
+  .pulse { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 6px var(--green); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  /* LAYOUT */
+  .main { padding: 20px 24px; max-width: 1600px; margin: 0 auto; }
+  .section-title {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 16px;
+  }
+  .section-title span { color: var(--accent2); }
+
+  /* STAT ROW */
+  .stat-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 24px; }
+  .stat-card {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 6px;
+    padding: 16px; position: relative; overflow: hidden;
+  }
+  .stat-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: var(--accent);
+  }
+  .stat-card.green::before { background: var(--green); }
+  .stat-card.gold::before { background: var(--gold); }
+  .stat-card.blue::before { background: var(--blue); }
+  .stat-card.purple::before { background: var(--purple); }
+  .stat-num { font-size: 32px; font-weight: 700; color: #fff; line-height: 1; }
+  .stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
+  .stat-sub { font-size: 11px; color: var(--text); margin-top: 6px; }
+
+  /* MAIN GRID */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .panel {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 6px; padding: 18px;
+  }
+  .panel-title {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text); margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
+  }
+  .panel-title .icon { font-size: 14px; }
+
+  /* CTSS HEATMAP */
+  .ctss-bar { margin-bottom: 10px; }
+  .ctss-row { display: flex; align-items: center; gap: 10px; margin-bottom: 7px; }
+  .ctss-id { font-size: 10px; color: var(--muted); font-family: var(--mono); width: 70px; flex-shrink: 0; }
+  .ctss-name { font-size: 11px; color: var(--text); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ctss-track { flex: 1; background: rgba(255,255,255,0.05); border-radius: 2px; height: 16px; position: relative; }
+  .ctss-fill {
+    height: 100%; border-radius: 2px; display: flex; align-items: center; justify-content: flex-end;
+    padding-right: 6px; font-size: 10px; font-weight: 700; color: #fff; transition: width 1s ease;
+  }
+  .fill-critical { background: linear-gradient(90deg, rgba(192,57,43,0.6), var(--critical)); }
+  .fill-high { background: linear-gradient(90deg, rgba(230,126,34,0.6), var(--high)); }
+  .fill-elevated { background: linear-gradient(90deg, rgba(243,156,18,0.5), var(--elevated)); }
+
+  /* LAYER STACK */
+  .layer-stack { display: flex; flex-direction: column; gap: 8px; }
+  .layer {
+    border-radius: 5px; padding: 12px 14px; position: relative;
+    border: 1px solid transparent; cursor: default;
+  }
+  .layer:hover { border-color: rgba(255,255,255,0.1); }
+  .layer-l2 { background: rgba(142,68,173,0.12); border-color: rgba(142,68,173,0.25); }
+  .layer-l1 { background: rgba(192,57,43,0.12); border-color: rgba(192,57,43,0.25); }
+  .layer-0  { background: rgba(243,156,18,0.1); border-color: rgba(243,156,18,0.25); }
+  .layer-p1 { background: rgba(41,128,185,0.12); border-color: rgba(41,128,185,0.25); }
+  .layer-p2 { background: rgba(39,174,96,0.1); border-color: rgba(39,174,96,0.25); }
+  .layer-label { font-size: 9px; font-family: var(--mono); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2px; }
+  .layer-l2 .layer-label { color: #a569bd; }
+  .layer-l1 .layer-label { color: var(--accent2); }
+  .layer-0  .layer-label { color: var(--gold); }
+  .layer-p1 .layer-label { color: #5dade2; }
+  .layer-p2 .layer-label { color: #58d68d; }
+  .layer-name { font-size: 12px; font-weight: 600; color: #fff; }
+  .layer-desc { font-size: 10px; color: var(--muted); margin-top: 3px; }
+  .layer-count { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 20px; font-weight: 700; opacity: 0.25; }
+
+  /* SIX DOMAINS */
+  .domains-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .domain-card {
+    border-radius: 5px; padding: 14px; border: 1px solid var(--border);
+    background: rgba(255,255,255,0.02); transition: border-color 0.2s;
+  }
+  .domain-card:hover { border-color: rgba(255,255,255,0.15); }
+  .domain-card.new { border-color: rgba(192,57,43,0.4); background: rgba(192,57,43,0.05); }
+  .domain-num { font-size: 28px; font-weight: 800; color: var(--border); line-height: 1; }
+  .domain-name { font-size: 12px; font-weight: 700; color: #fff; margin: 4px 0 2px; }
+  .domain-def { font-size: 10px; color: var(--muted); line-height: 1.4; }
+  .domain-new-badge {
+    display: inline-block; padding: 2px 6px; background: rgba(192,57,43,0.3);
+    color: var(--accent2); font-size: 9px; font-weight: 700; border-radius: 2px;
+    letter-spacing: 0.08em; margin-bottom: 4px;
+  }
+
+  /* COVERAGE MATRIX */
+  .coverage-grid { display: grid; gap: 6px; }
+  .cov-row { display: flex; align-items: center; gap: 10px; }
+  .cov-label { font-size: 10px; color: var(--text); width: 160px; flex-shrink: 0; }
+  .cov-track { flex: 1; background: rgba(255,255,255,0.05); border-radius: 2px; height: 12px; }
+  .cov-fill { height: 100%; border-radius: 2px; background: linear-gradient(90deg, rgba(39,174,96,0.4), var(--green)); }
+  .cov-pct { font-size: 10px; font-weight: 700; width: 38px; text-align: right; }
+  .cov-pct.good { color: var(--green); }
+  .cov-pct.warn { color: var(--gold); }
+  .cov-pct.bad  { color: var(--accent2); }
+
+  /* SWARM PHASES */
+  .phase-track { display: flex; gap: 0; border-radius: 5px; overflow: hidden; margin-top: 8px; }
+  .phase {
+    flex: 1; padding: 12px; text-align: center; border-right: 1px solid rgba(0,0,0,0.3);
+    position: relative;
+  }
+  .phase:last-child { border-right: none; }
+  .phase-a { background: rgba(41,128,185,0.15); }
+  .phase-b { background: rgba(243,156,18,0.12); }
+  .phase-c { background: rgba(192,57,43,0.12); }
+  .phase-label { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }
+  .phase-a .phase-label { color: #5dade2; }
+  .phase-b .phase-label { color: var(--gold); }
+  .phase-c .phase-label { color: var(--accent2); }
+  .phase-name { font-size: 11px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .phase-status { font-size: 10px; color: var(--muted); }
+  .active-marker {
+    position: absolute; top: 6px; right: 6px; width: 6px; height: 6px;
+    border-radius: 50%; background: var(--green); box-shadow: 0 0 5px var(--green);
+    animation: pulse 2s infinite;
+  }
+
+  /* OUTCOME TABLE */
+  table { width: 100%; border-collapse: collapse; font-size: 11px; }
+  th { text-align: left; padding: 6px 8px; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); }
+  td { padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.04); color: var(--text); vertical-align: top; }
+  tr:hover td { background: rgba(255,255,255,0.02); }
+  .id-cell { font-family: var(--mono); font-size: 10px; color: var(--muted); }
+  .score-pill {
+    display: inline-block; padding: 2px 7px; border-radius: 2px; font-size: 10px; font-weight: 700;
+  }
+  .score-critical { background: rgba(192,57,43,0.25); color: var(--accent2); }
+  .score-high { background: rgba(230,126,34,0.2); color: var(--high); }
+  .score-elevated { background: rgba(243,156,18,0.2); color: var(--elevated); }
+
+  /* EDGE CASES */
+  .edge-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .edge-card {
+    border-radius: 4px; padding: 12px; border-left: 3px solid;
+    background: rgba(255,255,255,0.02);
+  }
+  .edge-ok { border-color: var(--green); }
+  .edge-warn { border-color: var(--gold); }
+  .edge-crit { border-color: var(--accent2); }
+  .edge-name { font-size: 11px; font-weight: 600; color: #fff; margin-bottom: 3px; }
+  .edge-cov { font-size: 10px; margin-top: 4px; }
+  .edge-cov.crit { color: var(--accent2); font-weight: 700; }
+  .edge-cov.warn { color: var(--gold); }
+  .edge-cov.good { color: var(--green); }
+  .edge-desc { font-size: 10px; color: var(--muted); line-height: 1.4; }
+
+  /* FOOTER */
+  footer {
+    text-align: center; padding: 20px; font-size: 10px; color: var(--muted);
+    border-top: 1px solid var(--border); margin-top: 32px;
+    letter-spacing: 0.05em;
+  }
+  footer a { color: var(--accent2); text-decoration: none; }
+
+  /* RESPONSIVE */
+  @media (max-width: 1100px) {
+    .stat-row { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: 1fr; }
+    .grid-3 { grid-template-columns: 1fr 1fr; }
+    .domains-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 700px) {
+    .stat-row { grid-template-columns: 1fr 1fr; }
+    .grid-3 { grid-template-columns: 1fr; }
+    .domains-grid { grid-template-columns: 1fr; }
+    .edge-grid { grid-template-columns: 1fr; }
+    header { flex-direction: column; gap: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-shield">🛡️</div>
+    <div>
+      <div class="logo-text">COGNITIVE SOVEREIGNTY FRAMEWORK</div>
+      <div class="logo-sub">Command Center · Cyber Strategy Institute · v2.0</div>
+    </div>
+  </div>
+  <div class="header-badges">
+    <span class="badge badge-red">🔴 41 Threats Classified</span>
+    <span class="badge badge-gold">⚠ 3 Edge Domains Below 90%</span>
+    <span class="badge badge-blue"><span class="pulse"></span>&nbsp; Live Registry</span>
+  </div>
+</header>
+
+<div class="main">
+
+  <!-- STAT ROW -->
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="stat-num">41</div>
+      <div class="stat-label">Classified Threat Entries</div>
+      <div class="stat-sub">Across 5 causal layers</div>
+    </div>
+    <div class="stat-card green">
+      <div class="stat-num">92%</div>
+      <div class="stat-label">Taxonomy Coverage</div>
+      <div class="stat-sub">Asymptotic target: 100%</div>
+    </div>
+    <div class="stat-card gold">
+      <div class="stat-num">90</div>
+      <div class="stat-label">Top CTSS Score</div>
+      <div class="stat-sub">T-CT-008 Memetic Swarm</div>
+    </div>
+    <div class="stat-card blue">
+      <div class="stat-num">6</div>
+      <div class="stat-label">Resilience Domains</div>
+      <div class="stat-sub">Domain 6 is the missing pillar</div>
+    </div>
+    <div class="stat-card purple">
+      <div class="stat-num">5</div>
+      <div class="stat-label">Outcome Indicators</div>
+      <div class="stat-sub">Observable, not aspirational</div>
+    </div>
+  </div>
+
+  <!-- CTSS HEATMAP + LAYER STACK -->
+  <div class="grid-2">
+
+    <div class="panel">
+      <div class="panel-title"><span class="icon">📊</span> CTSS Heatmap — All 18 Technique Families</div>
+      <div id="ctss-container"></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title"><span class="icon">🏗️</span> Five-Layer Causal Stack</div>
+      <div class="layer-stack">
+        <div class="layer layer-l2">
+          <div class="layer-label">Layer -2</div>
+          <div class="layer-name">Civilizational Drivers</div>
+          <div class="layer-desc">Root forces generating vulnerability — CD-001 through CD-006</div>
+          <div class="layer-count">6</div>
+        </div>
+        <div class="layer layer-l1">
+          <div class="layer-label">Layer -1 · Strategic Center of Gravity</div>
+          <div class="layer-name">Substrate Threats</div>
+          <div class="layer-desc">Pre-manipulation foundations — ST-001 through ST-007</div>
+          <div class="layer-count">7</div>
+        </div>
+        <div class="layer layer-0">
+          <div class="layer-label">Layer 0 · Living System</div>
+          <div class="layer-name">Active Manipulation Techniques</div>
+          <div class="layer-desc">18 discrete adversary technique families — T-CT-001 through T-CT-018</div>
+          <div class="layer-count">18</div>
+        </div>
+        <div class="layer layer-p1">
+          <div class="layer-label">Layer +1</div>
+          <div class="layer-name">Delivery & Scale Mechanisms</div>
+          <div class="layer-desc">Amplification from individual reach to population scale — DS-001 through DS-005</div>
+          <div class="layer-count">5</div>
+        </div>
+        <div class="layer layer-p2">
+          <div class="layer-label">Layer +2 · Measurement Layer</div>
+          <div class="layer-name">Human Outcome Effects</div>
+          <div class="layer-desc">Observable changes in human cognition and behavior — HO-001 through HO-005</div>
+          <div class="layer-count">5</div>
+        </div>
+      </div>
+      <div style="margin-top:14px; padding:10px; background:rgba(192,57,43,0.08); border-radius:4px; border-left:3px solid var(--accent); font-size:10px; color:var(--muted); line-height:1.5;">
+        ⚡ <strong style="color:var(--text);">Critical Insight:</strong> If substrate conditions (Layer -1) are not addressed, active techniques at Layer 0 will always find new pathways. Tactical defense without substrate resilience is an infinite regression.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SIX DOMAINS -->
+  <div class="panel" style="margin-bottom:20px;">
+    <div class="panel-title"><span class="icon">🔬</span> Six-Domain Cognitive Sovereignty Model</div>
+    <div class="domains-grid" id="domains-grid"></div>
+  </div>
+
+  <!-- COVERAGE + SWARM -->
+  <div class="grid-2">
+
+    <div class="panel">
+      <div class="panel-title"><span class="icon">📐</span> Spectrum Coverage Matrix</div>
+      <div class="coverage-grid" id="coverage-grid"></div>
+      <div style="margin-top:12px; font-size:10px; color:var(--muted); line-height:1.5;">
+        ⚠ Remaining gaps: Swarm adaptation speed · Quantum acceleration · Neuro-swarm integration · Multi-generational effects
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title"><span class="icon">🤖</span> Swarm Threat Phase Progression</div>
+      <div class="phase-track">
+        <div class="phase phase-a">
+          <div class="active-marker"></div>
+          <div class="phase-label">Phase A</div>
+          <div class="phase-name">Human-Directed</div>
+          <div class="phase-status">Currently operational. UGC farms, A/B narrative testing at scale.</div>
+        </div>
+        <div class="phase phase-b">
+          <div class="phase-label">Phase B</div>
+          <div class="phase-name">Semi-Autonomous</div>
+          <div class="phase-status">Transition state. Humans set goals. Machines evolve methods.</div>
+        </div>
+        <div class="phase phase-c">
+          <div class="phase-label">Phase C</div>
+          <div class="phase-name">Fully Autonomous</div>
+          <div class="phase-status">Near-future. Parallel reality formation. Cognitive displacement.</div>
+        </div>
+      </div>
+      <div style="margin-top:16px;">
+        <div class="panel-title" style="margin-bottom:10px;"><span class="icon">🎯</span> Human Outcome Indicators</div>
+        <table>
+          <thead>
+            <tr><th>ID</th><th>Outcome</th><th>Detection</th></tr>
+          </thead>
+          <tbody id="outcomes-table"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- EDGE CASES -->
+  <div class="panel" style="margin-bottom:20px;">
+    <div class="panel-title"><span class="icon">⚡</span> Edge Cases — Where Defenses Fail</div>
+    <div class="edge-grid" id="edge-grid"></div>
+  </div>
+
+  <!-- MEASURABLE OUTCOMES -->
+  <div class="panel" style="margin-bottom:20px;">
+    <div class="panel-title"><span class="icon">📋</span> Measurable Resilience Outcomes — Success Thresholds</div>
+    <table>
+      <thead>
+        <tr><th>Indicator</th><th>What It Measures</th><th>Success Threshold</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:600;color:#fff;">Sustained Attention Span</td>
+          <td>Ability to maintain deep focus without platform-driven interruption</td>
+          <td><span class="score-pill score-critical">+20–30% in controlled studies</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#fff;">Resistance to False Narratives</td>
+          <td>Identify and reject manipulative content including deepfakes and synthetic personas</td>
+          <td><span class="score-pill score-high">~40% reduction via inoculation training</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#fff;">Stable Moral Reasoning Under Pressure</td>
+          <td>Maintain ethical judgment when social pressure or automation suggests compliance</td>
+          <td><span class="score-pill score-elevated">Audit-verified in AI-augmented environments</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#fff;">Ability to Act Against Social Manipulation</td>
+          <td>Recognize and resist synthetic consensus and manufactured outrage</td>
+          <td><span class="score-pill score-elevated">Measurable independence in red-team exercises</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#fff;">Preservation of Personal Agency</td>
+          <td>Independent decision-making capacity in AI-augmented environments</td>
+          <td><span class="score-pill score-critical">Sustained or improved critical thinking scores</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer>
+  Cognitive Sovereignty Framework v2.0 · <a href="https://cyberstrategyinstitute.com">Cyber Strategy Institute</a> ·
+  Companion to <a href="https://github.com/CyberStrategyInstitute/ai-safe2-framework">AI SAFE² Framework</a> ·
+  Data sourced from <code>taxonomy/registry.json</code> · February 2026
+</footer>
+
+<script>
+// ─── DATA ───────────────────────────────────────────────────────────────────
+const techniques = [
+  { id:'T-CT-008', name:'Memetic Swarm Orchestration', score:90, tier:'critical' },
+  { id:'T-CT-010', name:'Economic Coercion & Incentive Corruption', score:88, tier:'critical' },
+  { id:'T-CT-004', name:'Personalized Narrative Injection', score:85, tier:'critical' },
+  { id:'T-CT-013', name:'Social Scoring & Behavioral Governance', score:83, tier:'critical' },
+  { id:'T-CT-006', name:'Decision Automation Capture', score:82, tier:'critical' },
+  { id:'T-CT-015', name:'Legitimized Narrative Capture', score:81, tier:'critical' },
+  { id:'T-CT-001', name:'Attention Capture & Habituation', score:80, tier:'critical' },
+  { id:'T-CT-016', name:'Psychographic Micro-Targeting at Scale', score:79, tier:'high' },
+  { id:'T-CT-005', name:'Identity Replacement / Persona Hijacking', score:78, tier:'high' },
+  { id:'T-CT-014', name:'Cognitive Load Flooding', score:77, tier:'high' },
+  { id:'T-CT-007', name:'Information Ecosystem Poisoning', score:76, tier:'high' },
+  { id:'T-CT-002', name:'Algorithmic Amplification', score:75, tier:'high' },
+  { id:'T-CT-018', name:'Repetition & Normalization Manipulation', score:74, tier:'high' },
+  { id:'T-CT-009', name:'Institutional & Bureaucratic Capture', score:72, tier:'high' },
+  { id:'T-CT-003', name:'Micro-Targeted Emotional Priming', score:70, tier:'high' },
+  { id:'T-CT-017', name:'Guardrail Bias Exploitation', score:70, tier:'high' },
+  { id:'T-CT-011', name:'Epistemic Rewriting', score:65, tier:'elevated' },
+  { id:'T-CT-012', name:'Neurotech / Direct Cognitive Influence', score:60, tier:'elevated' },
+];
+
+const domains = [
+  { num:'01', name:'Biological', def:'Sleep, metabolism, nervous system regulation, neurophysiological integrity', isNew:false },
+  { num:'02', name:'Cognitive', def:'Attention control, deep thinking, memory, learning agility, reasoning capacity', isNew:false },
+  { num:'03', name:'Emotional', def:'Stress tolerance, emotional regulation, identity stability, trauma recovery', isNew:false },
+  { num:'04', name:'Social', def:'Trust networks, belonging, family continuity, community cohesion, civic identity', isNew:false },
+  { num:'05', name:'Purpose & Moral', def:'Values, meaning, service, moral reasoning capacity, ethical judgment', isNew:false },
+  { num:'06', name:'Digital & AI Symbiosis', def:'Working with AI without cognitive erosion; maintaining agency in automated environments; resisting synthetic media manipulation', isNew:true },
+];
+
+const coverage = [
+  { label:'Adversarial / Intentional', pct:92 },
+  { label:'Emergent / Systemic', pct:92 },
+  { label:'Incentive-Driven Shaping', pct:90 },
+  { label:'AI-Scale Engineering', pct:88 },
+  { label:'Institutional Capture', pct:94 },
+  { label:'Identity Influence', pct:93 },
+  { label:'Biological / Neurological', pct:85 },
+  { label:'Civilizational Continuity', pct:85 },
+  { label:'Individual → Civilizational', pct:92 },
+  { label:'Timeline Urgency', pct:90 },
+];
+
+const outcomes = [
+  { id:'HO-001', name:'Attention Ownership Loss', det:4 },
+  { id:'HO-002', name:'Belief Instability', det:3 },
+  { id:'HO-003', name:'Identity Fragmentation', det:4 },
+  { id:'HO-004', name:'Moral Disengagement', det:2 },
+  { id:'HO-005', name:'Agency Erosion', det:3 },
+];
+
+const edges = [
+  { name:'Reality Destabilization', cov:'95%', tier:'warn', desc:'Synthetic media indistinguishable from truth + AI persuasion at scale + competing truth ecosystems.' },
+  { name:'Institutional Capture', cov:'92%', tier:'warn', desc:'Bureaucratic preservation over liberty + safety narratives masking control.' },
+  { name:'Identity Fragmentation', cov:'94%', tier:'warn', desc:'Micro-tribe reinforcement + platform identity replacing civic identity.' },
+  { name:'Attention Extraction Economy', cov:'93%', tier:'warn', desc:'Dopamine loops + cognitive exhaustion + thinking outsourced to AI.' },
+  { name:'AI Swarm Persuasion', cov:'90%', tier:'warn', desc:'Billions of agentic entities with hyper-personalized narrative shaping.' },
+  { name:'Full Infrastructure Capture', cov:'<90%', tier:'crit', desc:'Adversary controls comms backbone. All information channels compromised simultaneously.' },
+  { name:'Autonomous Swarm Reality', cov:'<90%', tier:'crit', desc:'AI agents create a parallel reality environment indistinguishable from organic.' },
+  { name:'Civilizational Reproduction Failure', cov:'<90%', tier:'crit', desc:'Values, identity, trust, family formation fail simultaneously across a generation.' },
+];
+
+// ─── RENDER CTSS HEATMAP ────────────────────────────────────────────────────
+const ctssContainer = document.getElementById('ctss-container');
+techniques.forEach(t => {
+  const fillClass = t.tier === 'critical' ? 'fill-critical' : t.tier === 'high' ? 'fill-high' : 'fill-elevated';
+  const pct = (t.score / 100) * 100;
+  ctssContainer.innerHTML += `
+    <div class="ctss-row">
+      <span class="ctss-id">${t.id}</span>
+      <span class="ctss-name" title="${t.name}">${t.name}</span>
+      <div class="ctss-track" style="max-width:120px;">
+        <div class="ctss-fill ${fillClass}" style="width:${pct}%">${t.score}</div>
+      </div>
+    </div>`;
+});
+
+// ─── RENDER DOMAINS ─────────────────────────────────────────────────────────
+const domainsGrid = document.getElementById('domains-grid');
+domains.forEach(d => {
+  domainsGrid.innerHTML += `
+    <div class="domain-card${d.isNew ? ' new' : ''}">
+      ${d.isNew ? '<div class="domain-new-badge">★ NEW DOMAIN</div>' : ''}
+      <div class="domain-num">${d.num}</div>
+      <div class="domain-name">${d.name}</div>
+      <div class="domain-def">${d.def}</div>
+    </div>`;
+});
+
+// ─── RENDER COVERAGE ────────────────────────────────────────────────────────
+const coverageGrid = document.getElementById('coverage-grid');
+coverage.forEach(c => {
+  const cls = c.pct >= 92 ? 'good' : c.pct >= 88 ? 'warn' : 'bad';
+  const fillColor = c.pct >= 92 ? '#27ae60' : c.pct >= 88 ? '#f39c12' : '#e74c3c';
+  coverageGrid.innerHTML += `
+    <div class="cov-row">
+      <span class="cov-label">${c.label}</span>
+      <div class="cov-track"><div class="cov-fill" style="width:${c.pct}%;background:linear-gradient(90deg,rgba(39,174,96,0.3),${fillColor});"></div></div>
+      <span class="cov-pct ${cls}">${c.pct}%</span>
+    </div>`;
+});
+
+// ─── RENDER OUTCOMES ────────────────────────────────────────────────────────
+const outcomesTable = document.getElementById('outcomes-table');
+outcomes.forEach(o => {
+  const dots = '●'.repeat(o.det) + '○'.repeat(5 - o.det);
+  outcomesTable.innerHTML += `
+    <tr>
+      <td class="id-cell">${o.id}</td>
+      <td>${o.name}</td>
+      <td style="font-family:var(--mono);font-size:9px;color:${o.det >= 4 ? '#27ae60' : o.det >= 3 ? '#f39c12' : '#e74c3c'};">${dots}</td>
+    </tr>`;
+});
+
+// ─── RENDER EDGE CASES ──────────────────────────────────────────────────────
+const edgeGrid = document.getElementById('edge-grid');
+edges.forEach(e => {
+  const borderColor = e.tier === 'crit' ? 'var(--accent2)' : 'var(--gold)';
+  edgeGrid.innerHTML += `
+    <div class="edge-card edge-${e.tier}">
+      <div class="edge-name">${e.name}</div>
+      <div class="edge-desc">${e.desc}</div>
+      <div class="edge-cov ${e.tier === 'crit' ? 'crit' : 'warn'}">Coverage: ${e.cov}</div>
+    </div>`;
+});
+</script>
+</body>
+</html>

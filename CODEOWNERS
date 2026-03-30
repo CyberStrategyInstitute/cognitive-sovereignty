@@ -1,0 +1,20 @@
+# CODEOWNERS — Cognitive Sovereignty Framework
+# Requires review from designated owners before merging to main.
+
+# Framework core — taxonomy architecture and domain definitions
+/taxonomy/          @CyberStrategyInstitute
+/01-biological/     @CyberStrategyInstitute
+/02-cognitive/      @CyberStrategyInstitute
+/03-emotional/      @CyberStrategyInstitute
+/04-social/         @CyberStrategyInstitute
+/05-purpose-moral/  @CyberStrategyInstitute
+/06-digital-ai-symbiosis/ @CyberStrategyInstitute
+
+# Command Center visualization
+/command-center/    @CyberStrategyInstitute
+
+# Governance files
+README.md           @CyberStrategyInstitute
+EVOLUTION.md        @CyberStrategyInstitute
+LICENSE             @CyberStrategyInstitute
+CITATION.cff        @CyberStrategyInstitute

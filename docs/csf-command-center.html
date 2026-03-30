@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSF Command Center — Cognitive Sovereignty Framework</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1F33;--nm:#0F2845;--nl:#0d2340;
+  --slate:#2F3E46;--slm:#3a4d57;
+  --white:#F5F7FA;--wm:#c8d0d9;--wl:#8ba0b2;--wll:#566d80;
+  --gold:#C6A75E;--gh:#d9be7a;--gl:rgba(198,167,94,0.11);
+  --gb:rgba(198,167,94,0.22);--gg:rgba(198,167,94,0.06);
+  --bdr:rgba(198,167,94,0.14);--bds:rgba(255,255,255,0.07);
+  --crit:#c0392b;--cl:rgba(192,57,43,0.13);
+  --grn:#4a9e6e;--gl2:rgba(74,158,110,0.11);
+  --ff-d:'Cormorant Garamond',serif;--ff-b:'DM Sans',sans-serif;--ff-m:'JetBrains Mono',monospace;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--white);font-family:var(--ff-b);font-size:13px;line-height:1.6;overflow-x:hidden}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--navy)}::-webkit-scrollbar-thumb{background:var(--gb);border-radius:2px}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(198,167,94,0.018) 39px,rgba(198,167,94,0.018) 40px)}
+
+/* ── HEADER ──────────────────────────────── */
+header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:0 28px;height:56px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.h-brand{display:flex;align-items:center;gap:12px}
+.h-brand-name{font-family:var(--ff-d);font-weight:600;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;color:var(--white)}
+.h-brand-sub{font-family:var(--ff-m);font-size:8px;letter-spacing:0.14em;color:var(--gold);text-transform:uppercase}
+.h-status{display:flex;align-items:center;gap:16px}
+.h-badge{font-family:var(--ff-m);font-size:9px;letter-spacing:0.1em;padding:3px 9px;border-radius:1px;text-transform:uppercase}
+.hb-live{background:rgba(74,158,110,0.12);color:#7dcca0;border:1px solid rgba(74,158,110,0.28)}
+.hb-gold{background:var(--gl);color:var(--gold);border:1px solid var(--gb)}
+.hb-red{background:var(--cl);color:#e57e74;border:1px solid rgba(192,57,43,0.28)}
+.h-links{display:flex;gap:8px}
+.h-link{padding:5px 12px;border:1px solid var(--bds);border-radius:2px;font-family:var(--ff-b);font-size:11px;font-weight:500;color:var(--wl);text-decoration:none;transition:all 0.2s}
+.h-link:hover{border-color:var(--gb);color:var(--gold)}
+
+/* ── MAIN GRID ───────────────────────────── */
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto;gap:2px;padding:2px;min-height:calc(100vh - 56px)}
+
+/* ── PANELS ──────────────────────────────── */
+.panel{background:var(--nm);position:relative;overflow:hidden}
+.panel-hdr{padding:14px 16px 10px;border-bottom:1px solid var(--bds);display:flex;align-items:flex-start;justify-content:space-between}
+.panel-kicker{font-family:var(--ff-m);font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
+.panel-title{font-family:var(--ff-d);font-weight:700;font-size:18px;letter-spacing:0.03em;color:var(--white);line-height:1}
+.panel-meta{font-family:var(--ff-m);font-size:9px;color:var(--wll);margin-left:auto;text-align:right;line-height:1.5}
+.panel-body{padding:14px 16px}
+
+/* Span variants */
+.span-2c{grid-column:span 2}
+.span-3c{grid-column:span 3}
+.span-2r{grid-row:span 2}
+
+/* ── HERO DOCTRINE PANEL ─────────────────── */
+.doctrine-panel{background:var(--nl);border-right:1px solid var(--gb);grid-column:span 1;grid-row:span 2;display:flex;flex-direction:column;justify-content:space-between;padding:28px 24px;position:relative;overflow:hidden}
+.dp-seal{position:absolute;right:-30px;bottom:-30px;opacity:0.06}
+.dp-kicker{font-family:var(--ff-m);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.dp-title{font-family:var(--ff-d);font-weight:300;font-size:36px;line-height:0.92;color:var(--white);margin-bottom:4px}
+.dp-title strong{font-weight:700;display:block;color:var(--gold)}
+.dp-rule{width:40px;height:1px;background:var(--gold);margin:14px 0}
+.dp-pitch{font-family:var(--ff-d);font-style:italic;font-weight:300;font-size:14px;color:var(--wm);line-height:1.75;margin-bottom:18px}
+.dp-archetype{margin-top:auto}
+.dp-arch-row{display:flex;gap:10px;margin-bottom:6px;align-items:flex-start}
+.dp-arch-label{font-family:var(--ff-m);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);flex-shrink:0;padding-top:2px}
+.dp-arch-desc{font-size:11px;color:var(--wll);line-height:1.5}
+
+/* ── STAT CARDS ──────────────────────────── */
+.stat-panel{display:flex;flex-direction:column;justify-content:space-between;padding:18px;min-height:100px}
+.stat-num{font-family:var(--ff-d);font-weight:700;font-size:44px;line-height:1;color:var(--gold)}
+.stat-label{font-family:var(--ff-b);font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--wll);margin-top:4px}
+.stat-sub{font-size:11px;color:var(--wm);margin-top:3px}
+.stat-accent{height:2px;width:100%;margin-top:12px}
+.sa-gold{background:linear-gradient(90deg,var(--gold),transparent)}
+.sa-crit{background:linear-gradient(90deg,var(--crit),transparent)}
+.sa-grn{background:linear-gradient(90deg,var(--grn),transparent)}
+.sa-blue{background:linear-gradient(90deg,#2471a3,transparent)}
+
+/* ── CTSS HEATMAP ────────────────────────── */
+.ctss-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.ctss-id{font-family:var(--ff-m);font-size:8px;color:var(--wll);width:66px;flex-shrink:0}
+.ctss-name{font-size:11px;color:var(--wm);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ctss-track{width:100px;height:13px;background:rgba(255,255,255,0.05);border-radius:1px;flex-shrink:0;overflow:hidden}
+.ctss-fill{height:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:4px;font-family:var(--ff-m);font-size:8px;font-weight:500;color:#fff;border-radius:1px}
+.f-crit{background:linear-gradient(90deg,rgba(192,57,43,0.5),var(--crit))}
+.f-high{background:linear-gradient(90deg,rgba(198,167,94,0.5),var(--gold))}
+.f-elev{background:linear-gradient(90deg,rgba(100,100,100,0.3),#777)}
+
+/* ── FIVE LAYER STACK VISUAL ─────────────── */
+.layer-stack-vis{display:flex;flex-direction:column;gap:3px}
+.lv-item{padding:10px 14px;border-radius:2px;cursor:pointer;transition:all 0.2s;border:1px solid transparent}
+.lv-item:hover{border-color:var(--gb)}
+.lv-label{font-family:var(--ff-m);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:2px}
+.lv-name{font-size:12px;font-weight:500;color:var(--white)}
+.lv-count{font-family:var(--ff-m);font-size:9px;color:var(--wll);float:right;margin-top:1px}
+.lv-l2{background:rgba(125,60,152,0.08)}.lv-l2 .lv-label{color:#c39bd3}
+.lv-l1{background:rgba(192,57,43,0.08)}.lv-l1 .lv-label{color:#e57e74}
+.lv-l0{background:rgba(198,167,94,0.07)}.lv-l0 .lv-label{color:var(--gold)}
+.lv-p1{background:rgba(36,113,163,0.07)}.lv-p1 .lv-label{color:#7cc4e8}
+.lv-p2{background:rgba(74,158,110,0.07)}.lv-p2 .lv-label{color:#7dcca0}
+
+/* ── SIX DOMAINS ─────────────────────────── */
+.domain-grid-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.dm-item{padding:12px;background:rgba(255,255,255,0.025);border-radius:2px;border:1px solid var(--bds);cursor:pointer;transition:all 0.2s;position:relative}
+.dm-item:hover{border-color:var(--gb);background:var(--gg)}
+.dm-item.is-new{border-color:rgba(198,167,94,0.2)}
+.dm-num{font-family:var(--ff-d);font-weight:700;font-size:28px;color:rgba(198,167,94,0.12);line-height:1;letter-spacing:-0.02em}
+.dm-name{font-size:11px;font-weight:500;color:var(--white);margin-top:2px}
+.dm-line{height:1px;background:var(--gold);margin-top:7px;opacity:0.25;transition:opacity 0.2s}
+.dm-item:hover .dm-line,.dm-item.is-new .dm-line{opacity:0.65}
+.new-pip{position:absolute;top:6px;right:6px;font-family:var(--ff-m);font-size:7px;color:var(--gold);letter-spacing:0.08em}
+
+/* ── SWARM THREAT PHASES ─────────────────── */
+.swarm-phases-mini{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px}
+.spm{padding:12px;border-radius:2px;border-bottom:2px solid transparent;background:rgba(255,255,255,0.02);cursor:pointer;transition:all 0.2s}
+.spm:hover{background:rgba(255,255,255,0.04)}
+.spm-a{border-bottom-color:#7cc4e8}.spm-b{border-bottom-color:var(--gold)}.spm-c{border-bottom-color:var(--crit)}
+.spm-lbl{font-family:var(--ff-m);font-size:7px;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:4px}
+.spm-a .spm-lbl{color:#7cc4e8}.spm-b .spm-lbl{color:var(--gold)}.spm-c .spm-lbl{color:var(--crit)}
+.spm-name{font-size:11px;font-weight:500;color:var(--white);margin-bottom:3px}
+.spm-badge{font-family:var(--ff-m);font-size:7px;padding:1px 5px;border-radius:1px;display:inline-block;margin-bottom:4px}
+.sb-live{background:rgba(74,158,110,0.12);color:#7dcca0;border:1px solid rgba(74,158,110,0.25)}
+.sb-trans{background:var(--gl);color:var(--gold);border:1px solid var(--gb)}
+.sb-near{background:var(--cl);color:#e57e74;border:1px solid rgba(192,57,43,0.25)}
+.spm-desc{font-size:10px;color:var(--wll);line-height:1.4}
+
+/* ── HUMAN OUTCOMES ──────────────────────── */
+.ho-list{display:flex;flex-direction:column;gap:8px}
+.ho-item{display:flex;align-items:center;gap:10px;padding:9px 12px;background:rgba(255,255,255,0.02);border-radius:2px;border-left:2px solid;cursor:pointer;transition:background 0.2s}
+.ho-item:hover{background:rgba(255,255,255,0.04)}
+.ho-id{font-family:var(--ff-m);font-size:9px;color:var(--wll);flex-shrink:0;width:54px}
+.ho-name{font-size:12px;font-weight:500;color:var(--white);flex:1}
+.ho-det{font-family:var(--ff-m);font-size:9px;flex-shrink:0}
+.ho-bar-wrap{width:60px;flex-shrink:0}
+.ho-bar-track{height:4px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden}
+.ho-bar-fill{height:100%;border-radius:2px;transition:width 1.2s ease}
+
+/* ── COVERAGE BARS ───────────────────────── */
+.cov-list{display:flex;flex-direction:column;gap:6px}
+.cl-row{display:flex;align-items:center;gap:8px}
+.cl-lbl{font-size:11px;color:var(--wm);width:160px;flex-shrink:0}
+.cl-track{flex:1;height:8px;background:rgba(255,255,255,0.05);border-radius:1px;overflow:hidden}
+.cl-fill{height:100%;border-radius:1px;transition:width 1.2s ease}
+.cl-pct{font-family:var(--ff-m);font-size:9px;font-weight:500;width:34px;text-align:right}
+.pct-hi{color:var(--grn)}.pct-md{color:var(--gold)}.pct-lo{color:var(--crit)}
+
+/* ── EDGE CASE MATRIX ────────────────────── */
+.edge-mini{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.em-item{padding:9px;background:rgba(255,255,255,0.02);border-radius:2px;border:1px solid}
+.em-ok{border-color:rgba(198,167,94,0.18)}
+.em-bad{border-color:rgba(192,57,43,0.22)}
+.em-name{font-size:11px;font-weight:500;color:var(--white);margin-bottom:3px}
+.em-cov{font-family:var(--ff-m);font-size:8px;margin-bottom:3px}
+.em-ok .em-cov{color:var(--gold)}.em-bad .em-cov{color:var(--crit)}
+.em-desc{font-size:10px;color:var(--wll);line-height:1.4}
+
+/* ── RESILIENCE EVOLUTION ────────────────── */
+.evo-mini{display:flex;flex-direction:column;gap:4px}
+.evo-row{display:grid;grid-template-columns:90px 1fr;gap:10px;padding:9px 12px;background:rgba(255,255,255,0.02);border-radius:2px;border-left:2px solid}
+.evo-era{font-family:var(--ff-m);font-size:8px;letter-spacing:0.12em;text-transform:uppercase}
+.evo-industrial .evo-era{color:#7cc4e8}.evo-industrial{border-color:rgba(36,113,163,0.5)}
+.evo-information .evo-era{color:#c3a06a}.evo-information{border-color:rgba(181,129,58,0.5)}
+.evo-ai .evo-era{color:var(--gold)}.evo-ai{border-color:var(--gb)}
+.evo-name{font-size:12px;font-weight:500;color:var(--white);margin-bottom:2px}
+.evo-q{font-family:var(--ff-d);font-style:italic;font-size:11px;color:var(--gold)}
+.evo-desc{font-size:11px;color:var(--wl);line-height:1.4}
+
+/* ── QUOTE PANEL ─────────────────────────── */
+.quote-panel{background:var(--gg);border:1px solid var(--gb);display:flex;flex-direction:column;justify-content:center;padding:22px 22px}
+.qp-lbl{font-family:var(--ff-m);font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.qp-quote{font-family:var(--ff-d);font-weight:300;font-style:italic;font-size:clamp(14px,1.5vw,18px);color:var(--white);line-height:1.7;margin-bottom:12px}
+.qp-source{font-family:var(--ff-m);font-size:9px;color:var(--wll);letter-spacing:0.08em}
+
+/* ── THREE COMPONENTS ────────────────────── */
+.components{display:flex;flex-direction:column;gap:3px}
+.comp-item{padding:11px 14px;background:rgba(255,255,255,0.02);border-radius:2px;border-left:2px solid var(--gb)}
+.comp-num{font-family:var(--ff-d);font-weight:700;font-size:22px;color:rgba(198,167,94,0.15);line-height:1;margin-bottom:4px}
+.comp-title{font-size:12px;font-weight:500;color:var(--white);margin-bottom:3px}
+.comp-desc{font-size:11px;color:var(--wll);line-height:1.5}
+.comp-tag{margin-top:5px;font-family:var(--ff-m);font-size:8px;color:var(--gold);letter-spacing:0.1em}
+
+/* ── FOOTER RULE ─────────────────────────── */
+.footer-panel{background:var(--navy);border-top:1px solid var(--gb);padding:14px 28px;display:flex;align-items:center;justify-content:space-between;grid-column:span 3}
+.fp-txt{font-family:var(--ff-m);font-size:9px;color:var(--wll);letter-spacing:0.05em}
+.fp-txt a{color:var(--gold);text-decoration:none}
+.fp-links{display:flex;gap:14px}
+.fp-links a{font-family:var(--ff-m);font-size:9px;color:var(--wll);text-decoration:none;transition:color 0.2s}
+.fp-links a:hover{color:var(--gold)}
+
+/* Animations */
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.panel{animation:fadeIn 0.5s ease forwards}
+@media(max-width:1100px){.grid{grid-template-columns:1fr 1fr}.span-3c{grid-column:span 2}.doctrine-panel{grid-row:span 1}}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.span-2c,.span-3c{grid-column:span 1}.domain-grid-mini{grid-template-columns:1fr 1fr}.swarm-phases-mini{grid-template-columns:1fr}.edge-mini{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute;overflow:hidden">
+<defs>
+<symbol id="cseal" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.55"/>
+  <circle cx="100" cy="100" r="87" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+  <defs>
+    <path id="ta3" d="M 14,100 A 86,86 0 0,1 186,100"/>
+    <path id="ba3" d="M 20,112 A 86,86 0 0,0 180,112"/>
+  </defs>
+  <text font-family="'DM Sans',sans-serif" font-size="8.5" letter-spacing="3.6" fill="currentColor" opacity="0.5">
+    <textPath href="#ta3" startOffset="4%">COGNITIVE SOVEREIGNTY FRAMEWORK</textPath>
+  </text>
+  <text font-family="'DM Sans',sans-serif" font-size="7.5" letter-spacing="4.5" fill="currentColor" opacity="0.38">
+    <textPath href="#ba3" startOffset="15%">CYBER STRATEGY INSTITUTE</textPath>
+  </text>
+  <path d="M100 38 L132 53 L132 88 Q132 116 100 130 Q68 116 68 88 L68 53 Z" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.65"/>
+  <circle cx="100" cy="76" r="10" fill="none" stroke="currentColor" stroke-width="1" opacity="0.55"/>
+  <circle cx="85" cy="91" r="4.5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.45"/>
+  <circle cx="115" cy="91" r="4.5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.45"/>
+  <circle cx="100" cy="106" r="4.5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.45"/>
+  <line x1="100" y1="86" x2="87" y2="91" stroke="currentColor" stroke-width="0.7" opacity="0.4"/>
+  <line x1="100" y1="86" x2="113" y2="91" stroke="currentColor" stroke-width="0.7" opacity="0.4"/>
+  <line x1="88" y1="95" x2="97" y2="103" stroke="currentColor" stroke-width="0.7" opacity="0.4"/>
+  <line x1="112" y1="95" x2="103" y2="103" stroke="currentColor" stroke-width="0.7" opacity="0.4"/>
+</symbol>
+</defs>
+</svg>
+
+<header>
+  <div class="h-brand">
+    <svg width="32" height="32" viewBox="0 0 200 200" style="color:var(--gold)"><use href="#cseal"/></svg>
+    <div>
+      <div class="h-brand-name">Cognitive Sovereignty Framework</div>
+      <div class="h-brand-sub">Command Center · v2.0 · Cyber Strategy Institute</div>
+    </div>
+  </div>
+  <div class="h-status">
+    <span class="h-badge hb-live">● Doctrine Active</span>
+    <span class="h-badge hb-red">🔴 41 Threats Classified</span>
+    <span class="h-badge hb-gold">⚠ 3 Edge Domains Below 90%</span>
+    <span class="h-badge hb-gold">Sentinel + Architect</span>
+  </div>
+  <div class="h-links">
+    <a class="h-link" href="csf-learn.html">Learning Hub</a>
+    <a class="h-link" href="csf-explorer.html">Threat Explorer</a>
+  </div>
+</header>
+
+<div class="grid" id="grid">
+
+  <!-- DOCTRINE PANEL — Column 1, Rows 1-2 -->
+  <div class="doctrine-panel" style="grid-row:span 2">
+    <div class="dp-seal"><svg width="260" height="260" viewBox="0 0 200 200" style="color:var(--gold)"><use href="#cseal"/></svg></div>
+    <div>
+      <div class="dp-kicker">Open-Source Doctrine · February 2026</div>
+      <div class="dp-title">Cognitive<strong>Sovereignty</strong></div>
+      <div class="dp-rule"></div>
+      <p class="dp-pitch">The Industrial Age required physical endurance. The Information Age required psychological endurance. The AI Age requires cognitive sovereignty — the ability to retain our humanity, moral reasoning, and independent thought while being amplified by machines.</p>
+      <p style="font-size:11px;color:var(--wll);line-height:1.65;margin-bottom:14px">This is not a cybersecurity product. It is a cognitive defense doctrine — a philosophical movement, a systems engineering framework, and a <strong style="color:var(--wm)">civilizational safeguard</strong>. If it feels like marketing, it is wrong. If it feels like doctrine, it is right.</p>
+    </div>
+    <div class="dp-archetype">
+      <div style="font-family:var(--ff-m);font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Brand Archetype</div>
+      <div class="dp-arch-row"><span class="dp-arch-label">Sentinel</span><span class="dp-arch-desc">Protection, vigilance, sovereignty over one's own cognitive process.</span></div>
+      <div class="dp-arch-row"><span class="dp-arch-label">Architect</span><span class="dp-arch-desc">Structure, systems thinking, long-arc civilizational design.</span></div>
+    </div>
+  </div>
+
+  <!-- STAT ROW — Columns 2-3 -->
+  <div class="panel stat-panel">
+    <div>
+      <div style="font-family:var(--ff-m);font-size:8px;letter-spacing:0.16em;text-transform:uppercase;color:var(--wll);margin-bottom:4px">Classified Threat Entries</div>
+      <div class="stat-num">41</div>
+      <div class="stat-sub">Across 5 causal layers · 6 drivers · 7 substrates · 18 techniques</div>
+    </div>
+    <div class="stat-accent sa-gold"></div>
+  </div>
+  <div class="panel stat-panel">
+    <div>
+      <div style="font-family:var(--ff-m);font-size:8px;letter-spacing:0.16em;text-transform:uppercase;color:var(--wll);margin-bottom:4px">Taxonomy Coverage</div>
+      <div class="stat-num">92%</div>
+      <div class="stat-sub">Asymptotic target: 100% · Remaining gaps: 4 identified</div>
+    </div>
+    <div class="stat-accent sa-grn"></div>
+  </div>
+
+  <!-- CTSS HEATMAP — Columns 2-3 -->
+  <div class="panel span-2c">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-kicker">Layer 0 · Living Taxonomy</div>
+        <div class="panel-title">CTSS Heatmap</div>
+      </div>
+      <div class="panel-meta">18 Technique Families<br>Scored 0–100</div>
+    </div>
+    <div class="panel-body" id="ctss-heatmap"></div>
+  </div>
+
+  <!-- FIVE LAYERS — Column 1 -->
+  <div class="panel">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-kicker">Causal Architecture</div>
+        <div class="panel-title">Five-Layer Stack</div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="layer-stack-vis" id="layer-vis"></div>
+      <div style="margin-top:10px;padding:9px 11px;background:var(--gg);border-left:2px solid var(--gold);font-size:11px;color:var(--wm);line-height:1.6">
+        <strong style="color:var(--gold)">Sentinel Principle:</strong> If the substrate (Layer −1) is degraded, no tactical defense at Layer 0 matters. The substrate is the strategic center of gravity.
+      </div>
+    </div>
+  </div>
+
+  <!-- SIX DOMAINS — Columns 2-3 -->
+  <div class="panel span-2c">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-kicker">Response Architecture · Domain 6 is the Missing Pillar</div>
+        <div class="panel-title">Six Resilience Domains</div>
+      </div>
+      <div class="panel-meta">Domains 1–4: Existing DoD Frameworks<br>Domain 5: Refined · Domain 6: New</div>
+    </div>
+    <div class="panel-body">
+      <div class="domain-grid-mini" id="domain-grid"></div>
+    </div>
+  </div>
+
+  <!-- THREE COMPONENTS — Column 1 -->
+  <div class="panel">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-kicker">Architect Principle · Framework Structure</div>
+        <div class="panel-title">Three Core Components</div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="components" id="components"></div>
+    </div>
+  </div>
+
+  <!-- SWARM THREAT — Column 2 -->
+  <div class="panel">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-kicker">T-CT-008 · CTSS 90 · Highest in Taxonomy</div>
+        <div class="panel-title">Swarm Threat Phases</div>
+      </div>
+      <div class="panel-meta">Phase A: Operational<br>Phase C: Near-Future</div>
+    </div>
+    <div class="panel-body">
+      <div class="swarm-phases-mini" id="swarm-mini"></div>
+    </div>
+  </div>
+
+  <!-- HUMAN OUTCOMES — Column 3 -->
+  <div class="panel">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-kicker">Layer +2 · Measurement Layer</div>
+        <div class="panel-title">Human Outcome Indicators</div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="ho-list" id="ho-list"></div>
+    </div>
+  </div>
+
+  <!-- EVOLUTION — Column 1 -->
+  <div class="panel">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-kicker">Architect Principle · Historical Arc</div>
+        <div class="panel-title">Resilience Evolution</div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="evo-mini" id="evo-mini"></div>
+    </div>
+  </div>
+
+  <!-- COVERAGE — Column 2 -->
+  <div class="panel">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-kicker">Framework Validation · Spectrum Coverage</div>
+        <div class="panel-title">Coverage Matrix</div>
+      </div>
+      <div class="panel-meta">Overall: ~92%</div>
+    </div>
+    <div class="panel-body">
+      <div class="cov-list" id="cov-list"></div>
+    </div>
+  </div>
+
+  <!-- EDGE CASES — Column 3 -->
+  <div class="panel">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-kicker">Wargaming Validated · Stress Testing</div>
+        <div class="panel-title">Edge Case Matrix</div>
+      </div>
+      <div class="panel-meta">3 Below 90%<br>Coverage Threshold</div>
+    </div>
+    <div class="panel-body">
+      <div class="edge-mini" id="edge-mini"></div>
+    </div>
+  </div>
+
+  <!-- QUOTE — Full Width -->
+  <div class="quote-panel span-3c">
+    <div class="qp-lbl">Doctrine Foundation — CSF Cognitive Threat Assessment</div>
+    <div class="qp-quote">"The primary cognitive threat of the AI era is not deception. It is the gradual loss of autonomous human meaning-making. The threat is not that someone will lie to you. The threat is that you will lose the capacity to determine whether you are being lied to — and then lose the awareness that you ever had that capacity."</div>
+    <div class="qp-source">Cognitive Threat Assessment · Cyber Strategy Institute · February 2026 · v2.0</div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-panel">
+    <div class="fp-txt">© 2026 <a href="https://cyberstrategyinstitute.com">Cyber Strategy Institute</a> · Open-Source Doctrine · Dual License: MIT + CC-BY-SA 4.0 · Version 2.0</div>
+    <div class="fp-links">
+      <a href="csf-learn.html">Learning Hub</a>
+      <a href="csf-explorer.html">Threat Explorer</a>
+      <a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty-framework">GitHub Repository</a>
+    </div>
+  </div>
+
+</div><!-- /grid -->
+
+<script>
+// ── DATA ──────────────────────────────────────────────────────────────────────
+const CTSS=[
+  {id:'T-CT-008',name:'Memetic Swarm Orchestration',s:90,tier:'critical'},
+  {id:'T-CT-010',name:'Economic Coercion & Incentive Corruption',s:88,tier:'critical'},
+  {id:'T-CT-004',name:'Personalized Narrative Injection',s:85,tier:'critical'},
+  {id:'T-CT-013',name:'Social Scoring & Behavioral Governance',s:83,tier:'critical'},
+  {id:'T-CT-006',name:'Decision Automation Capture',s:82,tier:'critical'},
+  {id:'T-CT-015',name:'Legitimized Narrative Capture',s:81,tier:'critical'},
+  {id:'T-CT-001',name:'Attention Capture & Habituation',s:80,tier:'critical'},
+  {id:'T-CT-016',name:'Psychographic Micro-Targeting',s:79,tier:'high'},
+  {id:'T-CT-005',name:'Identity Replacement / Persona Hijacking',s:78,tier:'high'},
+  {id:'T-CT-014',name:'Cognitive Load Flooding',s:77,tier:'high'},
+  {id:'T-CT-007',name:'Information Ecosystem Poisoning',s:76,tier:'high'},
+  {id:'T-CT-002',name:'Algorithmic Amplification',s:75,tier:'high'},
+  {id:'T-CT-018',name:'Repetition & Normalization Manipulation',s:74,tier:'high'},
+  {id:'T-CT-009',name:'Institutional & Bureaucratic Capture',s:72,tier:'high'},
+  {id:'T-CT-003',name:'Micro-Targeted Emotional Priming',s:70,tier:'high'},
+  {id:'T-CT-017',name:'Guardrail Bias Exploitation',s:70,tier:'high'},
+  {id:'T-CT-011',name:'Epistemic Rewriting',s:65,tier:'elevated'},
+  {id:'T-CT-012',name:'Neurotech / Direct Cognitive Influence',s:60,tier:'elevated'},
+];
+
+const LAYERS=[
+  {cls:'lv-l2',lbl:'LAYER −2',name:'Civilizational Drivers',count:'6'},
+  {cls:'lv-l1',lbl:'LAYER −1 · CENTER OF GRAVITY',name:'Substrate Threats',count:'7'},
+  {cls:'lv-l0',lbl:'LAYER 0 · LIVING SYSTEM',name:'Active Manipulation Techniques',count:'18'},
+  {cls:'lv-p1',lbl:'LAYER +1',name:'Delivery & Scale Mechanisms',count:'5'},
+  {cls:'lv-p2',lbl:'LAYER +2 · MEASUREMENT',name:'Human Outcome Effects',count:'5'},
+];
+
+const DOMAINS=[
+  {n:'01',name:'Biological',isNew:false},
+  {n:'02',name:'Cognitive',isNew:false},
+  {n:'03',name:'Emotional',isNew:false},
+  {n:'04',name:'Social',isNew:false},
+  {n:'05',name:'Purpose & Moral',isNew:false},
+  {n:'06',name:'Digital & AI Symbiosis',isNew:true},
+];
+
+const COMPONENTS=[
+  {n:'01',t:'Cognitive Sovereignty Framework',d:'Open-source six-domain resilience model. Addresses the human-AI system — not just the human organism. Domain 6 is the missing pillar.',tag:'Training · Assessment · Doctrine'},
+  {n:'02',t:'Cognitive Threat Taxonomy & CTSS',d:'Five-layer causal stack. 41 entries scored using the Cognitive Threat Severity Score for prioritized defense allocation.',tag:'Classification · Measurement · Detection'},
+  {n:'03',t:'Structural Technical Guarantees',d:'EFA and E7 Protocol Stack. Human authority sits permanently at Layer 7. AI is always a tool. Decision rights never leak downward.',tag:'EFA · E7 Stack · HEAR Doctrine'},
+];
+
+const SWARM=[
+  {cls:'spm-a',lbl:'PHASE A',name:'Human-Directed',badge:'LIVE NOW',bcls:'sb-live',desc:'Mass UGC ad farms. Continuous A/B narrative testing. Already operational.'},
+  {cls:'spm-b',lbl:'PHASE B',name:'Semi-Autonomous',badge:'TRANSITION',bcls:'sb-trans',desc:'Humans set goals. Machines evolve methods. Human may not understand what machine converged on.'},
+  {cls:'spm-c',lbl:'PHASE C',name:'Fully Autonomous',badge:'NEAR-FUTURE',bcls:'sb-near',desc:'Parallel reality formation. Market distortion. Cognitive displacement. Coverage below 90%.'},
+];
+
+const OUTCOMES=[
+  {id:'HO-001',name:'Attention Ownership Loss',det:4,pct:25,col:'#7dcca0'},
+  {id:'HO-002',name:'Belief Instability',det:3,pct:40,col:'#c3a06a'},
+  {id:'HO-003',name:'Identity Fragmentation',det:4,pct:60,col:'#7dcca0'},
+  {id:'HO-004',name:'Moral Disengagement',det:2,pct:70,col:'#e57e74'},
+  {id:'HO-005',name:'Agency Erosion',det:3,pct:75,col:'#c3a06a'},
+];
+
+const EVOS=[
+  {cls:'evo-industrial',era:'Industrial Age',name:'Survive Hardship',q:'"Can the person endure physical deprivation and danger?"',desc:'Physical endurance, unit cohesion under fire.'},
+  {cls:'evo-information',era:'Information Age',name:'Survive Overload',q:'"Can the person maintain judgment under information pressure?"',desc:'Psychological endurance, stress management.'},
+  {cls:'evo-ai',era:'AI Age — Current Doctrine',name:'Retain Humanity While Amplified',q:'"Can the person remain human while integrated with AI?"',desc:'Cognitive sovereignty: independent thought, moral reasoning, identity coherence.'},
+];
+
+const COV=[
+  {l:'Adversarial / Intentional',p:92},{l:'Emergent / Systemic',p:92},{l:'Incentive-Driven',p:90},
+  {l:'AI-Scale Engineering',p:88},{l:'Institutional Capture',p:94},{l:'Identity Influence',p:93},
+  {l:'Biological / Neurological',p:85},{l:'Civilizational Continuity',p:85},
+];
+
+const EDGES=[
+  {name:'Reality Destabilization',cov:'95%',ok:true,desc:'Synthetic media + AI persuasion + competing truth ecosystems.'},
+  {name:'Institutional Capture',cov:'92%',ok:true,desc:'The institutions responsible for defense are captured and turned against the population.'},
+  {name:'AI Swarm Persuasion',cov:'90%',ok:true,desc:'Billions of agentic entities with autonomous memetic warfare.'},
+  {name:'Full Infrastructure Capture',cov:'<90%',ok:false,desc:'Adversary controls all communication channels simultaneously.'},
+  {name:'Autonomous Swarm Reality',cov:'<90%',ok:false,desc:'AI agents create a parallel reality indistinguishable from organic.'},
+  {name:'Civilizational Reproduction Failure',cov:'<90%',ok:false,desc:'Values, identity, trust, family formation fail simultaneously across a generation.'},
+];
+
+// ── RENDER ────────────────────────────────────────────────────────────────────
+// CTSS Heatmap
+const hm=document.getElementById('ctss-heatmap');
+hm.style.display='grid';hm.style.gridTemplateColumns='1fr 1fr';hm.style.gap='4px 16px';
+CTSS.forEach(t=>{
+  const fc=t.tier==='critical'?'f-crit':t.tier==='high'?'f-high':'f-elev';
+  const sc=t.tier==='critical'?'var(--crit)':t.tier==='high'?'var(--gold)':'var(--wll)';
+  hm.innerHTML+=`<div class="ctss-row"><span class="ctss-id">${t.id}</span><span class="ctss-name">${t.name}</span><div class="ctss-track"><div class="ctss-fill ${fc}" data-w="${t.s}%" style="width:0%">${t.s}</div></div></div>`;
+});
+setTimeout(()=>document.querySelectorAll('.ctss-fill').forEach(b=>{if(b.dataset.w)b.style.width=b.dataset.w;}),400);
+
+// Layer stack
+const lv=document.getElementById('layer-vis');
+LAYERS.forEach(l=>{
+  lv.innerHTML+=`<div class="lv-item ${l.cls}"><span class="lv-count">${l.count}</span><div class="lv-label">${l.lbl}</div><div class="lv-name">${l.name}</div></div>`;
+});
+
+// Domains
+const dg=document.getElementById('domain-grid');
+DOMAINS.forEach(d=>{
+  dg.innerHTML+=`<div class="dm-item${d.isNew?' is-new':''}"><div class="dm-num">${d.n}</div><div class="dm-name">${d.name}</div><div class="dm-line"></div>${d.isNew?'<div class="new-pip">★ NEW</div>':''}</div>`;
+});
+
+// Components
+const cp=document.getElementById('components');
+COMPONENTS.forEach(c=>{
+  cp.innerHTML+=`<div class="comp-item"><div class="comp-num">${c.n}</div><div class="comp-title">${c.t}</div><div class="comp-desc">${c.d}</div><div class="comp-tag">${c.tag}</div></div>`;
+});
+
+// Swarm phases
+const sw=document.getElementById('swarm-mini');
+SWARM.forEach(s=>{
+  sw.innerHTML+=`<div class="spm ${s.cls}"><div class="spm-lbl">${s.lbl}</div><div class="spm-name">${s.name}</div><span class="spm-badge ${s.bcls}">${s.badge}</span><div class="spm-desc">${s.desc}</div></div>`;
+});
+
+// Human outcomes
+const ho=document.getElementById('ho-list');
+const hoColors={4:'var(--grn)',3:'var(--gold)',2:'var(--crit)',1:'var(--crit)'};
+OUTCOMES.forEach(o=>{
+  const dc=hoColors[o.det]||'var(--wll)';
+  const dots='●'.repeat(o.det)+'○'.repeat(5-o.det);
+  ho.innerHTML+=`<div class="ho-item" style="border-color:${dc}"><div class="ho-id">${o.id}</div><div class="ho-name">${o.name}</div><div class="ho-det" style="color:${dc}">${dots}</div><div class="ho-bar-wrap"><div class="ho-bar-track"><div class="ho-bar-fill" data-w="${o.pct}%" style="width:0%;background:linear-gradient(90deg,rgba(198,167,94,0.3),${o.col})"></div></div></div></div>`;
+});
+setTimeout(()=>document.querySelectorAll('.ho-bar-fill').forEach(b=>{if(b.dataset.w)b.style.width=b.dataset.w;}),600);
+
+// Evolution
+const ev=document.getElementById('evo-mini');
+EVOS.forEach(e=>{
+  ev.innerHTML+=`<div class="evo-row ${e.cls}"><div><div class="evo-era">${e.era}</div><div class="evo-name">${e.name}</div></div><div><div class="evo-q">${e.q}</div><div class="evo-desc">${e.desc}</div></div></div>`;
+});
+
+// Coverage
+const cl=document.getElementById('cov-list');
+COV.forEach(c=>{
+  const cls=c.p>=93?'pct-hi':c.p>=90?'pct-md':'pct-lo';
+  const fc=c.p>=93?'#4a9e6e':c.p>=90?'#C6A75E':'#c0392b';
+  cl.innerHTML+=`<div class="cl-row"><div class="cl-lbl">${c.l}</div><div class="cl-track"><div class="cl-fill" data-w="${c.p}%" style="width:0%;background:linear-gradient(90deg,rgba(74,158,110,0.2),${fc});"></div></div><div class="cl-pct ${cls}">${c.p}%</div></div>`;
+});
+setTimeout(()=>document.querySelectorAll('.cl-fill').forEach(b=>{if(b.dataset.w)b.style.width=b.dataset.w;}),800);
+
+// Edge cases
+const eg=document.getElementById('edge-mini');
+EDGES.forEach(e=>{
+  const bc=e.ok?'rgba(198,167,94,0.18)':'rgba(192,57,43,0.22)';
+  const tc=e.ok?'var(--gold)':'var(--crit)';
+  eg.innerHTML+=`<div class="em-item ${e.ok?'em-ok':'em-bad'}"><div class="em-name">${e.name}</div><div class="em-cov">${e.cov} coverage ${e.ok?'⚠':'🔴'}</div><div class="em-desc">${e.desc}</div></div>`;
+});
+</script>
+</body>
+</html>

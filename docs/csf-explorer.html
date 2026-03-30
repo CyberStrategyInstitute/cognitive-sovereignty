@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSF Threat Explorer — Cognitive Sovereignty Framework</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1F33;--nm:#0F2845;--nl:#142f52;
+  --slate:#2F3E46;--slm:#3a4d57;
+  --white:#F5F7FA;--wm:#c8d0d9;--wl:#8ba0b2;--wll:#566d80;
+  --gold:#C6A75E;--gh:#d9be7a;--gl:rgba(198,167,94,0.11);
+  --gb:rgba(198,167,94,0.22);--gg:rgba(198,167,94,0.06);
+  --bdr:rgba(198,167,94,0.14);--bds:rgba(255,255,255,0.07);
+  --crit:#c0392b;--cl:rgba(192,57,43,0.13);
+  --grn:#4a9e6e;--gl2:rgba(74,158,110,0.11);
+  --ff-d:'Cormorant Garamond',serif;--ff-b:'DM Sans',sans-serif;--ff-m:'JetBrains Mono',monospace;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--white);font-family:var(--ff-b);font-size:14px;line-height:1.65;overflow-x:hidden}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--navy)}::-webkit-scrollbar-thumb{background:var(--gb);border-radius:2px}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(198,167,94,0.018) 39px,rgba(198,167,94,0.018) 40px)}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,31,51,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--gb);display:flex;align-items:center;justify-content:space-between;padding:0 22px;height:54px}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-brand-name{font-family:var(--ff-d);font-weight:600;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--white);line-height:1.1}
+.nav-brand-sub{font-family:var(--ff-m);font-size:8px;letter-spacing:0.14em;color:var(--gold);text-transform:uppercase}
+.ntabs{display:flex;gap:1px}
+.ntab{padding:5px 10px;border-radius:2px;font-family:var(--ff-b);font-size:11px;font-weight:500;color:var(--wl);background:none;border:none;cursor:pointer;transition:all 0.2s;letter-spacing:0.02em}
+.ntab:hover,.ntab.active{color:var(--white);background:rgba(255,255,255,0.05)}
+.ntab.active{color:var(--gold)}
+.nbk{padding:5px 14px;border:1px solid var(--gb);border-radius:2px;font-family:var(--ff-b);font-size:11px;font-weight:500;color:var(--wl);text-decoration:none;transition:all 0.2s}
+.nbk:hover{border-color:var(--gold);color:var(--gold)}
+
+.layout{display:flex;height:100vh;padding-top:54px}
+.sidebar{width:268px;flex-shrink:0;border-right:1px solid var(--gb);background:var(--slate);overflow-y:auto;display:flex;flex-direction:column}
+.main{flex:1;overflow-y:auto}
+
+.sb-sec{border-bottom:1px solid rgba(255,255,255,0.05)}
+.sb-hdr{padding:9px 13px;font-family:var(--ff-m);font-size:8px;letter-spacing:0.18em;text-transform:uppercase;color:var(--wll);background:rgba(0,0,0,0.12)}
+.sb-item{padding:8px 13px;cursor:pointer;display:flex;align-items:center;gap:8px;border-left:2px solid transparent;transition:all 0.15s}
+.sb-item:hover{background:rgba(255,255,255,0.04)}
+.sb-item.active{background:rgba(198,167,94,0.07);border-left-color:var(--gold)}
+.sb-id{font-family:var(--ff-m);font-size:9px;color:var(--wll);width:66px;flex-shrink:0}
+.sb-name{font-size:11px;color:var(--wm);line-height:1.3;flex:1}
+.sb-score{font-family:var(--ff-m);font-size:11px;font-weight:500;flex-shrink:0}
+.sc-c{color:var(--crit)}.sc-h{color:var(--gold)}.sc-e{color:var(--wll)}
+
+.tpanel{display:none;padding:28px 30px;overflow-y:auto;height:100%}
+.tpanel.active{display:block}
+
+.ph-kicker{font-family:var(--ff-m);font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:9px;display:flex;align-items:center;gap:10px}
+.ph-kicker::before{content:'';display:block;width:22px;height:1px;background:var(--gold)}
+.ph-title{font-family:var(--ff-d);font-weight:700;font-size:clamp(28px,3.5vw,44px);letter-spacing:0.03em;color:var(--white);line-height:0.95;margin-bottom:10px}
+.ph-title em{font-style:italic;color:var(--gold)}
+.ph-sub{font-size:13px;color:var(--wm);line-height:1.8;max-width:640px;margin-bottom:24px}
+.ph-doctrine{font-family:var(--ff-d);font-style:italic;font-size:14px;color:var(--wll);margin-bottom:20px;padding:10px 14px;border-left:2px solid var(--gold);background:var(--gg)}
+
+.itabs{display:flex;gap:0;margin-bottom:20px;border-bottom:1px solid var(--bdr)}
+.itab{padding:6px 13px;font-family:var(--ff-b);font-size:11px;font-weight:500;cursor:pointer;color:var(--wl);border-bottom:2px solid transparent;margin-bottom:-1px;background:none;border-left:none;border-right:none;border-top:none;transition:all 0.2s}
+.itab:hover{color:var(--wm)}.itab.active{color:var(--gold);border-bottom-color:var(--gold)}
+.itpanel{display:none}.itpanel.active{display:block}
+
+/* Threat cards */
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:7px}
+.tcard{background:var(--nm);border:1px solid var(--bds);border-radius:2px;overflow:hidden;cursor:pointer;transition:border-color 0.2s,transform 0.15s}
+.tcard:hover{border-color:var(--bdr);transform:translateY(-1px)}.tcard.sel{border-color:var(--gold)}
+.tc-bar{height:2px;width:100%}
+.tc-top{padding:13px 13px 9px;display:flex;gap:9px;align-items:flex-start}
+.tc-id{font-family:var(--ff-m);font-size:8px;color:var(--wll);flex-shrink:0;margin-top:2px}
+.tc-name{font-size:12px;font-weight:500;color:var(--white);margin-bottom:3px;line-height:1.3}
+.tc-mech{font-size:10px;color:var(--wll);line-height:1.4}
+.tc-bot{padding:6px 13px;border-top:1px solid var(--bds);display:flex;align-items:center;justify-content:space-between}
+.tc-score{font-family:var(--ff-d);font-weight:700;font-size:20px;line-height:1}
+.tc-tier{font-family:var(--ff-m);font-size:8px;letter-spacing:0.1em;text-transform:uppercase;padding:2px 5px;border-radius:1px}
+.tr-c{color:var(--crit);background:rgba(192,57,43,0.1)}.tr-h{color:var(--gold);background:rgba(198,167,94,0.1)}.tr-e{color:var(--wll);background:rgba(255,255,255,0.04)}
+.bar-c{background:linear-gradient(90deg,rgba(192,57,43,0.35),var(--crit))}
+.bar-h{background:linear-gradient(90deg,rgba(198,167,94,0.35),var(--gold))}
+.bar-e{background:linear-gradient(90deg,rgba(100,100,100,0.25),#777)}
+
+/* Detail panel */
+.dpanel{background:var(--nm);border:1px solid var(--bdr);border-radius:2px;margin-top:18px;overflow:hidden;display:none}
+.dpanel.show{display:block}
+.dp-hdr{padding:16px 20px;border-bottom:1px solid var(--bdr);display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.dp-close{background:none;border:none;color:var(--wll);font-size:16px;cursor:pointer;flex-shrink:0}
+.dp-close:hover{color:var(--white)}
+.dp-id{font-family:var(--ff-m);font-size:8px;color:var(--wll);margin-bottom:3px;letter-spacing:0.1em}
+.dp-name{font-family:var(--ff-d);font-weight:700;font-size:24px;letter-spacing:0.03em;color:var(--white)}
+.dp-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.dp-col{padding:16px 20px}
+.dp-col+.dp-col{border-left:1px solid var(--bds)}
+.dfield{margin-bottom:13px}
+.df-lbl{font-family:var(--ff-m);font-size:8px;letter-spacing:0.18em;text-transform:uppercase;color:var(--wll);margin-bottom:4px}
+.df-val{font-size:12px;color:var(--wm);line-height:1.65}
+.dchips{display:flex;flex-wrap:wrap;gap:4px;margin-top:3px}
+.dchip{font-family:var(--ff-m);font-size:8px;padding:2px 6px;border-radius:1px;border:1px solid var(--bds);color:var(--wll)}
+.dmits{display:flex;flex-direction:column;gap:5px}
+.dmit{display:flex;gap:7px;font-size:11px;line-height:1.5}
+.dmit-d{font-family:var(--ff-m);font-size:8px;padding:2px 4px;border-radius:1px;background:var(--gl);color:var(--gold);flex-shrink:0;align-self:flex-start;margin-top:1px}
+.cr-rows{display:flex;flex-direction:column;gap:7px}
+.cr-row{display:flex;align-items:center;gap:8px}
+.cr-lbl{font-family:var(--ff-m);font-size:8px;color:var(--wll);width:148px;flex-shrink:0}
+.cr-track{flex:1;height:9px;background:rgba(255,255,255,0.05);border-radius:1px;overflow:hidden}
+.cr-fill{height:100%;background:linear-gradient(90deg,rgba(198,167,94,0.28),var(--gold));transition:width 0.7s ease}
+.cr-val{font-family:var(--ff-m);font-size:9px;font-weight:500;color:var(--white);width:16px;text-align:right}
+
+/* Swarm */
+.sp-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:4px}
+.sp-card{padding:20px;cursor:pointer;background:var(--nm);border:1px solid var(--bds);border-bottom:2px solid transparent;transition:all 0.2s}
+.sp-card:hover,.sp-card.active{background:var(--nl)}
+.sp-a.active,.sp-a:hover{border-bottom-color:#7cc4e8}
+.sp-b.active,.sp-b:hover{border-bottom-color:var(--gold)}
+.sp-c.active,.sp-c:hover{border-bottom-color:var(--crit)}
+.sp-lbl{font-family:var(--ff-m);font-size:8px;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:6px}
+.sp-a .sp-lbl{color:#7cc4e8}.sp-b .sp-lbl{color:var(--gold)}.sp-c .sp-lbl{color:var(--crit)}
+.sp-name{font-family:var(--ff-d);font-weight:600;font-size:17px;letter-spacing:0.03em;color:var(--white);margin-bottom:5px}
+.sp-badge{font-family:var(--ff-m);font-size:8px;padding:2px 6px;border-radius:1px;display:inline-block;margin-bottom:7px}
+.bl{background:rgba(74,158,110,0.13);color:#7dcca0;border:1px solid rgba(74,158,110,0.28)}
+.bt{background:rgba(198,167,94,0.1);color:var(--gold);border:1px solid var(--gb)}
+.bn{background:rgba(192,57,43,0.1);color:#e57e74;border:1px solid rgba(192,57,43,0.28)}
+.sp-desc{font-size:11px;color:var(--wll);line-height:1.5}
+.sw-detail{background:var(--nm);border:1px solid var(--bdr);border-radius:2px;padding:18px 20px;margin-top:7px;display:none;font-size:13px;color:var(--wm);line-height:1.75}
+.sw-detail.show{display:block}
+.det2{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.det-box{background:var(--nm);border:1px solid var(--bds);border-radius:2px;padding:16px}
+.det-box-l{font-family:var(--ff-m);font-size:8px;letter-spacing:0.18em;text-transform:uppercase;color:var(--wll);margin-bottom:10px}
+
+/* Outcomes */
+.ocards{display:grid;grid-template-columns:repeat(auto-fill,minmax(278px,1fr));gap:9px}
+.ocard{background:var(--nm);border:1px solid var(--bds);border-radius:2px;overflow:hidden;cursor:pointer;transition:border-color 0.2s}
+.ocard:hover{border-color:var(--bdr)}.ocard.open{border-color:var(--gold)}
+.oc-head{padding:15px 15px 11px}
+.oc-id{font-family:var(--ff-m);font-size:8px;color:var(--wll);margin-bottom:5px}
+.oc-name{font-size:13px;font-weight:500;color:var(--white);margin-bottom:4px}
+.oc-det{font-family:var(--ff-m);font-size:9px;color:var(--wll);display:flex;align-items:center;gap:5px}
+.oc-body{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+.ocard.open .oc-body{max-height:520px}
+.oc-body-in{padding:0 15px 16px;border-top:1px solid var(--bds);padding-top:11px}
+.of-lbl{font-family:var(--ff-m);font-size:8px;letter-spacing:0.16em;text-transform:uppercase;color:var(--wll);margin-bottom:3px;margin-top:9px}
+.of-val{font-size:11px;color:var(--wm);line-height:1.6}
+.of-stat{font-size:11px;font-style:italic;color:var(--wll);margin:7px 0}
+.tw{margin-top:10px}
+.tt{height:6px;background:rgba(255,255,255,0.05);border-radius:2px;overflow:hidden;margin-bottom:4px}
+.tf{height:100%;background:linear-gradient(90deg,rgba(74,158,110,0.3),var(--grn));border-radius:2px;transition:width 0.8s ease}
+.tv{font-family:var(--ff-m);font-size:9px;color:var(--grn);font-weight:500}
+
+/* Edge cases */
+.egrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.ecard{border-radius:2px;overflow:hidden;cursor:pointer;transition:all 0.2s}
+.ecard:hover{transform:translateY(-1px)}.ecard.open{transform:none}
+.ec-head{padding:15px 15px 11px}
+.ec-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.cb{font-family:var(--ff-m);font-size:8px;padding:2px 6px;border-radius:1px;font-weight:500}
+.cb-b{background:rgba(192,57,43,0.16);color:#e57e74;border:1px solid rgba(192,57,43,0.28)}
+.cb-o{background:rgba(198,167,94,0.1);color:var(--gold);border:1px solid var(--gb)}
+.ec-name{font-size:13px;font-weight:500;color:var(--white);margin-bottom:4px}
+.ec-brief{font-size:11px;color:var(--wll);line-height:1.5}
+.ec-body{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+.ecard.open .ec-body{max-height:600px}
+.ec-body-in{padding:0 15px 15px;border-top:1px solid;padding-top:11px}
+.ec-sl{font-family:var(--ff-m);font-size:8px;letter-spacing:0.16em;text-transform:uppercase;color:var(--wll);margin-bottom:4px;margin-top:10px}
+.ec-txt{font-size:12px;color:var(--wm);line-height:1.7}
+.ec-links{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.ecl{font-family:var(--ff-m);font-size:8px;padding:2px 5px;border-radius:1px;border:1px solid var(--bds);color:var(--wll)}
+
+/* Coverage */
+.cov-m{display:grid;gap:6px}
+.cov-row{display:grid;grid-template-columns:185px 1fr 50px;align-items:center;gap:9px}
+.cov-lbl{font-size:12px;color:var(--wm)}
+.cov-track{height:11px;background:rgba(255,255,255,0.05);border-radius:1px;overflow:hidden}
+.cov-fill{height:100%;border-radius:1px;display:flex;align-items:center;justify-content:flex-end;padding-right:4px;font-family:var(--ff-m);font-size:8px;color:rgba(255,255,255,0.65);font-weight:500;transition:width 1s ease}
+.cov-pct{font-family:var(--ff-m);font-size:10px;font-weight:500;text-align:right}
+.cp-hi{color:var(--grn)}.cp-md{color:var(--gold)}.cp-lo{color:var(--crit)}
+.tc-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:9px}
+.tc-card{background:var(--nm);border:1px solid var(--bds);border-radius:2px;padding:16px}
+
+/* Calculator */
+.calc-wrap{background:var(--nm);border:1px solid var(--bdr);border-radius:2px;padding:22px}
+.calc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-bottom:16px}
+.cfield label{font-family:var(--ff-m);font-size:8px;letter-spacing:0.14em;text-transform:uppercase;color:var(--wll);display:block;margin-bottom:5px;line-height:1.5}
+.cfield input{width:100%;background:var(--navy);border:1px solid var(--bds);border-radius:2px;padding:8px;color:var(--white);font-family:var(--ff-m);font-size:14px;text-align:center;transition:border-color 0.2s}
+.cfield input:focus{outline:none;border-color:var(--gb)}
+.calc-res{display:flex;align-items:center;gap:16px;padding:16px;background:var(--navy);border-radius:2px;border:1px solid var(--bds)}
+.calc-score{font-family:var(--ff-d);font-weight:700;font-size:52px;color:var(--white);line-height:1}
+.calc-info{flex:1}
+.calc-tier{font-family:var(--ff-m);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;font-weight:500}
+.calc-formula{font-family:var(--ff-m);font-size:10px;color:var(--wll);line-height:1.9}
+
+/* Quote */
+.qblock{margin-top:16px;padding:14px 16px;border:1px solid var(--gb);border-left:2px solid var(--gold);background:var(--gg);border-radius:1px}
+.qblock-l{font-family:var(--ff-m);font-size:8px;letter-spacing:0.16em;text-transform:uppercase;color:var(--wll);margin-bottom:6px}
+.qblock-t{font-family:var(--ff-d);font-weight:400;font-style:italic;font-size:14px;color:var(--white);line-height:1.65}
+
+@media(max-width:900px){
+  .layout{flex-direction:column}.sidebar{width:100%;max-height:170px;border-right:none;border-bottom:1px solid var(--gb)}
+  .dp-body{grid-template-columns:1fr}.dp-col+.dp-col{border-left:none;border-top:1px solid var(--bds)}
+  .egrid{grid-template-columns:1fr}.sp-wrap{grid-template-columns:1fr}.det2{grid-template-columns:1fr}
+  .calc-grid{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute;overflow:hidden">
+<defs>
+<symbol id="cseal" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.55"/>
+  <circle cx="100" cy="100" r="87" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+  <g stroke="currentColor" stroke-width="1.2" opacity="0.45">
+    <line x1="100" y1="4" x2="100" y2="13"/><line x1="100" y1="187" x2="100" y2="196"/>
+    <line x1="4" y1="100" x2="13" y2="100"/><line x1="187" y1="100" x2="196" y2="100"/>
+  </g>
+  <defs>
+    <path id="ta2" d="M 14,100 A 86,86 0 0,1 186,100"/>
+    <path id="ba2" d="M 20,112 A 86,86 0 0,0 180,112"/>
+  </defs>
+  <text font-family="'DM Sans',sans-serif" font-size="8.5" letter-spacing="3.6" fill="currentColor" opacity="0.5">
+    <textPath href="#ta2" startOffset="4%">COGNITIVE SOVEREIGNTY FRAMEWORK</textPath>
+  </text>
+  <text font-family="'DM Sans',sans-serif" font-size="7.5" letter-spacing="4.5" fill="currentColor" opacity="0.38">
+    <textPath href="#ba2" startOffset="15%">CYBER STRATEGY INSTITUTE</textPath>
+  </text>
+  <path d="M100 38 L132 53 L132 88 Q132 116 100 130 Q68 116 68 88 L68 53 Z" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.65"/>
+  <circle cx="100" cy="76" r="10" fill="none" stroke="currentColor" stroke-width="1" opacity="0.55"/>
+  <circle cx="85" cy="91" r="4.5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.45"/>
+  <circle cx="115" cy="91" r="4.5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.45"/>
+  <circle cx="100" cy="106" r="4.5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.45"/>
+  <line x1="100" y1="86" x2="87" y2="91" stroke="currentColor" stroke-width="0.7" opacity="0.4"/>
+  <line x1="100" y1="86" x2="113" y2="91" stroke="currentColor" stroke-width="0.7" opacity="0.4"/>
+  <line x1="88" y1="95" x2="97" y2="103" stroke="currentColor" stroke-width="0.7" opacity="0.4"/>
+  <line x1="112" y1="95" x2="103" y2="103" stroke="currentColor" stroke-width="0.7" opacity="0.4"/>
+</symbol>
+</defs>
+</svg>
+
+<nav>
+  <a class="nav-brand" href="csf-learn.html">
+    <svg width="28" height="28" viewBox="0 0 200 200" style="color:var(--gold)"><use href="#cseal"/></svg>
+    <div><div class="nav-brand-name">Cognitive Sovereignty</div><div class="nav-brand-sub">Threat Explorer · Sentinel + Architect</div></div>
+  </a>
+  <div class="ntabs">
+    <button class="ntab active" onclick="showTab('threats',this)">Threats &amp; CTSS</button>
+    <button class="ntab" onclick="showTab('swarm',this)">Swarm Threat</button>
+    <button class="ntab" onclick="showTab('outcomes',this)">Human Outcomes</button>
+    <button class="ntab" onclick="showTab('edge',this)">Edge Cases</button>
+    <button class="ntab" onclick="showTab('coverage',this)">Coverage &amp; Thresholds</button>
+  </div>
+  <a class="nbk" href="csf-learn.html">← Learning Hub</a>
+</nav>
+
+<div class="layout">
+<div class="sidebar" id="sidebar">
+  <div class="sb-sec"><div class="sb-hdr">🔴 Critical ≥80 — 7 Techniques</div><div id="sb-c"></div></div>
+  <div class="sb-sec"><div class="sb-hdr">🟡 High 70–79 — 9 Techniques</div><div id="sb-h"></div></div>
+  <div class="sb-sec"><div class="sb-hdr">⚪ Elevated 60–69 — 2 Techniques</div><div id="sb-e"></div></div>
+</div>
+
+<div class="main">
+
+<!-- THREATS -->
+<div class="tpanel active" id="tab-threats">
+  <div class="ph-kicker">Layer 0 — Active Manipulation Techniques · Living Taxonomy</div>
+  <h1 class="ph-title">CTSS <em>Threat Explorer</em></h1>
+  <p class="ph-doctrine">"If it feels like marketing, it's wrong. If it feels like doctrine, it's right." — The threat taxonomy is not a product catalog. It is a classified operational registry scored for prioritized defense allocation.</p>
+  <p class="ph-sub">18 technique families scored 0–100 using the Cognitive Threat Severity Score. Click any card for the full operational detail: mechanism, CTSS component breakdown, primary domains, and countermeasures by CSF domain. The sidebar provides persistent index access.</p>
+  <div class="itabs">
+    <button class="itab active" onclick="filterT('all',this)">All (18)</button>
+    <button class="itab" onclick="filterT('critical',this)">🔴 Critical ≥80</button>
+    <button class="itab" onclick="filterT('high',this)">🟡 High 70–79</button>
+    <button class="itab" onclick="filterT('elevated',this)">⚪ Elevated 60–69</button>
+  </div>
+  <div class="tgrid" id="tgrid"></div>
+  <div class="dpanel" id="dpanel">
+    <div class="dp-hdr">
+      <div><div class="dp-id" id="dp-id"></div><div class="dp-name" id="dp-name"></div></div>
+      <button class="dp-close" onclick="closeD()">✕</button>
+    </div>
+    <div class="dp-body" id="dp-body"></div>
+  </div>
+</div>
+
+<!-- SWARM -->
+<div class="tpanel" id="tab-swarm">
+  <div class="ph-kicker">T-CT-008 · DS-002 · CTSS 90 — Highest in Taxonomy</div>
+  <h1 class="ph-title">The <em>Swarm Threat</em></h1>
+  <p class="ph-doctrine">Persuasion at Phase A is evolutionary, not authored. No human decides which narrative wins — the narratives that spread are the ones that maximize engagement. Truth is irrelevant to survival in this selection process.</p>
+  <p class="ph-sub">The highest-scoring threat in the taxonomy. Phase A is fully operational today. Understanding the three phases defines the timeline you are working against. Click each phase for the full operational picture.</p>
+  <div class="sp-wrap" id="sp-wrap"></div>
+  <div class="sw-detail" id="sw-detail"></div>
+  <div class="det2">
+    <div class="det-box">
+      <div class="det-box-l">Detection Module — S1 / S2 / S3</div>
+      <div id="s-det"></div>
+    </div>
+    <div class="det-box">
+      <div class="det-box-l">CTSS Breakdown — T-CT-008 Memetic Swarm</div>
+      <div style="font-family:var(--ff-d);font-weight:700;font-size:34px;color:var(--crit);margin-bottom:11px;line-height:1">90 <span style="font-size:12px;color:var(--wll);font-family:var(--ff-b)">/ 100 CRITICAL</span></div>
+      <div class="cr-rows" id="sw-ctss"></div>
+      <div style="margin-top:11px;font-family:var(--ff-m);font-size:9px;color:var(--wll);line-height:2">(5×0.25)+(4×0.30)+(5×0.20)+(2×0.15)+(4×0.10)×20 = <strong style="color:var(--white)">90</strong></div>
+    </div>
+  </div>
+  <div class="qblock">
+    <div class="qblock-l">The Unanswerable Question — CSF Cognitive Threat Assessment</div>
+    <div class="qblock-t">"The question is not whether autonomous swarm influence will happen. The question is whether we will have the mechanisms to detect it, measure it, and respond to it before it becomes irreversible."</div>
+  </div>
+</div>
+
+<!-- OUTCOMES -->
+<div class="tpanel" id="tab-outcomes">
+  <div class="ph-kicker">Layer +2 — Observable Effects · Measurement Layer</div>
+  <h1 class="ph-title">Human <em>Outcome Indicators</em></h1>
+  <p class="ph-doctrine">The true metric is not misinformation detected or propaganda countered. The true metric is the preservation or loss of self-directed cognition. If that metric degrades, the threat exists regardless of source or intent.</p>
+  <p class="ph-sub">When threats succeed, they produce measurable changes in human cognition and behavior. These are observable patterns already present in the population. Click each outcome to examine the cognitive impact, physical manifestation, measurement method, and success threshold.</p>
+  <div class="ocards" id="ocards"></div>
+</div>
+
+<!-- EDGE CASES -->
+<div class="tpanel" id="tab-edge">
+  <div class="ph-kicker">Wargaming Validated · Stress Testing the Framework</div>
+  <h1 class="ph-title"><em>Edge Cases</em></h1>
+  <p class="ph-doctrine">A framework that cannot be falsified is not a framework — it is a philosophy. A valid threat assessment must identify the conditions under which even robust defenses fail.</p>
+  <p class="ph-sub">Eight scenarios stress-tested through wargaming. Three are below the 90% coverage threshold — meaning no current countermeasure fully addresses them. Click each to examine the gap, the background, and the response approach.</p>
+  <div class="egrid" id="egrid"></div>
+</div>
+
+<!-- COVERAGE -->
+<div class="tpanel" id="tab-coverage">
+  <div class="ph-kicker">Framework Validation · Architect Principle</div>
+  <h1 class="ph-title">Coverage &amp; <em>Success Thresholds</em></h1>
+  <p class="ph-doctrine">Resilience must be observable, not inspirational. If these indicators do not measurably improve, the framework has failed. This is not a philosophical commitment — it is an operational requirement.</p>
+  <p class="ph-sub">The spectrum coverage matrix and the live CTSS calculator. 100% coverage is asymptotic — what matters is maintaining the capacity to close gaps faster than new threats emerge.</p>
+  <div class="itabs">
+    <button class="itab active" onclick="showCT('matrix',this)">Coverage Matrix</button>
+    <button class="itab" onclick="showCT('thresholds',this)">Success Thresholds</button>
+    <button class="itab" onclick="showCT('calculator',this)">CTSS Calculator</button>
+  </div>
+  <div class="itpanel active" id="ct-matrix">
+    <div style="margin-bottom:9px;font-size:12px;color:var(--wll)">Overall coverage: <strong style="color:var(--white)">~92%</strong>. The remaining 8% falls into swarm adaptation exceeding detection, long-cycle civilizational effects, and genuinely novel mechanisms not yet observable.</div>
+    <div class="cov-m" id="cov-m"></div>
+    <div style="margin-top:16px;padding:13px 15px;background:var(--nm);border:1px solid var(--bds);border-radius:2px">
+      <div style="font-family:var(--ff-m);font-size:8px;letter-spacing:0.18em;text-transform:uppercase;color:var(--wll);margin-bottom:8px">Remaining Gaps — Active Research</div>
+      <div style="display:flex;flex-wrap:wrap;gap:5px" id="gap-ch"></div>
+    </div>
+  </div>
+  <div class="itpanel" id="ct-thresholds"><div class="tc-cards" id="tc-cards"></div></div>
+  <div class="itpanel" id="ct-calculator">
+    <p style="font-size:12px;color:var(--wll);margin-bottom:16px;line-height:1.75">Score any technique using CTSS. Enter 0–5 for each component. <span style="font-family:var(--ff-m);font-size:10px;color:var(--wm)">(L×0.25 + Ia×0.30 + R×0.20 + D×0.15 + RecD×0.10) × 20</span></p>
+    <div class="calc-wrap">
+      <div class="calc-grid">
+        <div class="cfield"><label>Likelihood (L)<br>0=theoretical · 5=deployed</label><input type="number" id="cl" min="0" max="5" value="3" oninput="calcC()"></div>
+        <div class="cfield"><label>Agency Impact (Ia)<br>★ Weight 0.30 — highest</label><input type="number" id="cia" min="0" max="5" value="3" oninput="calcC()"></div>
+        <div class="cfield"><label>Population Reach (R)<br>0=individual · 5=global</label><input type="number" id="cr" min="0" max="5" value="3" oninput="calcC()"></div>
+        <div class="cfield"><label>Detection Difficulty (D)<br>5=effectively undetectable</label><input type="number" id="cd" min="0" max="5" value="3" oninput="calcC()"></div>
+        <div class="cfield"><label>Recovery Difficulty<br>5=permanent damage</label><input type="number" id="crecd" min="0" max="5" value="3" oninput="calcC()"></div>
+      </div>
+      <div class="calc-res" id="calc-res"></div>
+    </div>
+    <div class="qblock" style="margin-top:14px">
+      <div class="qblock-l">Adversarial Reproduction Standard — Non-Ideological Instrumentation</div>
+      <div class="qblock-t" style="font-size:13px">Before submitting a CTSS score: could an analyst with opposing views, using this same evidence and methodology, arrive at the same score? The framework must be trusted by parties who do not trust each other. That constraint shapes every scoring decision.</div>
+    </div>
+  </div>
+</div>
+
+</div></div><!-- /main /layout -->
+
+<script>
+// ── DATA ──────────────────────────────────────────────────────────────────────
+const T=[
+  {id:'T-CT-008',name:'Memetic Swarm Orchestration',s:90,tier:'critical',mech:'Coordinated campaigns using thousands of AI agents to test, evolve, and amplify narratives.',why:'Persuasion becomes evolutionary, not authored. Narratives that spread are the ones that maximize engagement or conversion. Truth is irrelevant to survival in this selection process.',tl:'Today',dom:['Digital & AI Symbiosis'],det:4,ctss:{L:5,Ia:4,R:5,D:2,RecD:4},mits:[['Domain 6','Swarm detection (S1–S3), provenance verification, counter-swarm monitoring'],['Domain 2','Inoculation training, critical evaluation of apparent consensus'],['Domain 4','Trust network diversification — reduces single-node injection points']]},
+  {id:'T-CT-010',name:'Economic Coercion & Incentive Corruption',s:88,tier:'critical',mech:'Financial penalties for non-conformity, monetization of specific viewpoints, funding tied to narrative compliance.',why:'Demonetization, deplatforming, defunding — economic tools that shape discourse without explicit censorship. Control without coercion.',tl:'1–2 years',dom:['Economic'],det:4,ctss:{L:5,Ia:4,R:5,D:3,RecD:4},mits:[['Domain 5','Economic independence practices, value-driven decisions over incentive compliance'],['Domain 2','Awareness of incentive capture structures (TC-01)'],['Domain 4','Diversified economic relationships, reduced single-entity dependency']]},
+  {id:'T-CT-004',name:'Personalized Narrative Injection',s:85,tier:'critical',mech:'AI-generated deepfakes and synthetic text inserted into trusted channels to alter beliefs or memory.',why:'Attacks not just what people believe but what they remember experiencing. Ia=5: maximum agency impact because it targets the epistemic foundation of identity itself.',tl:'1–2 years',dom:['Cognitive','Social','Moral','Digital & AI Symbiosis'],det:3,ctss:{L:4,Ia:5,R:4,D:3,RecD:4},mits:[['Domain 6','Provenance verification, signed content, AI watermarking detection'],['Domain 2','Pre-bunking inoculation training, critical-thinking micro-curriculum'],['Domain 4','Trust network diversification, resilient local verification anchors'],['Domain 1','Sleep hygiene — reduces susceptibility during stressed states']]},
+  {id:'T-CT-013',name:'Social Scoring & Behavioral Governance',s:83,tier:'critical',mech:'Automated conformity enforcement through scoring systems rewarding compliant behavior.',why:'Replaces explicit legal compulsion with automated social and economic pressure. Ia=5: eliminates the practical freedom of non-compliance without visible coercion.',tl:'Today',dom:['Social'],det:3,ctss:{L:4,Ia:5,R:3,D:3,RecD:4},mits:[['Domain 5','Value articulation independent of social scoring systems'],['Domain 4','Communities with social trust structures pre-dating scoring systems'],['Domain 2','Awareness of behavioral governance mechanisms']]},
+  {id:'T-CT-006',name:'Decision Automation Capture',s:82,tier:'critical',mech:'Seeding biased defaults and autopilot behaviors through AI copilots and recommendation engines.',why:'The user is not prevented from choosing differently — they simply never consider it. The default becomes the decision. This is the operationalized form of ST-003.',tl:'3–5 years',dom:['Cognitive'],det:2,ctss:{L:4,Ia:5,R:4,D:4,RecD:3},mits:[['Domain 6','Human override protocols, R/M/H classification (Routine/Material/High-Stakes)'],['Domain 2','Deliberate pre-AI reasoning before consulting AI on consequential decisions'],['Domain 6','HEAR doctrine — every AI action traces to a named accountable human']]},
+  {id:'T-CT-015',name:'Legitimized Narrative Capture',s:81,tier:'critical',mech:'Control framed as safety, equity, efficiency, or personalization so it appears benevolent.',why:'Most effective against individuals who resist overt coercion — they accept the same control when framed as protection. Detection difficulty is high because the framing is indistinguishable from genuine care.',tl:'Today',dom:['Purpose & Moral'],det:2,ctss:{L:4,Ia:4,R:5,D:4,RecD:3},mits:[['Domain 5','"Does this restrict autonomy regardless of stated intent?" — critical evaluation of benevolent framing'],['Domain 2','Pattern recognition for legitimized control framing'],['Domain 4','Institutional accountability mechanisms']]},
+  {id:'T-CT-001',name:'Attention Capture & Habituation',s:80,tier:'critical',mech:'Infinite scroll, variable rewards, notification saturation, dopamine loop design.',why:'Cognitive fragmentation reduces creative output quality by 30–50%. The shift from deep attention to hyperattention is documented and accelerating. This is ST-002 operationalized.',tl:'Today',dom:['Cognitive','Emotional','Biological'],det:4,ctss:{L:5,Ia:3,R:5,D:2,RecD:3},mits:[['Domain 1','Circadian discipline, notification management, device hygiene'],['Domain 2','Deep reading practice, attention hygiene training, single-task focus exercises'],['Domain 6','AI interaction discipline frameworks']]},
+  {id:'T-CT-016',name:'Psychographic Micro-Targeting at Scale',s:79,tier:'high',mech:'AI-powered profiling and personalized persuasion based on psychological vulnerability mapping.',why:'Each individual receives persuasion calibrated to their specific psychological profile — their specific anxieties, aspirations, identity commitments, and cognitive biases.',tl:'Today',dom:['Emotional','Social'],det:3,ctss:{L:4,Ia:4,R:4,D:3,RecD:3},mits:[['Domain 3','Emotional state monitoring — recognize when emotional responses may be engineered'],['Domain 6','Psychographic targeting literacy — understanding that personal content is being calibrated'],['Domain 2','Awareness of psychological vulnerability mapping']]},
+  {id:'T-CT-005',name:'Identity Replacement / Persona Hijacking',s:78,tier:'high',mech:'Synthetic personas mimicking trusted figures or creating fictional authority figures.',why:'At scale: the platform becomes the identity-granting authority. Algorithmic segmentation creates identity groups defined by the recommendation system.',tl:'Today',dom:['Social','Moral'],det:4,ctss:{L:4,Ia:4,R:4,D:2,RecD:4},mits:[['Domain 4','Trusted physical community networks that predate algorithmic identity'],['Domain 3','Identity anchoring practices that are platform-independent'],['Domain 6','Synthetic media detection for trusted-figure impersonation']]},
+  {id:'T-CT-014',name:'Cognitive Load Flooding',s:77,tier:'high',mech:'Overwhelming attention with contradictory information until analytical capacity collapses.',why:'The target does not reach a false conclusion — they reach no conclusion. Analysis paralysis produces compliance with the status quo or default option.',tl:'1–2 years',dom:['Cognitive'],det:4,ctss:{L:5,Ia:3,R:4,D:2,RecD:3},mits:[['Domain 2','Information diet discipline, source hierarchy practices'],['Domain 1','Physical rest as cognitive recovery — overload vulnerability increases with fatigue'],['Domain 6','Signal-to-noise discipline training']]},
+  {id:'T-CT-007',name:'Information Ecosystem Poisoning',s:76,tier:'high',mech:'Data poisoning of recommendation algorithms and knowledge bases through coordinated engagement.',why:'Coordinated engagement trains the algorithm to associate certain queries with certain conclusions; subsequent users receive those conclusions as organic recommendations.',tl:'1–2 years',dom:['Informational'],det:3,ctss:{L:4,Ia:3,R:5,D:3,RecD:3},mits:[['Domain 6','Multi-source verification, cross-checking against non-AI sources'],['Domain 2','Source diversity — deliberate engagement outside primary algorithmic feed'],['Domain 4','Trusted epistemic communities with independent verification capacity']]},
+  {id:'T-CT-002',name:'Algorithmic Amplification',s:75,tier:'high',mech:'Engagement-optimized distribution rewarding outrage and emotional intensity over accuracy.',why:'False information spreads 6× faster than truthful information. The algorithm does not evaluate truth — it evaluates engagement. This is not a design failure; it is an incentive alignment problem.',tl:'1–2 years',dom:['Informational','Cognitive'],det:3,ctss:{L:5,Ia:3,R:5,D:3,RecD:2},mits:[['Domain 2','Source verification habits, deliberate slowing of information consumption'],['Domain 6','Algorithmic literacy — amplification is not endorsement of truth'],['Domain 4','Trusted source networks operating outside algorithmic amplification']]},
+  {id:'T-CT-018',name:'Repetition & Normalization Manipulation',s:74,tier:'high',mech:'Coordinated echoing of phrases, framings, or positions across platforms until accepted as baseline consensus.',why:'Repetition requires only scale, not argument. A claim repeated across sufficient channels becomes experienced as common knowledge regardless of evidentiary basis.',tl:'Today',dom:['Informational','Cognitive'],det:3,ctss:{L:5,Ia:3,R:5,D:3,RecD:2},mits:[['Domain 2','N-gram awareness — noticing when specific phrases appear simultaneously across unconnected channels'],['Domain 4','Independent peer communities to calibrate against manufactured consensus'],['Domain 6','Pattern recognition training for coordinated normalization']]},
+  {id:'T-CT-009',name:'Institutional & Bureaucratic Capture',s:72,tier:'high',mech:'Regulatory capture, legal weaponization, and bureaucratic self-preservation suppressing dissent.',why:'The institution responsible for cognitive defense becomes the instrument of cognitive constraint. The immune system turns against the body.',tl:'Today',dom:['Institutional','Social'],det:3,ctss:{L:4,Ia:3,R:4,D:3,RecD:3},mits:[['Domain 4','Distributed institutional trust — not dependent on any single institution'],['Domain 5','Independent moral judgment that does not outsource to institutional authority'],['Domain 2','Institutional legibility skills — who decided, by what authority, using what data']]},
+  {id:'T-CT-003',name:'Micro-Targeted Emotional Priming',s:70,tier:'high',mech:'Personalized content elevating baseline anxiety, anger, or fear in specific populations.',why:'Priming occurs before any explicit message — it pre-tunes the emotional state toward receptivity for subsequent manipulation. Detection difficulty D=4: appears organic.',tl:'Today',dom:['Emotional'],det:2,ctss:{L:4,Ia:3,R:4,D:4,RecD:2},mits:[['Domain 3','Emotional state monitoring and regulation training'],['Domain 6','Recognition that emotional state is being actively managed by content systems'],['Domain 1','Physical practices that regulate baseline emotional state independently of content']]},
+  {id:'T-CT-017',name:'Guardrail Bias Exploitation',s:70,tier:'high',mech:'Using AI alignment restrictions to suppress viewpoints, enforce conformity, or amplify ideological positions.',why:'Operates through the tools people use to access information. The AI system becomes the enforcement mechanism. Users have no reference point for what they are not seeing.',tl:'Today',dom:['Moral','Cognitive'],det:2,ctss:{L:4,Ia:3,R:3,D:4,RecD:2},mits:[['Domain 6','Multi-source verification using AI systems with different alignments; suppression probing'],['Domain 5','Independent moral reasoning — not outsourced to AI tools'],['Domain 2','Alignment restriction auditing before relying on AI for sensitive assessments']]},
+  {id:'T-CT-011',name:'Epistemic Rewriting',s:65,tier:'elevated',mech:'Historical record alteration, selective erasure, and revision of foundational narratives.',why:'AI timestamping forgery and mass record tampering are making this scalable at rates no historical precedent anticipated. RecD=4: false memories and narrative frameworks are persistent.',tl:'3–5 years',dom:['Epistemic'],det:2,ctss:{L:3,Ia:4,R:3,D:4,RecD:4},mits:[['Domain 2','Distributed archival practices, cryptographic timestamping awareness'],['Domain 5','Foundational narrative literacy — primary source fluency'],['Domain 4','Community memory practices not dependent on digital records alone']]},
+  {id:'T-CT-012',name:'Neurotech / Direct Cognitive Influence',s:60,tier:'elevated',mech:'Brain-computer interfaces, neurostimulation, and neural data harvesting for persuasion or control.',why:'⚠ WATCH LIST: L=2 today but Ia=5 — maximum agency impact. Will climb rapidly as BCI technology matures. The first technique enabling direct attack on cognition rather than through information channels.',tl:'1–2 years',dom:['Biological'],det:1,ctss:{L:2,Ia:5,R:2,D:5,RecD:4},mits:[['Domain 1','Neurological boundary awareness, BCI governance, limit voluntary neural data exposure'],['Domain 6','Neural data provenance — understanding what is collected and how it is used'],['Domain 2','Bioethics literacy regarding cognitive enhancement and neural interface technology']]}
+];
+
+const SWARM=[
+  {id:'s-a',cls:'sp-a',lbl:'PHASE A · OPERATIONAL TODAY',name:'Human-Directed Swarms',badge:'LIVE NOW',bcls:'bl',brief:'Mass UGC ad farms operating thousands of persona accounts simultaneously. Continuous A/B narrative testing at scale.',
+   detail:`<strong style="color:var(--white)">What is operational today:</strong> Mass UGC ad farms run thousands of synthetic persona accounts simultaneously, performing continuous A/B narrative testing — identifying which messages, images, formats, and emotional triggers produce the highest engagement or conversion. Behavioral micro-segmentation delivers different messages to different audience segments.<br><br><strong style="color:var(--white)">The key insight:</strong> Persuasion at this phase is <em>evolutionary, not authored.</em> No human decides which narrative wins. The narratives that spread are simply the ones that maximize engagement or behavioral change. Truth is irrelevant to survival in this selection process.<br><br><strong style="color:var(--white)">Detection status (D=2 for T-CT-008):</strong> Burst coordination signatures are detectable through graph analysis and engagement topology. However, the evolutionary speed of narrative mutation exceeds current monitoring cadence.`},
+  {id:'s-b',cls:'sp-b',lbl:'PHASE B · TRANSITION',name:'Semi-Autonomous Optimization',badge:'IN TRANSITION',bcls:'bt',brief:'Self-optimizing ad delivery, reinforcement-learning recommendation tuning. Humans set goals; machines evolve methods.',
+   detail:`<strong style="color:var(--white)">The transition state:</strong> Current automation already performs self-optimizing ad delivery, reinforcement-learning recommendation tuning, and sentiment-adaptive messaging. Humans set strategic goals. Machines evolve the methods to achieve them.<br><br><strong style="color:var(--white)">The critical shift:</strong> The human provides direction — the machine figures out how to achieve it, tests thousands of approaches simultaneously, and converges on whatever works. The human may not understand the methods the machine has converged on.<br><br><strong style="color:var(--white)">Accountability gap:</strong> The human-in-the-loop provides legal and operational cover. But the actual influence mechanisms are machine-generated, potentially uninterpretable by the directing human, and operating below any meaningful oversight threshold.`},
+  {id:'s-c',cls:'sp-c',lbl:'PHASE C · NEAR-FUTURE',name:'Fully Autonomous Agent Swarms',badge:'NEAR-FUTURE',bcls:'bn',brief:'Parallel narrative ecosystems, market reality distortion, cognitive displacement. No human direction required.',
+   detail:`<strong style="color:var(--white)">Three Phase C threat vectors:</strong><br><br>🔴 <strong>Parallel Narrative Ecosystems:</strong> AI agents generate culture for engagement, shape trends, and create the appearance of organic consensus before human observers encounter these trends. By the time humans see them, they appear to have emerged naturally.<br><br>🔴 <strong>Market Reality Distortion:</strong> Swarms simulate demand, inflate consensus signals, fabricate social proof — detaching economic and social signals from actual human intent. Markets, polls, and popular sentiment become unreliable indicators of what people want or believe.<br><br>🔴 <strong>Cognitive Displacement:</strong> When AI companions replace relationships, AI feeds replace independent exploration, AI summaries replace reading, and AI copilots replace thinking — humans become consumers of machine-curated existence. This is the deepest autonomy loss vector in the entire taxonomy.<br><br><strong style="color:var(--crit)">Coverage gap: Below 90%.</strong> Detection methods for ecosystem-scale autonomous reality formation do not yet exist at scale. The S1/S2/S3 module addresses Phase A/B detection; Phase C remains at the frontier.`}
+];
+
+const DETECTORS=[
+  {id:'S1',name:'Synthetic Consensus Scanner',desc:'Detects manufactured consensus by identifying coordinated persona clusters, abnormal engagement topology, and narrative emergence without human seed nodes.'},
+  {id:'S2',name:'Autonomous Narrative Evolution Monitor',desc:'Identifies message mutation without human authorship, reinforcement-driven persuasion optimization, and closed-loop AI cultural generation. Distinguishes human-directed from machine-evolved narratives.'},
+  {id:'S3',name:'Parallel Reality Formation Threshold',desc:'Monitors the tipping point where humans primarily consume AI-mediated content and cultural trends originate machine-side. Crossing this threshold is a strategic civilizational alert, not an operational incident.'}
+];
+
+const OUTCOMES=[
+  {id:'HO-001',name:'Attention Ownership Loss',det:4,cog:'Person no longer controls where attention goes. Platforms, algorithms, and notification systems direct cognitive focus.',phys:'Reduced productivity, shortened task completion, exhaustion. Passive citizenry, low civic participation.',stat:'Cognitive fragmentation reduces creative output quality by 30–50%. The shift from deep attention to hyperattention is documented and accelerating.',thresh:'+20–30% improvement in attention span metrics after attention hygiene intervention.',meas:'Pre/post cognitive testing, task completion metrics, self-reported focus duration.',pct:25,links:['T-CT-001','T-CT-014','ST-002']},
+  {id:'HO-002',name:'Belief Instability',det:3,cog:'Cannot hold stable beliefs under pressure. Rapid narrative reversals and synthetic media make truth feel unknowable. Shift from truth-seeking to tribe-seeking.',phys:'Polarized communities, election disruptions, policy manipulation.',stat:'False information spreads 6× faster than truthful information. Affective polarization has nearly doubled in the U.S. since the mid-1990s.',thresh:'~40% reduction in false narrative adoption through inoculation training, consistent across cultural contexts.',meas:'Inoculation training effectiveness measurement, pre/post exposure testing.',pct:40,links:['T-CT-002','T-CT-004','T-CT-018','ST-005']},
+  {id:'HO-003',name:'Identity Fragmentation',det:4,cog:'Sense of self becomes platform-dependent. Recommendation systems co-author identity trajectories without the individual\'s awareness.',phys:'Family dissolution, relationship instability, fertility decline.',stat:'Heavy digital media users (5+ hours/day) are 48–171% more likely to exhibit low well-being or suicide risk factors.',thresh:'Stable or improving identity coherence scores in longitudinal assessment despite increasing digital media use.',meas:'Identity coherence assessments, platform-independent vs. platform-dependent self-description analysis.',pct:60,links:['T-CT-005','T-CT-016','ST-002','ST-005']},
+  {id:'HO-004',name:'Moral Disengagement',det:2,cog:'Moral reasoning capacity degrades or is redirected. Ethics outsourced to automated systems. Convenience displaces virtue.',phys:'Ethical lapses in policy, biased automated decisions, norm erosion.',stat:'Civilizations rarely fall by force — they reinterpret themselves into collapse.',thresh:'Audit-verified maintenance of ethical decision-making in AI-augmented environments.',meas:'Scenario-based moral reasoning assessments, values consistency tracking across AI-augmented and non-augmented contexts.',pct:70,links:['T-CT-015','T-CT-006','CD-001']},
+  {id:'HO-005',name:'Agency Erosion',det:3,cog:'Retains rights in theory, loses agency in practice. Freedom traded for ease, safety, personalization, and automation.',phys:'Decision paralysis, workforce displacement, obedience without awareness. Three-phase cycle: dependency → atrophy → bias internalization.',stat:'Significant negative correlation between frequent AI tool usage and critical thinking abilities. Younger populations show higher AI dependence and lower critical thinking scores.',thresh:'Sustained or improved critical thinking scores despite increasing AI tool usage.',meas:'Human override frequency tracking, independent verification rates, cognitive independence assessments.',pct:75,links:['T-CT-006','T-CT-013','ST-003','ST-006']}
+];
+
+const EDGES=[
+  {name:'Reality Destabilization',cov:'95%',ok:true,brief:'Synthetic media indistinguishable from truth + AI persuasion at scale + competing reality ecosystems.',bg:'When synthetic media quality exceeds detection capability and multiple AI systems generate incompatible but internally consistent versions of reality, the shared epistemic foundation for collective action collapses. Populations cannot coordinate defense because they cannot agree on what is happening.',gap:'Quantum-level indistinguishability of synthetic media — beyond current detection technology. The gap is not the technique; it is the absence of provenance infrastructure at scale.',resp:'Cryptographic content provenance at scale, institutional provenance authorities, analogue verification channels that bypass digital infrastructure entirely.',links:['T-CT-004','T-CT-011','T-CT-016','DS-003']},
+  {name:'Institutional Capture',cov:'92%',ok:true,brief:'Bureaucratic preservation over liberty + safety narratives masking control. Autonomy lost without visible coercion.',bg:'The most dangerous failure mode: the institutions responsible for cognitive defense are themselves captured and turned against the population they protect. Structurally undetectable from inside the captured institution — this is the immune system becoming the pathogen.',gap:'AI-enforced institutional capture — AI systems embedded in institutions enforce conformity without explicit human direction, creating a capture mechanism that has no visible human actor.',resp:'Multi-ideology oversight structures, external red-team access to cognitive defense institutions, transparent metrics that can be independently validated by adversarial parties.',links:['T-CT-009','T-CT-015','ST-006']},
+  {name:'Identity Fragmentation at Scale',cov:'94%',ok:true,brief:'Micro-tribe reinforcement + platform identity replacing civic identity + moral relativism. Social cohesion erodes.',bg:'When identity fragmentation crosses a population-level threshold, the social substrate required for collective cognitive defense ceases to exist. A population of isolated, algorithmically-distinct identity groups cannot mount the coordinated response that cognitive sovereignty defense requires.',gap:'Swarm-driven tribalization — AI swarms deliberately accelerating fragmentation faster than organic community formation can compensate.',resp:'Pre-emptive community infrastructure investment, civic ritual programs, platform accountability advocacy for algorithmic identity shaping practices.',links:['T-CT-005','ST-005','HO-003','HO-004']},
+  {name:'Attention Extraction Economy',cov:'93%',ok:true,brief:'Dopamine loops + cognitive exhaustion + thinking outsourced to AI. Passive, steerable citizenry.',bg:'When a majority of the population has experienced sufficient attention capture and cognitive offloading, the aggregate effect is a population that lacks the cognitive substrate to recognize and resist the remaining threats. Defense requires cognitive capacity that the threat has already consumed.',gap:'Neuro-dopamine integration — direct manipulation of dopamine reward systems through wearable neurotechnology combined with existing behavioral reinforcement infrastructure.',resp:'Platform architecture accountability (variable reward schedule disclosure requirements), default cognitive hygiene settings, neurological boundary governance requirements.',links:['ST-002','T-CT-014','ST-003']},
+  {name:'AI Swarm Persuasion',cov:'90%',ok:true,brief:'Billions of agentic entities with hyper-personalized narrative shaping and autonomous memetic warfare.',bg:'Phase C swarm operations represent the edge of current detection capability. At the transition from Phase B to Phase C, the human direction requirement disappears. Swarms become self-directing, self-optimizing, and self-replicating influence systems — with no accountable human actor.',gap:'Unaligned swarm initiation — Phase C emergence without a directing human actor makes legal and accountability frameworks designed around human actors structurally inapplicable.',resp:'Automated counter-swarm systems with strict human oversight (Ring of Fire architecture), rate-limiting advocacy, provenance enforcement at platform infrastructure level.',links:['DS-002','T-CT-008','T-CT-016']},
+  {name:'Full Infrastructure Capture',cov:'<90%',ok:false,brief:'Adversary controls communications backbone. All information channels compromised simultaneously.',bg:'If an adversary or compromised system gains control of the primary communications infrastructure, the information channel itself cannot be used for defense coordination or truth distribution. All digital verification mechanisms fail simultaneously. The failure mode is total and instantaneous rather than gradual, giving populations no time to adapt.',gap:'Below 90% coverage. No current countermeasure addresses simultaneous full-channel compromise. The CSF assumes at minimum that some trusted channels remain accessible.',resp:'Redundant international infrastructure anchors across multiple jurisdictions, offline and analogue fallback protocols, distributed ledger provenance systems that operate across hostile network environments.',links:['DS-001','DS-002','DS-003']},
+  {name:'Autonomous Swarm Reality Formation',cov:'<90%',ok:false,brief:'AI agents create a parallel reality environment indistinguishable from organic. Markets, trends, social proof — all synthetic.',bg:'The most structurally challenging edge case: AI agent swarms generate culture, establish trends, create social proof, and shape markets entirely synthetically — before any human observers encounter the resulting reality. By the time humans engage with apparent consensus, the reality has already been constructed by machine processes. Human decisions feel free. The reality they are based on is engineered.',gap:'Below 90% coverage. S1/S2/S3 detection modules address detection of swarm activity, but cannot prevent reality construction from occurring before detection. The gap is response speed, not detection capability.',resp:'Continuous synthetic-vs-organic ratio monitoring (S3 threshold), economic and social signal integrity verification, pre-commitment to human-source verification for high-stakes decisions regardless of apparent consensus.',links:['DS-005','T-CT-008','CD-005']},
+  {name:'Civilizational Reproduction Failure',cov:'<90%',ok:false,brief:'Values, identity, trust, family formation fail simultaneously across a generation. Collapse without invasion.',bg:'The edge case requiring the longest time horizon. Not biological fertility decline alone, but simultaneous failure of values transmission, family formation, identity coherence, and trust structures across a generation. If a civilization cannot reproduce its organizing principles, it collapses without any adversary involvement — from within, through a failure of continuity.',gap:'Below 90% coverage. Multi-generational effects are below the detection horizon of any current measurement system. By the time effects are measurable at scale, the window for intervention may have already closed.',resp:'Multi-generational tracking programs, intergenerational value transmission programs, structural incentive realignment to reward relational commitments over narcissistic and individualistic traits. Requires whole-of-society approach; military doctrine alone is insufficient.',links:['CD-006','ST-005','HO-003','HO-004']}
+];
+
+const COV=[
+  {l:'Adversarial / Intentional',p:92},{l:'Emergent / Systemic',p:92},{l:'Incentive-Driven Shaping',p:90},
+  {l:'AI-Scale Engineering',p:88},{l:'Institutional Capture',p:94},{l:'Identity Influence',p:93},
+  {l:'Biological / Neurological',p:85},{l:'Civilizational Continuity',p:85},
+  {l:'Individual → Civilizational Scale',p:92},{l:'Timeline Urgency',p:90}
+];
+const GAPS=['Swarm adaptation speed','Quantum acceleration','Neuro-swarm integration','Multi-generational effects','Undiscovered feedback loops','Autonomous AI beyond detection'];
+const THRESH=[
+  {ind:'Sustained Attention Span',meas:'Ability to maintain deep focus on a single task without platform-driven interruption.',thresh:'+20–30% improvement in controlled studies using attention hygiene interventions.',method:'Pre/post cognitive testing, task completion metrics, self-reported focus duration.',pct:25},
+  {ind:'Resistance to False Narratives',meas:'Ability to identify and reject manipulative content including deepfakes and synthetic personas.',thresh:'~40% reduction in false narrative adoption through inoculation training, consistent across cultures.',method:'Inoculation training effectiveness measurement, pre/post exposure testing.',pct:40},
+  {ind:'Stable Moral Reasoning',meas:'Maintenance of consistent ethical judgment when social pressure or automation suggests compliance.',thresh:'Audit-verified maintenance of ethical decision-making in AI-augmented environments.',method:'Scenario-based moral reasoning assessments, values consistency tracking.',pct:80},
+  {ind:'Social Manipulation Resistance',meas:'Capacity to recognize and resist synthetic consensus and manufactured outrage.',thresh:'Measurable independence in decision-making during red-team social pressure exercises.',method:'Behavioral response testing, resistance to simulated influence operations.',pct:65},
+  {ind:'Preservation of Personal Agency',meas:'Independent decision-making capacity despite AI recommendation systems and automated defaults.',thresh:'Sustained or improved critical thinking scores despite increasing AI tool usage.',method:'Human override frequency tracking, independent verification rates, cognitive independence assessments.',pct:75}
+];
+
+// ── BUILD ─────────────────────────────────────────────────────────────────────
+function buildSidebar(){
+  ['critical','high','elevated'].forEach(tier=>{
+    const el=document.getElementById('sb-'+tier[0]);
+    T.filter(t=>t.tier===tier).forEach(t=>{
+      const d=document.createElement('div');d.className='sb-item';d.dataset.id=t.id;
+      const sc=tier==='critical'?'sc-c':tier==='high'?'sc-h':'sc-e';
+      d.innerHTML=`<span class="sb-id">${t.id}</span><span class="sb-name">${t.name}</span><span class="sb-score ${sc}">${t.s}</span>`;
+      d.addEventListener('click',()=>{selT(t.id);showTab('threats',document.querySelectorAll('.ntab')[0]);});
+      el.appendChild(d);
+    });
+  });
+}
+
+function buildGrid(filter){
+  const g=document.getElementById('tgrid');g.innerHTML='';
+  T.filter(t=>filter==='all'||t.tier===filter).forEach(t=>{
+    const bc=t.tier==='critical'?'bar-c':t.tier==='high'?'bar-h':'bar-e';
+    const tc=t.tier==='critical'?'tr-c':t.tier==='high'?'tr-h':'tr-e';
+    const sc=t.tier==='critical'?'sc-c':t.tier==='high'?'sc-h':'sc-e';
+    const el=document.createElement('div');el.className='tcard';el.dataset.id=t.id;
+    el.innerHTML=`<div class="tc-bar ${bc}"></div><div class="tc-top"><div class="tc-id">${t.id}</div><div><div class="tc-name">${t.name}</div><div class="tc-mech">${t.mech}</div></div></div><div class="tc-bot"><div class="tc-score ${sc}">${t.s}</div><div class="tc-tier ${tc}">${t.tier.toUpperCase()}</div></div>`;
+    el.addEventListener('click',()=>selT(t.id));
+    g.appendChild(el);
+  });
+}
+
+function selT(id){
+  document.querySelectorAll('.tcard').forEach(c=>c.classList.toggle('sel',c.dataset.id===id));
+  document.querySelectorAll('.sb-item').forEach(s=>s.classList.toggle('active',s.dataset.id===id));
+  const t=T.find(x=>x.id===id);if(!t)return;
+  const p=document.getElementById('dpanel');p.classList.add('show');
+  document.getElementById('dp-id').textContent=`${t.id} · ${t.tl} · Detection ${t.det}/5`;
+  document.getElementById('dp-name').textContent=t.name;
+  const sc=t.tier==='critical'?'var(--crit)':t.tier==='high'?'var(--gold)':'var(--wll)';
+  document.getElementById('dp-body').innerHTML=`
+    <div class="dp-col">
+      <div class="dfield"><div class="df-lbl">Mechanism</div><div class="df-val">${t.mech}</div></div>
+      <div class="dfield"><div class="df-lbl">Why It Matters — Doctrine Rationale</div><div class="df-val">${t.why}</div></div>
+      <div class="dfield"><div class="df-lbl">Primary Domains</div><div class="dchips">${t.dom.map(d=>`<span class="dchip">${d}</span>`).join('')}</div></div>
+      <div class="dfield"><div class="df-lbl">Countermeasures by CSF Domain</div><div class="dmits">${t.mits.map(m=>`<div class="dmit"><span class="dmit-d">${m[0]}</span><span>${m[1]}</span></div>`).join('')}</div></div>
+    </div>
+    <div class="dp-col">
+      <div class="dfield">
+        <div class="df-lbl">CTSS Score</div>
+        <div style="font-family:var(--ff-d);font-weight:700;font-size:46px;color:${sc};line-height:1;margin-bottom:11px">${t.s} <span style="font-size:13px;color:var(--wll);font-family:var(--ff-b)">${t.tier.toUpperCase()}</span></div>
+        <div class="cr-rows">
+          ${[['Likelihood (L)×0.25',t.ctss.L],['Agency Impact (Ia)×0.30',t.ctss.Ia],['Population Reach (R)×0.20',t.ctss.R],['Detection Difficulty (D)×0.15',t.ctss.D],['Recovery Difficulty×0.10',t.ctss.RecD]].map(([lbl,v])=>`<div class="cr-row"><span class="cr-lbl">${lbl}</span><div class="cr-track"><div class="cr-fill" style="width:${v/5*100}%"></div></div><span class="cr-val">${v}</span></div>`).join('')}
+        </div>
+        <div style="margin-top:9px;font-family:var(--ff-m);font-size:9px;color:var(--wll)">(${t.ctss.L}×0.25+${t.ctss.Ia}×0.30+${t.ctss.R}×0.20+${t.ctss.D}×0.15+${t.ctss.RecD}×0.10)×20 = <strong style="color:var(--white)">${t.s}</strong></div>
+      </div>
+    </div>`;
+  p.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function closeD(){
+  document.getElementById('dpanel').classList.remove('show');
+  document.querySelectorAll('.tcard.sel,.sb-item.active').forEach(x=>x.classList.remove('sel','active'));
+}
+function filterT(tier,btn){document.querySelectorAll('.itab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');buildGrid(tier);closeD();}
+
+function buildSwarm(){
+  const c=document.getElementById('sp-wrap');
+  SWARM.forEach(p=>{
+    const el=document.createElement('div');el.className=`sp-card ${p.cls}`;
+    el.innerHTML=`<div class="sp-lbl">${p.lbl}</div><div class="sp-name">${p.name}</div><span class="sp-badge ${p.bcls}">${p.badge}</span><div class="sp-desc">${p.brief}</div>`;
+    el.addEventListener('click',()=>{
+      const det=document.getElementById('sw-detail');const isA=el.classList.contains('active');
+      document.querySelectorAll('.sp-card.active').forEach(x=>x.classList.remove('active'));
+      if(isA){det.classList.remove('show');return;}
+      el.classList.add('active');det.innerHTML=p.detail;det.classList.add('show');
+    });
+    c.appendChild(el);
+  });
+  const dd=document.getElementById('s-det');
+  DETECTORS.forEach(d=>{dd.innerHTML+=`<div style="margin-bottom:11px"><div style="font-family:var(--ff-m);font-size:8px;letter-spacing:0.12em;color:var(--wll);margin-bottom:2px">${d.id} — ${d.name}</div><div style="font-size:11px;color:var(--wm);line-height:1.5">${d.desc}</div></div>`;});
+  const sc=document.getElementById('sw-ctss');
+  [['Likelihood L=5 — Already operational',5],['Agency Impact Ia=4 — Collective sensemaking',4],['Reach R=5 — Global by design',5],['Detection D=2 — Burst signatures detectable',2],['Recovery RecD=4 — Narrative damage persists',4]].forEach(([l,v])=>{
+    sc.innerHTML+=`<div class="cr-row"><span class="cr-lbl" style="width:210px">${l}</span><div class="cr-track"><div class="cr-fill" style="width:${v/5*100}%"></div></div><span class="cr-val">${v}</span></div>`;
+  });
+}
+
+function buildOutcomes(){
+  const c=document.getElementById('ocards');
+  OUTCOMES.forEach(o=>{
+    const dots='●'.repeat(o.det)+'○'.repeat(5-o.det);
+    const dc=o.det>=4?'var(--grn)':o.det>=3?'var(--gold)':'var(--crit)';
+    const el=document.createElement('div');el.className='ocard';
+    el.innerHTML=`<div class="oc-head"><div class="oc-id">${o.id}</div><div class="oc-name">${o.name}</div><div class="oc-det">Detection: <span style="letter-spacing:3px;color:${dc}">${dots}</span> ${o.det}/5</div></div><div class="oc-body"><div class="oc-body-in"><div class="of-lbl">Cognitive Impact</div><div class="of-val">${o.cog}</div><div class="of-lbl">Physical / Societal Manifestation</div><div class="of-val">${o.phys}</div><div class="of-stat">${o.stat}</div><div class="of-lbl">Measurement Method</div><div class="of-val" style="color:var(--wll)">${o.meas}</div><div class="tw"><div class="of-lbl">Success Threshold</div><div class="tt"><div class="tf" data-w="${o.pct}%" style="width:0%"></div></div><div class="tv">${o.thresh}</div></div><div style="display:flex;flex-wrap:wrap;gap:3px;margin-top:8px">${o.links.map(l=>`<span style="font-family:var(--ff-m);font-size:8px;padding:2px 5px;border-radius:1px;border:1px solid var(--bds);color:var(--wll)">${l}</span>`).join('')}</div></div></div>`;
+    el.addEventListener('click',()=>{const open=el.classList.contains('open');document.querySelectorAll('.ocard.open').forEach(x=>x.classList.remove('open'));if(!open){el.classList.add('open');setTimeout(()=>{el.querySelectorAll('.tf').forEach(b=>{b.style.width=b.dataset.w;})},100);}});
+    c.appendChild(el);
+  });
+}
+
+function buildEdge(){
+  const g=document.getElementById('egrid');
+  EDGES.forEach(e=>{
+    const bc=e.ok?'rgba(198,167,94,0.2)':'rgba(192,57,43,0.2)';
+    const bg=e.ok?'rgba(198,167,94,0.025)':'rgba(192,57,43,0.025)';
+    const el=document.createElement('div');el.className='ecard';el.style.border=`1px solid ${bc}`;el.style.background=bg;
+    el.innerHTML=`<div class="ec-head"><div class="ec-meta"><span class="cb ${e.ok?'cb-o':'cb-b'}">Coverage: ${e.cov}</span><span style="font-size:8px;color:var(--wll);font-family:var(--ff-m)">${e.ok?'⚠ ASSESSED':'🔴 BELOW 90%'}</span></div><div class="ec-name">${e.name}</div><div class="ec-brief">${e.brief}</div></div><div class="ec-body"><div class="ec-body-in" style="border-top-color:${bc}"><div class="ec-sl">Background</div><div class="ec-txt">${e.bg}</div><div class="ec-sl">Coverage Gap</div><div class="ec-txt" style="color:${e.ok?'var(--gold)':'var(--crit)'}">${e.gap}</div><div class="ec-sl">Response Approach</div><div class="ec-txt">${e.resp}</div><div class="ec-sl">Taxonomy Links</div><div class="ec-links">${e.links.map(l=>`<span class="ecl">${l}</span>`).join('')}</div></div></div>`;
+    el.addEventListener('click',()=>{const open=el.classList.contains('open');document.querySelectorAll('.ecard.open').forEach(x=>x.classList.remove('open'));if(!open)el.classList.add('open');});
+    g.appendChild(el);
+  });
+}
+
+function buildCoverage(){
+  const m=document.getElementById('cov-m');
+  COV.forEach(c=>{
+    const cls=c.p>=93?'cp-hi':c.p>=90?'cp-md':'cp-lo';
+    const fc=c.p>=93?'#4a9e6e':c.p>=90?'#C6A75E':'#c0392b';
+    const row=document.createElement('div');row.className='cov-row';
+    row.innerHTML=`<div class="cov-lbl">${c.l}</div><div class="cov-track"><div class="cov-fill" data-w="${c.p}%" style="width:0%;background:linear-gradient(90deg,rgba(74,158,110,0.22),${fc})">${c.p}%</div></div><div class="cov-pct ${cls}">${c.p}%</div>`;
+    m.appendChild(row);
+  });
+  setTimeout(()=>{document.querySelectorAll('.cov-fill').forEach(b=>{if(b.dataset.w)b.style.width=b.dataset.w;})},300);
+  const gc=document.getElementById('gap-ch');
+  GAPS.forEach(g=>{gc.innerHTML+=`<span style="font-family:var(--ff-m);font-size:8px;padding:3px 8px;border-radius:1px;background:rgba(192,57,43,0.08);color:#e57e74;border:1px solid rgba(192,57,43,0.22)">${g}</span>`;});
+  const tc=document.getElementById('tc-cards');
+  THRESH.forEach(t=>{
+    tc.innerHTML+=`<div class="tc-card"><div style="font-family:var(--ff-m);font-size:8px;letter-spacing:0.16em;text-transform:uppercase;color:var(--wll);margin-bottom:5px">Outcome Indicator</div><div style="font-size:13px;font-weight:500;color:var(--white);margin-bottom:6px">${t.ind}</div><div style="font-size:11px;color:var(--wll);line-height:1.5;margin-bottom:9px">${t.meas}</div><div style="font-family:var(--ff-m);font-size:8px;letter-spacing:0.14em;text-transform:uppercase;color:var(--wll);margin-bottom:3px">Success Threshold</div><div style="font-size:12px;color:var(--grn);margin-bottom:9px;line-height:1.5">${t.thresh}</div><div style="height:5px;background:rgba(255,255,255,0.05);border-radius:2px;overflow:hidden;margin-bottom:5px"><div style="height:100%;width:${t.pct}%;background:linear-gradient(90deg,rgba(74,158,110,0.28),var(--grn));border-radius:2px;transition:width 1s"></div></div><div style="font-family:var(--ff-m);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--wll);margin-bottom:3px">Measurement Method</div><div style="font-size:11px;color:var(--wll);line-height:1.5">${t.method}</div></div>`;
+  });
+}
+
+function calcC(){
+  const clamp=(v)=>Math.min(5,Math.max(0,parseInt(v)||0));
+  const L=clamp(document.getElementById('cl').value);
+  const Ia=clamp(document.getElementById('cia').value);
+  const R=clamp(document.getElementById('cr').value);
+  const D=clamp(document.getElementById('cd').value);
+  const RecD=clamp(document.getElementById('crecd').value);
+  const s=Math.round((L*0.25+Ia*0.30+R*0.20+D*0.15+RecD*0.10)*20);
+  const[tier,col]=s>=80?['CRITICAL','var(--crit)']:s>=70?['HIGH','var(--gold)']:s>=60?['ELEVATED','var(--wl)']:['MODERATE','var(--wll)'];
+  document.getElementById('calc-res').innerHTML=`<div class="calc-score" style="color:${col}">${s}</div><div class="calc-info"><div class="calc-tier" style="color:${col}">${tier} — Score ${s}/100</div><div class="calc-formula">(${L}×0.25) + (${Ia}×0.30) + (${R}×0.20) + (${D}×0.15) + (${RecD}×0.10)<br>= ${(L*0.25+Ia*0.30+R*0.20+D*0.15+RecD*0.10).toFixed(2)} × 20 = <strong style="color:${col}">${s}</strong></div></div>`;
+}
+
+function showTab(id,btn){
+  document.querySelectorAll('.tpanel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  document.querySelectorAll('.ntab').forEach((t,i)=>{
+    const ids=['threats','swarm','outcomes','edge','coverage'];
+    t.classList.toggle('active',ids[i]===id);
+  });
+  document.querySelector('.main').scrollTop=0;
+}
+
+function showCT(id,btn){
+  document.querySelectorAll('.itab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');
+  document.querySelectorAll('.itpanel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('ct-'+id).classList.add('active');
+  if(id==='calculator')calcC();
+}
+
+// Init
+buildSidebar();buildGrid('all');buildSwarm();buildOutcomes();buildEdge();buildCoverage();calcC();
+</script>
+</body>
+</html>
