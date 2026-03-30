@@ -13,9 +13,9 @@
 
 ## Interactive Documentation
 
-→ [CSF Learning Hub](https://cyberstrategyinstitute.github.io/cognitive-sovereignty-framework/)  
-→ [Threat Explorer](https://cyberstrategyinstitute.github.io/cognitive-sovereignty-framework/csf-explorer.html)  
-→ [Command Center](https://cyberstrategyinstitute.github.io/cognitive-sovereignty-framework/csf-command-center.html)
+→ [CSF Learning Hub](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/)  
+→ [Threat Explorer](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/csf-explorer.html)  
+→ [Command Center](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/csf-command-center.html)
 
 ---
 
@@ -266,28 +266,39 @@ Resilience must be observable, not inspirational. Five outcome indicators determ
 
 ---
 
-## 🔗 Companion Frameworks
+## 🔗 Companion Framework: AI SAFE²
 
-The CSF is one component of an integrated defense architecture.
+The CSF protects the human cognitive layer. It does not secure the AI system the human is operating.
 
-| Framework | Purpose | Relationship |
+An AI infrastructure with prompt injection vulnerabilities, misconfigured agent scoping, or compromised memory systems can undermine human cognitive sovereignty regardless of how well-trained the operator is. The CSF covers the human side. **[AI SAFE²](https://github.com/CyberStrategyInstitute/ai-safe2-framework)** covers the machine side.
+
+| | CSF | AI SAFE² |
 |---|---|---|
-| **[AI SAFE²](https://github.com/CyberStrategyInstitute/ai-safe2-framework)** | GRC standard for securing Agentic AI systems | Protects the AI side of the human-AI system; CSF protects the human side |
-| **EFA (Ethical Functionality without Agency)** | Ensures AI is a tool, never a moral agent | Provides technical enforcement architecture for CSF Domain 6 |
-| **E7 Protocol Stack** | OSI-equivalent AI governance reference architecture | Places human authority at Layer 7; structurally prevents agency leakage |
-| **HEAR Doctrine** | Human Ethical Agent of Record accountability | Every AI action traces to a named accountable human |
+| **Layer** | Human | Machine |
+| **Defends** | The human operator | The AI system |
+| **Governs** | The capacity to govern the tool | The tool |
+| **Prevents** | Cognitive offloading, attention capture, decision automation capture, identity fragmentation | Prompt injection, data leakage, unsafe autonomy, swarm governance failures |
+| **Ensures** | The human stays capable of defining the lane | AI stays in its lane |
+| **Repo** | [https://github.com/CyberStrategyInstitute/cognitive-sovereignty](https://github.com/CyberStrategyInstitute/cognitive-sovereignty) | [https://github.com/CyberStrategyInstitute/ai-safe2-framework](https://github.com/CyberStrategyInstitute/ai-safe2-framework) |
 
-> **Together, CSF + AI SAFE² cover the full human-AI system: CSF for the human, AI SAFE² for the machine.**
+**The shared principle:** Both frameworks enforce the same core commitment — AI is always a tool, never a moral agent. Human authority is non-negotiable. The CSF's EFA paradigm and E7 Protocol Stack enforce this at the human-AI interface layer. AI SAFE²'s runtime governors and circuit breakers enforce it at the technical infrastructure layer.
 
-### DoD AI Ethical Principles Alignment (Feb 24, 2020)
+**The threat that connects both frameworks:** The highest-scoring threat in the CSF taxonomy is [T-CT-008: Memetic Swarm Orchestration (CTSS 90)](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/csf-explorer.html) — coordinated AI agent campaigns that test, evolve, and amplify narratives at non-human speed. AI SAFE² defends AI system integrity against adversarial swarm techniques. The CSF defends human populations against the cognitive effects of swarm-delivered narratives. Defending only one layer leaves the other entirely exposed.
+
+> **Together, CSF + AI SAFE² cover the full human-AI system: CSF for the human, AI SAFE² for the machine. Neither is sufficient without the other.**
+
+→ **[AI SAFE² Repository](https://github.com/CyberStrategyInstitute/ai-safe2-framework)** — The Universal GRC Operating System for Agentic AI, Non-Human Identities, and Swarm Governance  
+→ **[AI SAFE² Companion Release Note](https://github.com/CyberStrategyInstitute/ai-safe2-framework/blob/main/docs/CSF-COMPANION.md)** — How the two frameworks fit together in practice
+
+### DoW AI Ethical Principles Alignment (Feb 24, 2020)
 
 | Principle | CSF Alignment |
-|---|---|
+| --- | --- |
 | **Responsible** | Domain 5 (Purpose & Moral) builds the moral reasoning capacity required for responsible AI use |
 | **Equitable** | Domain 4 (Social) addresses algorithmic bias and access equity |
 | **Traceable** | Domain 6 (Digital & AI Symbiosis) mandates provenance verification and HEAR accountability |
 | **Reliable** | Domain 2 (Cognitive) builds independent verification capacity to detect model drift |
-| **Governable** | E7 Layer 7 ensures human authority remains the top of every system |
+| **Governable** | E7 Layer 7 ensures human authority remains at the top of every system |
 
 ---
 
