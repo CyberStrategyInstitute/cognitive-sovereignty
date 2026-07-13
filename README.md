@@ -308,7 +308,7 @@ The CTSS scoring model is the quantitative instrument for the human layer: CTSS 
 > **Together, CSF + AI SAFE² cover the full human-AI system: CSF for the human, AI SAFE² for the machine. Neither is sufficient without the other.**
 
 → **[AI SAFE² Repository](https://github.com/CyberStrategyInstitute/ai-safe2-framework)** — The Universal GRC Operating System for Agentic AI, Non-Human Identities, and Swarm Governance  
-→ **[AI SAFE² Companion Release Note]([https://github.com/CyberStrategyInstitute/ai-safe2-framework/blob/main/docs/CSF-COMPANION.md](https://github.com/CyberStrategyInstitute/ai-safe2-framework/blob/main/CSF-COMPANION.md))** — How the two frameworks fit together in practice
+→ **[AI SAFE² Companion Release Note](https://github.com/CyberStrategyInstitute/ai-safe2-framework/blob/main/CSF-COMPANION.md)** — How the two frameworks fit together in practice
 
 ### DoW AI Ethical Principles Alignment (Feb 24, 2020)
 
