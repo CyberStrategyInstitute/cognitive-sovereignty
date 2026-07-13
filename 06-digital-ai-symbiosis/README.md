@@ -108,6 +108,25 @@ Domain 6 capabilities directly map to AI SAFE² pillars:
 
 ---
 
+## Federal Procurement Alignment (CP.11)
+
+Domain 6 is now the anchor of a formal cross-framework integration. Four Domain 6 control concepts are published as part of **AI SAFE² CP.11, the Unbiased AI Standard**, the procurement-facing compliance surface for draft GSAR clause 552.239-7001 (j)(1):
+
+| Domain 6 Concept | CP.11 Control | Function |
+|---|---|---|
+| AI dependency induction monitoring | UAS-H5 | Detects functional dependency impairing mission decision-making |
+| Cross-session cognitive drift tracking | UAS-X3 (bridge) | Maps AI interaction volume against sovereignty risk thresholds |
+| Override rate preservation | UAS-H8 | Keeps human override health measurable, integrates AI SAFE² CP.9 |
+| AI-human boundary clarity | UAS-H7 | Resists persona blurring and role-boundary erosion |
+
+Federal deployments amplify every Domain 6 risk: high-consequence decisions, an authority gradient that accelerates deference to "government approved" outputs, multi-year contracts creating the long-horizon interaction patterns where dependency emerges, and reduced external calibration in classified environments.
+
+The full analysis, including CTSS integration into the CP.11 evidence package and suggested performance work statement language for contracting officers, is in the Domain 6 supplement:
+
+📄 **[Federal Procurement Alignment supplement →](./federal-procurement-alignment.md)**
+
+---
+
 ## Failure Modes
 
 Domain 6 fails under three specific conditions:
@@ -141,3 +160,5 @@ Domain 6 fails under three specific conditions:
 - AI SAFE² Framework — [github.com/CyberStrategyInstitute/ai-safe2-framework](https://github.com/CyberStrategyInstitute/ai-safe2-framework)
 - DoD AI Ethical Principles (February 24, 2020)
 - DoD Directive 3000.09 (updated January 25, 2023)
+- CP.11 Unbiased AI Standard — [ai-safe2-framework/00-cross-pillar/unbiased-ai](https://github.com/CyberStrategyInstitute/ai-safe2-framework/tree/main/00-cross-pillar/unbiased-ai)
+- Domain 6 Federal Procurement Alignment supplement — [federal-procurement-alignment.md](./06-digital-ai-symbiosis/federal-procurement-alignment.md)
