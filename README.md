@@ -283,16 +283,6 @@ An AI infrastructure with prompt injection vulnerabilities, misconfigured agent 
 | **Ensures** | The human stays capable of defining the lane | AI stays in its lane |
 | **Repo** | [https://github.com/CyberStrategyInstitute/cognitive-sovereignty](https://github.com/CyberStrategyInstitute/cognitive-sovereignty) | [https://github.com/CyberStrategyInstitute/ai-safe2-framework](https://github.com/CyberStrategyInstitute/ai-safe2-framework) |
 
-### DoD AI Ethical Principles Alignment (Feb 24, 2020)
-
-| Principle | CSF Alignment |
-| --- | --- |
-| **Responsible** | Domain 5 (Purpose & Moral) builds the moral reasoning capacity required for responsible AI use |
-| **Equitable** | Domain 4 (Social) addresses algorithmic bias and access equity |
-| **Traceable** | Domain 6 (Digital & AI Symbiosis) mandates provenance verification and HEAR accountability |
-| **Reliable** | Domain 2 (Cognitive) builds independent verification capacity to detect model drift |
-| **Governable** | E7 Layer 7 ensures human authority remains at the top of every system |
-
 ### Formal Integration: AI SAFE² CP.11 (Unbiased AI Standard)
 
 The CSF-AI SAFE² relationship is no longer only conceptual. CSF's human-layer controls are formally integrated into **AI SAFE² CP.11, the Unbiased AI Standard (UAS)**, as controls **UAS-H1 through UAS-H8**, sourced directly from CSF Domains 1 through 6. CP.11 provides the procurement-facing compliance host for CSF's controls in federal AI deployments, including draft GSAR clause 552.239-7001 (Notice-MVAC-2026-01), where the human-layer dimension of "Unbiased AI" is otherwise unaddressed.
