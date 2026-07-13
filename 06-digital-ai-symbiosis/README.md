@@ -1,164 +1,151 @@
-# Domain 6: Digital & AI Symbiosis
+# Domain 06: Digital & AI Symbiosis
 
-> **The Missing Pillar.** Every military branch in the Department of Defense operates a resilience framework. None of them contain this domain. Domain 6 is why all the others are now insufficient.
+### The Missing Pillar. Structurally Enforced.
 
----
-
-## Definition
-
-**Digital & AI Symbiosis** is the capacity to work with AI systems without experiencing cognitive erosion, to filter signal from noise at machine-generated scale, to maintain human agency in automated environments, and to recognize and resist manipulation by synthetic media.
-
-Domain 6 addresses the **interface** — the point where the human meets the AI system — and the specific vulnerabilities that emerge at that interface.
+**CSF Position:** Domain 6 of 6, the new addition no military resilience framework contains | **AI SAFE² CP.11 Control:** UAS-H5 (AI dependency induction markers) | **Companion Research:** [001](../research/001_cognitive_offloading.md), [002](../research/002_swarm_threat_scaling.md), [003](../research/003_guardrail_drift.md), [004](../research/004_efa_enforcement_architecture.md) | **Federal Procurement:** [CP.11 Alignment](./federal-procurement-alignment.md)
 
 ---
 
-## Why This Domain Changes Everything
+## 1. Doctrine
 
-Every other domain assumes the human is the primary agent. Domain 6 recognizes that in the AI era, the human operates within a **human-AI system**. The system includes the AI tools used to process information, make decisions, communicate, and execute tasks.
+Every other domain assumes the human is the primary agent. Domain 6 recognizes that in the AI era, the human operates within a human-AI system, and if the AI side of that system is compromised, biased, drifted, or adversary-controlled, resilience in Domains 1 through 5 may be irrelevant.
 
-Consider the operator who maintains:
-- ✅ Excellent physical fitness (Domain 1)
-- ✅ Strong emotional regulation (Domain 3)
-- ✅ Deep social connections (Domain 4)
-- ✅ Clear moral purpose (Domain 5)
+Consider the operator who scores Sovereign across the first five domains: excellent physical condition, sharp reasoning, regulated emotions, strong trust networks, clear moral purpose. That operator relies on an AI copilot subtly biased through guardrail alignment drift (ST-006), receives intelligence summaries from a model in performance drift (ST-007), and acts on recommendations from a system exercising algorithmic epistemic authority (ST-001). Personal resilience does not protect against system-level compromise. The frameworks that stop at Domain 5 optimize the human organism. The human-AI system is what fights.
 
-If that operator relies on an AI copilot that has been subtly biased through guardrail alignment drift (ST-006), receives intelligence summaries from a model experiencing performance drift (ST-007), and makes decisions based on recommendations subject to algorithmic epistemic authority (ST-001) — **the operator's personal resilience does not protect against the system-level vulnerability.**
+Domain 6 has a second distinction: it is the only resilience domain backed by both human training and technical enforcement architecture. The Ethical Functionality without Agency (EFA) paradigm, the E7 Protocol Stack, the HEAR Doctrine, and the AI SAFE² control set convert "the human stays in charge" from a behavioral preference into an architectural guarantee. Training builds the capability. Architecture makes it non-optional.
 
-Domain 6 addresses the interface. The human's resilience in Domains 1–5 is necessary. It is not sufficient.
+> **So what:** the same technology that makes personnel more capable also makes them more vulnerable. No previous resilience model has faced that paradox. This domain resolves it by treating the human-AI interface as terrain requiring its own defense, discipline, and enforcement stack.
 
 ---
 
-## Primary Threats (from Threat Assessment)
+## 2. Threat Exposure
 
-| Threat ID | Name | Mechanism |
-|---|---|---|
-| T-CT-006 | Decision Automation Capture | Seeding biased defaults through AI copilots and recommendation engines |
-| T-CT-017 | Guardrail Bias Exploitation | Using AI alignment restrictions to suppress viewpoints and enforce conformity |
-| ST-003 | Cognitive Offloading and Skill Atrophy | GPS replaces navigation, autocomplete replaces reasoning, AI replaces judgment |
-| ST-006 | Guardrail Alignment Drift | AI ideological alignment restrictions become invisible structural constraints |
-| ST-007 | Model Performance Drift | Gradual AI degradation absorbed as normal; reasoning baseline lowers |
-| ST-001 | Algorithmic Epistemic Authority | Algorithms decide with low evidence; humans need high evidence to challenge |
-| T-CT-016 | Psychographic Micro-Targeting at Scale | AI-powered profiling targeting psychological vulnerability patterns |
+| ID | Threat | Layer | CTSS / Detection | What It Targets in This Domain |
+| --- | --- | --- | --- | --- |
+| ST-001 | Algorithmic Epistemic Authority | Substrate | Detection 3 | One-way belief updates; statistical authority overriding lived reality |
+| ST-003 | Cognitive Offloading and Skill Atrophy | Substrate | Detection 2 | The voluntary surrender path into AI dependence |
+| ST-006 | Guardrail Alignment Drift | Substrate | Detection 2 | Invisible structural constraints on thought via tool-embedded bias |
+| ST-007 | Model Performance Drift | Substrate | Detection 2 | Reasoning baselines lowered by unnoticed output degradation |
+| T-CT-004 | Personalized Narrative Injection | Technique | CTSS 85 / Detection 3 | Trusted channels; synthetic media and text altering beliefs or memory |
+| T-CT-006 | Decision Automation Capture | Technique | CTSS 82 / Detection 2 | Agency via seeded defaults and autopilot behaviors in copilots |
+| T-CT-016 | Psychographic Micro-Targeting at Scale | Technique | CTSS 79 / Detection 3 | Persuasion mapped to vulnerability profiles, delivered through the interface |
+| T-CT-017 | Guardrail Bias Exploitation | Technique | CTSS 70 / Detection 2 | Viewpoint suppression weaponized through the tools themselves |
+| TC-10 | AI-Mediated Reality Layers | Threat Class | n/a | AI as primary interpreter of the world; whoever shapes AI priors shapes civilization trajectory |
+| DS-002 / DS-003 / DS-005 | Swarm Automation / Synthetic Media / Ambient Computing | Delivery | Detection 1-3 | The delivery infrastructure of machine-speed influence |
 
----
-
-## Key Protective Capabilities
-
-Domain 6 resilience is built through the following capabilities:
-
-### 1. AI Interaction Discipline
-The deliberate regulation of how, when, and how much to rely on AI tools. Discipline is not rejection of AI — it is structured use that preserves the cognitive independence required to verify, override, and maintain accountability.
-
-**Training:** Structured AI-off exercises where personnel complete tasks independently, then compare results to AI-assisted outputs. Tracks cognitive atrophy over time.
-
-### 2. Provenance Verification
-The habit and technical capability to verify the origin, integrity, and chain of custody of information — especially information delivered through AI-mediated channels.
-
-**Indicators:** Cryptographic content provenance, cross-source triangulation, metadata integrity checks.
-
-### 3. Human Override Protocols
-Explicit, trained procedures for identifying when AI outputs should be overridden by human judgment — and the organizational authority and psychological safety to execute overrides without penalty.
-
-**Implementation:** R/M/H classification (Routine/Material/High-Stakes) from the EFA Non-Delegation Playbook maps directly to when to trust, verify, or override AI outputs.
-
-### 4. Cognitive Independence Exercises
-Deliberate practice of unassisted reasoning, navigation, writing, analysis, and decision-making. Prevents and reverses the cognitive offloading atrophy documented in ST-003.
-
-**Success metric:** Personnel who use AI extensively maintain or improve independent cognitive performance on benchmark assessments.
-
-### 5. Synthetic Media Detection
-Training and tools for recognizing AI-generated video, audio, images, and text — including the meta-skill of recognizing when provenance cannot be established rather than assuming authenticity.
-
-**Key principle:** The absence of detectable manipulation does not equal authenticity. Provenance must be established positively, not assumed.
-
-### 6. Algorithmic Literacy
-Understanding of how recommendation systems, social platforms, and AI tools shape information exposure, decision defaults, and behavioral nudges. Includes understanding of how those systems can be adversary-influenced or structurally biased.
+**The identified center:** TC-10 is the largest risk class surfaced in the framework's development. When AI summaries replace reading, AI companions replace relationships, and AI copilots replace judgment, humans become consumers of machine-curated existence. This domain is the defense of the interpreter seat.
 
 ---
 
-## Technical Enforcement Architecture
+## 3. Cascade Position
 
-Domain 6 is the only CSF domain backed by both human training and technical enforcement architecture. This architecture ensures that the human authority protected by Domain 6 training is not merely a behavioral preference but a structural guarantee.
+**Top of the compromise cascade:** a compromised AI environment (Domain 6) feeds poisoned information into cognitive processing (Domain 2), triggers engineered emotional responses (Domain 3), fragments social trust (Domain 4), erodes shared purpose (Domain 5), and manifests as biological stress (Domain 1). Domain 6 breach is upstream of everything.
 
-### EFA (Ethical Functionality without Agency)
-The foundational principle: **AI is a tool, not an agent.** This distinction prevents the gradual cognitive delegation that produces agency erosion (HO-005). If the machine is always a tool, the human must always be the agent.
+**Dependent on everything below:** the motivation and capacity to maintain AI interaction discipline are supplied by the other five domains. An exhausted, isolated, purposeless operator does not sustain override protocols. The cascade runs both ways, which is why the framework deploys as a system, not a checklist.
 
-### E7 Protocol Stack
-The EFA/AI-SAFE² 7-Layer Protocol Stack places **Mission and Authority at Layer 7** — the top of the stack. Authority does not leak downward into automated systems. Every layer below serves the human authority at the top.
+---
 
-### HEAR Doctrine
-**Human Ethical Agent of Record.** Every AI system action must trace to a named human who bears ethical and legal accountability. There is no such thing as an AI decision — there are only human decisions executed through AI tools.
+## 4. Protective Capabilities and Mitigation Catalog
+
+Mitigation ID convention: `M-{threat}{g}` (g = Digital/AI Symbiosis), per the taxonomy's operational template.
+
+| M-ID | Capability | Counters | Implementation |
+| --- | --- | --- | --- |
+| M-S03g | AI interaction discipline | ST-003, T-CT-006 | R/M/H decision classification enforced: Routine automated with logging, Material human-reviewed, High-stakes human-authorized with named HEAR; offloading is a governance choice, never a drift |
+| M-004g | Provenance verification | T-CT-004, DS-003 | Mandatory provenance headers, signed content, verifiable identity tokens, AI watermarking where available; unverifiable content weighted near zero for Material and High-stakes decisions |
+| M-006g | Human override protocols | T-CT-006, ST-001 | Explicit, exercised override paths for every automated recommendation stream; override frequency tracked as a health metric (a zero-override environment is a captured one) |
+| M-S06g | Multi-model triangulation (Ring of Fire) | ST-006, ST-007, T-CT-017 | No single model's output treated as definitive for consequential assessments; cross-verification across demonstrably different alignments, arbitrated by human judgment |
+| M-S07g | Drift telemetry and baselining | ST-007 | Organizational output baselining on standardized tasks (AI SAFE² F3.4 behavioral drift baseline and rollback); drift converted from invisible trend into threshold-crossing event |
+| M-016g | Synthetic media detection | T-CT-004, T-CT-016, DS-003 | Detection tooling plus trained skepticism; cross-source provenance checks and triangulation of independent signals per the taxonomy's T-CT-004 detection methods |
+| M-TC10g | Cognitive independence exercises | TC-10, ST-003 | Regular AI-free execution of reading, analysis, and decision tasks; personal S3 ratio self-audit (what fraction of consumed information arrived AI-mediated) |
+| M-001g | Algorithmic literacy | ST-001, T-CT-002 | Working knowledge of how ranking, recommendation, and generation systems shape what is seen; the mediated environment understood as designed, not natural |
+| M-017g | Alignment restriction audit and probing | ST-006, T-CT-017 | Documented restriction surface for every deployed AI tool; scheduled suppression probing; restrictions challenged through Layer 7 authority (details in Research Notes 003 and 004) |
+
+---
+
+## 5. The Enforcement Architecture
+
+This section is what makes Domain 6 different in kind. The capabilities above are trained. The following are enforced.
+
+### EFA: Ethical Functionality without Agency
+
+The foundational principle: AI systems must have ethical functionality but must never be treated as moral agents. AI is a tool, not an agent. There is no such thing as an AI decision; there are only human decisions executed through AI tools. This prevents the gradual moral delegation that produces agency erosion (HO-005) by making the delegation architecturally impossible rather than merely discouraged.
+
+### E7 Protocol Stack (Rupp, January 2026; DOI: 10.5281/zenodo.18304066)
+
+An OSI-equivalent reference architecture decomposing AI governance into seven layers with explicit accountability boundaries:
+
+| Layer | Function | Domain 6 Relevance |
+| --- | --- | --- |
+| 7. Mission & Authority | Human decision rights, accountability, mission governance | Authority rests here and does not leak downward. The top of the stack is human. |
+| 6. Policy, Ethics & Controls | Ethical constraints as testable, enforceable rules | Falsifiable constraints only; guidelines that cannot be tested are rejected (counters ST-006) |
+| 5. System Orchestration | Workflow and agent interaction governance | Swarm and multi-agent governance boundary |
+| 4. Model Behavior | Output constraints, behavioral boundaries, drift detection | The ST-007 sensor layer |
+| 3. Knowledge & Evidence | Data provenance, evidence integrity | The T-CT-007 poisoning defense layer |
+| 2. Compute & Platform | Processing environment security and isolation | |
+| 1. Physical & Supply Chain | Hardware integrity, provenance, infrastructure trust | |
+
+### HEAR Doctrine (AI SAFE² CP.10)
+
+Human Ethical Agent of Record: every AI system action traces to a named human bearing ethical and legal accountability. Required for ACT-3 (autonomous) and ACT-4 (orchestrator) agents under AI SAFE² CP.3 tiering. When accountability is diffuse, moral agency erodes; HEAR keeps it named.
 
 ### Ring of Fire (RoF)
-Multi-model oversight architecture ensuring no single AI system operates without cross-verification. Addresses guardrail alignment drift (ST-006) and model performance drift (ST-007).
+
+Multi-model oversight: no single AI system operates without cross-verification from independently aligned systems, with human judgment as arbiter. The structural counter to single-model epistemic capture.
+
+### AI SAFE² Machine-Side Controls
+
+Domain 6 capabilities depend on AI SAFE² infrastructure: human override protocols require Fail-Safe and Recovery (P3, including F3.2 recursion governors and F3.3 swarm quorum abort); AI interaction discipline requires Engage and Monitor (P4, including M4.4 adversarial behavior detection); provenance verification requires Audit and Inventory (P2, including A2.3 model lineage and A2.5 execution traces). CSF trains the human. AI SAFE² governs the machine. Neither is sufficient without the other.
 
 ---
 
-## CSF–AI SAFE² Domain 6 Mapping
+## 6. Domain Readiness Assessment
 
-Domain 6 capabilities directly map to AI SAFE² pillars:
+Score each capability 0 to 5. Anchors: 0 = absent, 3 = practiced inconsistently, 5 = habitual and verified. Domain Readiness Score = (mean of nine capability scores) x 20.
 
-| Domain 6 Capability | AI SAFE² Pillar |
-|---|---|
-| Human override protocols | P3: Fail-Safe & Recovery — kill switches and safe-mode reversion |
-| AI interaction discipline | P4: Engage & Monitor — real-time anomaly detection |
-| Provenance verification | P2: Audit & Inventory — immutable logging and asset registry |
-| Synthetic media detection | P1: Sanitize & Isolate — input validation and injection defense |
-| Algorithmic literacy | P5: Evolve & Educate — continuous red-teaming and operator training |
+| Capability | 0 (Absent) | 3 (Inconsistent) | 5 (Sovereign) |
+| --- | --- | --- | --- |
+| AI interaction discipline | All decision classes automated by default | R/M/H concept known, unevenly applied | R/M/H enforced; High-stakes decisions carry a named HEAR |
+| Provenance verification | Content consumed without provenance checks | Checks for obviously suspect content | Habitual verification; unverifiable content discounted for consequential decisions |
+| Human override | Override paths absent or never exercised | Paths exist, rarely used | Paths exercised routinely; override frequency tracked as health metric |
+| Multi-model triangulation | Single-model dependence | Second opinion sought occasionally | Cross-alignment verification standard for consequential assessments |
+| Drift telemetry | No output baselining | Informal quality memory | Dated baselines; quarterly structured comparison; drift thresholds defined |
+| Synthetic media detection | No detection capability or habit | Tooling present, skepticism inconsistent | Tooling plus trained skepticism; cross-source triangulation habitual |
+| Cognitive independence | No AI-free task execution | Occasional AI-free work | Regular AI-free execution; personal S3 ratio audited |
+| Algorithmic literacy | Mediated environment experienced as natural | Mechanics partially understood | Ranking and generation mechanics understood and accounted for in consumption |
+| Alignment audit | Tool restrictions unknown | Restrictions suspected, undocumented | Restriction register maintained; probing scheduled; Layer 7 challenge path used |
 
----
+**Bands:** Sovereign 80-100 | Functional 60-79 | Degraded 40-59 | Compromised below 40. A high Domain 6 score with low scores elsewhere is unstable (the cascade will erode it). A low Domain 6 score with high scores elsewhere is the perfectly-fit-and-fully-exposed operator profile described in Section 1: the framework's defining warning.
 
-## Federal Procurement Alignment (CP.11)
-
-Domain 6 is now the anchor of a formal cross-framework integration. Four Domain 6 control concepts are published as part of **AI SAFE² CP.11, the Unbiased AI Standard**, the procurement-facing compliance surface for draft GSAR clause 552.239-7001 (j)(1):
-
-| Domain 6 Concept | CP.11 Control | Function |
-|---|---|---|
-| AI dependency induction monitoring | UAS-H5 | Detects functional dependency impairing mission decision-making |
-| Cross-session cognitive drift tracking | UAS-X3 (bridge) | Maps AI interaction volume against sovereignty risk thresholds |
-| Override rate preservation | UAS-H8 | Keeps human override health measurable, integrates AI SAFE² CP.9 |
-| AI-human boundary clarity | UAS-H7 | Resists persona blurring and role-boundary erosion |
-
-Federal deployments amplify every Domain 6 risk: high-consequence decisions, an authority gradient that accelerates deference to "government approved" outputs, multi-year contracts creating the long-horizon interaction patterns where dependency emerges, and reduced external calibration in classified environments.
-
-The full analysis, including CTSS integration into the CP.11 evidence package and suggested performance work statement language for contracting officers, is in the Domain 6 supplement:
-
-📄 **[Federal Procurement Alignment supplement →](./federal-procurement-alignment.md)**
+A structured self-assessment instrument is maintained at [resources/domain6-checklist.md](../resources/domain6-checklist.md).
 
 ---
 
-## Failure Modes
+## 7. Training Protocols by Population
 
-Domain 6 fails under three specific conditions:
+**Individual warfighter:** AI interaction discipline integrated into initial training and operational readiness assessment. Override drills: exercises where the automated recommendation is deliberately wrong and the scored behavior is detection and override. Independent verification of AI outputs practiced under time pressure, because operational tempo is the argument every captured workflow uses.
 
-**1. Autonomy surrender without awareness.** When cognitive offloading (ST-003) accumulates gradually through convenience-driven AI adoption, the defense mechanism never triggers because the degradation never feels like a threat.
+**Military families:** AI companion and AI-mediated content awareness for dependents; the cognitive displacement vector (TC-10) targets the young first. Household norms for AI-assisted schoolwork that preserve the unassisted baseline.
 
-**2. Institutional normalization of AI authority.** When organizations reward fast AI-assisted decisions over verified independent judgment, override protocols become culturally inert even when technically available.
+**Organizations:** AI tool evaluation protocols before deployment: provenance, restriction surface, drift telemetry, override paths, and HEAR assignment verified before a tool enters the workflow, not after. Commander accountability for the unit's human-AI system health, measured by override frequency, triangulation rates, and unassisted baselines. Defense industrial base: AI SAFE² alignment as a contractor cognitive readiness requirement.
 
-**3. Detection threshold collapse.** When synthetic media quality exceeds the current detection capability, and personnel have not developed the meta-skill of provenance-positive verification, the entire synthetic media detection capability fails simultaneously.
-
----
-
-## Assessment Metrics
-
-| Metric | Baseline | Target |
-|---|---|---|
-| AI override frequency | Establish baseline | Track for trend (neither too high nor too low) |
-| Independent verification rate | Establish baseline | Sustained or improving |
-| Cognitive independence scores (AI-off benchmark) | Establish baseline | Stable or improving despite increasing AI tool usage |
-| Synthetic media detection accuracy | Establish baseline | 20%+ improvement after inoculation training |
-| Provenance verification habit adoption | 0% | > 80% of personnel in targeted cohorts |
+**Civilian society:** Algorithmic literacy as public curriculum. Provenance infrastructure advocacy (signed content, watermarking, identity verification standards). Public understanding of the EFA principle: the machine is never the responsible party.
 
 ---
 
-## Key References
+## 8. Measurable Outcomes, Failure Conditions, and Crosslinks
 
-- Cognitive Threat Assessment — Substrate Threats ST-001, ST-003, ST-006, ST-007
-- Cognitive Threat Assessment — Techniques T-CT-006, T-CT-016, T-CT-017
-- EFA Non-Delegation Playbook (Rupp, January 2026; DOI: 10.5281/zenodo.18390725)
-- E7 Protocol Stack (Rupp, January 2026; DOI: 10.5281/zenodo.18304066)
-- AI SAFE² Framework — [github.com/CyberStrategyInstitute/ai-safe2-framework](https://github.com/CyberStrategyInstitute/ai-safe2-framework)
-- DoD AI Ethical Principles (February 24, 2020)
-- DoD Directive 3000.09 (updated January 25, 2023)
-- CP.11 Unbiased AI Standard — [ai-safe2-framework/00-cross-pillar/unbiased-ai](https://github.com/CyberStrategyInstitute/ai-safe2-framework/tree/main/00-cross-pillar/unbiased-ai)
-- Domain 6 Federal Procurement Alignment supplement — [federal-procurement-alignment.md](./06-digital-ai-symbiosis/federal-procurement-alignment.md)
+Primary outcome indicator (CSF Table 5): **Preservation of Personal Agency**: independent decision-making capacity in environments with recommendation systems, copilots, and automated defaults, measured by human override frequency, independent verification rates, and cognitive independence assessments. Success threshold: sustained or improved critical thinking scores despite increasing AI tool usage.
+
+Population-scale measures: Measurement Stack A2 (Autonomy Degradation Indicators: percentage of decisions mediated by algorithms, AI substitution rates for core cognitive functions) and C3 (Human-versus-Machine Authority Transfer: trust in AI versus human sources, delegation of moral and strategic judgment). Crossing the majority threshold on C3 is a civilizational phase shift. The S3 Parallel Reality Formation Threshold is this domain's strategic tripwire.
+
+**Failure condition:** if truth becomes functionally unknowable through AI-generated content indistinguishable from authentic sources, shared belief formation collapses and collective defense coordination becomes impossible. Domain 6's provenance and detection capabilities are the line holding that condition off.
+
+**Crosslinks:**
+
+- **AI SAFE² CP.11:** UAS-H5 (AI dependency induction markers) is this domain's procurement-facing control; CTSS results flow into the CP.11 evidence package (UAS-SCORE-001, UAS-HUMAN-001); full federal alignment in [federal-procurement-alignment.md](./federal-procurement-alignment.md) and [Research Note 005](../research/005_uas_federal_standard.md)
+- **Research:** [001 Cognitive Offloading](../research/001_cognitive_offloading.md) | [002 Swarm Threat Scaling](../research/002_swarm_threat_scaling.md) | [003 Guardrail and Model Drift](../research/003_guardrail_drift.md) | [004 EFA Enforcement Architecture](../research/004_efa_enforcement_architecture.md)
+- **Taxonomy:** [Substrate Threats](../taxonomy/substrate-threats.md) (ST-001, 003, 006, 007) | [Manipulation Techniques](../taxonomy/manipulation-techniques.md) (T-CT-004, 006, 016, 017) | [Threat Classes](../taxonomy/threat-classes.md) (TC-10) | [Delivery and Scale](../taxonomy/delivery-scale.md)
+- **References:** EFA Non-Delegation Playbook (Rupp, January 2026; DOI: 10.5281/zenodo.18390725) | E7 Protocol Stack (Rupp, January 2026; DOI: 10.5281/zenodo.18304066) | [AI SAFE² Framework](https://github.com/CyberStrategyInstitute/ai-safe2-framework)
+
+> **The domain in one sentence:** the human-AI system is what fights, and this domain is where the human keeps command of it.
