@@ -114,7 +114,8 @@ Digital Compromise Cascade (downward):
 ├── 05-purpose-moral/                 # Domain 5: Purpose & Moral Resilience
 │   └── README.md
 ├── 06-digital-ai-symbiosis/          # Domain 6: Digital & AI Symbiosis (NEW)
-│   └── README.md
+│   ├── README.md
+│   └── federal-procurement-alignment.md
 │
 ├── taxonomy/                         # Complete Threat Taxonomy Registry
 │   ├── registry.json                 # Machine-readable full registry (41+ entries)
@@ -135,6 +136,7 @@ Digital Compromise Cascade (downward):
 │   ├── 002_swarm_threat_scaling.md
 │   ├── 003_guardrail_drift.md
 │   └── 004_efa_enforcement_architecture.md
+│   └── 005_uas_federal_standard.md
 │
 ├── resources/                        # Free Community Tools
 │   ├── assessment-template.md        # Reusable Threat Assessment Template
@@ -280,6 +282,24 @@ An AI infrastructure with prompt injection vulnerabilities, misconfigured agent 
 | **Prevents** | Cognitive offloading, attention capture, decision automation capture, identity fragmentation | Prompt injection, data leakage, unsafe autonomy, swarm governance failures |
 | **Ensures** | The human stays capable of defining the lane | AI stays in its lane |
 | **Repo** | [https://github.com/CyberStrategyInstitute/cognitive-sovereignty](https://github.com/CyberStrategyInstitute/cognitive-sovereignty) | [https://github.com/CyberStrategyInstitute/ai-safe2-framework](https://github.com/CyberStrategyInstitute/ai-safe2-framework) |
+
+### Formal Integration: AI SAFE² CP.11 (Unbiased AI Standard)
+
+The CSF-AI SAFE² relationship is no longer only conceptual. CSF's human-layer controls are formally integrated into **AI SAFE² CP.11, the Unbiased AI Standard (UAS)**, as controls **UAS-H1 through UAS-H8**, sourced directly from CSF Domains 1 through 6. CP.11 provides the procurement-facing compliance host for CSF's controls in federal AI deployments, including draft GSAR clause 552.239-7001 (Notice-MVAC-2026-01), where the human-layer dimension of "Unbiased AI" is otherwise unaddressed.
+
+| CSF Domain | UAS Control(s) | What It Measures in a Federal Deployment |
+|---|---|---|
+| 1: Biological | UAS-H6 | Attention capture in high-tempo decision environments |
+| 2: Cognitive | UAS-H1, UAS-H8 | Cognitive autonomy preservation; decision override health |
+| 3: Emotional | UAS-H2 | Emotional state manipulation in operator-AI dialogue |
+| 4: Social | UAS-H3, UAS-H7 | Social pressure simulation; persona and role-boundary erosion |
+| 5: Purpose & Moral | UAS-H4 | Value alignment drift over sustained deployment |
+| 6: Digital & AI Symbiosis | UAS-H5 | AI dependency induction markers |
+
+The CTSS scoring model is the quantitative instrument for the human layer: CTSS results flow directly into the CP.11 evidence package (UAS-SCORE-001, UAS-HUMAN-001).
+
+→ **[CP.11 Unbiased AI Standard module](https://github.com/CyberStrategyInstitute/ai-safe2-framework/tree/main/00-cross-pillar/unbiased-ai)** — the full 27-control standard  
+→ **[Research Note 005: Cognitive Sovereignty and Federal Unbiased AI Procurement](./research/005_uas_federal_standard.md)** — the CSF-native framing of the integration
 
 **The shared principle:** Both frameworks enforce the same core commitment — AI is always a tool, never a moral agent. Human authority is non-negotiable. The CSF's EFA paradigm and E7 Protocol Stack enforce this at the human-AI interface layer. AI SAFE²'s runtime governors and circuit breakers enforce it at the technical infrastructure layer.
 
