@@ -2,7 +2,7 @@
 
 ### A Six-Domain Model for Human Resilience in the AI Era
 
-[![Version](https://img.shields.io/badge/version-2.0.0-crimson.svg)](https://github.com/CyberStrategyInstitute/cognitive-sovereignty-framework/releases)
+[![Version](https://img.shields.io/badge/version-2.1.0-crimson.svg)](https://github.com/CyberStrategyInstitute/cognitive-sovereignty-framework/releases)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![DoD Aligned](https://img.shields.io/badge/Aligned-DoD_AI_Ethical_Principles-005696?style=flat-square)](https://www.ai.mil/docs/RAI_Toolkit_Intro_Oct_21.pdf)
