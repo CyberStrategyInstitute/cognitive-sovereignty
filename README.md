@@ -1,4 +1,8 @@
-assets/CSF-Human-Control-Plane-v2.png
+[![AI SAFE2 Framework Visual Map](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/raw/main/assets/CSF-Human-Control-Plane-v2.png)](https://github.com/CyberStrategyInstitute/ai-safe2-framework/blob/main/assets/CSF-Human-Control-Plane-v2.png)
+
+<div align="center">
+
+
 
 # Cognitive Sovereignty Framework (CSF)
 
