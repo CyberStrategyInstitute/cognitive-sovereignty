@@ -1,3 +1,5 @@
+assets/CSF-Human-Control-Plane-v2.png
+
 # Cognitive Sovereignty Framework (CSF)
 
 ### A Six-Domain Model for Human Resilience in the AI Era
