@@ -1,6 +1,6 @@
 {
   "method": "event-intake-v1",
-  "generated_on": "2026-11-07",
+  "assessment_as_of": "2026-11-07",
   "assessment_dates": [
     "2026-11-07"
   ],
@@ -18,10 +18,10 @@
   },
   "source_files": 16,
   "provisional_scores": 87,
-  "sha256": {
-    "research/intake/events.json": "14795ddd1dc24c315256f86231d0191aa8b66e26b48359782ce853b4e0a661ad",
-    "research/intake/manifest.json": "1d9f5f0cfe1e5a9b8dd4a1e79ad305da826cdcfcc9d9eccb49a8ccfaac8163fa",
-    "tools/event_monitor.py": "180a7f8615c9b734506d43c509fa0fca85334b2b5c2ffdf6c59f61998c8a6e79",
+  "sha256_utf8_lf": {
+    "research/intake/events.json": "944ea4e97727d3c1d38437e9564f95c73ddb4f68738fc566ca067bd511c3abb7",
+    "research/intake/manifest.json": "bf8b43b7bdc42e8a6108b18253273721b193b9637c45aad180f9c7e48d7e7351",
+    "tools/event_monitor.py": "cdf63c2eda2d98e743629411705bbb9307d85404972bb4302aa919f6586386b7",
     "lenses/profiles.json": "664f859079c014fc749f6abda3e6602bb65be087e4749909fc5a51958dd58813"
   }
 }
