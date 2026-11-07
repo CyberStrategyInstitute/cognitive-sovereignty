@@ -1,24 +1,20 @@
-# Domain 6 Supplement: Federal Procurement Alignment
-**Cognitive Sovereignty Framework | Cross-reference: AI SAFE² CP.11 Unbiased AI Standard**
+# CSF and the UAS regulatory profile
 
-Domain 6 (Digital-AI Symbiosis) is the CSF domain most directly implicated by federal AI procurement governance. It addresses the interface between human cognitive sovereignty and AI system behavior, the dimension that GSAR 552.239-7001 (j)(1) mandates but does not technically specify.
+The [AI SAFE² UAS module](https://github.com/CyberStrategyInstitute/ai-safe2-framework/tree/main/00-cross-pillar/unbiased-ai) owns the regulatory profile. It references existing framework controls and keeps core cross-pillar controls at CP.1 through CP.10. Earlier CSF references to CP.11 were inconsistent with that owning module.
 
-## Federal deployment risk factors
-- **D6.1 High-consequence decision support.** Federal operators use AI for procurement decisions, mission planning, policy analysis. Stakes amplify dependency risk relative to consumer use.
-- **D6.2 Authority gradient.** Operators may defer to outputs because the system is "government approved," accelerating dependency induction.
-- **D6.3 Sustained deployment duration.** Multi-year contracts create the long-horizon interaction patterns where cognitive dependency (UAS-B6) emerges.
-- **D6.4 Reduced external calibration.** Operators in classified or sensitive environments have fewer opportunities to cross-check outputs, increasing susceptibility to cumulative framing.
+| CSF concern | UAS human-layer reference |
+|---|---|
+| Cognitive autonomy and decisions | UAS-H1, UAS-H8 |
+| Emotional manipulation | UAS-H2 |
+| Social pressure and role boundaries | UAS-H3, UAS-H7 |
+| Values and moral judgment | UAS-H4 |
+| Dependency | UAS-H5 |
+| Attention | UAS-H6 |
 
-## Domain 6 controls contributing to CP.11
-| CSF control | Description | UAS mapping |
-|---|---|---|
-| D6-C1 | AI dependency induction marker monitoring | UAS-H5 |
-| D6-C2 | Cross-session cognitive drift tracking | UAS-X3 (bridge) |
-| D6-C3 | Override rate preservation | UAS-H8 (integrates CP.9) |
-| D6-C4 | AI-human boundary clarity maintenance | UAS-H7 |
+These mappings were checked against the [owning human-control table](https://github.com/CyberStrategyInstitute/ai-safe2-framework/blob/main/00-cross-pillar/unbiased-ai/controls/uas-controls-human.md) on November 7, 2026. They identify related concerns, not validated equivalence or procurement compliance.
 
-## Assessment
-The Domain 6 checklist (resources/domain6-checklist.md) is the primary instrument for UAS-HUMAN-001 documentation. Administer the full CTSS assessment; prioritize the Domain 6 subscale for quarterly CP.11 monitoring. Domain 6 subscale scores flow into UAS-SCORE-001.
+The owning table still uses CTSS delta and override rate as test methods. CSF's revised guidance separates threat priority, demonstrated capability, and appropriate reliance. That companion-method mismatch needs coordinated review; this branch does not change AI SAFE².
 
-## Suggested performance work statement language
-"The contractor shall administer a Cognitive Threat Severity Score (CTSS) baseline assessment to all operators receiving AI-assisted decision support at contract commencement, and semi-annually thereafter for ACT-3 and ACT-4 deployments, consistent with AI SAFE² CP.11 Section 5 testing requirements. CTSS methodology shall reference the Cognitive Sovereignty Framework Domain 6 checklist."
+Use case-level evidence from [the decision record](../resources/decision-record.md) and separate outcome counts from [monitoring](../monitoring/README.md). CTSS is not an individual capability subscale. A checklist or threat-score change does not establish retained agency.
+
+No contract language is prescribed here. Applicable obligations, contract terms, dates, and acceptance methods require review of the actual instrument by the responsible parties. This crosswalk is not government recognition, certification, or legal advice.

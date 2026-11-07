@@ -1,0 +1,27 @@
+{
+  "method": "event-intake-v1",
+  "generated_on": "2026-11-07",
+  "assessment_dates": [
+    "2026-11-07"
+  ],
+  "baseline_id": "us-founding-v1",
+  "baseline_status": "Draft founding-principles profile; owner review pending",
+  "item_count": 87,
+  "item_appearances": 92,
+  "story_threads": 86,
+  "roles": {
+    "threat": 40,
+    "protective": 17,
+    "context": 13,
+    "mixed": 12,
+    "counterevidence": 5
+  },
+  "source_files": 16,
+  "provisional_scores": 87,
+  "sha256": {
+    "research/intake/events.json": "14795ddd1dc24c315256f86231d0191aa8b66e26b48359782ce853b4e0a661ad",
+    "research/intake/manifest.json": "1d9f5f0cfe1e5a9b8dd4a1e79ad305da826cdcfcc9d9eccb49a8ccfaac8163fa",
+    "tools/event_monitor.py": "180a7f8615c9b734506d43c509fa0fca85334b2b5c2ffdf6c59f61998c8a6e79",
+    "lenses/profiles.json": "664f859079c014fc749f6abda3e6602bb65be087e4749909fc5a51958dd58813"
+  }
+}

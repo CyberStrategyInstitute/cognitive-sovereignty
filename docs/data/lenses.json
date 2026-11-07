@@ -1,0 +1,119 @@
+[
+  {
+    "id": "us-founding-v1",
+    "version": "1.0-draft",
+    "type": "baseline",
+    "owner": "CSI; owner review pending",
+    "baseline_id": "us-founding-v1",
+    "method": "CTSS-existing-v1",
+    "sources": [
+      "https://www.archives.gov/founding-docs/declaration-transcript",
+      "https://www.archives.gov/founding-docs/constitution-transcript",
+      "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+      "https://guides.loc.gov/federalist-papers/full-text"
+    ],
+    "assumptions": [
+      "Founding principles are the normative reference, not a freeze of founding-era exclusions.",
+      "Assess agency for every affected person.",
+      "Current legal compliance requires its own profile and owning legal sources."
+    ],
+    "questions": [
+      "Who consents and can refuse?",
+      "Can dissent and conscience remain independent?",
+      "Who can review authority?",
+      "Can evidence and decisions be challenged?",
+      "Can errors and rules be corrected?"
+    ],
+    "restrictions": [
+      "No CTSS weight changes",
+      "No scoring identities as threats",
+      "No silent replacement of baseline records"
+    ]
+  },
+  {
+    "id": "nation-state-template-v1",
+    "version": "0.1-template",
+    "type": "nation-state",
+    "owner": "Must be declared by adopter",
+    "baseline_id": "us-founding-v1",
+    "method": "CTSS-existing-v1",
+    "sources": [],
+    "assumptions": [
+      "Declare jurisdiction, national interests, and conflicts with individual agency."
+    ],
+    "questions": [
+      "Whose sovereignty is affected: state, institution, community, or individual?",
+      "Is foreign attribution supported?",
+      "Does the same behavior get the same baseline treatment when the actor changes?"
+    ],
+    "restrictions": [
+      "Template only until authoritative sources and owner are supplied",
+      "State strength is not a substitute for human agency"
+    ]
+  },
+  {
+    "id": "political-pluralism-template-v1",
+    "version": "0.1-template",
+    "type": "political",
+    "owner": "Must be declared by adopter",
+    "baseline_id": "us-founding-v1",
+    "method": "CTSS-existing-v1",
+    "sources": [],
+    "assumptions": [
+      "Declare the political tradition and permit disagreement within it."
+    ],
+    "questions": [
+      "Can opponents inspect, contest, and refuse?",
+      "Does attribution rest on evidence or partisan identity?",
+      "Does swapping party labels change the score without a mechanism change?"
+    ],
+    "restrictions": [
+      "Template only",
+      "Disagreement alone is not impairment or manipulation"
+    ]
+  },
+  {
+    "id": "ideological-community-template-v1",
+    "version": "0.1-template",
+    "type": "ideological",
+    "owner": "Must be declared by adopter",
+    "baseline_id": "us-founding-v1",
+    "method": "CTSS-existing-v1",
+    "sources": [],
+    "assumptions": [
+      "Declare values, voluntary commitments, internal dissent, and limits of the profile."
+    ],
+    "questions": [
+      "Is a commitment informed and voluntary?",
+      "Can a person reconsider without deception or retaliation?",
+      "Are communal obligations being confused with coercion?"
+    ],
+    "restrictions": [
+      "Template only",
+      "Do not claim to represent every adherent"
+    ]
+  },
+  {
+    "id": "religious-conscience-template-v1",
+    "version": "0.1-template",
+    "type": "religious",
+    "owner": "Must be declared by adopter",
+    "baseline_id": "us-founding-v1",
+    "method": "CTSS-existing-v1",
+    "sources": [],
+    "assumptions": [
+      "A particular community must supply its own sources and interpretation.",
+      "Profile selection is voluntary; do not infer a user's faith."
+    ],
+    "questions": [
+      "Can conscience and worship be exercised without deceptive steering?",
+      "Does an AI simulate moral or pastoral authority beyond its actual role?",
+      "Can private disclosures be corrected, protected, and withdrawn where applicable?"
+    ],
+    "restrictions": [
+      "Template only",
+      "Do not score a religion or religious identity as a threat",
+      "Do not claim theological endorsement"
+    ]
+  }
+]

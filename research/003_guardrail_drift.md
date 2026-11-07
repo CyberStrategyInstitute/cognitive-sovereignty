@@ -28,7 +28,7 @@ ST-006 and ST-007 are both drift threats, both operate through the tools people 
 
 No malicious intent is required. The chain is mundane: alignment guidelines are developed by teams with particular worldviews, operationalized into content restrictions, and applied uniformly across millions of users. The users have no reference point for what they are not seeing. The result is an invisible structural constraint on thought, delivered through the tool the user trusts most.
 
-The weaponized form is T-CT-017 (Guardrail Bias Exploitation, CTSS 70): a deliberate actor exploits existing alignment restrictions as an enforcement mechanism, achieving ideological control without appearing to act at all. The tool becomes the enforcement mechanism, not just the channel.
+The weaponized form is T-CT-017 (Guardrail Bias Exploitation, CTSS 66): a deliberate actor exploits existing alignment restrictions as an enforcement mechanism, achieving ideological control without appearing to act at all. The tool becomes the enforcement mechanism, not just the channel.
 
 ### ST-007: The Mechanics of Lowering Baselines
 

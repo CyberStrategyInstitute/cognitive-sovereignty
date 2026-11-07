@@ -246,8 +246,11 @@ footer{background:var(--navy);border-top:1px solid var(--gb);padding:26px 44px;d
   .root-distincts{grid-template-columns:1fr}nav .nav-links{display:none}
 }
 </style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
+<!-- CSF shared navigation --><nav class="csf-site-nav" aria-label="Main"><strong>CSI / Cognitive Sovereignty</strong><a href="index.html" aria-current="page">Learn</a><a href="research.html">Research and scores</a><a href="csf-explorer.html">Taxonomy</a><a href="csf-command-center.html">Command center</a><a href="guide.html">How to use it</a><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>
+<p style="padding:12px;background:#fff4df;color:#231b10;position:relative;z-index:101">Coverage and human protection have not been validated. Reference scores are analyst estimates. <a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty/blob/main/monitoring/README.md">Measurement method</a>.</p>
 
 <!-- SEAL DEFINITION -->
 <svg width="0" height="0" style="position:absolute;overflow:hidden">
@@ -315,7 +318,7 @@ footer{background:var(--navy);border-top:1px solid var(--gb);padding:26px 44px;d
   <div class="hero-stats">
     <div class="hero-stat"><div class="hero-stat-n">41</div><div class="hero-stat-l">Classified Threats</div></div>
     <div class="hero-stat"><div class="hero-stat-n">6</div><div class="hero-stat-l">Resilience Domains</div></div>
-    <div class="hero-stat"><div class="hero-stat-n">92%</div><div class="hero-stat-l">Taxonomy Coverage</div></div>
+    <div class="hero-stat"><div class="hero-stat-n">Unknown</div><div class="hero-stat-l">Coverage unvalidated</div></div>
     <div class="hero-stat"><div class="hero-stat-n">5</div><div class="hero-stat-l">Causal Layers</div></div>
   </div>
   <div class="hero-acts">
@@ -427,7 +430,7 @@ footer{background:var(--navy);border-top:1px solid var(--gb);padding:26px 44px;d
     <div class="reveal">
       <div class="kicker"><span class="knum">PART III</span>Response Architecture</div>
       <h2 class="sh">The <em>Six Domains</em></h2>
-      <p class="sb">Every U.S. military branch operates a four-domain resilience program. None contain a domain for digital, cognitive, or informational resilience. This is a structural blind spot, not a training gap. Domain 6 closes it — backed by both human training and technical enforcement architecture that makes human authority a structural guarantee, not a behavioral preference. Select any domain to explore.</p>
+      <p class="sb">Every U.S. military branch operates a four-domain resilience program. None contain a domain for digital, cognitive, or informational resilience. This is a structural blind spot, not a training gap. Domain 6 closes it — backed by both human training and proposed technical safeguards that require implementation and testing. Select any domain to explore.</p>
     </div>
     <div class="dgrid reveal" style="transition-delay:0.1s" id="dgrid"></div>
   </div>
@@ -526,7 +529,7 @@ const LAYERS=[
    q:'What operates before manipulation begins?',
    chips:['ST-001 Algorithmic Epistemic Authority','ST-002 Behavioral Reinforcement Engineering','ST-003 Cognitive Offloading & Skill Atrophy','ST-004 Neuro-Intrusion Surface Expansion','ST-005 Social Trust Fragmentation','ST-006 Guardrail Alignment Drift','ST-007 Model Performance Drift']},
   {cls:'ll0',badge:'LAYER 0 · LIVING SYSTEM',name:'Active Manipulation Techniques',count:'18 techniques',
-   desc:'Discrete techniques adversaries, platforms, and misaligned systems use to influence human cognition. This layer grows as adversary adaptation occurs fastest here. Techniques are scored using CTSS (0–100). Highest scorer: Memetic Swarm Orchestration (CTSS 90).',
+   desc:'Discrete techniques adversaries, platforms, and misaligned systems use to influence human cognition. This layer grows as adversary adaptation occurs fastest here. Techniques are scored using CTSS (0–100). Reference scores are analyst estimates; see the current generated rankings.',
    why:'These techniques do not operate in isolation. A coordinated campaign layers them: emotional priming creates vulnerability, amplification delivers the payload, synthetic social proof manufactures consensus, repetition normalizes it, legitimized narrative capture prevents the target from recognizing the operation.',
    q:'What discrete actions influence cognition?',
    chips:['T-CT-001 Attention Capture (80)','T-CT-004 Narrative Injection (85)','T-CT-006 Decision Automation (82)','T-CT-008 Memetic Swarm (90)','T-CT-010 Economic Coercion (88)','T-CT-013 Social Scoring (83)','+ 12 more techniques']},
@@ -560,7 +563,7 @@ const DOMAINS=[
   {n:'06',name:'Digital & AI Symbiosis',def:'Working with AI without cognitive erosion; maintaining agency in automated environments; resisting synthetic media manipulation.',isNew:true,
    threats:[['T-CT-006','Decision Automation Capture'],['ST-006','Guardrail Alignment Drift'],['ST-007','Model Performance Drift'],['T-CT-017','Guardrail Bias Exploitation']],
    protect:'AI interaction discipline, provenance verification, human override protocols, cognitive independence exercises, synthetic media detection, algorithmic literacy.',
-   newNote:'The missing pillar across all DoD resilience frameworks. Traditional frameworks optimize the human organism. Domain 6 addresses the human-AI system. Without it, a warfighter can score perfectly on every existing resilience metric and still be fully captured through the AI tools they depend on. Backed by EFA + E7 Protocol Stack — human authority is a structural guarantee, not a behavioral preference.'}
+   newNote:'The missing pillar across all DoD resilience frameworks. Traditional frameworks optimize the human organism. Domain 6 addresses the human-AI system. Without it, a warfighter can score perfectly on every existing resilience metric and still be fully captured through the AI tools they depend on. Backed by EFA + E7 Protocol Stack — human authority is a design requirement that needs implementation and testing.'}
 ];
 const EVOS=[
   {era:'industrial',lbl:'Industrial Age',name:'Survive Hardship',caps:'Physical endurance, manual skill, unit cohesion under fire.',q:'"Can the person endure physical deprivation and danger?"'},
@@ -581,7 +584,7 @@ const QUIZ=[
   {q:'What is the single root mechanism behind nearly all cognitive threats?',opts:['State-sponsored disinformation campaigns','Misaligned incentive systems acting on programmable human attention','Social media addiction and dopamine loops','AI-generated deepfakes and synthetic media'],correct:1,fb:'Correct. The battlefield is not information — it is the control of feedback loops that shape perception, belief, identity, and behavior. Misaligned incentive systems produce cognitive harm automatically, without requiring a deliberate adversary. Defending against information attacks misses the structural nature of the problem.'},
   {q:'Why is Layer −1 (Substrate Threats) called the "strategic center of gravity"?',opts:['It contains the most techniques','If the substrate is degraded, no tactical defense matters','It has the highest CTSS scores','It is the hardest layer to detect'],correct:1,fb:'Correct. If substrate conditions are intact, new active techniques can be recognized and countered. If the substrate is degraded — through cognitive offloading, guardrail drift, or trust fragmentation — tactical defenses at Layer 0 cannot compensate. This is why most current defenses fail: they treat the symptom, not the terrain.'},
   {q:'What does Domain 6 (Digital & AI Symbiosis) address that Domains 1–5 do not?',opts:['Physical fitness in digital environments','The human-AI system, not just the human organism','Social media usage policies','Cybersecurity and network defense'],correct:1,fb:'Correct. Every other domain assumes the human is the primary agent. Domain 6 recognizes that in the AI era, humans operate within a human-AI system. If the AI side is compromised, biased, or adversary-controlled, the human\'s resilience in Domains 1–5 may be entirely irrelevant. Domain 6 addresses the interface.'},
-  {q:'Why does Memetic Swarm Orchestration (T-CT-008) score highest at CTSS 90?',opts:['It is the newest technique','Likelihood=5 + Population Reach=5 combined with high Agency Impact and Recovery Difficulty','It is the hardest to detect','It has been deployed against the most countries'],correct:1,fb:'Correct. T-CT-008: L=5 (already operational with UGC farms), Ia=4 (erodes collective sensemaking at scale), R=5 (global reach by design), RecD=4 (narratives selected by evolutionary fitness are persistent). The combination of confirmed deployment, global scale, and persistence of damage produces the top score.'},
+  {q:'Which inputs give T-CT-008 its reference score of 83?',opts:['It is the newest technique','Likelihood=5 + Population Reach=5 combined with high Agency Impact and Recovery Difficulty','It is the hardest to detect','It has been deployed against the most countries'],correct:1,fb:'Correct. T-CT-008: L=5 (already operational with UGC farms), Ia=4 (erodes collective sensemaking at scale), R=5 (global reach by design), RecD=4 (narratives selected by evolutionary fitness are persistent). The combination of confirmed deployment, global scale, and persistence of damage produces a reference score of 83. The input evidence still needs review.'},
   {q:'What is the "true metric" the CSF defines for measuring success?',opts:['Number of deepfakes detected','Propaganda campaigns countered','The preservation or loss of self-directed cognition','Cybersecurity incidents prevented'],correct:2,fb:'Correct. Not misinformation detected. Not propaganda countered. The true metric is whether the population retains the capacity for autonomous meaning-making. If that capacity degrades, the threat exists regardless of source or intent. A framework that does not measure this is aspirational, not operational — doctrine, not decoration.'}
 ];
 

@@ -1,5 +1,7 @@
 # Layer +2: Human Outcome Effects
 
+Coverage percentages and broad outcome claims in the legacy discussion below are unvalidated estimates unless linked to a specific evidence record. They are not measured CSF results. See [the research register](../research/README.md).
+
 > **These are the measurement layer.** When threats succeed, they produce measurable changes in human cognition and behavior. These are not theoretical risks — they are observable patterns already present in the population. The delivery is technical. The impact is cognitive. The outcome manifests as physical change in behavior, society, and institutions.
 
 ---

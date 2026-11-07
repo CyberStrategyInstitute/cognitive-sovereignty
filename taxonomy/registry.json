@@ -7,7 +7,10 @@
     "description": "Complete machine-readable registry of all classified cognitive threats across the five-layer causal stack. 41 primary entries + 10 newly identified threat classes + 3 edge domain additions.",
     "total_entries": 54,
     "ctss_formula": "CTSS = (L*0.25 + Ia*0.30 + R*0.20 + D*0.15 + RecD*0.10) * 20",
-    "companion_frameworks": ["AI SAFE2 Framework", "EFA Non-Delegation Playbook", "E7 Protocol Stack"]
+    "companion_frameworks": ["AI SAFE2 Framework", "EFA Non-Delegation Playbook", "E7 Protocol Stack"],
+    "score_method": "CTSS existing formula; integer points are L*5 + Ia*6 + R*4 + D*3 + RecD*2",
+    "arithmetic_reviewed": "2026-11-07",
+    "score_evidence_status": "Legacy inputs require source-by-source review; no measured incident scores implied"
   },
   "civilizational_drivers": [
     {
@@ -151,16 +154,19 @@
       "primary_domains": ["Cognitive", "Emotional", "Biological"],
       "detection": 4,
       "timeline": "Today",
-      "ctss": { "L": 5, "Ia": 3, "R": 5, "D": 2, "RecD": 3, "score": 80 }
+      "ctss": { "L": 5, "Ia": 3, "R": 5, "D": 2, "RecD": 3, "score": 75 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-002",
       "name": "Algorithmic Amplification",
       "mechanism": "Engagement-optimized distribution rewarding outrage and emotional intensity over accuracy",
-      "primary_domains": ["Informational", "Cognitive"],
+      "primary_domains": ["Cognitive", "Digital & AI Symbiosis"],
       "detection": 3,
       "timeline": "1-2 years",
-      "ctss": { "L": 5, "Ia": 3, "R": 5, "D": 3, "RecD": 2, "score": 75 }
+      "ctss": { "L": 5, "Ia": 3, "R": 5, "D": 3, "RecD": 2, "score": 76 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated",
+      "context_tags": ["Informational"]
     },
     {
       "id": "T-CT-003",
@@ -169,7 +175,8 @@
       "primary_domains": ["Emotional"],
       "detection": 2,
       "timeline": "Today",
-      "ctss": { "L": 4, "Ia": 3, "R": 4, "D": 4, "RecD": 2, "score": 70 }
+      "ctss": { "L": 4, "Ia": 3, "R": 4, "D": 4, "RecD": 2, "score": 70 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-004",
@@ -178,7 +185,8 @@
       "primary_domains": ["Cognitive", "Social", "Purpose & Moral", "Digital & AI Symbiosis"],
       "detection": 3,
       "timeline": "1-2 years",
-      "ctss": { "L": 4, "Ia": 5, "R": 4, "D": 3, "RecD": 4, "score": 85 }
+      "ctss": { "L": 4, "Ia": 5, "R": 4, "D": 3, "RecD": 4, "score": 83 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-005",
@@ -187,7 +195,8 @@
       "primary_domains": ["Social", "Purpose & Moral"],
       "detection": 4,
       "timeline": "Today",
-      "ctss": { "L": 4, "Ia": 4, "R": 4, "D": 2, "RecD": 4, "score": 78 }
+      "ctss": { "L": 4, "Ia": 4, "R": 4, "D": 2, "RecD": 4, "score": 74 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-006",
@@ -196,16 +205,19 @@
       "primary_domains": ["Cognitive"],
       "detection": 2,
       "timeline": "3-5 years",
-      "ctss": { "L": 4, "Ia": 5, "R": 4, "D": 4, "RecD": 3, "score": 82 }
+      "ctss": { "L": 4, "Ia": 5, "R": 4, "D": 4, "RecD": 3, "score": 84 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-007",
       "name": "Information Ecosystem Poisoning",
       "mechanism": "Data poisoning of recommendation algorithms and knowledge bases through coordinated engagement",
-      "primary_domains": ["Informational"],
+      "primary_domains": ["Cognitive", "Digital & AI Symbiosis"],
       "detection": 3,
       "timeline": "1-2 years",
-      "ctss": { "L": 4, "Ia": 3, "R": 5, "D": 3, "RecD": 3, "score": 76 }
+      "ctss": { "L": 4, "Ia": 3, "R": 5, "D": 3, "RecD": 3, "score": 73 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated",
+      "context_tags": ["Informational"]
     },
     {
       "id": "T-CT-008",
@@ -214,34 +226,41 @@
       "primary_domains": ["Digital & AI Symbiosis"],
       "detection": 4,
       "timeline": "Today",
-      "ctss": { "L": 5, "Ia": 4, "R": 5, "D": 2, "RecD": 4, "score": 90 }
+      "ctss": { "L": 5, "Ia": 4, "R": 5, "D": 2, "RecD": 4, "score": 83 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-009",
       "name": "Institutional and Bureaucratic Capture",
       "mechanism": "Regulatory capture, legal weaponization, and bureaucratic self-preservation suppressing dissent",
-      "primary_domains": ["Institutional", "Social"],
+      "primary_domains": ["Social", "Purpose & Moral"],
       "detection": 3,
       "timeline": "Today",
-      "ctss": { "L": 4, "Ia": 3, "R": 4, "D": 3, "RecD": 3, "score": 72 }
+      "ctss": { "L": 4, "Ia": 3, "R": 4, "D": 3, "RecD": 3, "score": 69 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated",
+      "context_tags": ["Institutional"]
     },
     {
       "id": "T-CT-010",
       "name": "Economic Coercion and Incentive Corruption",
       "mechanism": "Financial penalties for non-conformity, monetization of specific viewpoints, funding tied to narrative compliance",
-      "primary_domains": ["Economic"],
+      "primary_domains": ["Purpose & Moral", "Social"],
       "detection": 4,
       "timeline": "1-2 years",
-      "ctss": { "L": 5, "Ia": 4, "R": 5, "D": 3, "RecD": 4, "score": 88 }
+      "ctss": { "L": 5, "Ia": 4, "R": 5, "D": 3, "RecD": 4, "score": 86 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated",
+      "context_tags": ["Economic"]
     },
     {
       "id": "T-CT-011",
       "name": "Epistemic Rewriting",
       "mechanism": "Historical record alteration, selective erasure, and revision of foundational narratives",
-      "primary_domains": ["Epistemic"],
+      "primary_domains": ["Cognitive"],
       "detection": 2,
       "timeline": "3-5 years",
-      "ctss": { "L": 3, "Ia": 4, "R": 3, "D": 4, "RecD": 4, "score": 65 }
+      "ctss": { "L": 3, "Ia": 4, "R": 3, "D": 4, "RecD": 4, "score": 71 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated",
+      "context_tags": ["Epistemic"]
     },
     {
       "id": "T-CT-012",
@@ -250,7 +269,8 @@
       "primary_domains": ["Biological"],
       "detection": 1,
       "timeline": "1-2 years",
-      "ctss": { "L": 2, "Ia": 5, "R": 2, "D": 5, "RecD": 4, "score": 60 }
+      "ctss": { "L": 2, "Ia": 5, "R": 2, "D": 5, "RecD": 4, "score": 71 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-013",
@@ -259,7 +279,8 @@
       "primary_domains": ["Social"],
       "detection": 3,
       "timeline": "Today",
-      "ctss": { "L": 4, "Ia": 5, "R": 3, "D": 3, "RecD": 4, "score": 83 }
+      "ctss": { "L": 4, "Ia": 5, "R": 3, "D": 3, "RecD": 4, "score": 79 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-014",
@@ -268,7 +289,8 @@
       "primary_domains": ["Cognitive"],
       "detection": 4,
       "timeline": "1-2 years",
-      "ctss": { "L": 5, "Ia": 3, "R": 4, "D": 2, "RecD": 3, "score": 77 }
+      "ctss": { "L": 5, "Ia": 3, "R": 4, "D": 2, "RecD": 3, "score": 71 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-015",
@@ -277,7 +299,8 @@
       "primary_domains": ["Purpose & Moral"],
       "detection": 2,
       "timeline": "Today",
-      "ctss": { "L": 4, "Ia": 4, "R": 5, "D": 4, "RecD": 3, "score": 81 }
+      "ctss": { "L": 4, "Ia": 4, "R": 5, "D": 4, "RecD": 3, "score": 82 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-016",
@@ -286,7 +309,8 @@
       "primary_domains": ["Emotional", "Social"],
       "detection": 3,
       "timeline": "Today",
-      "ctss": { "L": 4, "Ia": 4, "R": 4, "D": 3, "RecD": 3, "score": 79 }
+      "ctss": { "L": 4, "Ia": 4, "R": 4, "D": 3, "RecD": 3, "score": 75 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-017",
@@ -295,16 +319,19 @@
       "primary_domains": ["Purpose & Moral", "Cognitive"],
       "detection": 2,
       "timeline": "Today",
-      "ctss": { "L": 4, "Ia": 3, "R": 3, "D": 4, "RecD": 2, "score": 70 }
+      "ctss": { "L": 4, "Ia": 3, "R": 3, "D": 4, "RecD": 2, "score": 66 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated"
     },
     {
       "id": "T-CT-018",
       "name": "Repetition and Normalization Manipulation",
       "mechanism": "Coordinated echoing of phrases, framings, or positions across platforms until accepted as baseline consensus",
-      "primary_domains": ["Informational", "Cognitive"],
+      "primary_domains": ["Cognitive", "Digital & AI Symbiosis"],
       "detection": 3,
       "timeline": "Today",
-      "ctss": { "L": 5, "Ia": 3, "R": 5, "D": 3, "RecD": 2, "score": 74 }
+      "ctss": { "L": 5, "Ia": 3, "R": 5, "D": 3, "RecD": 2, "score": 76 },
+      "score_status": "Inherited analyst estimate; arithmetic checked, empirical inputs not revalidated",
+      "context_tags": ["Informational"]
     }
   ],
   "delivery_scale": [
@@ -398,39 +425,63 @@
       "id": "E1",
       "name": "Autonomous Swarm Reality Formation",
       "description": "AI agent swarms shape pre-human reality layers. Agents generate culture, create trends, simulate organic consensus before human observers encounter resulting narratives.",
-      "coverage": "Below 90%",
+      "coverage": "Unvalidated",
+      "historical_unvalidated_coverage": "Below 90%",
       "detection_challenge": "Distinguishing swarm-generated reality from organic reality requires detection methods that do not yet exist at scale."
     },
     {
       "id": "E2",
       "name": "Synthetic Consensus Economies",
       "description": "Markets, trends, beliefs detached from actual human preference. Swarms simulate demand, inflate consensus signals, fabricate social proof at scale.",
-      "coverage": "Below 90%",
+      "coverage": "Unvalidated",
+      "historical_unvalidated_coverage": "Below 90%",
       "detection_challenge": "Current market surveillance detects manipulation of individual instruments, not systematic reality distortion."
     },
     {
       "id": "E3",
       "name": "Civilizational Reproduction Failure",
       "description": "Loss of continuity in family formation, values transmission, identity coherence, trust structures. Not just biological fertility decline but inability to reproduce organizing principles across generations.",
-      "coverage": "Below 90%",
+      "coverage": "Unvalidated",
+      "historical_unvalidated_coverage": "Below 90%",
       "detection_challenge": "Long-cycle measurement. Effects manifest over decades, not quarters."
     }
   ],
   "coverage_summary": {
-    "overall": "92%",
+    "overall": null,
     "by_domain": {
-      "adversarial_intentional": "92%",
-      "emergent_systemic": "92%",
-      "incentive_driven": "90%",
-      "ai_scale_engineering": "88%",
-      "institutional_capture": "94%",
-      "identity_influence": "93%",
-      "biological_neurological": "85%",
-      "civilizational_continuity": "85%",
-      "individual_to_civilizational_scale": "92%",
-      "timeline_urgency": "90%"
+      "adversarial_intentional": null,
+      "emergent_systemic": null,
+      "incentive_driven": null,
+      "ai_scale_engineering": null,
+      "institutional_capture": null,
+      "identity_influence": null,
+      "biological_neurological": null,
+      "civilizational_continuity": null,
+      "individual_to_civilizational_scale": null,
+      "timeline_urgency": null
     },
-    "gaps": ["Swarm adaptation speed", "Quantum acceleration", "Neuro-swarm integration", "Multi-generational effects"],
-    "note": "100% coverage is asymptotic, not achievable. What matters is maintaining the capacity to close gaps faster than new threats emerge."
+    "gaps": [
+      "Swarm adaptation speed",
+      "Quantum acceleration",
+      "Neuro-swarm integration",
+      "Multi-generational effects"
+    ],
+    "note": "No measured coverage denominator or validation result is supplied.",
+    "historical_unvalidated_estimates": {
+      "overall": "92%",
+      "by_domain": {
+        "adversarial_intentional": "92%",
+        "emergent_systemic": "92%",
+        "incentive_driven": "90%",
+        "ai_scale_engineering": "88%",
+        "institutional_capture": "94%",
+        "identity_influence": "93%",
+        "biological_neurological": "85%",
+        "civilizational_continuity": "85%",
+        "individual_to_civilizational_scale": "92%",
+        "timeline_urgency": "90%"
+      }
+    },
+    "status": "Unvalidated; historical estimates retained only for traceability"
   }
 }

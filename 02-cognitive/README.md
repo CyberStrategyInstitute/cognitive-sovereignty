@@ -2,7 +2,7 @@
 
 ### The Capacity Under Direct Attack
 
-**CSF Position:** Domain 2 of 6 | **AI SAFE² CP.11 Controls:** UAS-H1 (cognitive autonomy preservation), UAS-H8 (decision override health) | **Companion Research:** [001 Cognitive Offloading](../research/001_cognitive_offloading.md), [003 Guardrail and Model Drift](../research/003_guardrail_drift.md)
+**CSF Position:** Domain 2 of 6 | **AI SAFE² UAS profile Controls:** UAS-H1 (cognitive autonomy preservation), UAS-H8 (decision override health) | **Companion Research:** [001 Cognitive Offloading](../research/001_cognitive_offloading.md), [003 Guardrail and Model Drift](../research/003_guardrail_drift.md)
 
 ---
 
@@ -22,10 +22,10 @@ Two distinct attack modes converge on this domain. The active mode floods, captu
 | --- | --- | --- | --- | --- |
 | ST-003 | Cognitive Offloading and Skill Atrophy | Substrate | Detection 2 | Reasoning, memory, and language capacity via voluntary convenience trades |
 | ST-007 | Model Performance Drift | Substrate | Detection 2 | Reasoning baselines; degraded AI outputs absorbed as normal |
-| T-CT-001 | Attention Capture and Habituation | Technique | CTSS 80 / Detection 4 | Attention sovereignty; ability to focus and reason |
-| T-CT-006 | Decision Automation Capture | Technique | CTSS 82 / Detection 2 | Independent decision-making via biased defaults and autopilot behaviors |
-| T-CT-007 | Information Ecosystem Poisoning | Technique | CTSS 76 / Detection 3 | Epistemic environment integrity via data poisoning of recommendation and knowledge systems |
-| T-CT-014 | Cognitive Load Flooding | Technique | CTSS 77 / Detection 4 | Analytical capacity; contradictory streams until analysis collapses |
+| T-CT-001 | Attention Capture and Habituation | Technique | CTSS 75 / Detection 4 | Attention sovereignty; ability to focus and reason |
+| T-CT-006 | Decision Automation Capture | Technique | CTSS 84 / Detection 2 | Independent decision-making via biased defaults and autopilot behaviors |
+| T-CT-007 | Information Ecosystem Poisoning | Technique | CTSS 73 / Detection 3 | Epistemic environment integrity via data poisoning of recommendation and knowledge systems |
+| T-CT-014 | Cognitive Load Flooding | Technique | CTSS 71 / Detection 4 | Analytical capacity; contradictory streams until analysis collapses |
 | TC-05 | Cognitive Overload Saturation | Threat Class | n/a | Decision quality at scale; defaults to tribal heuristics, authority shortcuts, apathy |
 
 **The compounding pattern:** ST-003 and ST-007 interact. A user in offloading Phase 2 or 3 (dependency, atrophy) has surrendered the independent capability required to notice model drift. Degraded outputs get absorbed as the new baseline. This pairing is the quiet path to population-scale reasoning decline with no attack and no incident. Details in Research Notes [001](../research/001_cognitive_offloading.md) and [003](../research/003_guardrail_drift.md).
@@ -106,7 +106,7 @@ Domain-specific measures: unassisted baseline trend, assisted-versus-unassisted 
 
 ## 8. Enforcement and Crosslinks
 
-- **AI SAFE² CP.11:** UAS-H1 (cognitive autonomy preservation) and UAS-H8 (decision override health) are the procurement-facing measures of this domain; override frequency and independence metrics feed the CP.11 evidence package
+- **AI SAFE² UAS profile:** UAS-H1 (cognitive autonomy preservation) and UAS-H8 (decision override health) are the procurement-facing measures of this domain; override frequency and independence metrics feed the UAS profile evidence package
 - **EFA:** R/M/H decision classification (CP.10 HEAR for High-stakes) is the structural enforcement of the independent-first habit; see [Research Note 001](../research/001_cognitive_offloading.md)
 - **Taxonomy:** [Substrate Threats](../taxonomy/substrate-threats.md) (ST-003, ST-007) | [Manipulation Techniques](../taxonomy/manipulation-techniques.md) (T-CT-001, 006, 007, 014) | [Threat Classes](../taxonomy/threat-classes.md) (TC-05) | [CTSS Scoring](../taxonomy/ctss-scoring.md)
 - **Adjacent domains:** [Domain 1: Biological](../01-biological/README.md) (precondition) | [Domain 6: Digital & AI Symbiosis](../06-digital-ai-symbiosis/README.md) (the interface this domain's independence defends against)

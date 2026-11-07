@@ -1,0 +1,174 @@
+[
+  {
+    "week_end": "2026-09-21",
+    "items": 12,
+    "unique_story_threads": 12,
+    "provisional": 12,
+    "mean_associated_risk": 57,
+    "threat_items": 3,
+    "mean_threat_risk": 69.7,
+    "high_or_critical": 2,
+    "roles": {
+      "threat": 3,
+      "protective": 3,
+      "context": 5,
+      "mixed": 1
+    },
+    "themes": {
+      "synthetic influence": 2,
+      "oversight and recourse": 3,
+      "retained capability": 4,
+      "authorization and scope": 1,
+      "relational influence": 1,
+      "neurotechnology": 1
+    }
+  },
+  {
+    "week_end": "2026-09-25",
+    "items": 12,
+    "unique_story_threads": 12,
+    "provisional": 12,
+    "mean_associated_risk": 52.3,
+    "threat_items": 4,
+    "mean_threat_risk": 55.5,
+    "high_or_critical": 0,
+    "roles": {
+      "context": 2,
+      "mixed": 4,
+      "threat": 4,
+      "protective": 2
+    },
+    "themes": {
+      "oversight and recourse": 6,
+      "delegated commerce": 1,
+      "delegation identity": 1,
+      "authorization and scope": 3,
+      "social trust": 1
+    }
+  },
+  {
+    "week_end": "2026-10-02",
+    "items": 12,
+    "unique_story_threads": 12,
+    "provisional": 12,
+    "mean_associated_risk": 55.7,
+    "threat_items": 8,
+    "mean_threat_risk": 60.1,
+    "high_or_critical": 0,
+    "roles": {
+      "protective": 3,
+      "threat": 8,
+      "mixed": 1
+    },
+    "themes": {
+      "retained capability": 3,
+      "relational influence": 2,
+      "authorization and scope": 3,
+      "synthetic influence": 2,
+      "behavioral governance": 1,
+      "oversight and recourse": 1
+    }
+  },
+  {
+    "week_end": "2026-10-09",
+    "items": 12,
+    "unique_story_threads": 12,
+    "provisional": 12,
+    "mean_associated_risk": 56.6,
+    "threat_items": 5,
+    "mean_threat_risk": 65.6,
+    "high_or_critical": 2,
+    "roles": {
+      "threat": 5,
+      "protective": 4,
+      "counterevidence": 1,
+      "context": 1,
+      "mixed": 1
+    },
+    "themes": {
+      "synthetic influence": 1,
+      "relational influence": 2,
+      "retained capability": 2,
+      "cultural mediation": 1,
+      "authorization and scope": 2,
+      "oversight and recourse": 2,
+      "delegated commerce": 1,
+      "evidence integrity": 1
+    }
+  },
+  {
+    "week_end": "2026-10-16",
+    "items": 12,
+    "unique_story_threads": 12,
+    "provisional": 12,
+    "mean_associated_risk": 55.7,
+    "threat_items": 7,
+    "mean_threat_risk": 56.6,
+    "high_or_critical": 0,
+    "roles": {
+      "threat": 7,
+      "protective": 2,
+      "mixed": 2,
+      "context": 1
+    },
+    "themes": {
+      "evidence integrity": 6,
+      "social trust": 1,
+      "behavioral governance": 1,
+      "relational influence": 2,
+      "institutional action": 1,
+      "authorization and scope": 1
+    }
+  },
+  {
+    "week_end": "2026-10-30",
+    "items": 12,
+    "unique_story_threads": 12,
+    "provisional": 12,
+    "mean_associated_risk": 52.7,
+    "threat_items": 6,
+    "mean_threat_risk": 58,
+    "high_or_critical": 1,
+    "roles": {
+      "threat": 6,
+      "protective": 2,
+      "mixed": 1,
+      "context": 1,
+      "counterevidence": 2
+    },
+    "themes": {
+      "retained capability": 3,
+      "synthetic influence": 3,
+      "evidence integrity": 3,
+      "behavioral governance": 1,
+      "delegation identity": 1,
+      "social trust": 1
+    }
+  },
+  {
+    "week_end": "2026-11-06",
+    "items": 15,
+    "unique_story_threads": 15,
+    "provisional": 15,
+    "mean_associated_risk": 56.3,
+    "threat_items": 7,
+    "mean_threat_risk": 63.6,
+    "high_or_critical": 2,
+    "roles": {
+      "threat": 7,
+      "mixed": 2,
+      "context": 3,
+      "counterevidence": 2,
+      "protective": 1
+    },
+    "themes": {
+      "synthetic influence": 2,
+      "evidence integrity": 4,
+      "authorization and scope": 1,
+      "retained capability": 4,
+      "social trust": 1,
+      "relational influence": 1,
+      "delegated commerce": 2
+    }
+  }
+]

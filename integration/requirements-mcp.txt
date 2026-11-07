@@ -1,0 +1,2 @@
+# Optional integration only. The tested version is recorded in integration/VALIDATION.md.
+mcp==1.30.0

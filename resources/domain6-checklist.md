@@ -5,6 +5,8 @@
 
 **How to use:** Complete independently. For unit-level assessment, aggregate individual results and identify the lowest-scoring capability areas. Those areas are your training priorities.
 
+This is a self-report training aid. Bands and thresholds below are proposed, unvalidated guidance. Do not use them alone for deployment, clinical, employment, or disciplinary decisions. Confirm capability through observed tasks.
+
 **Scoring:** 0 = Never / 1 = Rarely / 2 = Sometimes / 3 = Usually / 4 = Always
 
 ---
@@ -114,7 +116,7 @@ For unit commanders, collect individual assessments and calculate:
 
 1. **Unit average score** by section — identifies collective capability gaps
 2. **Distribution of scores** — a bimodal distribution (high scorers and low scorers) indicates training is not reaching all personnel
-3. **Lowest 20th percentile** — these personnel are the highest-risk cognitive security liability; prioritize for individual assessment
+3. **Lowest 20th percentile** — use the pattern to offer support and investigate training access; self-report does not establish individual risk
 4. **Trend over time** — scores should improve with training; stable or declining scores after training indicate an ineffective training program
 
 ---

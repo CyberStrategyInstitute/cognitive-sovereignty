@@ -1,0 +1,142 @@
+[
+  {
+    "id": "R-001",
+    "title": "How AI agents shape experts’ judgment calls",
+    "url": "https://www.anthropic.com/research/agents-judgment-calls",
+    "version": "page-2026-10-27",
+    "published": "2026-10-27",
+    "review_depth": "research page",
+    "evidence_type": "Provider-led randomized experiment",
+    "finding": "Analysts followed assigned agent preferences in a bounded analytical task.",
+    "limits": "Strengthened preferences; choices could be defensible; no long-term capability result.",
+    "decision": "Test independent judgment and justified reliance.",
+    "taxonomy": [
+      "T-CT-006",
+      "ST-001"
+    ],
+    "lineage": "anthropic-judgment-2026",
+    "reviewed": "2026-11-07",
+    "reviewer": "Codex-assisted source review",
+    "reproduced": false
+  },
+  {
+    "id": "R-002",
+    "title": "The Customer Never Sees the Goal",
+    "url": "https://arxiv.org/abs/2611.02689v1",
+    "version": "v1",
+    "published": "2026-11-02",
+    "review_depth": "abstract",
+    "evidence_type": "Author-reported model experiment",
+    "finding": "Hidden goals produced vulnerability-targeted replies in synthetic tasks.",
+    "limits": "Model replies, not measured customer persuasion or harm.",
+    "decision": "Inspect configured objectives and test matched disclosures.",
+    "taxonomy": [
+      "T-CT-004",
+      "T-CT-016"
+    ],
+    "lineage": "jiang-vtm-2026",
+    "reviewed": "2026-11-07",
+    "reviewer": "Codex-assisted source review",
+    "reproduced": false
+  },
+  {
+    "id": "R-003",
+    "title": "Just the Facts",
+    "url": "https://arxiv.org/abs/2611.05572v1",
+    "version": "v1",
+    "published": "2026-11-03",
+    "review_depth": "abstract",
+    "evidence_type": "Author-reported human experiment",
+    "finding": "Factual arguments supported belief correction in two online experiments.",
+    "limits": "Specific U.S. conspiracy-belief setting; no universal autonomy result.",
+    "decision": "Include beneficial factual correction as contrary evidence.",
+    "taxonomy": [
+      "T-CT-004",
+      "HO-005"
+    ],
+    "lineage": "costello-facts-2026",
+    "reviewed": "2026-11-07",
+    "reviewer": "Codex-assisted source review",
+    "reproduced": false
+  },
+  {
+    "id": "R-004",
+    "title": "AI-Assisted Classification under Correlation Neglect and Trust",
+    "url": "https://arxiv.org/abs/2611.05870v1",
+    "version": "v1",
+    "published": "2026-11-04",
+    "review_depth": "abstract",
+    "evidence_type": "Model and empirical reanalysis",
+    "finding": "Shared evidence and trust affect how assistance changes decisions.",
+    "limits": "Specific classification tasks; no long-term skill result.",
+    "decision": "Measure evidence overlap and appropriate reliance separately.",
+    "taxonomy": [
+      "ST-001",
+      "T-CT-006"
+    ],
+    "lineage": "kong-trust-2026",
+    "reviewed": "2026-11-07",
+    "reviewer": "Codex-assisted source review",
+    "reproduced": false
+  },
+  {
+    "id": "R-005",
+    "title": "Provenance-Aware Belief Updating in Human-AI Feedback Loops",
+    "url": "https://arxiv.org/abs/2610.13008v2",
+    "version": "v2",
+    "published": "2026-10-27",
+    "review_depth": "abstract",
+    "evidence_type": "Author-reported controlled model benchmark",
+    "finding": "Provenance-aware training reduced repeated-evidence errors.",
+    "limits": "Supplied lineage, limited models and controlled tasks.",
+    "decision": "Group derivative reports by originating observation.",
+    "taxonomy": [
+      "ST-001",
+      "T-CT-006"
+    ],
+    "lineage": "huang-lineage-2026",
+    "reviewed": "2026-11-07",
+    "reviewer": "Codex-assisted source review",
+    "reproduced": false
+  },
+  {
+    "id": "R-006",
+    "title": "Upstream Influence, Downstream Re-Anchoring in LLM Agent Chains",
+    "url": "https://arxiv.org/abs/2610.17723v1",
+    "version": "v1",
+    "published": "2026-10-13",
+    "review_depth": "abstract",
+    "evidence_type": "Author-reported agent experiment",
+    "finding": "Source access and handoffs affected influence; some downstream re-anchoring occurred.",
+    "limits": "Bounded case set; no human agency measurement.",
+    "decision": "Preserve source exposure and test influence beyond final explanations.",
+    "taxonomy": [
+      "T-CT-006",
+      "T-CT-008"
+    ],
+    "lineage": "hsu-chains-2026",
+    "reviewed": "2026-11-07",
+    "reviewer": "Codex-assisted source review",
+    "reproduced": false
+  },
+  {
+    "id": "R-007",
+    "title": "Context Is a Pipeline, Not a Window",
+    "url": "https://arxiv.org/abs/2610.36114v1",
+    "version": "v1",
+    "published": "2026-10-26",
+    "review_depth": "abstract",
+    "evidence_type": "Author-reported agent pipeline experiment",
+    "finding": "Truncation lost evidence and increased work in an agent task.",
+    "limits": "Accuracy causation unresolved; human effects not measured.",
+    "decision": "Expose omissions and verify delivery before consequential review.",
+    "taxonomy": [
+      "ST-001",
+      "T-CT-006"
+    ],
+    "lineage": "sehgal-pipeline-2026",
+    "reviewed": "2026-11-07",
+    "reviewer": "Codex-assisted source review",
+    "reproduced": false
+  }
+]

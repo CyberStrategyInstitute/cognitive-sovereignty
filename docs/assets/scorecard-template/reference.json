@@ -1,0 +1,40 @@
+{
+  "usage": "User-supplied visual and editorial template. Historical watermark claims are not newly verified. This example is excluded from the weekly intake baseline.",
+  "original_case_date": "2026-09-03",
+  "original_inputs": {
+    "L": 5,
+    "Ia": 4,
+    "R": 5,
+    "D": 4,
+    "RecD": 3
+  },
+  "original_score": 87,
+  "escalation_score": 95,
+  "escalation_inputs": "Not supplied; do not reproduce 95 as a calculated result without declared changed inputs.",
+  "files": [
+    {
+      "file": "01-ctss-overall.png",
+      "sha256": "0f559c5cac8c422c4593cbd78c892265b6a6f34fc8dedd286578fb46400f8710"
+    },
+    {
+      "file": "02-likelihood.png",
+      "sha256": "acde78e5c56f85a07578e5cd5d1527bd2a5d946aed856dd81858bb8b9234160a"
+    },
+    {
+      "file": "03-impact-on-agency.png",
+      "sha256": "b12c631283eca7bcc331b2b4bc461eae8a8a8a30e62987864d5d94bdb7899848"
+    },
+    {
+      "file": "04-population-reach.png",
+      "sha256": "6c8931e61a6f90edcbbd87581ec99fc84f44ff53563dd3cff9537e120ad8fda6"
+    },
+    {
+      "file": "05-detection-difficulty.png",
+      "sha256": "4ab27363a51cad673fbac04dc4bb0df3295488caae54e5895e0258dc8a161e23"
+    },
+    {
+      "file": "06-recovery-difficulty.png",
+      "sha256": "c9c6cb0580b38eca3966a76f5460229337f1f7e4618163e326c958fc06ecb569"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cyberstrategyinstitute.github.io/cognitive-sovereignty/schemas/event-v1",
+  "title": "CSF item assessment v1",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "week_end",
+    "assessment_date",
+    "score_status",
+    "role",
+    "taxonomy",
+    "inputs",
+    "input_reasons",
+    "analysis",
+    "action",
+    "research_trigger",
+    "lens_id"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "week_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "assessment_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "score_status": {
+      "enum": [
+        "provisional",
+        "reviewed"
+      ]
+    },
+    "role": {
+      "enum": [
+        "threat",
+        "protective",
+        "counterevidence",
+        "mixed",
+        "context"
+      ]
+    },
+    "taxonomy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "L": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "Ia": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "R": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "D": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "RecD": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        }
+      },
+      "required": [
+        "L",
+        "Ia",
+        "R",
+        "D",
+        "RecD"
+      ],
+      "additionalProperties": false
+    },
+    "input_reasons": {
+      "type": "object",
+      "properties": {
+        "L": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Ia": {
+          "type": "string",
+          "minLength": 1
+        },
+        "R": {
+          "type": "string",
+          "minLength": 1
+        },
+        "D": {
+          "type": "string",
+          "minLength": 1
+        },
+        "RecD": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "L",
+        "Ia",
+        "R",
+        "D",
+        "RecD"
+      ]
+    },
+    "analysis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "research_trigger": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lens_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://"
+      }
+    }
+  },
+  "additionalProperties": true
+}

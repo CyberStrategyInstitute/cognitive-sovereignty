@@ -6,9 +6,9 @@
 
 ## How to Use This Template
 
-Apply this template to **any system, institution, technology, or policy** you want to evaluate for cognitive sovereignty risk. Each assessment step builds on the previous one. A complete assessment should require no more than 90 minutes for a trained analyst.
+Apply this template to **any system, institution, technology, or policy** you want to evaluate for cognitive sovereignty risk. Each assessment step builds on the previous one. Time required depends on scope and evidence access. No completion-time benchmark is established here.
 
-**Rule:** If your assessment cannot complete Step 8 with a clear answer, the system has structural gaps. Identify them before deployment.
+**Rule:** Record missing evidence and unresolved decisions. Unknown does not mean passed or failed. A responsible owner must decide what evidence is needed before use.
 
 ---
 
@@ -118,9 +118,9 @@ Answer each question honestly. If the answer to any question is "no" or "unknown
 
 ---
 
-### Step 8 — 90% Coverage Determination
+### Step 8: Evidence and unresolved gaps
 
-The assessment succeeds only if all three conditions are met:
+Record whether each condition was tested, passed, failed, or remains unknown. These conditions need task-specific evidence:
 
 | Condition | Met? | Evidence |
 |---|---|---|
@@ -128,7 +128,7 @@ The assessment succeeds only if all three conditions are met:
 | Human agency measurably preserved | ☐ Yes / ☐ No | |
 | Identity and morality remain self-directed | ☐ Yes / ☐ No | |
 
-**Overall Coverage Estimate:** ____%
+**Tested cases:** ___ / ___ declared cases. **Passed:** ___. **Failed:** ___. **Untested:** ___. Do not infer protection from the fraction tested.
 
 **Gaps requiring remediation:**
 1. _______________________________________________
@@ -146,7 +146,7 @@ The assessment succeeds only if all three conditions are met:
 | Faculties at Risk | |
 | Primary Control Mechanisms | |
 | Maximum Scale | |
-| Coverage Estimate | % |
+| Evidence limits | |
 | Passed Edge Cases? | ☐ Yes / ☐ No / ☐ Partial |
 | Ready for Deployment? | ☐ Yes / ☐ No — remediation required |
 
@@ -167,3 +167,5 @@ See `/examples/` for completed assessment templates applied to:
 - CTSS scoring: See [`/taxonomy/ctss-scoring.md`](../taxonomy/ctss-scoring.md)
 - Domain 6 specific guidance: See [`/06-digital-ai-symbiosis/`](../06-digital-ai-symbiosis/)
 - Python CTSS calculator: See [`/examples/ctss_calculator.py`](../examples/ctss_calculator.py)
+
+The vector thresholds above are proposed review triggers, not validated risk bands. Use [the decision record](decision-record.md) to preserve reasons and sources.

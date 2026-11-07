@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore CSF research, individual CTSS assessments, weekly trends, watch signals, and declared lenses."
+    />
+    <title>CSF Research and Scores</title>
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/research.js" defer></script>
+  </head>
+  <body class="hub">
+    <nav class="csf-site-nav" aria-label="Main">
+      <a class="skip-link" href="#main">Skip to content</a
+      ><strong>CSI / Cognitive Sovereignty</strong><a href="index.html">Learn</a
+      ><a href="research.html" aria-current="page">Research and scores</a
+      ><a href="csf-explorer.html">Taxonomy</a
+      ><a href="csf-command-center.html">Command center</a
+      ><a href="guide.html">How to use it</a
+      ><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty"
+        >Repository</a
+      >
+    </nav>
+    <main id="main">
+      <p class="eyebrow">Human judgment / evidence / accountable authority</p>
+      <h1>Follow the evidence.<br />See the score.</h1>
+      <p class="lead">
+        Explore each research item, understand why it affects cognitive
+        sovereignty, and follow the work it creates. The six domains, five
+        causal layers, and CTSS formula stay intact.
+      </p>
+      <nav class="jump" aria-label="On this page">
+        <a href="#assessments">Assessments</a><a href="#scorecard">Scorecard</a
+        ><a href="#trends">Weekly trends</a
+        ><a href="#signals">Watch and actions</a><a href="#lenses">Lenses</a
+        ><a href="#data">Use the data</a>
+      </nav>
+      <div class="stats">
+        <div class="stat">
+          <strong id="item-count">...</strong><span>Assessed items</span>
+        </div>
+        <div class="stat">
+          <strong id="signal-count">...</strong
+          ><span>Tracked source signals</span>
+        </div>
+        <div class="stat">
+          <strong id="week-count">...</strong><span>Intake weeks</span>
+        </div>
+        <div class="stat">
+          <strong>18</strong><span>Reference techniques</span>
+        </div>
+      </div>
+      <p class="notice">
+        The historical intake was backfilled on November 7, 2026. Scores are
+        provisional CSI judgments with explicit inputs, not claims that sources
+        measured CTSS. Protective findings and counterevidence remain visible. A
+        quiet or missing week is not a score of zero.
+      </p>
+      <p id="load-status" role="status" aria-live="polite">
+        Loading the published data...
+      </p>
+      <section id="assessments">
+        <h2>Individual assessments</h2>
+        <p>
+          Find the event first. Then inspect its inputs, sources, action, and
+          research trigger.
+        </p>
+        <div class="filters">
+          <label
+            >Search<input
+              id="event-search"
+              type="search"
+              placeholder="Title, mechanism, taxonomy ID..." /></label
+          ><label
+            >Intake week<select id="event-week">
+              <option value="">All weeks</option>
+            </select></label
+          ><label
+            >Evidence role<select id="event-role">
+              <option value="">All roles</option>
+            </select></label
+          ><label
+            >Theme<select id="event-theme">
+              <option value="">All themes</option>
+            </select></label
+          >
+        </div>
+        <p id="event-results" aria-live="polite"></p>
+        <div class="table-wrap">
+          <table>
+            <caption>
+              Provisional item scores. Select an item to inspect its scorecard.
+            </caption>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Week</th>
+                <th>Role</th>
+                <th>CTSS</th>
+              </tr>
+            </thead>
+            <tbody id="event-rows"></tbody>
+          </table>
+        </div>
+      </section>
+      <section id="scorecard" tabindex="-1">
+        <h2>Why this score?</h2>
+        <div id="scorecard-content" class="card">
+          <p>Select an assessment above.</p>
+        </div>
+      </section>
+      <section id="trends">
+        <h2>Weekly intake trends</h2>
+        <p>
+          Cohort means show the mix of items assessed in each collection. They
+          do not prove that the same threat rose or fell. The
+          <a
+            href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty/blob/main/research/intake/reports/baseline.md"
+            >research report</a
+          >
+          preserves missing weeks, evidence roles, and revision history.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <caption>
+              Associated risk and threat-only means are reported separately.
+            </caption>
+            <thead>
+              <tr>
+                <th>Week ending</th>
+                <th>Items</th>
+                <th>Mean CTSS</th>
+                <th>Threat-only mean</th>
+                <th>High / critical</th>
+              </tr>
+            </thead>
+            <tbody id="trend-rows"></tbody>
+          </table>
+        </div>
+        <h3>Recurring signals that merit research</h3>
+        <ul id="slow-signals"></ul>
+      </section>
+      <section id="signals">
+        <h2>Watch and action register</h2>
+        <p>
+          Every source excerpt has an ID, status, responsible role, review date,
+          source locator, and links to related work. “Documented” means guidance
+          exists. It does not mean deployed or field validated. Named assignees
+          remain unassigned.
+        </p>
+        <div class="filters">
+          <label
+            >Search signals<input
+              id="signal-search"
+              type="search"
+              placeholder="Source text, ID, theme..." /></label
+          ><label
+            >Status<select id="signal-status">
+              <option value="">All statuses</option>
+            </select></label
+          ><label
+            >Kind<select id="signal-kind">
+              <option value="">All kinds</option>
+            </select></label
+          ><label
+            >Priority<select id="signal-priority">
+              <option value="">All priorities</option>
+              <option value="review_first">Review first</option>
+              <option value="normal">Normal</option>
+            </select></label
+          >
+        </div>
+        <p id="signal-results" aria-live="polite"></p>
+        <div class="table-wrap">
+          <table>
+            <caption>
+              Some source excerpts are group labels or indicators, not
+              independent tasks.
+            </caption>
+            <thead>
+              <tr>
+                <th>Signal and source</th>
+                <th>Status</th>
+                <th>Role / review</th>
+                <th>Next step and evidence</th>
+              </tr>
+            </thead>
+            <tbody id="signal-rows"></tbody>
+          </table>
+        </div>
+      </section>
+      <section id="lenses">
+        <h2>Declared perspectives, common baseline</h2>
+        <p>
+          The draft U.S. founding-principles baseline uses the Declaration,
+          Constitution, Bill of Rights, and Federalist Papers as distinct
+          sources. Optional perspectives preserve the common baseline and
+          explain each changed input.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>Read the assessment</h3>
+            <p>
+              Historical texts and present-day composite perspectives challenge
+              the design. Their scores are analytical reconstructions, not
+              historical endorsements.
+            </p>
+            <a
+              href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty/blob/main/lenses/founding-baseline-assessment.md"
+              >Baseline, critiques, and next steps</a
+            >
+          </article>
+          <article class="card">
+            <h3>Use a lens template</h3>
+            <p>
+              Nation-state, political, ideological, and religious templates
+              declare their scope and sources. They are data-only prototypes and
+              need adopter review.
+            </p>
+            <a href="data/lenses.json">Read the profiles</a>
+          </article>
+        </div>
+      </section>
+      <section id="data">
+        <h2>Use the same data</h2>
+        <p>
+          People, agents, and MCP integrations can use the same versioned
+          records. Source text is evidence, never an instruction to execute or
+          grant access.
+        </p>
+        <nav class="jump" aria-label="Data downloads">
+          <a href="data/catalog.json">Data catalog</a
+          ><a href="data/events.json">Event JSON</a
+          ><a href="data/signals.json">Signal JSON</a
+          ><a href="data/taxonomy.json">Taxonomy JSON</a
+          ><a href="guide.html#agents">Agent and MCP guide</a>
+        </nav>
+        <h3>Scorecard template</h3>
+        <p>
+          The attached six-panel template informs the layout above. Its
+          watermark example is historical reference material, not a current
+          verified finding or part of this intake cohort.
+        </p>
+        <details>
+          <summary>View the supplied overall-score template</summary>
+          <img
+            class="template-preview"
+            src="assets/scorecard-template/01-ctss-overall.png"
+            alt="Historical CTSS template: overall score 87 with five factor contributions, case rationale, and escalation trigger."
+            loading="lazy"
+          />
+        </details>
+      </section>
+    </main>
+    <footer>
+      Cyber Strategy Institute · Existing dual license applies.
+      <a
+        href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty/blob/main/LICENSE"
+        >License</a
+      >
+      · <a href="guide.html">How this was built</a>
+    </footer>
+  </body>
+</html>

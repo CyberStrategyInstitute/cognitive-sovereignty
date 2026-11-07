@@ -1,0 +1,68 @@
+{
+  "id": "EV-YYYYMMDD-UNIQUE",
+  "story_id": "stable-underlying-story-id",
+  "week_end": "YYYY-MM-DD",
+  "assessment_date": "YYYY-MM-DD",
+  "title": "Source item title",
+  "record_type": "event_or_research_item",
+  "event_date": null,
+  "publication_date": null,
+  "date_precision": "Known dates only; preserve date text when unresolved",
+  "scope": "US-12-month-scenario",
+  "lens_id": "us-founding-v1",
+  "score_method": "CTSS-existing-v1",
+  "score_status": "provisional",
+  "assessor": "Named analyst or configured research assistant",
+  "role": "context",
+  "theme": "Existing theme or explained new tag",
+  "taxonomy": [
+    "T-CT-006"
+  ],
+  "inputs": {
+    "L": null,
+    "Ia": null,
+    "R": null,
+    "D": null,
+    "RecD": null
+  },
+  "input_reasons": {
+    "L": "Explain estimate and assumptions",
+    "Ia": "Explain effect on agency",
+    "R": "Explain scenario reach versus measured exposure",
+    "D": "Explain visibility and detection",
+    "RecD": "Explain reversal and persistence"
+  },
+  "analysis": "What this changes for CSF, why, and any contrary evidence",
+  "action": "Specific action and expected outcome",
+  "research_trigger": "What evidence or correction could change this preliminary score",
+  "source_review": "Source type, review depth, date, and limitations",
+  "source_urls": [
+    "https://primary-source.example/replace-before-use"
+  ],
+  "us_relevance": "Explain direct U.S. relevance or transfer from a non-U.S. case",
+  "occurrences": [
+    {
+      "source_id": "stable-source-id",
+      "rank": null,
+      "paragraph_start": null,
+      "paragraph_end": null
+    }
+  ],
+  "original_analysis": [
+    {
+      "source_id": "stable-source-id",
+      "paragraphs": [
+        {
+          "index": null,
+          "text": "Preserve the original title and source text or supplied analysis here",
+          "urls": [
+            "https://primary-source.example/replace-before-use"
+          ]
+        }
+      ]
+    }
+  ],
+  "original_score_statement": null,
+  "original_numeric_score": null,
+  "assessment_history": []
+}

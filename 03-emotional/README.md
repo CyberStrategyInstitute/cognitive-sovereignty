@@ -2,7 +2,7 @@
 
 ### Pre-Decision Terrain
 
-**CSF Position:** Domain 3 of 6 | **AI SAFE² CP.11 Control:** UAS-H2 (emotional state manipulation in operator-AI dialogue) | **Companion Research:** [002 Swarm Threat Scaling](../research/002_swarm_threat_scaling.md)
+**CSF Position:** Domain 3 of 6 | **AI SAFE² UAS profile Control:** UAS-H2 (emotional state manipulation in operator-AI dialogue) | **Companion Research:** [002 Swarm Threat Scaling](../research/002_swarm_threat_scaling.md)
 
 ---
 
@@ -21,7 +21,7 @@ At the individual level, the same mechanics run through micro-targeted emotional
 | ID | Threat | Layer | CTSS / Detection | What It Targets in This Domain |
 | --- | --- | --- | --- | --- |
 | T-CT-003 | Micro-Targeted Emotional Priming | Technique | CTSS 70 / Detection 2 | Emotional stability; elevated baseline anxiety, anger, fear in targeted populations |
-| T-CT-016 | Psychographic Micro-Targeting at Scale | Technique | CTSS 79 / Detection 3 | Psychological integrity; persuasion mapped to individual vulnerability profiles |
+| T-CT-016 | Psychographic Micro-Targeting at Scale | Technique | CTSS 75 / Detection 3 | Psychological integrity; persuasion mapped to individual vulnerability profiles |
 | ST-002 | Behavioral Reinforcement Engineering | Substrate | Detection 4 | Emotional reward loops; approval metrics as operant conditioning |
 | TC-03 | Algorithmic Identity Shaping | Threat Class | n/a | Identity trajectory; self-worth metrics co-authored by recommendation systems |
 | TC-04 | Emotional Climate Engineering | Threat Class | n/a | Baseline societal mood; tuning what populations will tolerate |
@@ -100,7 +100,7 @@ Domain-specific measures: population and unit emotional climate baselines tracke
 
 ## 8. Enforcement and Crosslinks
 
-- **AI SAFE² CP.11:** UAS-H2 measures emotional state manipulation in operator-AI dialogue; Domain 3 assessment results feed the CP.11 evidence package
+- **AI SAFE² UAS profile:** UAS-H2 measures emotional state manipulation in operator-AI dialogue; Domain 3 assessment results feed the UAS profile evidence package
 - **Measurement Stack:** Layer C2 (Emotional Climate Baseline) is this domain's population-scale sensor
 - **Taxonomy:** [Manipulation Techniques](../taxonomy/manipulation-techniques.md) (T-CT-003, T-CT-016) | [Threat Classes](../taxonomy/threat-classes.md) (TC-03, TC-04) | [Human Outcomes](../taxonomy/human-outcomes.md) (HO-003) | [CTSS Scoring](../taxonomy/ctss-scoring.md)
 - **Adjacent domains:** [Domain 2: Cognitive](../02-cognitive/README.md) (appraisal capacity) | [Domain 4: Social](../04-social/README.md) (where dysregulation propagates) | [Domain 6: Digital & AI Symbiosis](../06-digital-ai-symbiosis/README.md) (the delivery interface)

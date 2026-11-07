@@ -2,7 +2,7 @@
 
 ### The Substrate the Adversary Reaches First
 
-**CSF Position:** Domain 1 of 6 | **AI SAFE² CP.11 Control:** UAS-H6 (attention capture in high-tempo decision environments) | **Companion Research:** [002 Swarm Threat Scaling](../research/002_swarm_threat_scaling.md)
+**CSF Position:** Domain 1 of 6 | **AI SAFE² UAS profile Control:** UAS-H6 (attention capture in high-tempo decision environments) | **Companion Research:** [002 Swarm Threat Scaling](../research/002_swarm_threat_scaling.md)
 
 ---
 
@@ -24,9 +24,9 @@ The targeting is not metaphorical. Variable-reward schedules, notification patte
 | --- | --- | --- | --- | --- |
 | ST-002 | Behavioral Reinforcement Engineering | Substrate | Detection 4 | Dopamine system; converts cognition into an operant-conditioned feedback loop |
 | ST-004 | Neuro-Intrusion Surface Expansion | Substrate | Detection 1 | Direct neural access via BCIs, stimulation, affect-modulating wearables, neural data harvesting |
-| T-CT-001 | Attention Capture and Habituation | Technique | CTSS 80 / Detection 4 | Reward circuitry via infinite scroll, variable rewards, notification saturation |
+| T-CT-001 | Attention Capture and Habituation | Technique | CTSS 75 / Detection 4 | Reward circuitry via infinite scroll, variable rewards, notification saturation |
 | T-CT-003 | Micro-Targeted Emotional Priming | Technique | CTSS 70 / Detection 2 | Stress physiology; elevated baseline anxiety, anger, fear |
-| T-CT-012 | Neurotech / Direct Cognitive Influence | Technique | CTSS 60 / Detection 1 | Neurological integrity; persuasion or control below the information layer |
+| T-CT-012 | Neurotech / Direct Cognitive Influence | Technique | CTSS 71 / Detection 1 | Neurological integrity; persuasion or control below the information layer |
 | DS-004 | Neuro-Digital Interfaces | Delivery | Detection 1 | Wearables and brain interfaces as always-on delivery channels |
 
 **Threat trajectory note:** T-CT-012 carries the lowest current CTSS in the taxonomy (60) purely on likelihood. Its Impact on Agency score is 5, the maximum. As the neurotech surface matures, this domain's threat profile climbs faster than any other domain's. Build the defenses before the likelihood arrives.
@@ -99,7 +99,7 @@ Domain-specific measures: sleep architecture trend (duration, continuity, timing
 
 ## 8. Enforcement and Crosslinks
 
-- **AI SAFE² CP.11:** UAS-H6 measures attention capture in high-tempo decision environments; CTSS results feed the CP.11 evidence package (UAS-SCORE-001, UAS-HUMAN-001)
+- **AI SAFE² UAS profile:** UAS-H6 measures attention capture in high-tempo decision environments; CTSS results feed the UAS profile evidence package (UAS-SCORE-001, UAS-HUMAN-001)
 - **Taxonomy:** [Substrate Threats](../taxonomy/substrate-threats.md) (ST-002, ST-004) | [Manipulation Techniques](../taxonomy/manipulation-techniques.md) (T-CT-001, T-CT-003, T-CT-012) | [Delivery and Scale](../taxonomy/delivery-scale.md) (DS-004) | [CTSS Scoring](../taxonomy/ctss-scoring.md)
 - **Edge case watch:** neuro-swarm integration (the coverage gap flagged at 85 percent for the Biological/Neurological spectrum) is the intersection of this domain with [Research Note 002](../research/002_swarm_threat_scaling.md)
 - **Adjacent domains:** [Domain 2: Cognitive](../02-cognitive/README.md) (immediate upward cascade target) | [Domain 6: Digital & AI Symbiosis](../06-digital-ai-symbiosis/README.md) (delivery-side governance)

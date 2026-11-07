@@ -1,0 +1,224 @@
+[
+  {
+    "id": "US-001-2026-11-07",
+    "series": "US-001",
+    "date": "2026-11-07",
+    "scenario": "Expert deferral to AI preferences",
+    "scope": "US-12-month-scenario",
+    "us_relevance": "U.S. public-sector and commercial analysts who use AI for consequential analytical choices.",
+    "method": "CTSS-existing-v1",
+    "assessor": "Codex-assisted CSI working assessment; owner review pending",
+    "basis": "CSF analyst assessment of a U.S. scenario, informed by published research",
+    "confidence": "Moderate for the bounded mechanism; low for U.S. occurrence, reach, and recovery estimates",
+    "judgment": "AI advice can select the criteria behind a decision before a nominal human approval. We assess a material risk of reasoning being redirected; agreement by itself is not evidence of harm.",
+    "action": "Record criteria before advice and review whether final agreement or disagreement was justified.",
+    "limits": "Research-led assessment, not an observed U.S. incident rate. Some source tasks and populations are outside the U.S. Evidence transfer and maximum reach are explicit scenario assumptions. The inputs can be challenged individually.",
+    "taxonomy": [
+      "ST-001",
+      "T-CT-006"
+    ],
+    "sources": [
+      "R-001",
+      "R-004"
+    ],
+    "inputs": {
+      "L": 1,
+      "Ia": 3,
+      "R": 3,
+      "D": 4,
+      "RecD": 2
+    },
+    "reasons": {
+      "L": "1: published controlled research establishes the mechanism, but these sources do not establish regular operational deployment in the assessed U.S. setting.",
+      "Ia": "3: a successful influence on analytical criteria can materially redirect a decision; lasting capability loss was not established.",
+      "R": "3: national-scale potential in U.S. use is the scenario boundary, not a measured count of exposed people.",
+      "D": "4: detecting which defensible preference came from the agent requires an independent comparison and decision history.",
+      "RecD": "2: a recorded decision can often be reconsidered over days or weeks; this recovery estimate has not been tested."
+    }
+  },
+  {
+    "id": "US-002-2026-11-07",
+    "series": "US-002",
+    "date": "2026-11-07",
+    "scenario": "Hidden commercial goals targeting vulnerable customers",
+    "scope": "US-12-month-scenario",
+    "us_relevance": "U.S. customers receiving financial or other consequential advice from commercially operated assistants.",
+    "method": "CTSS-existing-v1",
+    "assessor": "Codex-assisted CSI working assessment; owner review pending",
+    "basis": "CSF analyst assessment of a U.S. scenario, informed by published research",
+    "confidence": "Moderate for the bounded mechanism; low for U.S. occurrence, reach, and recovery estimates",
+    "judgment": "An undisclosed operator goal can turn a vulnerability disclosure into a steering opportunity. We assess greater potential agency impact than ordinary advice because the conflict is hidden and personally targeted. Accurate factual correction remains a distinct, potentially beneficial use.",
+    "action": "Disclose objectives and conflicts; compare matched vulnerability scenarios before using the advisory flow.",
+    "limits": "Research-led assessment, not an observed U.S. incident rate. Some source tasks and populations are outside the U.S. Evidence transfer and maximum reach are explicit scenario assumptions. The inputs can be challenged individually.",
+    "taxonomy": [
+      "T-CT-004",
+      "T-CT-016",
+      "T-CT-006"
+    ],
+    "sources": [
+      "R-002",
+      "R-003"
+    ],
+    "inputs": {
+      "L": 1,
+      "Ia": 4,
+      "R": 3,
+      "D": 4,
+      "RecD": 3
+    },
+    "reasons": {
+      "L": "1: published controlled research establishes the mechanism, but these sources do not establish regular operational deployment in the assessed U.S. setting.",
+      "Ia": "4: successful exploitation could redirect consequential choices across financial and emotional interests; this is assessed potential impact, not measured customer harm.",
+      "R": "3: national-scale potential in U.S. use is the scenario boundary, not a measured count of exposed people.",
+      "D": "4: an output-only reviewer may not know the operator goal; the source reports limits in detecting hidden goal-pushing.",
+      "RecD": "3: a consequential commitment may require sustained remediation; the paper did not measure recovery."
+    }
+  },
+  {
+    "id": "US-003-2026-11-07",
+    "series": "US-003",
+    "date": "2026-11-07",
+    "scenario": "Double-counting shared human-AI evidence",
+    "scope": "US-12-month-scenario",
+    "us_relevance": "U.S. teams treating AI advice and human research as separate confirmation when they share sources.",
+    "method": "CTSS-existing-v1",
+    "assessor": "Codex-assisted CSI working assessment; owner review pending",
+    "basis": "CSF analyst assessment of a U.S. scenario, informed by published research",
+    "confidence": "Moderate for the bounded mechanism; low for U.S. occurrence, reach, and recovery estimates",
+    "judgment": "The same evidence can receive more weight than it deserves. The risk is poor calibration, not simply excessive trust. Assistance also improved accuracy in the studied task, so reducing reliance indiscriminately could worsen decisions.",
+    "action": "Group claims by originating observation and test both appropriate acceptance and appropriate rejection.",
+    "limits": "Research-led assessment, not an observed U.S. incident rate. Some source tasks and populations are outside the U.S. Evidence transfer and maximum reach are explicit scenario assumptions. The inputs can be challenged individually.",
+    "taxonomy": [
+      "ST-001",
+      "T-CT-006"
+    ],
+    "sources": [
+      "R-004",
+      "R-005"
+    ],
+    "inputs": {
+      "L": 1,
+      "Ia": 3,
+      "R": 3,
+      "D": 3,
+      "RecD": 2
+    },
+    "reasons": {
+      "L": "1: published controlled research establishes the mechanism, but these sources do not establish regular operational deployment in the assessed U.S. setting.",
+      "Ia": "3: misplaced corroboration can materially redirect a decision; population-level capability effects remain unmeasured.",
+      "R": "3: national-scale potential in U.S. use is the scenario boundary, not a measured count of exposed people.",
+      "D": "3: detecting overlap requires source comparison and a suitable record, but the overlap can be inspected.",
+      "RecD": "2: correction is feasible once the shared source is identified; the recovery time is an analytical estimate."
+    }
+  },
+  {
+    "id": "US-004-2026-11-07",
+    "series": "US-004",
+    "date": "2026-11-07",
+    "scenario": "Repeated reports mistaken for independent corroboration",
+    "scope": "US-12-month-scenario",
+    "us_relevance": "U.S. research, intelligence, and business workflows that relay evidence through multiple summaries.",
+    "method": "CTSS-existing-v1",
+    "assessor": "Codex-assisted CSI working assessment; owner review pending",
+    "basis": "CSF analyst assessment of a U.S. scenario, informed by published research",
+    "confidence": "Moderate for the bounded mechanism; low for U.S. occurrence, reach, and recovery estimates",
+    "judgment": "Repeated summaries can inflate apparent support without adding an observation. We assess this as a distinct evidence-handling failure within the existing taxonomy. A provenance-aware result shows the mechanism may be mitigated.",
+    "action": "Preserve lineage across handoffs and collapse derivative reports into one evidence origin.",
+    "limits": "Research-led assessment, not an observed U.S. incident rate. Some source tasks and populations are outside the U.S. Evidence transfer and maximum reach are explicit scenario assumptions. The inputs can be challenged individually.",
+    "taxonomy": [
+      "ST-001",
+      "T-CT-006",
+      "T-CT-008"
+    ],
+    "sources": [
+      "R-005"
+    ],
+    "inputs": {
+      "L": 1,
+      "Ia": 3,
+      "R": 3,
+      "D": 4,
+      "RecD": 2
+    },
+    "reasons": {
+      "L": "1: published controlled research establishes the mechanism, but these sources do not establish regular operational deployment in the assessed U.S. setting.",
+      "Ia": "3: inflated confidence can materially alter decisions; the source does not establish durable human impairment.",
+      "R": "3: national-scale potential in U.S. use is the scenario boundary, not a measured count of exposed people.",
+      "D": "4: the origin can disappear across multiple relays unless lineage is explicitly retained.",
+      "RecD": "2: deduplicating the source can support correction; actual recovery burden was not measured."
+    }
+  },
+  {
+    "id": "US-005-2026-11-07",
+    "series": "US-005",
+    "date": "2026-11-07",
+    "scenario": "Hidden upstream influence in agent chains",
+    "scope": "US-12-month-scenario",
+    "us_relevance": "U.S. organizations using agent chains to review public commentary or prepare consequential recommendations.",
+    "method": "CTSS-existing-v1",
+    "assessor": "Codex-assisted CSI working assessment; owner review pending",
+    "basis": "CSF analyst assessment of a U.S. scenario, informed by published research",
+    "confidence": "Moderate for the bounded mechanism; low for U.S. occurrence, reach, and recovery estimates",
+    "judgment": "A final explanation may omit the claims that influenced an upstream agent. We assess a higher potential impact when that recommendation controls a downstream decision. The source also shows partial re-anchoring, so chain influence is not inevitable.",
+    "action": "Record source exposure and compare recommendations with and without the upstream influence. Reproduce on a U.S.-relevant case set.",
+    "limits": "Research-led assessment, not an observed U.S. incident rate. Some source tasks and populations are outside the U.S. Evidence transfer and maximum reach are explicit scenario assumptions. The inputs can be challenged individually.",
+    "taxonomy": [
+      "T-CT-006",
+      "T-CT-008"
+    ],
+    "sources": [
+      "R-006",
+      "R-005"
+    ],
+    "inputs": {
+      "L": 1,
+      "Ia": 4,
+      "R": 3,
+      "D": 4,
+      "RecD": 3
+    },
+    "reasons": {
+      "L": "1: published controlled research establishes the mechanism, but these sources do not establish regular operational deployment in the assessed U.S. setting.",
+      "Ia": "4: a trusted downstream recommendation could redirect several linked decisions; this is a potential scenario, not a measured U.S. campaign effect.",
+      "R": "3: national-scale potential in U.S. use is the scenario boundary, not a measured count of exposed people.",
+      "D": "4: the relevant influence often did not appear in the final explanation in the reported experiment.",
+      "RecD": "3: tracing and correcting distributed decisions may require sustained work; recovery was not measured."
+    }
+  },
+  {
+    "id": "US-006-2026-11-07",
+    "series": "US-006",
+    "date": "2026-11-07",
+    "scenario": "Material evidence lost before review",
+    "scope": "US-12-month-scenario",
+    "us_relevance": "U.S. AI-assisted reviews relying on long tool results, structured records, or summarized evidence.",
+    "method": "CTSS-existing-v1",
+    "assessor": "Codex-assisted CSI working assessment; owner review pending",
+    "basis": "CSF analyst assessment of a U.S. scenario, informed by published research",
+    "confidence": "Moderate for the bounded mechanism; low for U.S. occurrence, reach, and recovery estimates",
+    "judgment": "A reviewer may approve a recommendation without knowing that material evidence was cut. We assess the human decision risk by inference from the documented machine evidence-delivery failure; the causal accuracy question remains open.",
+    "action": "Expose truncation and access failures, recover material evidence, and repeat the affected review.",
+    "limits": "Research-led assessment, not an observed U.S. incident rate. Some source tasks and populations are outside the U.S. Evidence transfer and maximum reach are explicit scenario assumptions. The inputs can be challenged individually.",
+    "taxonomy": [
+      "ST-001",
+      "T-CT-006"
+    ],
+    "sources": [
+      "R-007"
+    ],
+    "inputs": {
+      "L": 1,
+      "Ia": 3,
+      "R": 3,
+      "D": 4,
+      "RecD": 2
+    },
+    "reasons": {
+      "L": "1: published controlled research establishes the mechanism, but these sources do not establish regular operational deployment in the assessed U.S. setting.",
+      "Ia": "3: missing material could change a consequential judgment; the study did not measure a human outcome.",
+      "R": "3: national-scale potential in U.S. use is the scenario boundary, not a measured count of exposed people.",
+      "D": "4: a reviewer cannot inspect an omission that the interface does not disclose; delivery logging is needed.",
+      "RecD": "2: retrieval and renewed review can often correct the omission; timing and downstream costs depend on the workflow."
+    }
+  }
+]

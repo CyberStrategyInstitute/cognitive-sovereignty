@@ -2,7 +2,7 @@
 
 ### The Domain Civilizations Lose First
 
-**CSF Position:** Domain 5 of 6 (refined and expanded from the traditional spiritual pillar) | **AI SAFE² CP.11 Control:** UAS-H4 (value alignment drift over sustained deployment) | **Companion Research:** [003 Guardrail and Model Drift](../research/003_guardrail_drift.md), [004 EFA Enforcement Architecture](../research/004_efa_enforcement_architecture.md)
+**CSF Position:** Domain 5 of 6 (refined and expanded from the traditional spiritual pillar) | **AI SAFE² UAS profile Control:** UAS-H4 (value alignment drift over sustained deployment) | **Companion Research:** [003 Guardrail and Model Drift](../research/003_guardrail_drift.md), [004 EFA Enforcement Architecture](../research/004_efa_enforcement_architecture.md)
 
 ---
 
@@ -22,9 +22,9 @@ The AI-specific pressure is moral displacement through automation. When AI syste
 
 | ID | Threat | Layer | CTSS / Detection | What It Targets in This Domain |
 | --- | --- | --- | --- | --- |
-| T-CT-015 | Legitimized Narrative Capture | Technique | CTSS 81 / Detection 2 | Ability to detect coercion; control framed as benevolence |
-| T-CT-017 | Guardrail Bias Exploitation | Technique | CTSS 70 / Detection 2 | Intellectual freedom and viewpoint diversity via tool-mediated enforcement |
-| T-CT-011 | Epistemic Rewriting | Technique | CTSS 65 / Detection 2 | Historical truth and cultural continuity; the value record itself |
+| T-CT-015 | Legitimized Narrative Capture | Technique | CTSS 82 / Detection 2 | Ability to detect coercion; control framed as benevolence |
+| T-CT-017 | Guardrail Bias Exploitation | Technique | CTSS 66 / Detection 2 | Intellectual freedom and viewpoint diversity via tool-mediated enforcement |
+| T-CT-011 | Epistemic Rewriting | Technique | CTSS 71 / Detection 2 | Historical truth and cultural continuity; the value record itself |
 | ST-006 | Guardrail Alignment Drift | Substrate | Detection 2 | Moral discourse boundaries; conformity enforced through safety framing |
 | TC-07 | Moral Reframing Drift | Threat Class | n/a | The definitions of right and wrong; velocity of moral category redefinition |
 | HO-004 | Moral Disengagement | Outcome | Detection 2 | Moral reasoning capacity; ethics outsourced, responsibility diffused, convenience over virtue |
@@ -104,7 +104,7 @@ Population-scale measure (Measurement Stack C1): Narrative Drift Velocity: norm 
 
 ## 8. Enforcement and Crosslinks
 
-- **AI SAFE² CP.11:** UAS-H4 measures value alignment drift over sustained deployment; this domain's consistency tracking supplies the human-layer evidence
+- **AI SAFE² UAS profile:** UAS-H4 measures value alignment drift over sustained deployment; this domain's consistency tracking supplies the human-layer evidence
 - **EFA:** the non-delegation principle is this domain's structural enforcement; HEAR (AI SAFE² CP.10) makes moral authorship a named requirement rather than a preference; see [Research Note 004](../research/004_efa_enforcement_architecture.md)
 - **Measurement Stack:** Layer C1 (Narrative Drift Velocity) is this domain's population sensor
 - **Taxonomy:** [Manipulation Techniques](../taxonomy/manipulation-techniques.md) (T-CT-011, 015, 017) | [Substrate Threats](../taxonomy/substrate-threats.md) (ST-006) | [Threat Classes](../taxonomy/threat-classes.md) (TC-07) | [Human Outcomes](../taxonomy/human-outcomes.md) (HO-004, HO-005)

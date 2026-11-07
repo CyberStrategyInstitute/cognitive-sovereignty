@@ -1,0 +1,43 @@
+{
+  "method": "csf-evidence-v1",
+  "date": "2026-11-07",
+  "commit": "6125cbd252d785efdbc27fc05fe677ff7a8288e1",
+  "working_tree_changed": true,
+  "file_hashes": {
+    "taxonomy/registry.json": "ecd4349f013a58a986d55463fc3cc2d618a4e64e4741f85f4852e29ebf2ced4e",
+    "research/evidence.json": "9d1c4db4cae91b41c5a111357f74438c85af5ae38d024d86d8fe2d015241b48e",
+    "tools/csf.py": "886183e85c1a53363b22afb0fc09ca63444cc64006cd7ee8473883dc3674d43b"
+  },
+  "measurement_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "registry_errors": [],
+  "reference_scores": {
+    "T-CT-001": 75,
+    "T-CT-002": 76,
+    "T-CT-003": 70,
+    "T-CT-004": 83,
+    "T-CT-005": 74,
+    "T-CT-006": 84,
+    "T-CT-007": 73,
+    "T-CT-008": 83,
+    "T-CT-009": 69,
+    "T-CT-010": 86,
+    "T-CT-011": 71,
+    "T-CT-012": 71,
+    "T-CT-013": 79,
+    "T-CT-014": 71,
+    "T-CT-015": 82,
+    "T-CT-016": 75,
+    "T-CT-017": 66,
+    "T-CT-018": 76
+  },
+  "research": {
+    "R-001": "04c36f2db4c803b1923fd7a844c334c25bcb8f347a42d2a1137d16c07357724f",
+    "R-002": "5341564ad62c29f35105a47b8c44b446a65b3ff2836e6d5dc01b7075f5b7c8cd",
+    "R-003": "ba1b6dd611c8732a9f0b975406eef39ad7c170d86eefd75b8695fbaebd16ea03",
+    "R-004": "6a2cc89edc0008c1797bd0e14467e32804e898401a8fedcd732547d2514050f5",
+    "R-005": "102d82a7209023cd36006f2d5afc85682881993c549f4d249daed4d994cc8252",
+    "R-006": "ad3754b7283e2b8622b19b358610c1dc75f83e52880257e48bc1424b6a35f3ed",
+    "R-007": "52dc414b31c5ca9e69381428f15186d7232f81273bbd91071f8d5b41eb7cab2b"
+  },
+  "observations": []
+}

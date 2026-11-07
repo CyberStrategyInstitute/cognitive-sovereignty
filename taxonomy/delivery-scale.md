@@ -1,5 +1,7 @@
 # Layer +1: Delivery and Scale Mechanisms
 
+Coverage percentages and broad outcome claims in the legacy discussion below are unvalidated estimates unless linked to a specific evidence record. They are not measured CSF results. See [the research register](../research/README.md).
+
 > These mechanisms amplify techniques from individual reach to population scale. **The key shift: manipulation moves from events to environment.** Understanding delivery mechanisms explains why techniques that are individually detectable become practically undetectable at scale.
 
 ---

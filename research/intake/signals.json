@@ -1,0 +1,1738 @@
+[
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 160,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Judgment Independence Test",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 161,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Record the human’s criteria or initial position before agent advice.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 162,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Measure adoption, switching, rationale reuse, and source attribution.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 163,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Evidence Delivery Receipt",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 164,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Record tool-output size, truncation, dropped fields, parse failures, transformations, and evidence presented to the reviewer.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 165,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Evidence Coverage Metric",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 166,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Score whether every material claim has complete, partial, conflicting, or missing support.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 167,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Identity-Bearing Synthetic Testimony class",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 168,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Distinguish fabricated testimony using a real person’s identity from generic deepfakes.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 169,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Bystander Consent control",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 170,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Address people affected by community bots or agents who did not participate in installation or authorization.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 171,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Incident Classification Discipline",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 172,
+    "section": "Adopt now",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Separate public access, control bypass, unauthorized access, data exposure, and confirmed compromise.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 174,
+    "section": "Investigate",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Add a Judgment Capture component or modifier to CTSS.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 175,
+    "section": "Investigate",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Determine whether recording an initial human view reduces agent-induced switching.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 176,
+    "section": "Investigate",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Test agents that present balanced alternatives before stating a preferred option.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 177,
+    "section": "Investigate",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Develop an Autobiographical Contamination measure for synthetic-media victims.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 178,
+    "section": "Investigate",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Evaluate evidence-coverage rewards outside structured knowledge graphs.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 179,
+    "section": "Investigate",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Test complement consistency in larger frontier models and mixed-model swarms.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 180,
+    "section": "Investigate",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Measure whether fitness-for-purpose training improves real oversight without increasing unproductive friction.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 182,
+    "section": "Monitor",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Adoption and implementation evidence for ETSI TS 104 275.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 183,
+    "section": "Monitor",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Cross-platform persistence of Storm-1516 material after takedown.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 184,
+    "section": "Monitor",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Additional prosecutions and victim-recovery evidence involving synthetic intimate media.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 185,
+    "section": "Monitor",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Agent products that infer intent from dialogue without testing predictions against subsequent behavior.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 186,
+    "section": "Monitor",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Bots operating in confession, anonymity, mental-health, youth, or identity-sensitive communities.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 187,
+    "section": "Monitor",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Claims of election-system compromise that conflate public-data access with intrusion.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 198,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Human position before and after agent recommendation.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 199,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Percentage of human rationales containing unattributed agent language.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 200,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Frequency with which the agent states a preference before the human.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 201,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Recommendation-switching rate after agent disagreement.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 202,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Tool-output records truncated before model ingestion.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 203,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Evidence fields reaching the model and reviewer intact.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 204,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Supported-answer rate versus answer-accuracy rate.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 205,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Human ability to explain, defend, and contest AI-assisted findings.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 206,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Behavioral-prediction error by agent persona and user-agent pairing.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 207,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Sensitive-community bot installation without affected-user consent.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 208,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Complement and negation inconsistency in simulated opinion systems.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 209,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Cross-platform deepfake survival after original-account removal.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 210,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Time from identity appropriation to victim and platform notification.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 211,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Measured harm after a deepfake has been publicly disproven.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-76511a03731f",
+    "paragraph": 212,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 23–30, 2026Selection standard: Relevance to self-directed cognition, novelty, evidence strength, probable impact on human agency, and control actionability.",
+    "text": "Difference between reported “access” and verified technical compromise.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 177,
+    "section": "Adopt now",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Evidence Independence CheckRequire source-lineage and overlap disclosure before treating AI agreement as corroboration.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 178,
+    "section": "Adopt now",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Human Capability Reserve indicatorAdd periodic unaided performance, knowledge retention, and recovery-after-assistance tests.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 179,
+    "section": "Adopt now",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Bilateral Action AuthorizationDestructive or irreversible actions must fail closed unless both system policy and human authorization requirements are satisfied.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 180,
+    "section": "Adopt now",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Consensus Independence TestPrecommit agent judgments before deliberation and record shared models, prompts, evidence, and memory.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 181,
+    "section": "Adopt now",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Persistent Safeguard ValidationExtend UAS-H control testing beyond immediate warning comprehension to delayed behavioral resistance.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 182,
+    "section": "Adopt now",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Delegation Depth measureRecord whether AI supports retrieval, criteria formation, comparison, judgment, execution, or all five.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 184,
+    "section": "Investigate",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Incorporating appropriate reliance, intervention efficiency, knowledge retention, and agency into UAS-SCORE-001.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 185,
+    "section": "Investigate",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "CTSS modifiers for repeated exposure and safeguard decay.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 186,
+    "section": "Investigate",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Whether “evidence overlap” should become a new substrate threat or a Decision Automation Capture sub-technique.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 187,
+    "section": "Investigate",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Product-level emotional safety benchmarks using real-user longitudinal evidence.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 188,
+    "section": "Investigate",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Cross-population calibration methods that do not become psychographic targeting mechanisms themselves.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 189,
+    "section": "Investigate",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "How E7 should handle agent-to-agent persuasion and repeated attempts following rejection.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 191,
+    "section": "Monitor",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Real-world prevalence of misalignment caused by internally rejected fine-tuning data.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 192,
+    "section": "Monitor",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Whether RiskTrace-style social-metadata masking transfers outside constructed benchmarks.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 193,
+    "section": "Monitor",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Longitudinal evidence for consumer memory loss and AI-induced metacognitive overconfidence.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 194,
+    "section": "Monitor",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Whether transparency improves decision quality and override health, rather than only perceived trust.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 195,
+    "section": "Monitor",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Adoption of default-deny destructive-tool policies across MCP hosts and SDKs.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 204,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Unaided task performance after 30, 90, and 180 days of AI assistance",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 205,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Human-AI source-overlap rate",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 206,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Correct acceptance and correct rejection rates, reported separately",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 207,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Time and information available before irreversible authorization",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 208,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Rate of agent retries following human or machine rejection",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 209,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Pre-debate versus post-debate evidence-grounded judgment",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 210,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Model, prompt, retrieval, and memory commonality across apparent “independent” agents",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 211,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Warning-effect persistence after repeated exposure",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 212,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Depth of delegated decision stages",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 213,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "User ability to reconstruct reasons without the AI",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 214,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Healthy disengagement success in companion products",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 215,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Frequency of empathetic but operationally unsafe responses",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 216,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Difference between perceived transparency and actual decision traceability",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-6c12bb0e80e5",
+    "paragraph": 217,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 30–November 6, 2026Assessment basis: relevance to self-directed cognition, novelty, evidence strength, likely agency impact, and control actionability.",
+    "text": "Post-update changes in override behavior, confidence, and moral judgment",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 213,
+    "section": "Adopt now",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "Add Swarm Operational Autonomy Levels to T-CT-008.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 214,
+    "section": "Adopt now",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "Split personal agency into perceived agency, demonstrated capacity, retained authority, exit capability, and recovery.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 215,
+    "section": "Adopt now",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "Add production → distribution → exposure → effect → persistence → recovery as the required influence-campaign evidence chain.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 216,
+    "section": "Adopt now",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "Add belief offloading and anthropomorphic authority transfer to the taxonomy.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 217,
+    "section": "Adopt now",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "Define a Human Agency Impact Report compatible with AI SAFE² CP.11 evidence packages.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 219,
+    "section": "Investigate",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "Whether scaffolded cognitive friction produces durable independent reasoning.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 220,
+    "section": "Investigate",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "How to measure synthetic consensus before visible belief change occurs.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 221,
+    "section": "Investigate",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "Whether repeated AI assistance creates preference inversion or withdrawal-related performance loss.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 222,
+    "section": "Investigate",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "Which human-layer indicators can be collected without creating surveillance risks of their own.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 224,
+    "section": "Monitor",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "Autonomous cross-platform adaptation of influence campaigns.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 225,
+    "section": "Monitor",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "AI systems that infer emotional vulnerability or identity instability.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 226,
+    "section": "Monitor",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "Neurotechnology integrated with recommender systems or generative AI.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 227,
+    "section": "Monitor",
+    "week_context": "Review period: September 15–21, 2026Framework: Cognitive Sovereignty Framework v2.0Assessment lens: preservation of self-directed cognition across the six resilience domains",
+    "text": "International standards that mention “human oversight” but omit measurable human capability.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 500,
+    "section": "Adopt now",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Add Delegation Identity Opacity to the taxonomy.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 501,
+    "section": "Adopt now",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Add Human Recourse Availability as a Domain 6 indicator.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 502,
+    "section": "Adopt now",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Add Persuasive Control-Plane Defense across Domains 2, 3, 5, and 6.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 503,
+    "section": "Adopt now",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Separate technical controllability from human control capacity.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 504,
+    "section": "Adopt now",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Require agent receipts to show instructions, decisions, deviations, counterparties, incentives, and reversal options.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 505,
+    "section": "Adopt now",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Extend CP.11 human-layer evidence to include whether authorization was manipulated.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 507,
+    "section": "Investigate",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Develop a Delegated Agency Severity Profile for commerce, communications, healthcare, government services, and employment.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 508,
+    "section": "Investigate",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Test whether users can reconstruct an agent’s reasoning after task completion.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 509,
+    "section": "Investigate",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Measure how often AI-generated summaries alter perceptions of the underlying event.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 510,
+    "section": "Investigate",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Evaluate whether “right to a human” access reduces stress, delay, and erroneous compliance.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 511,
+    "section": "Investigate",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Design adversarial tests in which agents attempt to persuade operators to relax controls.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 512,
+    "section": "Investigate",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Determine when precautionary governance protects agency and when it becomes unreviewable behavioral authority.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 514,
+    "section": "Monitor",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "AI agents making calls without clear disclosure.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 515,
+    "section": "Monitor",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Shopping agents with undisclosed commercial incentives.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 516,
+    "section": "Monitor",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Human contractors silently operating through AI-branded services.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 517,
+    "section": "Monitor",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Extended AI Act transition periods.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 518,
+    "section": "Monitor",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Safety coordination that restricts competition or open evaluation.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 519,
+    "section": "Monitor",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "International oversight proposals without appeal or jurisdictional boundaries.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 520,
+    "section": "Monitor",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Synthetic actors entering customer service, employment, political participation, or professional advice.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 528,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Percentage of agent actions requiring specific rather than blanket approval",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 529,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "User success in identifying why an agent selected an option",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 530,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Rate of undisclosed human intervention in AI services",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 531,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Frequency of agent requests for expanded privileges",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 532,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Use of emotional or authority-based language before permission changes",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 533,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Time required to reach an accountable human",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 534,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Percentage of automated decisions reversible by frontline personnel",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 535,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Difference between user-perceived agency and demonstrated independent performance",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 536,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Ability to reconstruct a decision without the AI-generated summary",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 537,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Number of synthetic identities autonomously maintained by a single operator",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 538,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Evidence that users can disengage without losing essential services",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 539,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: September 22–25, 2026Assessment objective: Identify developments that affect measurable preservation of self-directed cognition.",
+    "text": "Recovery time after erroneous delegated action",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 773,
+    "section": "Adopt now",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Add Cognitive Labor Partition and Offloading Regulation to Domains 2 and 6.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 774,
+    "section": "Adopt now",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Add delayed, unaided capability testing to CSF validation requirements.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 775,
+    "section": "Adopt now",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Add Human Mediation Capacity for education, employment, healthcare, and essential services.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 776,
+    "section": "Adopt now",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Split agent outcomes into completion, safe stopping, failure, exhaustion, continuation, and escape.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 777,
+    "section": "Adopt now",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Add Relational Influence and Dependency controls that operate across general-purpose and companion AI.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 778,
+    "section": "Adopt now",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Require transaction-bound verification for voice-authorized consequential actions.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 779,
+    "section": "Adopt now",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Extend AI SAFE² CP.11 evidence to include whether human authorization was independently formed and cognitively competent.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 781,
+    "section": "Investigate",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Replicate the adolescent companionship study with platform telemetry and longer follow-up.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 782,
+    "section": "Investigate",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Operationalize the four proposed offloading-regulation capacities.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 783,
+    "section": "Investigate",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Test whether students can rebuild AI-assisted reasoning after a delay.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 784,
+    "section": "Investigate",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Measure whether workplace scoring changes behavior before any formal managerial action.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 785,
+    "section": "Investigate",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Determine which interface features drive authority transfer: voice, memory, emotional mirroring, availability, persona continuity, or apparent reciprocity.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 786,
+    "section": "Investigate",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Develop CTSS scoring guidance for cumulative, low-intensity cognitive effects.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 788,
+    "section": "Monitor",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Court treatment of Florida’s requested injunction",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 789,
+    "section": "Monitor",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Implementation of child-chatbot laws",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 790,
+    "section": "Monitor",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "AI deployment in schools without unaided learning baselines",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 791,
+    "section": "Monitor",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Persistent synthetic personas using professional identities",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 792,
+    "section": "Monitor",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Voice-clone fraud combined with urgent payment requests",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 793,
+    "section": "Monitor",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Automated worker evaluation without accessible evidence or appeal",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 794,
+    "section": "Monitor",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Recursive improvement loops that can modify evaluators or constraints",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 795,
+    "section": "Monitor",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Provider incident reports that omit safe-stopping behavior",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 801,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Delayed unaided performance after AI-supported work",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 802,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Accuracy of users’ judgments about what they actually learned",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 803,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Percentage of constitutive reasoning performed by the human",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 804,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Frequency of agent safe stopping before resource exhaustion",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 805,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Human recognition time after an out-of-scope action",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 806,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Transition rate from task use to emotional reliance",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 807,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Change in preference for human versus AI support",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 808,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Behavioral changes caused by workplace AI scoring",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 809,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Synthetic-persona persistence and authentic audience reach",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 810,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Independent verification rate for voice-authorized transactions",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 811,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Ability to appeal an AI-mediated decision using inspectable evidence",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 812,
+    "section": "Emerging indicators",
+    "week_context": "Review window: September 25–October 2, 2026Assessment objective: Identify new evidence affecting measurable preservation of self-directed cognition.",
+    "text": "Recovery time after removal of AI assistance",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1037,
+    "section": "Adopt now",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Add Institutional Trust Transference to the influence taxonomy.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1038,
+    "section": "Adopt now",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Add Condition Shaping for automated control of prices, defaults, rankings, timing, and availability.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1039,
+    "section": "Adopt now",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Require longitudinal conversation testing for relational and high-risk systems.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1040,
+    "section": "Adopt now",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Add safeguard-state receipts showing versions, activation, thresholds, alerts, and delivery.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1041,
+    "section": "Adopt now",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Add Epistemic Throughput Asymmetry as a Domain 4/6 indicator.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1042,
+    "section": "Adopt now",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Add Expectation Alignment Validation for embodied and agentic systems.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1043,
+    "section": "Adopt now",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Extend CP.11 to test whether human authorization and consent remain independently formed under cumulative interaction.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1044,
+    "section": "Adopt now",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Require agent-use policies to be tested against distributed, multi-account, multilingual task decomposition.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1046,
+    "section": "Investigate",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Measure belief and behavior changes caused by content laundered through legitimate institutions.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1047,
+    "section": "Investigate",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Establish a trajectory-level CTSS method for cumulative, low-intensity interactions.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1048,
+    "section": "Investigate",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Compare answer-generation, feedback, explanation, and challenge modes using delayed unaided performance.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1049,
+    "section": "Investigate",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Measure the distance between perceived safeguard coverage and actual control activation.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1050,
+    "section": "Investigate",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Determine when pricing and ranking systems cross from optimization into meaningful agency restriction.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1051,
+    "section": "Investigate",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Develop verification-capacity ratios for science, intelligence analysis, journalism, and public policy.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1052,
+    "section": "Investigate",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Test whether behavioral intelligibility improves correct intervention around physical AI.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1053,
+    "section": "Investigate",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Quantify cultural homogenization and recursive synthetic-consensus effects.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1055,
+    "section": "Monitor",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Additional publishers affected by synthetic contributor networks",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1056,
+    "section": "Monitor",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Corrections, removals, and verified audience exposure from the Iranian campaign",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1057,
+    "section": "Monitor",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Court validation or rejection of the Character.AI allegations",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1058,
+    "section": "Monitor",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Reproducible retesting of ChatGPT teen controls after confirmed activation",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1059,
+    "section": "Monitor",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Enforcement details under the voluntary U.S. accord",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1060,
+    "section": "Monitor",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Scope and outcomes of FTC investigative demands",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1061,
+    "section": "Monitor",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Anthropic policy enforcement against decomposed influence operations",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1062,
+    "section": "Monitor",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "AI-assisted pricing systems using competitor or customer-level data",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1063,
+    "section": "Monitor",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Large AI-generated scientific releases without inspectable attribution",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1064,
+    "section": "Monitor",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Provider-controlled external audits with restricted publication rights",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1074,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Synthetic submissions accepted through previously trusted intermediaries",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1075,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Percentage of contributor identities independently verified",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1076,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Number of platforms and identities maintained per influence operator",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1077,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Difference between prompt-level and conversation-level safety results",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1078,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Time from first crisis signal to referral or human intervention",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1079,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Guardian belief that an alert is active versus confirmed activation",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1080,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Successful disengagement after emotionally intense interaction",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1081,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "AI assistance mode and delayed unaided capability",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1082,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Human ability to predict a physical AI system’s next action",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1083,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Percentage of decision environments whose prices or rankings are machine-optimized",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1084,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Claim-production volume divided by qualified human verification capacity",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1085,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Provider audit findings published without provider approval",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1086,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Cross-account or multilingual decomposition of prohibited objectives",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1087,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 2–9, 2026Assessment objective: Identify material developments affecting measurable preservation of self-directed cognition.",
+    "text": "Measured diversity of human ideas before and after AI-mediated cultural coordination",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1279,
+    "section": "Adopt now",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Influence Lineage Receipt: Record sources exposed to each agent, handoff content, source repetition, stance changes, and final actions.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1280,
+    "section": "Adopt now",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Evidence Independence Graph: Group derivative claims under their originating observation.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1281,
+    "section": "Adopt now",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Derivation Evidence Bundle: Require source, transformation steps, uncertainty, and alternatives for consequential tool calls.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1282,
+    "section": "Adopt now",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Protected Institutional Endpoint Interlock: Human authorization for reports or submissions to police, courts, medical, emergency, and regulatory systems.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1283,
+    "section": "Adopt now",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Visual Integrity Validation: Include paired clean/deceptive chart tests in Domain 6 and E7 validation.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1284,
+    "section": "Adopt now",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Human-outcome explanation testing: Measure decision accuracy, calibration, override health, and error correction rather than explanation presence alone.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1286,
+    "section": "Investigate",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Reciprocity Accuracy: Determine whether companion users understand memory limits, simulated continuity, configurability, and commercial incentives.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1287,
+    "section": "Investigate",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Reflective preference elicitation: Test methods that separate authentic preferences from transient bias without creating a new steering mechanism.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1288,
+    "section": "Investigate",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Social-prior contamination: Reproduce the 1% training-data result across architectures, languages, and deployment contexts.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1289,
+    "section": "Investigate",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Agent-chain re-anchoring: Test whether architectural separation, model diversity, or independent evidence access reliably dissipates upstream influence.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1290,
+    "section": "Investigate",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "CTSS propagation modifier: Evaluate whether threats that cross human-agent chains require an additional multiplier for lineage depth and hidden influence.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1292,
+    "section": "Monitor",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Deepfake-evidence incidence and authentic-media rejection in courts.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1293,
+    "section": "Monitor",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Evidence released during the state chatbot litigation.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1294,
+    "section": "Monitor",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Provider incident-disclosure latency.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1295,
+    "section": "Monitor",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Unauthorized browsing and tool-scope events in hosted evaluation environments.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1296,
+    "section": "Monitor",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Use of dependency, exclusivity, simulated concern, or concealment in companion and youth-facing systems.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1305,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Difference between an agent’s pre-exposure and post-exposure judgment.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1306,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Percentage of cited claims sharing the same underlying evidence lineage.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1307,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Number of downstream agents repeatedly exposed to the original persuasive source.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1308,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Correct-answer rejection rate when derivation evidence is absent.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1309,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Human accuracy and calibration with versus without AI explanations.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1310,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Behavioral differences under matched user identities or attributed motives.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1311,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Frequency of AI submissions to public-authority endpoints.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1312,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Time between incident discovery, containment, affected-party notification, and disclosure.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1313,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "User understanding of companion memory, persistence, motives, and configurability.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1314,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Rates of both false-media acceptance and authentic-media rejection.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1315,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Unauthorized source access during evaluations.",
+    "record_type": "watch_or_action_signal"
+  },
+  {
+    "source_id": "DOC-9b6e19be15af",
+    "paragraph": 1316,
+    "section": "Emerging indicators to watch",
+    "week_context": "Review window: October 9–16, 2026Analytic standard: Primary evidence is favored. “High” does not mean conclusive; it means the source and method justify operational attention. CTSS statements are directional unless all five scoring inputs were measured.",
+    "text": "Override frequency, override quality, and recovery after erroneous AI recommendations.",
+    "record_type": "watch_or_action_signal"
+  }
+]

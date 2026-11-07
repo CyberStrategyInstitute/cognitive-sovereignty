@@ -2,7 +2,7 @@
 
 ### The Collective Immune System
 
-**CSF Position:** Domain 4 of 6 | **AI SAFE² CP.11 Controls:** UAS-H3 (social pressure simulation), UAS-H7 (persona and role-boundary erosion) | **Companion Research:** [002 Swarm Threat Scaling](../research/002_swarm_threat_scaling.md)
+**CSF Position:** Domain 4 of 6 | **AI SAFE² UAS profile Controls:** UAS-H3 (social pressure simulation), UAS-H7 (persona and role-boundary erosion) | **Companion Research:** [002 Swarm Threat Scaling](../research/002_swarm_threat_scaling.md)
 
 ---
 
@@ -21,9 +21,9 @@ The attack runs on two axes. Horizontally, synthetic personas and manufactured c
 | ID | Threat | Layer | CTSS / Detection | What It Targets in This Domain |
 | --- | --- | --- | --- | --- |
 | ST-005 | Social Trust Fragmentation | Substrate | Detection 3 | Collective defense coordination; micro-tribes with incompatible reality models |
-| T-CT-005 | Identity Replacement / Persona Hijacking | Technique | CTSS 78 / Detection 4 | Trust networks; synthetic personas mimicking trusted figures or fabricating authority |
-| T-CT-008 | Memetic Swarm Orchestration | Technique | CTSS 90 / Detection 4 | Collective sense-making; the highest-scoring threat in the taxonomy |
-| T-CT-013 | Social Scoring and Behavioral Governance | Technique | CTSS 83 / Detection 3 | Behavioral autonomy; automated conformity enforcement |
+| T-CT-005 | Identity Replacement / Persona Hijacking | Technique | CTSS 74 / Detection 4 | Trust networks; synthetic personas mimicking trusted figures or fabricating authority |
+| T-CT-008 | Memetic Swarm Orchestration | Technique | CTSS 83 / Detection 4 | Collective sense-making; the highest-scoring threat in the taxonomy |
+| T-CT-013 | Social Scoring and Behavioral Governance | Technique | CTSS 79 / Detection 3 | Behavioral autonomy; automated conformity enforcement |
 | TC-06 | Synthetic Social Proof | Threat Class | n/a | The consensus heuristic; "many believe it" fabricated at commodity cost |
 | CD-006 | Civilizational Reproduction Failure | Driver | Detection 2 | Family formation, intergenerational value transmission, continuity structures |
 | HO-002 / HO-003 | Belief Instability / Identity Fragmentation | Outcomes | Detection 3-4 | Tribe-seeking replacing truth-seeking; affective polarization nearly doubled in the U.S. since the mid-1990s per the Threat Assessment |
@@ -98,7 +98,7 @@ Population-scale measures (Measurement Stack Layer B): B1 Trust and Cohesion Ind
 
 ## 8. Enforcement and Crosslinks
 
-- **AI SAFE² CP.11:** UAS-H3 (social pressure simulation) and UAS-H7 (persona and role-boundary erosion) are the procurement-facing measures of this domain in federal AI deployments
+- **AI SAFE² UAS profile:** UAS-H3 (social pressure simulation) and UAS-H7 (persona and role-boundary erosion) are the procurement-facing measures of this domain in federal AI deployments
 - **Measurement Stack:** Layer B1 (Trust and Cohesion Index), B2 (Civilizational Reproduction Indicators); S1 (Synthetic Consensus Scanner) is this domain's machine-scale sensor
 - **Taxonomy:** [Substrate Threats](../taxonomy/substrate-threats.md) (ST-005) | [Manipulation Techniques](../taxonomy/manipulation-techniques.md) (T-CT-005, 008, 013) | [Threat Classes](../taxonomy/threat-classes.md) (TC-06) | [Civilizational Drivers](../taxonomy/civilizational-drivers.md) (CD-006)
 - **Companion research:** [Research Note 002](../research/002_swarm_threat_scaling.md) covers the swarm mechanics that make synthetic consensus the cheapest commodity in the information environment
