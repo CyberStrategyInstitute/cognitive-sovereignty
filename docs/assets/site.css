@@ -343,3 +343,159 @@ summary:focus-visible {
     transition: none !important;
   }
 }
+
+/* Shared navigation and practice panels also appear on the legacy pages. */
+.csf-site-nav {
+  height: auto;
+  min-height: 76px;
+  justify-content: flex-start;
+}
+.csf-site-nav .csf-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: auto;
+  white-space: normal;
+}
+.csf-brand img,
+.csf-shield {
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.csf-practice-summary {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 24px auto;
+  padding: 24px clamp(16px, 4vw, 48px);
+  background: var(--csf-panel);
+  color: var(--csf-text);
+  border: 1px solid var(--csf-line);
+  border-radius: 12px;
+  text-align: left;
+  font:
+    15px/1.6 system-ui,
+    sans-serif;
+}
+.csf-practice-summary h2 {
+  font:
+    700 24px/1.3 system-ui,
+    sans-serif;
+  margin: 0 0 12px;
+}
+.csf-practice-summary h3 {
+  font:
+    700 17px/1.4 system-ui,
+    sans-serif;
+}
+.csf-practice-summary p {
+  margin: 8px 0;
+}
+.csf-practice-summary a,
+.csf-related-controls a {
+  color: var(--csf-orange);
+}
+.csf-practice-summary .jump {
+  position: static;
+  height: auto;
+  min-height: 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 0;
+  background: none;
+  justify-content: flex-start;
+  backdrop-filter: none;
+}
+.csf-domain-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+.csf-domain-cards .card {
+  padding: 16px;
+  border: 1px solid var(--csf-line);
+  border-radius: 10px;
+  background: var(--csf-bg);
+  min-width: 0;
+}
+.csf-domain-cards .muted {
+  color: var(--csf-muted);
+}
+.csf-related-controls {
+  grid-column: 1/-1;
+  border-top: 1px solid var(--csf-line);
+  padding: 16px;
+  font:
+    14px/1.6 system-ui,
+    sans-serif;
+}
+body > nav:not(.csf-site-nav) {
+  position: relative;
+  min-height: 54px;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+  gap: 12px;
+}
+.layout {
+  height: auto !important;
+  min-height: 80vh;
+  padding-top: 0 !important;
+}
+.layout > .main {
+  overflow: visible;
+  min-width: 0;
+}
+.layout > .sidebar {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  max-height: 100vh;
+}
+.explorer-filters {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.explorer-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font:
+    14px system-ui,
+    sans-serif;
+}
+.explorer-filters input,
+.explorer-filters select {
+  background: var(--csf-panel);
+  color: var(--csf-text);
+  border: 1px solid var(--csf-line);
+  padding: 10px;
+  font: inherit;
+  min-width: 180px;
+}
+@media (max-width: 800px) {
+  .csf-domain-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .csf-site-nav {
+    gap: 12px;
+  }
+  .csf-site-nav .csf-brand {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 520px) {
+  .csf-domain-cards {
+    grid-template-columns: 1fr;
+  }
+  .csf-practice-summary {
+    margin: 12px;
+  }
+  .csf-site-nav a {
+    font-size: 14px;
+  }
+}

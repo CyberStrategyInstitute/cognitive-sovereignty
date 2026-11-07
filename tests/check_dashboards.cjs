@@ -11,6 +11,7 @@ for (const [name, variable, field] of [
   ['docs/index.html', null, null],
   ['docs/research.html', null, null],
   ['docs/guide.html', null, null],
+  ['docs/practice.html', null, null],
 ]) {
   const html = fs.readFileSync(path.join(root, name), 'utf8');
   const scripts = [...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];
@@ -36,5 +37,27 @@ for (const [name, variable, field] of [
     assert.equal(entry.tier, context.window.CSF_SCORES[entry.id].tier);
   }
   assert.equal(entries[0].id, 'T-CT-010');
+  if (name === 'docs/csf-explorer.html') {
+    const fields = Object.fromEntries(['technique-search', 'technique-domain', 'technique-sort', 'technique-results', 'tgrid'].map(id => [id, { value: '', children: [], appendChild(child) { this.children.push(child); } }]));
+    const grid = fields.tgrid;
+    Object.defineProperty(grid, 'innerHTML', { set() { this.children = []; } });
+    context.document = { getElementById: id => fields[id], createElement: () => ({ dataset: {}, addEventListener() {} }) };
+    vm.runInContext(code.slice(code.indexOf("let currentTier='all';"), code.indexOf('function selT(')), context);
+    fields['technique-sort'].value = 'score-asc';
+    vm.runInContext("buildGrid('all')", context);
+    assert.equal(grid.children.length, 18);
+    const scores = grid.children.map(c => context.window.CSF_SCORES[c.dataset.id].score);
+    assert.deepEqual(scores, [...scores].sort((a,b) => a-b));
+    fields['technique-domain'].value = 'Purpose & Moral';
+    vm.runInContext('buildGrid()', context);
+    assert.ok(grid.children.length > 0);
+    assert.ok(grid.children.every(c => context.window.CSF_SCORES[c.dataset.id].domains.includes('Purpose & Moral')));
+    fields['technique-domain'].value = '';
+    fields['technique-search'].value = 'T-CT-006';
+    vm.runInContext("buildGrid('critical')", context);
+    assert.deepEqual(grid.children.map(c => c.dataset.id), ['T-CT-006']);
+    vm.runInContext("buildGrid('elevated')", context);
+    assert.equal(grid.children.length, 0);
+  }
 }
-console.log('PASS: six browser pages and local scripts parse; three dashboards use the generated scores and corrected ranking.');
+console.log('PASS: seven pages and local scripts parse; shared scores, ranking, combined search/domain/tier filtering, and sorting pass. Rendered layout is not tested here.');

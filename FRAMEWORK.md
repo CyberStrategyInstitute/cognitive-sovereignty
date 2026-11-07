@@ -1,6 +1,6 @@
-[![AI SAFE2 Framework Visual Map](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/raw/main/assets/CSF-Human-Control-Plane-v2.png)](https://github.com/CyberStrategyInstitute/ai-safe2-framework/blob/main/assets/CSF-Human-Control-Plane-v2.png)
+[![CSF human control-plane visual](assets/CSF-Human-Control-Plane-v2.png)](assets/CSF-Human-Control-Plane-v2.png)
 
-<div align="center">
+
 
 
 

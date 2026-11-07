@@ -71,3 +71,7 @@ For an assessment, use: CSF assesses [scenario] at CTSS [score] as of [date], fr
 For a direct test, use this pattern after review: On [date], [system/version] passed [x] of [n] cases on [protocol/case set]. The comparable baseline was [b] of [m] on [date]. The main failures were [categories]. Results apply to [scope]. [Limitations].
 
 A monitoring result is a scoped finding. It does not establish that CSF prevents manipulation across a population. Reports remain drafts until an authorized owner clears publication.
+
+## Domain capability results
+
+Use [the readiness worksheet](../resources/readiness-worksheet.md), [catalog](../resources/mitigation-catalog.md), and [worked unit example](../examples/unit_readiness_assessment.md). `readiness-assessments.json` starts empty. The read-only summary excludes synthetic examples and keeps inherited capability profiles separate from the two new checks per domain. No observed unit readiness increase is claimed. `python -m tools.readiness` reports the current observed collection.

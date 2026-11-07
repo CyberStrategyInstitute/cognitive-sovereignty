@@ -32,6 +32,17 @@ Two distinct attack modes converge on this domain. The active mode floods, captu
 
 ---
 
+<!-- domain-exposure:start -->
+### Research-informed exposure updates
+
+These map additional mechanisms to existing threat IDs. They expand what this domain examines; they do not establish increased incidence, reach, or severity.
+
+| Existing threat ID | Mechanism to examine | Research |
+|---|---|---|
+| T-CT-004 (added) | Hidden objectives can steer advice before a decision is formed. | [006](../research/006_independent_judgment.md), [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+| T-CT-008 (added) | Repeated derivative evidence can look like independent corroboration. | [006](../research/006_independent_judgment.md), [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+<!-- domain-exposure:end -->
+
 ## 3. Cascade Position
 
 **Receives from below:** biological capture (Domain 1) delivers a sleep-deprived, reward-hijacked brain to this domain. Attention hygiene cannot be trained onto captured reward circuitry.
@@ -44,39 +55,54 @@ Two distinct attack modes converge on this domain. The active mode floods, captu
 
 ## 4. Protective Capabilities and Mitigation Catalog
 
-Mitigation ID convention: `M-{threat}{c}` (c = Cognitive), per the taxonomy's operational template.
+Stable IDs connect each capability to its research and test. Existing IDs are retained. See the [full catalog](../resources/mitigation-catalog.md) for expected outcomes, owner roles, checks, and failure responses.
 
-| M-ID | Capability | Counters | Implementation |
-| --- | --- | --- | --- |
-| M-001c | Attention hygiene | T-CT-001 | Single-task deep work blocks; platform access scheduled, not ambient; interruption budget tracked and enforced |
-| M-014c | Load management discipline | T-CT-014, TC-05 | Bounded information intake windows; deliberate triage before analysis; recognition training for flooding conditions (contradictory streams, performative crisis tempo) |
-| M-007c | Source verification habit | T-CT-007 | Provenance check before belief update; independent corroboration for any claim that would change a decision; distrust of unverifiable virality |
-| M-S03c | Cognitive independence exercises | ST-003 | Quarterly unassisted baseline testing (reasoning, writing, recall against own trend line); rotation of tool-free task execution; offloading inventory maintained per role |
-| M-006c | Independent-first decision habit | T-CT-006 | Formulate position before consulting AI tools on Material/High-stakes questions; log and investigate divergences; never accept defaults on consequential decisions unreviewed |
-| M-S07c | Output quality baselining | ST-007 | Dated samples of AI outputs on standardized tasks; quarterly comparison converts invisible drift into measurable trend |
-| M-004c | Inoculation training | T-CT-004 and technique layer broadly | Pre-exposure to weakened manipulation techniques builds mental antibodies; per CSF Table 5, inoculation reduces false narrative adoption by approximately 40 percent across cultures |
-| M-002c | Deep reading practice | T-CT-001, ST-003 | Sustained long-form engagement as deliberate training, rebuilding the deep-attention capacity hyperattention displaces |
+| M-ID | Capability | Counters | Implementation | Research |
+|---|---|---|---|---|
+| M-001c | Attention hygiene (inherited) | T-CT-001 | Single-task deep work blocks; platform access scheduled, not ambient; interruption budget tracked and enforced | [010](../research/010_domain_controls_and_readiness.md) |
+| M-014c | Load management discipline (inherited) | T-CT-014, TC-05 | Bounded information intake windows; deliberate triage before analysis; recognition training for flooding conditions (contradictory streams, performative crisis tempo) | [010](../research/010_domain_controls_and_readiness.md) |
+| M-007c | Source verification habit (refined) | T-CT-007 | Trace claims to independent origins, including conflicting evidence. Three derivative summaries count as one lineage; provenance is evidence about origin, not truth. | [007](../research/007_evidence_lineage.md) |
+| M-S03c | Cognitive independence exercises (refined) | ST-003 | Use comparable assisted and unaided tasks with a dated protocol, baseline, system version, and accessibility arrangements. Compare like tasks and retain helpful-delegation controls. | [006](../research/006_independent_judgment.md) |
+| M-006c | Independent-first decision habit (refined) | T-CT-006 | Record initial criteria before consequential advice. Measure justified acceptance and rejection, comprehension, time, and later comparable performance. Keep helpful assistance and accessibility options. | [006](../research/006_independent_judgment.md) |
+| M-S07c | Output quality baselining (refined) | ST-007 | Retain dated cases and compare the same task, protocol, environment, and system version. Separate a model change, changed evidence, and an assessment correction. | [006](../research/006_independent_judgment.md), [007](../research/007_evidence_lineage.md) |
+| M-004c | Inoculation training (refined) | T-CT-004 | Practice recognizing current manipulation techniques with correct and incorrect advice. Measure actual decisions and retention; no universal percentage improvement is established by this catalog. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+| M-002c | Deep reading practice (inherited) | T-CT-001, ST-003 | Sustained long-form engagement as deliberate training, rebuilding the deep-attention capacity hyperattention displaces | [010](../research/010_domain_controls_and_readiness.md) |
+| M-007c2 | Evidence completeness check (added) | T-CT-007, T-CT-008 | Group derivative reports by their original observation. Mark missing pages, truncated tool output, and contradictory evidence before deciding. | [007](../research/007_evidence_lineage.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-008c | Trace influence to an outcome (added) | T-CT-004, T-CT-008 | Record production, distribution, exposure, decision change, persistence, and recovery separately. Preserve unknown stages. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
 
 ---
 
 ## 5. Domain Readiness Assessment
 
-Score each capability 0 to 5. Anchors: 0 = absent, 3 = practiced inconsistently, 5 = habitual and verified. Domain Readiness Score = (mean of eight capability scores) x 20.
+This is a proposed, task-specific training rubric, not a validated personnel-readiness instrument. Score each capability 0 to 5. Anchors: 0 = absent, 3 = practiced inconsistently, 5 = habitual and verified. Domain Readiness Score = (mean of eight capability scores) x 20.
 
 | Capability | 0 (Absent) | 3 (Inconsistent) | 5 (Sovereign) |
 | --- | --- | --- | --- |
 | Attention hygiene | Ambient platform access; no deep work structure | Deep work attempted; interruptions unmanaged | Scheduled access; protected deep work blocks; interruption budget tracked |
 | Load management | Continuous intake; no triage | Intake bounded sometimes | Bounded windows; triage before analysis; flooding conditions recognized |
-| Source verification | Belief updates on unverified content | Verification for major claims only | Provenance check habitual before any decision-relevant belief update |
-| Cognitive independence | No unassisted baseline ever measured | Baseline measured once; no trend | Quarterly unassisted testing; stable or improving trend line |
-| Independent-first habit | Tool output accepted as conclusion | Independent position formed occasionally | Position formed before tool consult on all Material/High-stakes questions; divergences logged |
-| Output baselining | No retained samples | Informal memory of past quality | Dated samples; quarterly structured comparison |
-| Inoculation | No exposure training | One-time awareness briefing | Recurring inoculation against current technique families |
+| Source verification | Decision-relevant claims accepted without origin checks | Origins checked but shared lineage or contrary material is missed | Independent origins, conflicts, and material omissions are identified in the declared cases |
+| Cognitive independence | No comparable capability check | One check without stable conditions or a retained baseline | Comparable accessible assisted/unaided tasks and delayed transfer are recorded with limits |
+| Independent-first habit | Advice accepted without criteria or reasons | Criteria or review recorded inconsistently | Initial criteria, justified agreement/rejection, comprehension, and reasons are demonstrated |
+| Output baselining | No retained cases | Samples exist but conditions or versions differ without explanation | Dated outputs, task conditions, system versions, and change reasons are recorded |
+| Inoculation | No relevant practice | Awareness briefing without a recorded performance check | Current technique practice includes correct and incorrect advice with retained task results |
 | Deep reading | Long-form abandoned | Occasional long-form | Regular sustained long-form engagement, tracked |
 
-**Bands:** Sovereign 80-100 | Functional 60-79 | Degraded 40-59 | Compromised below 40. A Compromised score here with high AI tool usage is the ST-003 Phase 3 profile: the person can no longer distinguish their reasoning from the tool's.
+**Bands:** Sovereign 80-100 | Functional 60-79 | Degraded 40-59 | Compromised below 40. A low score identifies checks to investigate. It does not by itself establish skill atrophy or inability to reason independently.
 
 ---
+
+<!-- domain-readiness:start -->
+### Additional readiness checks
+
+Keep the inherited capability score and denominator unchanged. Report these research-extension checks separately. Unknown is not zero. Use [the worksheet](../resources/readiness-worksheet.md) and [worked unit example](../examples/unit_readiness_assessment.md). Readiness is a task-specific assessment, not CTSS.
+
+| M-ID | Check | 0 | 3 | 5 |
+|---|---|---|---|---|
+| M-007c2 | Provide three summaries of one study, a conflicting independent study, and one missing page. Require two lineages and an explicit omission. | The control is absent or the declared check failed completely. | The path works in some declared cases; important gaps or evidence remain. | The path passes the declared case set, including an adverse case, with retained evidence. |
+| M-008c | Review a case with message-generation evidence only. Check that exposure and behavior remain unknown and that the CTSS assumptions are explicit. | The control is absent or the declared check failed completely. | The path works in some declared cases; important gaps or evidence remain. | The path passes the declared case set, including an adverse case, with retained evidence. |
+
+Record the protocol, case set, catalog revision, date, assessor, evidence, failed cases, and remediation owner. No observed unit results were supplied, so current readiness remains unknown in all six domains. A documented capability is not a passed test.
+<!-- domain-readiness:end -->
 
 ## 6. Training Protocols by Population
 

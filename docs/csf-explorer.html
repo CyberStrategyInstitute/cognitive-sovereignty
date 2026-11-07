@@ -202,9 +202,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,31,51,0.9
 }
 </style>
 <link rel="stylesheet" href="assets/site.css">
+<script src="assets/practice.js" defer></script>
 </head>
 <body>
-<!-- CSF shared navigation --><nav class="csf-site-nav" aria-label="Main"><strong>CSI / Cognitive Sovereignty</strong><a href="index.html">Learn</a><a href="research.html">Research and scores</a><a href="csf-explorer.html" aria-current="page">Taxonomy</a><a href="csf-command-center.html">Command center</a><a href="guide.html">How to use it</a><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>
+<!-- CSF shared navigation --><nav class="csf-site-nav" aria-label="Main"><a class="csf-brand" href="index.html"><img src="assets/brand/csi-shield-white-orange.svg" width="32" height="48" alt="Cyber Strategy Institute shield"><span>CSI / Cognitive Sovereignty</span></a><a href="index.html">Learn</a><a href="research.html">Research and scores</a><a href="csf-explorer.html" aria-current="page">Taxonomy</a><a href="practice.html">Controls and readiness</a><a href="csf-command-center.html">Command center</a><a href="guide.html">How to use it</a><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>
 <p style="padding:12px;background:#fff4df;color:#231b10;position:relative;z-index:101">Reference framework view. Scores are analyst estimates; coverage and human protection have not been validated. <a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty/blob/main/monitoring/README.md">Measurement method</a>.</p>
 
 <svg width="0" height="0" style="position:absolute;overflow:hidden">
@@ -241,7 +242,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,31,51,0.9
 
 <nav>
   <a class="nav-brand" href="index.html">
-    <svg width="28" height="28" viewBox="0 0 200 200" style="color:var(--gold)"><use href="#cseal"/></svg>
+    <img class="csf-shield" src="assets/brand/csi-shield-white-orange.svg" alt="CSI shield" width="42" height="54">
     <div><div class="nav-brand-name">Cognitive Sovereignty</div><div class="nav-brand-sub">Threat Explorer · Sentinel + Architect</div></div>
   </a>
   <div class="ntabs">
@@ -254,10 +255,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,31,51,0.9
   <a class="nbk" href="index.html">← Learning Hub</a>
 </nav>
 
+<!-- CSF practice summary:start --><section class="csf-practice-summary" aria-label="Domain controls and readiness"><h2>From research to tested capability</h2><p>44 inherited controls retained, 20 refined, and 12 added. Readiness is unknown until a scoped assessment supplies results.</p><nav class="jump" aria-label="Practice resources"><a href="practice.html#domains">Six domains</a><a href="practice.html#controls">Control catalog</a><a href="practice.html#resources">Assessment resources</a><a href="practice.html#roadmap">Roadmap status</a></nav><div data-domain-summary></div></section><!-- CSF practice summary:end -->
 <div class="layout">
 <div class="sidebar" id="sidebar">
-  <div class="sb-sec"><div class="sb-hdr">🔴 Critical ≥80 — 7 Techniques</div><div id="sb-c"></div></div>
-  <div class="sb-sec"><div class="sb-hdr">🟡 High 70–79 — 9 Techniques</div><div id="sb-h"></div></div>
+  <div class="sb-sec"><div class="sb-hdr">🔴 Critical ≥80 — 5 Techniques</div><div id="sb-c"></div></div>
+  <div class="sb-sec"><div class="sb-hdr">🟡 High 70–79 — 11 Techniques</div><div id="sb-h"></div></div>
   <div class="sb-sec"><div class="sb-hdr">⚪ Elevated 60–69 — 2 Techniques</div><div id="sb-e"></div></div>
 </div>
 
@@ -267,7 +269,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,31,51,0.9
 <div class="tpanel active" id="tab-threats">
   <div class="ph-kicker">Layer 0 — Active Manipulation Techniques · Living Taxonomy</div>
   <h1 class="ph-title">CTSS <em>Threat Explorer</em></h1>
-  <p class="ph-doctrine">"If it feels like marketing, it's wrong. If it feels like doctrine, it's right." — The threat taxonomy is not a product catalog. It is a classified operational registry scored for prioritized defense allocation.</p>
+  <p class="ph-doctrine">Find the technique, inspect its reference score, and open the linked controls and research. Assess a specific event separately with explicit CTSS inputs and reasons.</p>
   <p class="ph-sub">18 technique families scored 0–100 using the Cognitive Threat Severity Score. Click any card for the full operational detail: mechanism, CTSS component breakdown, primary domains, and countermeasures by CSF domain. The sidebar provides persistent index access.</p>
   <div class="itabs">
     <button class="itab active" onclick="filterT('all',this)">All (18)</button>
@@ -275,6 +277,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,31,51,0.9
     <button class="itab" onclick="filterT('high',this)">🟡 High 70–79</button>
     <button class="itab" onclick="filterT('elevated',this)">⚪ Elevated 60–69</button>
   </div>
+  <div class="explorer-filters"><label>Search techniques<input id="technique-search" type="search" placeholder="ID, name, mechanism..." oninput="buildGrid()"></label><label>Domain<select id="technique-domain" onchange="buildGrid()"><option value="">All domains</option><option>Biological</option><option>Cognitive</option><option>Emotional</option><option>Social</option><option>Purpose &amp; Moral</option><option>Digital &amp; AI Symbiosis</option></select></label><label>Sort<select id="technique-sort" onchange="buildGrid()"><option value="score-desc">CTSS high to low</option><option value="score-asc">CTSS low to high</option><option value="id">Technique ID</option><option value="name">Technique name</option></select></label></div><p id="technique-results" role="status" aria-live="polite"></p>
   <div class="tgrid" id="tgrid"></div>
   <div class="dpanel" id="dpanel">
     <div class="dp-hdr">
@@ -300,9 +303,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,31,51,0.9
     </div>
     <div class="det-box">
       <div class="det-box-l">CTSS Breakdown — T-CT-008 Memetic Swarm</div>
-      <div style="font-family:var(--ff-d);font-weight:700;font-size:34px;color:var(--crit);margin-bottom:11px;line-height:1">90 <span style="font-size:12px;color:var(--wll);font-family:var(--ff-b)">/ 100 CRITICAL</span></div>
+      <div style="font-family:var(--ff-d);font-weight:700;font-size:34px;color:var(--crit);margin-bottom:11px;line-height:1">83 <span style="font-size:12px;color:var(--wll);font-family:var(--ff-b)">/ 100 CRITICAL</span></div>
       <div class="cr-rows" id="sw-ctss"></div>
-      <div style="margin-top:11px;font-family:var(--ff-m);font-size:9px;color:var(--wll);line-height:2">(5×0.25)+(4×0.30)+(5×0.20)+(2×0.15)+(4×0.10)×20 = <strong style="color:var(--white)">90</strong></div>
+      <div style="margin-top:11px;font-family:var(--ff-m);font-size:9px;color:var(--wll);line-height:2">(5×0.25+4×0.30+5×0.20+2×0.15+4×0.10)×20 = <strong style="color:var(--white)">83</strong></div>
     </div>
   </div>
   <div class="qblock">
@@ -322,10 +325,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,31,51,0.9
 
 <!-- EDGE CASES -->
 <div class="tpanel" id="tab-edge">
-  <div class="ph-kicker">Wargaming Validated · Stress Testing the Framework</div>
+  <div class="ph-kicker">Illustrative Scenarios · Stress Testing the Framework</div>
   <h1 class="ph-title"><em>Edge Cases</em></h1>
   <p class="ph-doctrine">A framework that cannot be falsified is not a framework — it is a philosophy. A valid threat assessment must identify the conditions under which even robust defenses fail.</p>
-  <p class="ph-sub">Eight scenarios stress-tested through wargaming. Three are below the 90% coverage threshold — meaning no current countermeasure fully addresses them. Click each to examine the gap, the background, and the response approach.</p>
+  <p class="ph-sub">Eight inherited scenarios identify questions for testing. Their coverage estimates are unvalidated; no completed wargame protocol or empirical coverage denominator is supplied. Click each to examine the gap, the background, and the response approach.</p>
   <div class="egrid" id="egrid"></div>
 </div>
 
@@ -460,9 +463,17 @@ function buildSidebar(){
   });
 }
 
+let currentTier='all';
 function buildGrid(filter){
+  if(filter)currentTier=filter;
+  const text=(document.getElementById('technique-search').value||'').trim().toLocaleLowerCase();
+  const domain=document.getElementById('technique-domain').value;
+  const mode=document.getElementById('technique-sort').value;
+  const rows=T.filter(t=>(currentTier==='all'||t.tier===currentTier)&&(!domain||t.dom.includes(domain))&&JSON.stringify(t).toLocaleLowerCase().includes(text));
+  rows.sort((a,b)=>mode==='name'?a.name.localeCompare(b.name):mode==='id'?a.id.localeCompare(b.id):mode==='score-asc'?a.s-b.s||a.id.localeCompare(b.id):b.s-a.s||a.id.localeCompare(b.id));
+  document.getElementById('technique-results').textContent=rows.length+' of '+T.length+' technique families shown. Reference estimates are separate from event CTSS.';
   const g=document.getElementById('tgrid');g.innerHTML='';
-  T.filter(t=>filter==='all'||t.tier===filter).forEach(t=>{
+  rows.forEach(t=>{
     const bc=t.tier==='critical'?'bar-c':t.tier==='high'?'bar-h':'bar-e';
     const tc=t.tier==='critical'?'tr-c':t.tier==='high'?'tr-h':'tr-e';
     const sc=t.tier==='critical'?'sc-c':t.tier==='high'?'sc-h':'sc-e';
@@ -498,6 +509,7 @@ function selT(id){
         <div style="margin-top:9px;font-family:var(--ff-m);font-size:9px;color:var(--wll)">(${t.ctss.L}×0.25+${t.ctss.Ia}×0.30+${t.ctss.R}×0.20+${t.ctss.D}×0.15+${t.ctss.RecD}×0.10)×20 = <strong style="color:var(--white)">${t.s}</strong></div>
       </div>
     </div>`;
+  window.CSFPractice?.showTechnique(t.id);
   p.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 

@@ -19,3 +19,9 @@ Keep five questions separate: Does the person feel capable? Can they perform the
 Compare agent-first and independent-first conditions on counterbalanced, comparable tasks. Include correct and incorrect recommendations. Record accuracy, calibration, time, effort, and delayed transfer. Permit accessible assistance where needed and state what capability is being assessed. Adopt a procedure only if it meets the workflow's declared benefit and burden criteria.
 
 Neither paper validates CSF or proves inevitable atrophy. See [safeguard 1](../resources/practical-safeguards.md) and [the pilot plan](../monitoring/pilot-plan.md).
+
+## Apply this note through controls
+
+[M-001b: Circadian discipline](../resources/mitigation-catalog.md#m-001b), [M-S03c: Cognitive independence exercises](../resources/mitigation-catalog.md#m-s03c), [M-006c: Independent-first decision habit](../resources/mitigation-catalog.md#m-006c), [M-S07c: Output quality baselining](../resources/mitigation-catalog.md#m-s07c), [M-004c: Inoculation training](../resources/mitigation-catalog.md#m-004c), [M-HO4f: Values articulation and testing](../resources/mitigation-catalog.md#m-ho4f), [M-006g: Human override protocols](../resources/mitigation-catalog.md#m-006g), [M-S07g: Drift telemetry and baselining](../resources/mitigation-catalog.md#m-s07g), [M-014b: Decision pacing under pressure](../resources/mitigation-catalog.md#m-014b), [M-HO5f2: Challenge and correct a score](../resources/mitigation-catalog.md#m-ho5f2).
+
+Use [the readiness worksheet](../resources/readiness-worksheet.md) to retain results. These mappings are documented design decisions, not evidence of field effectiveness.

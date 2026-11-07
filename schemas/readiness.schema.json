@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CSF scoped readiness assessment",
+  "type": "object",
+  "required": [
+    "id",
+    "kind",
+    "assessment_date",
+    "scope",
+    "protocol",
+    "case_set",
+    "assessor",
+    "catalog_revision",
+    "ratings"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protocol": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_set": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assessor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "catalog_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "observed",
+        "synthetic"
+      ]
+    },
+    "assessment_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "ratings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "control_id",
+          "rating"
+        ],
+        "properties": {
+          "control_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rating": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 5
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          },
+          "adverse_case_passed": {
+            "type": "boolean"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "rating": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "rating"
+              ]
+            },
+            "then": {
+              "required": [
+                "evidence",
+                "note"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "rating": {
+                  "const": 5
+                }
+              },
+              "required": [
+                "rating"
+              ]
+            },
+            "then": {
+              "required": [
+                "adverse_case_passed"
+              ],
+              "properties": {
+                "adverse_case_passed": {
+                  "const": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

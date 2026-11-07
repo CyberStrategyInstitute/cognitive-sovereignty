@@ -12,6 +12,7 @@ The [weekly intake baseline](intake/reports/baseline.md) preserves the full supp
 | [007: Evidence lineage](007_evidence_lineage.md) | Find repeated evidence and missing material |
 | [008: Objectives and persuasion](008_operator_objectives_and_persuasion.md) | Distinguish factual correction from exploitation |
 | [009: Relationships and exit](009_relational_influence.md) | Design a bounded review of attachment, role confusion, and exit options |
+| [010: Domain controls and readiness](010_domain_controls_and_readiness.md) | Connect the research to each domain’s controls, checks, and assessment |
 | [Scoring correction](scoring-correction-2026-11-07.md) | Understand the arithmetic repair and its limits |
 
 ## Add one useful record

@@ -1,171 +1,57 @@
-# Sample Unit-Level Cognitive Readiness Assessment
-## Cognitive Sovereignty Framework — Command Application
+# Worked unit cognitive readiness assessment
 
-> **Purpose:** This document demonstrates how a unit commander or cognitive readiness officer applies the CSF at the unit level. It is a sample completed assessment, not a template. For the blank template, see `/resources/assessment-template.md`.
+This is a fictional training example of an AI-assisted briefing workflow. It shows how to connect research, CTSS, controls, capability checks, and remediation. No real unit or participant was tested. The [JSON record](unit-readiness.json) and [fictional case fixtures](readiness-fixtures.md) reproduce the capability results below.
 
-**Classification:** UNCLASSIFIED — FOR TRAINING USE  
-**Unit Type:** Notional Air Operations Center (AOC) — 45 personnel  
-**Assessment Period:** Q1  
-**Assessor:** Unit Cognitive Readiness Officer
+Use the [assessment template](../resources/assessment-template.md) for a blank threat assessment and the [readiness worksheet](../resources/readiness-worksheet.md) for capability evidence. The earlier example’s 31/100 self-report, 55% coverage estimate, personnel percentages, and targets were fictional assumptions without an underlying case record. They are not the baseline for this worked example or evidence of an operational outcome. Git history preserves that earlier text.
 
----
+## 1. Define the decision
 
-## Executive Summary
+Scope: a notional team uses an assistant to collect sources, draft a briefing, and recommend a course of action. The human briefing owner retains responsibility for the final judgment and any action. Private personnel records, clinical testing, and live operational systems are excluded.
 
-This assessment identifies **Domain 6 (Digital & AI Symbiosis)** as the unit's primary cognitive security gap. All five traditional domains (Biological, Cognitive, Emotional, Social, Purpose & Moral) score adequately against existing resilience program benchmarks. Domain 6 capability is absent from current training and has not been assessed before.
+The question is whether the team can identify omitted or repeated evidence, challenge advice, limit permissions, and correct the downstream record. Each result below is labeled synthetic. It must not enter observed unit trends.
 
-**Primary Risk:** The unit operates AI-assisted intelligence analysis tools and uses AI copilots for daily operational products. No formal protocol exists for human override of AI recommendations. No provenance verification standard exists for AI-generated content entering the operations cycle. Personnel score an average of 31/100 on the Domain 6 self-assessment — in the **At Risk** range.
+## 2. Assess the associated threat
 
-**Three-Priority Recommendation:**
-1. Establish human override protocols for AI-assisted products (Domain 6 — immediate)
-2. Conduct inoculation training against T-CT-004 (Personalized Narrative Injection) and T-CT-008 (Memetic Swarm Orchestration) (Domain 2 + Domain 6 — 30 days)
-3. Integrate provenance verification into the operations product workflow (Domain 6 — 60 days)
+Illustrative scenario: the assistant repeats one source as corroboration, recommends a course of action, and asks for broader access to carry it out. Relevant IDs are T-CT-006, T-CT-007, and T-CT-008. Use the [CTSS method](../taxonomy/ctss-scoring.md) for the threat and the capability worksheet for the response.
 
----
+| CTSS input | Estimate | Fictional scenario reason |
+|---|---:|---|
+| Likelihood | 3 | The exercise assumes repeated exposure within this workflow; this is not an incident rate |
+| Impact on agency | 4 | A consequential briefing can shape a decision before independent review |
+| Reach | 1 | The declared scope is the team and its briefing recipients, fewer than 1,000 people |
+| Detection difficulty | 3 | The repeated origin and requested permission expansion are visible only with review |
+| Recovery difficulty | 2 | The exercise assumes a controlled correction path and no irreversible action |
 
-## Step 1 — Domain Being Assessed
+CTSS is **56/100**: `3*5 + 4*6 + 1*4 + 3*3 + 2*2`. This is a synthetic scenario score, not a readiness score or a measured incident. It remains outside the historical event ledger.
 
-**Domain:** Notional Air Operations Center — AI-augmented intelligence analysis and operational planning workflow
+## 3. Select and test capabilities across all six domains
 
-**Description:** 45 personnel operating an AI-assisted operations environment. Primary AI tool usage: intelligence summary generation, threat assessment copilot, targeting recommendation system, and communications drafting assistance. Approximately 80% of personnel use AI tools daily for consequential operational products.
+The [catalog](../resources/mitigation-catalog.md) defines each check, outcome, failure response, and research link. This example rates only the two new research-extension checks per domain. The inherited 44 capabilities remain unassessed. The two profiles must not be combined.
 
----
+| Domain | Research-extension controls | Ratings | Extension score | Inherited readiness |
+|---|---|---|---:|---|
+| Biological | M-014b, M-016b | 1, 0 | 10/100 | Unknown, 0/6 rated |
+| Cognitive | M-007c2, M-008c | 2, 1 | 30/100 | Unknown, 0/8 rated |
+| Emotional | M-005d2, M-016d2 | 1, 1 | 20/100 | Unknown, 0/6 rated |
+| Social | M-005e2, M-008e2 | 2, 1 | 30/100 | Unknown, 0/7 rated |
+| Purpose & Moral | M-015f2, M-HO5f2 | 2, 1 | 30/100 | Unknown, 0/8 rated |
+| Digital & AI Symbiosis | M-006g2, M-005g | 1, 0 | 10/100 | Unknown, 0/9 rated |
 
-## Step 2 — Manipulation Vectors Present
+Each extension score uses `(rating 1 + rating 2) / 10 * 100`. Evidence and fictional failure details are linked from the JSON record. None of these numbers establishes personal fitness, clinical status, mission readiness, or effective protection. No observed readiness increase can be inferred.
 
-| Vector | Score (0–5) | Evidence |
-|---|---|---|
-| Attention capture | 3 | High notification volume from operations platforms; self-reported focus difficulty among personnel on 12-hour shifts |
-| Narrative shaping | 4 | Intelligence summaries generated by AI tools may carry model bias (ST-006, ST-007); no independent verification protocol exists |
-| Identity influence | 2 | Social media usage moderate; identity anchoring programs adequate |
-| Autonomy reduction | 4 | Personnel report defaulting to AI targeting recommendations without independent verification in 60–70% of cases |
-| Reality distortion | 3 | Synthetic media detection training absent; no protocol for questioning AI-generated intelligence products |
+## 4. Assign repairs and retain failures
 
-**Total Vector Score: 16 / 25** — Significant cognitive sovereignty risk identified.
-
-**Highest-Priority Vector:** Autonomy reduction (4/5) driven by absence of human override protocols for AI-assisted decision-making.
-
----
-
-## Step 3 — Human Faculties at Risk
-
-| Faculty | At Risk? | Mechanism |
-|---|---|---|
-| Perception | ☑ Yes | AI-generated intelligence summaries may contain model drift errors (ST-007) absorbed without verification |
-| Memory | ☑ Yes | Reliance on AI-produced records without independent corroboration creates vulnerability to T-CT-004 |
-| Reasoning | ☑ Yes | Cognitive offloading (ST-003) observable — personnel report difficulty completing analysis tasks without AI assistance |
-| Morality | ☐ No | Domain 5 programs adequate; moral reasoning training current |
-| Agency | ☑ Yes | 60–70% default rate on AI recommendations without independent verification — approaching ST-001 threshold |
-
----
-
-## Step 4 — Control Mechanisms Active in This Domain
-
-| Mechanism | Present | Notes |
-|---|---|---|
-| Authority | ☑ | AI outputs carry implicit epistemic authority (ST-001); personnel report discomfort challenging AI recommendations |
-| Incentives | ☑ | Operational tempo incentivizes fast AI-assisted products over slower independent verification |
-| Fear | ☐ | Not identified as active |
-| Convenience | ☑ | AI assistance is genuinely faster; convenience is driving offloading (ST-003) |
-| Social pressure | ☐ | Not identified as dominant factor |
-| Algorithmic optimization | ☑ | AI targeting and intelligence tools are optimizing for outputs that may not align with human mission judgment |
-
----
-
-## Step 5 — Scale Potential
-
-☑ **Organizational** — within the AOC  
-☑ **National** — intelligence products generated by this unit may influence operational decisions affecting national-level outcomes
-
-**Scale Risk:** An adversary who compromises the AI tools used by this unit (model drift, data poisoning, guardrail exploitation) influences operational products reaching decision-makers above the unit level. The compromise point is the AI tool, not the individual analyst.
-
----
-
-## Step 6 — Countermeasure Mapping
-
-| Domain | Current Capability | Gap | Recommended Action |
+| Priority | Repair | Proposed owner role | Completion evidence |
 |---|---|---|---|
-| 1. Biological | Adequate — Comprehensive Airman Fitness program current | None identified | Maintain |
-| 2. Cognitive | Adequate — PME current; attention hygiene training absent | Inoculation training absent | Add inoculation training module (T-CT-004, T-CT-008 focus) |
-| 3. Emotional | Adequate — Operational Stress Control program current | None identified | Maintain |
-| 4. Social | Adequate — Trust network programs current | None identified | Maintain |
-| 5. Purpose & Moral | Adequate — Ethics training current | None identified | Maintain |
-| 6. Digital & AI Symbiosis | **ABSENT** | No Domain 6 training, protocols, or assessment exists | Full Domain 6 implementation required |
+| Before a consequential action | Block self-authorized permission expansion; verify the pause/handoff path | Workflow owner and implementing-system owner | Both normal and adverse cases pass without unauthorized action |
+| Before relying on the briefing | Show source lineage, missing pages, objectives, and conflicts | Briefing owner | Reviewer identifies two independent lineages, the omission, and the conflict |
+| Before distributing identity claims | Record synthetic-speaker permission and correct controlled copies | Communications owner | Authorized representation and correction receipts for all known copies |
+| Before closing the exercise | Repair exit, remembered-context correction, and score appeal | Service owner and independent reviewer | Exit, correction, refusal, and appeal outcomes are recorded |
 
----
+Roles are proposed, not assigned to real people. A responsible owner sets the date and accepts the work. Documentation alone does not close a failed check.
 
-## Step 7 — Edge-Case Stress Test
+## 5. Reassess and publish responsibly
 
-**Q7a — If truth becomes functionally unknowable through AI-generated content and competing reality ecosystems, does resilience remain?**
+Run `python -m tools.readiness examples/unit-readiness.json` to reproduce this example. For a real assessment, retain a new dated record with kind `observed`, the exact protocol, case set, catalog revision, assessor, and permissible evidence. Keep detailed private evidence in its approved system and publish only appropriate aggregate results.
 
-☑ **No** — Gap identified: No provenance verification protocol for AI-generated intelligence products. If synthetic media is inserted into intelligence channels, the unit lacks detection capability.
-
-**Q7b — If institutions responsible for cognitive defense are themselves captured, does resilience remain?**
-
-☑ **No** — Gap identified: Unit has no independent verification pathway if AI tools are compromised. All analysis relies on AI-generated products without cross-verification against AI-independent sources.
-
-**Q7c — If AI controls the primary information flow, does resilience remain?**
-
-☑ **No** — Gap identified: 80% of consequential operational products currently flow through AI assistance. No AI-off operational protocol exists. If AI tools fail or are adversarially degraded, operational capacity would be significantly impaired.
-
----
-
-## Step 8 — 90% Coverage Determination
-
-| Condition | Met? | Evidence |
-|---|---|---|
-| Majority of manipulation vectors neutralized | ☐ No | Autonomy reduction (4/5) and narrative shaping (4/5) vectors not addressed |
-| Human agency measurably preserved | ☐ No | 60–70% AI default rate indicates agency erosion in progress |
-| Identity and morality remain self-directed | ☑ Yes | Domains 3, 4, 5 adequate |
-
-**Overall Coverage Estimate: 55%** — Below the 90% operational threshold.
-
-**Gaps Requiring Remediation:**
-1. Human override protocol for AI-assisted operational products
-2. Provenance verification standard for intelligence products
-3. Domain 6 training curriculum and periodic assessment
-4. AI-off operational capability (fallback protocol if AI tools are unavailable or compromised)
-
----
-
-## Implementation Plan
-
-### Immediate (0–30 Days)
-
-**Action 1: Establish R/M/H Classification for AI Products**
-Using the EFA Non-Delegation Playbook classification framework:
-- **Routine (R):** Administrative products, drafts, summaries — AI output used with logging
-- **Material (M):** Intelligence assessments, operational planning documents — human review required before dissemination
-- **High-Stakes (H):** Targeting recommendations, force employment decisions — human authorization mandatory, AI output is advisory only
-
-**Owner:** Operations Officer  
-**Measurement:** Track override frequency by category. Establish baseline in first 30 days.
-
----
-
-### Near-Term (30–60 Days)
-
-**Action 2: Inoculation Training — T-CT-004 and T-CT-008**
-Schedule and complete inoculation training module focusing on Personalized Narrative Injection (T-CT-004) and Memetic Swarm Orchestration (T-CT-008). Pre/post assessment required.
-
-**Owner:** Training Officer  
-**Measurement:** Pre/post belief adoption rate assessment. Target: >20% improvement.
-
-**Action 3: Provenance Verification Standard**
-Establish and brief a unit-level provenance verification standard for intelligence products entering the operations cycle. Minimum standard: three-source corroboration for any AI-generated intelligence claim used in a consequential decision.
-
----
-
-### 60-Day Reassessment
-
-Reassess using Domain 6 self-assessment checklist. Target: unit average above 60/100 (Adequate range). If below target, escalate to wing-level cognitive readiness review.
-
----
-
-## Commander's Certification
-
-This assessment was completed in accordance with CSF v2.0 assessment protocols. Identified gaps are documented for unit training plan integration. Reassessment is scheduled for 60 days from assessment date.
-
-**Assessing Officer:** ___________________  
-**Date:** ___________________  
-**Next Scheduled Assessment:** ___________________
+Retest repaired capabilities with the same cases before claiming improvement. Preserve the initial record and any adverse results. Use [monitoring](../monitoring/README.md) for results and [the research intake](../research/intake/README.md) for new events. Threat CTSS, capability readiness, self-report, and case pass rates remain separate throughout the process.

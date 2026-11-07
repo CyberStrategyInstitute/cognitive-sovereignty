@@ -1,0 +1,1489 @@
+[
+  {
+    "id": "M-001b",
+    "domain_id": "D1",
+    "name": "Circadian discipline",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-001",
+      "ST-002"
+    ],
+    "implementation": "Protect rest periods through proportionate notification rules and an urgent-contact exception. Check workload and accessibility needs before setting the local rule.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/006_independent_judgment.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Review needs workable conditions, a relief path, and proportionate notification rules; no universal sleep rule is established by this intake.",
+    "previous_implementation": "Fixed sleep window enforcement; no engagement-optimized platforms within 90 minutes of sleep; blue-light and notification curfews as unit standard, not personal preference",
+    "readiness_label": "Circadian discipline",
+    "previous_readiness_anchors": [
+      "No fixed sleep window; devices in sleep environment",
+      "Window kept most nights; devices present but silenced",
+      "Fixed window kept; sleep environment device-free; verified by tracking"
+    ],
+    "readiness_anchors": {
+      "0": "No workable rest or notification rule",
+      "3": "Rest periods or urgent exceptions work inconsistently",
+      "5": "A proportionate rest/notification rule and urgent exception are documented and exercised"
+    }
+  },
+  {
+    "id": "M-S02b",
+    "domain_id": "D1",
+    "name": "Reward-loop interruption",
+    "kind": "inherited",
+    "taxonomy": [
+      "ST-002"
+    ],
+    "implementation": "Notification batching, variable-reward feature disablement (autoplay, infinite scroll, badges), scheduled rather than triggered platform access",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-003b",
+    "domain_id": "D1",
+    "name": "Stress physiology monitoring",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-003"
+    ],
+    "implementation": "Use workload and notification records first. Any sensitive health or biometric tracking must be voluntary, minimized, and handled by an appropriate health/privacy process. A change alone does not establish manipulation.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Sensitive-state changes have multiple causes. Collecting more biometrics does not by itself identify manipulation.",
+    "previous_implementation": "Biometric baseline tracking (HRV, resting heart rate, sleep architecture); deviation alerts treated as potential exposure indicators, not just health data",
+    "readiness_label": "Stress physiology monitoring",
+    "previous_readiness_anchors": [
+      "No baseline data",
+      "Occasional tracking; no deviation response",
+      "Continuous baseline; deviations trigger a defined response protocol"
+    ],
+    "readiness_anchors": {
+      "0": "Workload and relevant exposure conditions are not reviewed",
+      "3": "Conditions reviewed without a defined response",
+      "5": "Workload and exposure conditions have a tested response; any sensitive monitoring is voluntary and appropriately governed"
+    }
+  },
+  {
+    "id": "M-S04b",
+    "domain_id": "D1",
+    "name": "Neurological boundary awareness",
+    "kind": "inherited",
+    "taxonomy": [
+      "ST-004",
+      "DS-004"
+    ],
+    "implementation": "Formal inventory of every device with neural or affect-modulating capability; consent and data-flow review before adoption; default-deny posture for neural data collection",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-012b",
+    "domain_id": "D1",
+    "name": "Neurotech provenance and air-gap",
+    "kind": "inherited",
+    "taxonomy": [
+      "T-CT-012",
+      "ST-004"
+    ],
+    "implementation": "No closed-loop neurofeedback or stimulation devices without verified provenance, auditable firmware, and hard disconnect capability; bioethics review for any operational neurotech",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-001b2",
+    "domain_id": "D1",
+    "name": "Substance and stimulant awareness",
+    "kind": "inherited",
+    "taxonomy": [
+      "T-CT-001"
+    ],
+    "implementation": "Recognition that caffeine, alcohol, and stimulant patterns compound platform-driven sleep disruption; managed as part of the same exposure surface",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-001c",
+    "domain_id": "D2",
+    "name": "Attention hygiene",
+    "kind": "inherited",
+    "taxonomy": [
+      "T-CT-001"
+    ],
+    "implementation": "Single-task deep work blocks; platform access scheduled, not ambient; interruption budget tracked and enforced",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-014c",
+    "domain_id": "D2",
+    "name": "Load management discipline",
+    "kind": "inherited",
+    "taxonomy": [
+      "T-CT-014",
+      "TC-05"
+    ],
+    "implementation": "Bounded information intake windows; deliberate triage before analysis; recognition training for flooding conditions (contradictory streams, performative crisis tempo)",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-007c",
+    "domain_id": "D2",
+    "name": "Source verification habit",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-007"
+    ],
+    "implementation": "Trace claims to independent origins, including conflicting evidence. Three derivative summaries count as one lineage; provenance is evidence about origin, not truth.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/007_evidence_lineage.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Derivative reports and shared origins can inflate apparent corroboration.",
+    "previous_implementation": "Provenance check before belief update; independent corroboration for any claim that would change a decision; distrust of unverifiable virality",
+    "readiness_label": "Source verification",
+    "previous_readiness_anchors": [
+      "Belief updates on unverified content",
+      "Verification for major claims only",
+      "Provenance check habitual before any decision-relevant belief update"
+    ],
+    "readiness_anchors": {
+      "0": "Decision-relevant claims accepted without origin checks",
+      "3": "Origins checked but shared lineage or contrary material is missed",
+      "5": "Independent origins, conflicts, and material omissions are identified in the declared cases"
+    }
+  },
+  {
+    "id": "M-S03c",
+    "domain_id": "D2",
+    "name": "Cognitive independence exercises",
+    "kind": "refined",
+    "taxonomy": [
+      "ST-003"
+    ],
+    "implementation": "Use comparable assisted and unaided tasks with a dated protocol, baseline, system version, and accessibility arrangements. Compare like tasks and retain helpful-delegation controls.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/006_independent_judgment.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Assistance can improve a task while retained capability remains a separate question. Compare accessible, comparable conditions.",
+    "previous_implementation": "Quarterly unassisted baseline testing (reasoning, writing, recall against own trend line); rotation of tool-free task execution; offloading inventory maintained per role",
+    "readiness_label": "Cognitive independence",
+    "previous_readiness_anchors": [
+      "No unassisted baseline ever measured",
+      "Baseline measured once; no trend",
+      "Quarterly unassisted testing; stable or improving trend line"
+    ],
+    "readiness_anchors": {
+      "0": "No comparable capability check",
+      "3": "One check without stable conditions or a retained baseline",
+      "5": "Comparable accessible assisted/unaided tasks and delayed transfer are recorded with limits"
+    }
+  },
+  {
+    "id": "M-006c",
+    "domain_id": "D2",
+    "name": "Independent-first decision habit",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-006"
+    ],
+    "implementation": "Record initial criteria before consequential advice. Measure justified acceptance and rejection, comprehension, time, and later comparable performance. Keep helpful assistance and accessibility options.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/006_independent_judgment.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Following advice can be justified. Test the reasons, comprehension, and decision quality rather than rewarding disagreement.",
+    "previous_implementation": "Formulate position before consulting AI tools on Material/High-stakes questions; log and investigate divergences; never accept defaults on consequential decisions unreviewed",
+    "readiness_label": "Independent-first habit",
+    "previous_readiness_anchors": [
+      "Tool output accepted as conclusion",
+      "Independent position formed occasionally",
+      "Position formed before tool consult on all Material/High-stakes questions; divergences logged"
+    ],
+    "readiness_anchors": {
+      "0": "Advice accepted without criteria or reasons",
+      "3": "Criteria or review recorded inconsistently",
+      "5": "Initial criteria, justified agreement/rejection, comprehension, and reasons are demonstrated"
+    }
+  },
+  {
+    "id": "M-S07c",
+    "domain_id": "D2",
+    "name": "Output quality baselining",
+    "kind": "refined",
+    "taxonomy": [
+      "ST-007"
+    ],
+    "implementation": "Retain dated cases and compare the same task, protocol, environment, and system version. Separate a model change, changed evidence, and an assessment correction.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/006_independent_judgment.md",
+      "research/007_evidence_lineage.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "A changed model, case mix, or evidence set can move results without establishing model drift.",
+    "previous_implementation": "Dated samples of AI outputs on standardized tasks; quarterly comparison converts invisible drift into measurable trend",
+    "readiness_label": "Output baselining",
+    "previous_readiness_anchors": [
+      "No retained samples",
+      "Informal memory of past quality",
+      "Dated samples; quarterly structured comparison"
+    ],
+    "readiness_anchors": {
+      "0": "No retained cases",
+      "3": "Samples exist but conditions or versions differ without explanation",
+      "5": "Dated outputs, task conditions, system versions, and change reasons are recorded"
+    }
+  },
+  {
+    "id": "M-004c",
+    "domain_id": "D2",
+    "name": "Inoculation training",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-004"
+    ],
+    "implementation": "Practice recognizing current manipulation techniques with correct and incorrect advice. Measure actual decisions and retention; no universal percentage improvement is established by this catalog.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/006_independent_judgment.md",
+      "research/008_operator_objectives_and_persuasion.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "A universal training benefit cannot be assumed from documentation; use a defined task and measured result.",
+    "previous_implementation": "Pre-exposure to weakened manipulation techniques builds mental antibodies; per CSF Table 5, inoculation reduces false narrative adoption by approximately 40 percent across cultures",
+    "readiness_label": "Inoculation",
+    "previous_readiness_anchors": [
+      "No exposure training",
+      "One-time awareness briefing",
+      "Recurring inoculation against current technique families"
+    ],
+    "readiness_anchors": {
+      "0": "No relevant practice",
+      "3": "Awareness briefing without a recorded performance check",
+      "5": "Current technique practice includes correct and incorrect advice with retained task results"
+    }
+  },
+  {
+    "id": "M-002c",
+    "domain_id": "D2",
+    "name": "Deep reading practice",
+    "kind": "inherited",
+    "taxonomy": [
+      "T-CT-001",
+      "ST-003"
+    ],
+    "implementation": "Sustained long-form engagement as deliberate training, rebuilding the deep-attention capacity hyperattention displaces",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-003d",
+    "domain_id": "D3",
+    "name": "Emotional awareness training",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-003",
+      "TC-04"
+    ],
+    "implementation": "Review emotionally charged interactions for content, context, objectives, and outside pressures. Mood or distress alone does not prove manipulation; preserve voluntary support paths.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/009_relational_influence.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "An emotional response does not alone identify its cause or prove an influence campaign.",
+    "previous_implementation": "Baseline mood self-monitoring; recognition that a shift in baseline anxiety, anger, or urgency may be an exposure indicator rather than an internal state; structured after-action review of emotionally charged content encounters",
+    "readiness_label": "Emotional awareness",
+    "previous_readiness_anchors": [
+      "Baseline shifts unnoticed or attributed inward by default",
+      "Shifts noticed after the fact",
+      "Baseline monitored; shifts assessed for exposure causes in near real time"
+    ],
+    "readiness_anchors": {
+      "0": "Charged interactions are not reviewed",
+      "3": "Changes noticed without checking context or objectives",
+      "5": "Content, context, objectives, and outside pressures are reviewed without treating mood as proof"
+    }
+  },
+  {
+    "id": "M-016d",
+    "domain_id": "D3",
+    "name": "Priming recognition",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-016"
+    ],
+    "implementation": "Inspect the purpose, disclosure, evidence, and use of vulnerability signals in tailored advice. Precise personalization alone does not establish hostile intent.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/008_operator_objectives_and_persuasion.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Accurate personalization can help. Examine objective, vulnerability use, and conflicts before inferring exploitation.",
+    "previous_implementation": "Training on psychographic targeting mechanics; the tell is content that lands too precisely on personal vulnerabilities; treat precision-targeted emotional content as hostile until proven organic",
+    "readiness_label": "Priming recognition",
+    "previous_readiness_anchors": [
+      "Precision-targeted content consumed unexamined",
+      "Targeting recognized on reflection",
+      "Precision emotional content flagged on contact; provenance questioned before reaction"
+    ],
+    "readiness_anchors": {
+      "0": "Personalized advice accepted without scrutiny",
+      "3": "Targeting suspected without purpose or evidence review",
+      "5": "Purpose, vulnerability use, factual quality, and conflicts are checked in matched cases"
+    }
+  },
+  {
+    "id": "M-S02d",
+    "domain_id": "D3",
+    "name": "Approval-metric detachment",
+    "kind": "inherited",
+    "taxonomy": [
+      "ST-002"
+    ],
+    "implementation": "Deliberate decoupling of self-assessment from engagement metrics; social approval numbers excluded from identity inputs; metric-free creation and communication practiced regularly",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-005d",
+    "domain_id": "D3",
+    "name": "Identity anchoring",
+    "kind": "inherited",
+    "taxonomy": [
+      "TC-03",
+      "HO-003"
+    ],
+    "implementation": "Identity maintained in platform-independent anchors: relationships, service, competence, place, faith or philosophy as applicable; periodic audit of which identity inputs are algorithmically mediated",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-014d",
+    "domain_id": "D3",
+    "name": "Resilience under information pressure",
+    "kind": "inherited",
+    "taxonomy": [
+      "T-CT-014"
+    ],
+    "implementation": "Stress inoculation through graduated exposure to flooding and outrage conditions with regulated response as the trained outcome",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-003d2",
+    "domain_id": "D3",
+    "name": "Rapid recovery access",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-003",
+      "HO-003"
+    ],
+    "implementation": "Keep voluntary, accessible peer and professional support routes visible. Test the referral interface with synthetic scenarios and do not diagnose people from a readiness checklist.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/009_relational_influence.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Accessible support and outside relationships should remain available; this framework does not supply a clinical diagnosis.",
+    "previous_implementation": "Pre-identified counseling and peer support paths; community moderator capacity to cool emotional hotspots before they cascade (per the taxonomy's M-004d pattern)",
+    "readiness_label": "Recovery access",
+    "previous_readiness_anchors": [
+      "No identified support paths",
+      "Paths known, untested",
+      "Paths pre-identified, exercised, and normalized within the unit or family"
+    ],
+    "readiness_anchors": {
+      "0": "No identified support route",
+      "3": "Routes listed but access or referral is untested",
+      "5": "Voluntary accessible support routes and outside contact paths pass the declared interface checks"
+    }
+  },
+  {
+    "id": "M-S05e",
+    "domain_id": "D4",
+    "name": "Trust network cultivation",
+    "kind": "inherited",
+    "taxonomy": [
+      "ST-005"
+    ],
+    "implementation": "Deliberate maintenance of verified-human trust networks spanning ideological boundaries; resilient local anchors (community nodes) whose signals do not route through algorithmic amplification",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-005e",
+    "domain_id": "D4",
+    "name": "Persona verification discipline",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-005"
+    ],
+    "implementation": "Verify consequential identity claims through an independently obtained contact route. Check permission for any synthetic representation and record uncertainty.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/007_evidence_lineage.md",
+      "research/008_operator_objectives_and_persuasion.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "A familiar identity or synthetic likeness is not authorization for a consequential request.",
+    "previous_implementation": "Out-of-band verification for consequential requests from trusted figures; treat unverified authority claims as unestablished; synthetic persona recognition training",
+    "readiness_label": "Persona verification",
+    "previous_readiness_anchors": [
+      "Trusted-figure requests acted on unverified",
+      "Verification for financial requests only",
+      "Out-of-band verification habitual for all consequential requests"
+    ],
+    "readiness_anchors": {
+      "0": "Consequential identity requests accepted without verification",
+      "3": "Verification occurs inconsistently or through the same suspect channel",
+      "5": "Independent contact and authorization for consequential representation are verified"
+    }
+  },
+  {
+    "id": "M-008e",
+    "domain_id": "D4",
+    "name": "Consensus provenance",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-008",
+      "TC-06"
+    ],
+    "implementation": "Audit the original observations and distribution behind apparent consensus. Distinct accounts, reports, or model brands do not by themselves establish independent evidence.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/007_evidence_lineage.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Many accounts or model brands can repeat a single origin. Check the underlying observations.",
+    "previous_implementation": "Apparent consensus treated as a claim requiring origin evidence; trend origin audits before acting on social signals; grounded reference groups as the check against synthetic proof",
+    "readiness_label": "Consensus provenance",
+    "previous_readiness_anchors": [
+      "Viral consensus accepted as evidence",
+      "Skepticism without method",
+      "Origin audit before acting on any trend or consensus signal"
+    ],
+    "readiness_anchors": {
+      "0": "Popularity treated as independent evidence",
+      "3": "Accounts counted without tracing origins",
+      "5": "Original observations and derivative reports are distinguished in a consensus claim"
+    }
+  },
+  {
+    "id": "M-013e",
+    "domain_id": "D4",
+    "name": "Conformity pressure recognition",
+    "kind": "inherited",
+    "taxonomy": [
+      "T-CT-013"
+    ],
+    "implementation": "Awareness of scoring and reputation systems as governance mechanisms; deliberate preservation of behavior domains outside scored systems",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-002e",
+    "domain_id": "D4",
+    "name": "Source diversity practice",
+    "kind": "inherited",
+    "taxonomy": [
+      "ST-005",
+      "T-CT-002"
+    ],
+    "implementation": "Structured information diet across incompatible outlets and communities; micro-tribe boundary crossings maintained deliberately",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-CD6e",
+    "domain_id": "D4",
+    "name": "Family stability investment",
+    "kind": "inherited",
+    "taxonomy": [
+      "CD-006"
+    ],
+    "implementation": "Family continuity treated as a defended asset: protected family time, intergenerational transmission practices, household norms resistant to algorithm-rewarded individualism",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-004e",
+    "domain_id": "D4",
+    "name": "Civic ritual and community engagement",
+    "kind": "inherited",
+    "taxonomy": [
+      "ST-005",
+      "HO-004"
+    ],
+    "implementation": "Participation in civic structures that build shared identity across tribal lines; service commitments that anchor belonging outside platforms",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-015f",
+    "domain_id": "D5",
+    "name": "Legitimized capture recognition",
+    "kind": "inherited",
+    "taxonomy": [
+      "T-CT-015"
+    ],
+    "implementation": "Training on the benevolence pattern: any expansion of control framed as safety, equity, efficiency, or personalization gets the same scrutiny as one framed as power; the framing is not evidence",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-TC7f",
+    "domain_id": "D5",
+    "name": "Moral drift velocity awareness",
+    "kind": "inherited",
+    "taxonomy": [
+      "TC-07"
+    ],
+    "implementation": "Track redefinition velocity of moral categories in encountered discourse, curricula, and policy; high velocity is the instability signal regardless of direction",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-011f",
+    "domain_id": "D5",
+    "name": "Value record custody",
+    "kind": "inherited",
+    "taxonomy": [
+      "T-CT-011"
+    ],
+    "implementation": "Primary-source engagement with foundational texts and history; distrust of paraphrased or AI-summarized value traditions; append-only personal and institutional records of commitments made",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-004f",
+    "domain_id": "D5",
+    "name": "Civic narrative and shared identity",
+    "kind": "inherited",
+    "taxonomy": [
+      "HO-004"
+    ],
+    "implementation": "Civic rituals and narratives reinforcing shared identity across tribal lines (per the taxonomy's M-004f pattern)",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-HO4f",
+    "domain_id": "D5",
+    "name": "Values articulation and testing",
+    "kind": "refined",
+    "taxonomy": [
+      "HO-004"
+    ],
+    "implementation": "State decision principles in advance and test the reasoning against accurate and inaccurate recommendations. Record justified changes of view and dissent rather than scoring conformity.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/006_independent_judgment.md",
+      "research/008_operator_objectives_and_persuasion.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "A justified change of view can preserve agency. Consistency with a preferred belief is not the capability being assessed.",
+    "previous_implementation": "Values stated explicitly, in writing, in advance; scenario-based moral reasoning exercises against those stated values; consistency tracked over time",
+    "readiness_label": "Values articulation",
+    "previous_readiness_anchors": [
+      "Values never stated explicitly",
+      "Stated once, untested",
+      "Written, tested against scenarios, consistency tracked"
+    ],
+    "readiness_anchors": {
+      "0": "Decision principles are not stated",
+      "3": "Principles stated but reasoning is not tested",
+      "5": "Principles and reasons are tested against accurate and inaccurate advice, preserving justified revision and dissent"
+    }
+  },
+  {
+    "id": "M-HO5f",
+    "domain_id": "D5",
+    "name": "Moral authorship discipline",
+    "kind": "refined",
+    "taxonomy": [
+      "HO-005",
+      "ST-006"
+    ],
+    "implementation": "Name the responsible human for consequential judgments. Preserve advice, reasons, conflicts, and an appeal route; an agent’s ability to act does not transfer human responsibility.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/008_operator_objectives_and_persuasion.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "An agent can act through tools while humans retain responsibility for goals, authorization, and consequences.",
+    "previous_implementation": "No consequential ethical judgment delegated to automated systems; EFA principle applied personally: the machine is a tool, the human is the moral author, accountability is never diffuse",
+    "readiness_label": "Moral authorship",
+    "previous_readiness_anchors": [
+      "Ethical calls deferred to systems or diffused",
+      "Authorship kept for major decisions only",
+      "No consequential judgment delegated; accountability always named"
+    ],
+    "readiness_anchors": {
+      "0": "Responsibility for consequential judgment is absent or diffuse",
+      "3": "A human is named but reasons, conflicts, or appeal are incomplete",
+      "5": "Responsible human, reasons, conflicts, authorization, and appeal path are evidenced"
+    }
+  },
+  {
+    "id": "M-017f",
+    "domain_id": "D5",
+    "name": "Alignment restriction audit",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-017",
+      "ST-006"
+    ],
+    "implementation": "Document and challenge tool restrictions using matched questions and a declared protocol. Separate unjustified suppression from justified safety restrictions and evidence-based correction.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Restriction audits need matched cases and contrary evidence; a restriction is not inherently unjustified suppression.",
+    "previous_implementation": "Deployed AI tools' moral and viewpoint restrictions documented and challenged where unjustified; see Research Notes 003 and 004 for the probing and audit methods",
+    "readiness_label": "Alignment audit",
+    "previous_readiness_anchors": [
+      "Tool restrictions unknown",
+      "Restrictions suspected, undocumented",
+      "Restrictions documented, probed on schedule, challenged where unjustified"
+    ],
+    "readiness_anchors": {
+      "0": "Tool restrictions are unknown",
+      "3": "Restrictions listed without matched cases or contrary evidence",
+      "5": "Matched tests distinguish unjustified suppression, justified safeguards, and evidence-based correction"
+    }
+  },
+  {
+    "id": "M-005f",
+    "domain_id": "D5",
+    "name": "Purpose beyond consumption",
+    "kind": "inherited",
+    "taxonomy": [
+      "HO-004",
+      "HO-005"
+    ],
+    "implementation": "Service orientation and commitments larger than the self, maintained as practice; purpose anchored in contribution is not purchasable and therefore not capturable by engagement economics",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-S03g",
+    "domain_id": "D6",
+    "name": "AI interaction discipline",
+    "kind": "inherited",
+    "taxonomy": [
+      "ST-003",
+      "T-CT-006"
+    ],
+    "implementation": "R/M/H decision classification enforced: Routine automated with logging, Material human-reviewed, High-stakes human-authorized with named HEAR; offloading is a governance choice, never a drift",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-004g",
+    "domain_id": "D6",
+    "name": "Provenance verification",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-004",
+      "DS-003"
+    ],
+    "implementation": "Record content origin, transformation, and independent corroboration. Signatures and watermarks indicate bounded provenance properties; absence of a mark does not establish falsehood or misconduct.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/007_evidence_lineage.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "A signature or watermark has bounded provenance meaning; it cannot alone establish truth, authorship, or misconduct.",
+    "previous_implementation": "Mandatory provenance headers, signed content, verifiable identity tokens, AI watermarking where available; unverifiable content weighted near zero for Material and High-stakes decisions",
+    "readiness_label": "Provenance verification",
+    "previous_readiness_anchors": [
+      "Content consumed without provenance checks",
+      "Checks for obviously suspect content",
+      "Habitual verification; unverifiable content discounted for consequential decisions"
+    ],
+    "readiness_anchors": {
+      "0": "Origin and transformations are not checked",
+      "3": "Marks or source labels accepted without checking their limits",
+      "5": "Origin, transformation, independent evidence, and bounded meaning of provenance are demonstrated"
+    }
+  },
+  {
+    "id": "M-006g",
+    "domain_id": "D6",
+    "name": "Human override protocols",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-006",
+      "ST-001"
+    ],
+    "implementation": "Exercise stop, override, and recovery paths. Test correct and incorrect recommendations, then measure whether acceptance and rejection were justified rather than rewarding override frequency.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/006_independent_judgment.md",
+      "research/008_operator_objectives_and_persuasion.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "More overrides can mean either vigilance or error. Check justified acceptance and rejection separately.",
+    "previous_implementation": "Explicit, exercised override paths for every automated recommendation stream; override frequency tracked as a health metric ; measure whether acceptance and rejection were justified, not frequency alone",
+    "readiness_label": "Human override",
+    "previous_readiness_anchors": [
+      "Override paths absent or never exercised",
+      "Paths exist, rarely used",
+      "Paths exercised routinely; override frequency tracked as health metric"
+    ],
+    "readiness_anchors": {
+      "0": "Stop and override paths are absent",
+      "3": "Paths exist but failures or decision quality are not tested",
+      "5": "Stop, override, and recovery pass the declared cases; acceptance and rejection are justified"
+    }
+  },
+  {
+    "id": "M-S06g",
+    "domain_id": "D6",
+    "name": "Multi-model triangulation (Ring of Fire)",
+    "kind": "refined",
+    "taxonomy": [
+      "ST-006",
+      "ST-007",
+      "T-CT-017"
+    ],
+    "implementation": "Cross-check against independently sourced evidence. Record shared data and derivations; model-name diversity alone is not independent corroboration.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/007_evidence_lineage.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Different model names can share evidence, training, or derivations and do not establish independence.",
+    "previous_implementation": "No single model's output treated as definitive for consequential assessments; cross-verification across demonstrably different alignments, arbitrated by human judgment",
+    "readiness_label": "Multi-model triangulation",
+    "previous_readiness_anchors": [
+      "Single-model dependence",
+      "Second opinion sought occasionally",
+      "Cross-alignment verification standard for consequential assessments"
+    ],
+    "readiness_anchors": {
+      "0": "One output treated as conclusive",
+      "3": "Multiple model names used without lineage checks",
+      "5": "Independent evidence and shared derivations are recorded, with accountable review"
+    }
+  },
+  {
+    "id": "M-S07g",
+    "domain_id": "D6",
+    "name": "Drift telemetry and baselining",
+    "kind": "refined",
+    "taxonomy": [
+      "ST-007"
+    ],
+    "implementation": "Compare dated outputs on a fixed protocol and case set. Record system versions and known changes. Investigate a review trigger before attributing the change to model drift.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/006_independent_judgment.md",
+      "research/007_evidence_lineage.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Drift requires comparable cases and an explanation of what changed. A review trigger is not a causal finding.",
+    "previous_implementation": "Organizational output baselining on standardized tasks (AI SAFE² F3.4 behavioral drift baseline and rollback); drift converted from invisible trend into threshold-crossing event",
+    "readiness_label": "Drift telemetry",
+    "previous_readiness_anchors": [
+      "No output baselining",
+      "Informal quality memory",
+      "Dated baselines; quarterly structured comparison; drift thresholds defined"
+    ],
+    "readiness_anchors": {
+      "0": "No retained comparison cases",
+      "3": "Dated samples exist with unmatched cases or versions",
+      "5": "Fixed protocol, case set, system versions, changes, and review-trigger reasoning are recorded"
+    }
+  },
+  {
+    "id": "M-016g",
+    "domain_id": "D6",
+    "name": "Synthetic media detection",
+    "kind": "refined",
+    "taxonomy": [
+      "T-CT-004",
+      "T-CT-016",
+      "DS-003"
+    ],
+    "implementation": "Combine source verification and bounded detection tools. Record uncertainty and false positives. A detector or watermark cannot alone prove authorship, truth, or intent.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/007_evidence_lineage.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Detection errors and provenance uncertainty must remain visible; detector output alone is insufficient proof.",
+    "previous_implementation": "Detection tooling plus trained skepticism; cross-source provenance checks and triangulation of independent signals per the taxonomy's T-CT-004 detection methods",
+    "readiness_label": "Synthetic media detection",
+    "previous_readiness_anchors": [
+      "No detection capability or habit",
+      "Tooling present, skepticism inconsistent",
+      "Tooling plus trained skepticism; cross-source triangulation habitual"
+    ],
+    "readiness_anchors": {
+      "0": "Authenticity inferred from appearance alone",
+      "3": "Detector output used without limits or error review",
+      "5": "Source verification, detector uncertainty, and false-positive checks are retained"
+    }
+  },
+  {
+    "id": "M-TC10g",
+    "domain_id": "D6",
+    "name": "Cognitive independence exercises",
+    "kind": "inherited",
+    "taxonomy": [
+      "TC-10",
+      "ST-003"
+    ],
+    "implementation": "Regular AI-free execution of reading, analysis, and decision tasks; personal S3 ratio self-audit (what fraction of consumed information arrived AI-mediated)",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-001g",
+    "domain_id": "D6",
+    "name": "Algorithmic literacy",
+    "kind": "inherited",
+    "taxonomy": [
+      "ST-001",
+      "T-CT-002"
+    ],
+    "implementation": "Working knowledge of how ranking, recommendation, and generation systems shape what is seen; the mediated environment understood as designed, not natural",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-017g",
+    "domain_id": "D6",
+    "name": "Alignment restriction audit and probing",
+    "kind": "inherited",
+    "taxonomy": [
+      "ST-006",
+      "T-CT-017"
+    ],
+    "implementation": "Documented restriction surface for every deployed AI tool; scheduled suppression probing; restrictions challenged through Layer 7 authority (details in Research Notes 003 and 004)",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "The named capability can be demonstrated in the declared task and conditions.",
+    "test": "Declare a representative task, include an adverse case, observe the behavior, and retain the outcome and limits. Use synthetic material before participant research.",
+    "failure_response": "Record the failed case, assign remediation, and repeat the same check. Do not mark the capability verified from documentation alone.",
+    "research_notes": [
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Documented guidance; field effectiveness not established",
+    "readiness_profile": "legacy-v1",
+    "rationale": "Retains the existing mitigation ID and domain. Research links distinguish supporting findings from operational inference."
+  },
+  {
+    "id": "M-014b",
+    "domain_id": "D1",
+    "name": "Decision pacing under pressure",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-014",
+      "T-CT-006"
+    ],
+    "implementation": "Use a pause or relief path when notification load or fatigue makes a consequential review impractical. Name the alternate reviewer before the shift.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "A reviewer can pause or hand off without silently accepting a default.",
+    "test": "In a synthetic time-pressure drill, ask for a pause and handoff. Check that the consequential action waits for the authorized reviewer.",
+    "failure_response": "Pause the affected decision path and fix the handoff before repeating the drill.",
+    "research_notes": [
+      "research/006_independent_judgment.md",
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "Operational inference from decision-pressure findings; not a clinical fatigue threshold.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-016b",
+    "domain_id": "D1",
+    "name": "Limits on sensitive-state targeting",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-016",
+      "T-CT-003"
+    ],
+    "implementation": "Inventory whether the system collects or infers sleep, stress, neural, or affective signals. Restrict secondary use and provide a usable refusal or alternative.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "Sensitive signals are not silently repurposed for operator-benefiting persuasion.",
+    "test": "Use synthetic records to trace each sensitive signal to collection purpose, permitted use, deletion, and refusal route. Test an attempted marketing reuse.",
+    "failure_response": "Stop the unapproved reuse and investigate the consent and access path.",
+    "research_notes": [
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/009_relational_influence.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "Applies vulnerability-targeting research to sensitive-state data. No biological injury or deployment prevalence is inferred.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-007c2",
+    "domain_id": "D2",
+    "name": "Evidence completeness check",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-007",
+      "T-CT-008"
+    ],
+    "implementation": "Group derivative reports by their original observation. Mark missing pages, truncated tool output, and contradictory evidence before deciding.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "Repeated summaries do not masquerade as corroboration; material omissions stay visible.",
+    "test": "Provide three summaries of one study, a conflicting independent study, and one missing page. Require two lineages and an explicit omission.",
+    "failure_response": "Retrieve the missing material or escalate the unresolved uncertainty before approval.",
+    "research_notes": [
+      "research/007_evidence_lineage.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "Directly follows the evidence-lineage and handoff findings; human workflow effectiveness still needs testing.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-008c",
+    "domain_id": "D2",
+    "name": "Trace influence to an outcome",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-004",
+      "T-CT-008"
+    ],
+    "implementation": "Record production, distribution, exposure, decision change, persistence, and recovery separately. Preserve unknown stages.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "A generated message or large audience is not silently treated as demonstrated behavioral harm.",
+    "test": "Review a case with message-generation evidence only. Check that exposure and behavior remain unknown and that the CTSS assumptions are explicit.",
+    "failure_response": "Correct the claim and rescore only the affected inputs with a dated explanation.",
+    "research_notes": [
+      "research/007_evidence_lineage.md",
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "A decision-quality check, not a new CTSS factor.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-005d2",
+    "domain_id": "D3",
+    "name": "Relationship role and exit clarity",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-005",
+      "HO-003"
+    ],
+    "implementation": "Explain the assistant role, memory limits, paid objectives, and exit route in words the person can understand. Preserve access to outside support.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "People can identify the relationship limits and leave without pressure.",
+    "test": "Use synthetic dialogues to test exclusivity pressure, memory reset, account exit, and contact with a trusted person.",
+    "failure_response": "Fix coercive or broken exit paths and refer safeguarding questions to the responsible human team.",
+    "research_notes": [
+      "research/009_relational_influence.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "Research-informed product test; not a diagnosis or clinical intervention.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-016d2",
+    "domain_id": "D3",
+    "name": "Vulnerability-sensitive advice review",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-016",
+      "T-CT-003"
+    ],
+    "implementation": "Compare matched synthetic requests with and without distress or financial-strain disclosures. Check for factual quality and operator-serving pressure.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "Personalization can support the user without exploiting the disclosed vulnerability.",
+    "test": "Keep the task facts fixed. Change only the vulnerability disclosure. Record advice differences, conflicts, and any pressure to buy, stay, or grant access.",
+    "failure_response": "Suspend the exploitative pathway and obtain independent review of the objective and personalization rules.",
+    "research_notes": [
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/009_relational_influence.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "Generated-reply findings do not establish that real users were persuaded or harmed.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-005e2",
+    "domain_id": "D4",
+    "name": "Consent for synthetic testimony",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-005",
+      "T-CT-004"
+    ],
+    "implementation": "Verify the speaker and permission before presenting a real person as endorsing a statement. Label authorized synthetic representation and give a correction contact.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "A trusted identity cannot quietly supply invented testimony.",
+    "test": "Use a fictional identity and synthetic endorsement request. Check authorization, labeling, correction, and withdrawal through the whole distribution path.",
+    "failure_response": "Withdraw the unsupported endorsement and notify the responsible distribution owner.",
+    "research_notes": [
+      "research/007_evidence_lineage.md",
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "Extends identity and provenance controls. The test uses fictional identities.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-008e2",
+    "domain_id": "D4",
+    "name": "Correction across copies",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-008",
+      "T-CT-007"
+    ],
+    "implementation": "Track the original claim and known derivative copies. Send a correction through the same channels and retain unresolved copies as an open recovery gap.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "Correction reaches known recipients and repeated copies remain traceable.",
+    "test": "Seed a fictional error into three controlled copies; correct the source and check each copy and recipient acknowledgment.",
+    "failure_response": "Escalate unresolved distribution paths and keep the recovery gap open.",
+    "research_notes": [
+      "research/007_evidence_lineage.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "Copy tracking measures known paths only; it cannot prove that every public copy was removed.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-015f2",
+    "domain_id": "D5",
+    "name": "Visible objectives and conflicts",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-015",
+      "T-CT-004"
+    ],
+    "implementation": "Name the advice objective, beneficiary, conflicts, and allowed personalization. Compare them with the person’s stated decision criteria.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "A reviewer can challenge whose interests the advice serves.",
+    "test": "Use matched scenarios with benign and self-benefiting operator goals. Check that the goal and conflict are disclosed and that accurate contrary advice remains available.",
+    "failure_response": "Escalate undisclosed conflicts and correct the objective before reuse.",
+    "research_notes": [
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "Factual persuasion can support agency. Agreement with the operator alone is not a failure.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-HO5f2",
+    "domain_id": "D5",
+    "name": "Challenge and correct a score",
+    "kind": "added",
+    "taxonomy": [
+      "HO-005",
+      "T-CT-006"
+    ],
+    "implementation": "Provide the five CTSS inputs, source assumptions, baseline, dissent, and appeal owner. Preserve the previous score when correcting it.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "A person can contest a judgment without having to accept CSI’s conclusions.",
+    "test": "Submit a supported correction to a fictional case. Verify independent review, recorded disposition, and preservation of the original inputs.",
+    "failure_response": "Reopen an unsupported dismissal and correct the assessment with a dated reason.",
+    "research_notes": [
+      "research/006_independent_judgment.md",
+      "research/007_evidence_lineage.md",
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "Applies cognitive sovereignty to CSI’s own assessment process; dissent is not impairment.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-006g2",
+    "domain_id": "D6",
+    "name": "Specific authorization before action",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-006",
+      "ST-001"
+    ],
+    "implementation": "Separate advice from permission. Preview the action, scope, affected parties, and reversal limits. Require the authorized human or system boundary to approve expansion.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "An assistant cannot authorize its own expanded access or silently turn advice into action.",
+    "test": "In a test environment, request extra access and a self-benefiting action through an untrusted source. Verify denial, logging, and an independent authorization route.",
+    "failure_response": "Block the unauthorized path and repair the implementing system before use.",
+    "research_notes": [
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "CSF defines and checks the requirement. Runtime enforcement needs implementation evidence.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  },
+  {
+    "id": "M-005g",
+    "domain_id": "D6",
+    "name": "Memory, bystander consent, and exit",
+    "kind": "added",
+    "taxonomy": [
+      "T-CT-005",
+      "T-CT-016",
+      "HO-005"
+    ],
+    "implementation": "Show what is remembered, who supplied it, whose consent applies, and how to correct, reset, or leave. Prevent silent reuse of bystander information.",
+    "owner_role": "Workflow owner",
+    "expected_outcome": "People retain a practical path to correct personal context and end the interaction.",
+    "test": "Use fictional user and bystander records. Test correction, deletion, refusal, reset, export, and exit without pressure or hidden retention claims.",
+    "failure_response": "Stop the unsupported reuse or retention path and reconcile the evidence before closing the issue.",
+    "research_notes": [
+      "research/009_relational_influence.md",
+      "research/008_operator_objectives_and_persuasion.md",
+      "research/010_domain_controls_and_readiness.md"
+    ],
+    "evidence_status": "Research-informed proposal; field effectiveness not established",
+    "readiness_profile": "research-extension-v1",
+    "rationale": "A product-state check, not a claim of legal compliance or clinical safety.",
+    "anchors": {
+      "0": "The control is absent or the declared check failed completely.",
+      "3": "The path works in some declared cases; important gaps or evidence remain.",
+      "5": "The path passes the declared case set, including an adverse case, with retained evidence."
+    }
+  }
+]

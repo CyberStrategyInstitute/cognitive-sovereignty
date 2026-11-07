@@ -1,0 +1,23 @@
+[
+  {
+    "file": "csi-shield-color.svg",
+    "source_package": "CSI_Shield_Logo_Package",
+    "source_relative_path": "SVG/CSI-shield-color.svg",
+    "sha256": "2d464ac57f77015969a5423f525513e5c22579c5c5c297f5c58fb924698da34d",
+    "modified": false
+  },
+  {
+    "file": "csi-shield-white-orange.svg",
+    "source_package": "CSI_Shield_Logo_Package",
+    "source_relative_path": "SVG/CSI-shield-white-orange.svg",
+    "sha256": "29dc346d5f43a4b3023f08463e3052edefca48c3bdc209cb3712a213a3faaa92",
+    "modified": false
+  },
+  {
+    "file": "csi-shield-color.png",
+    "source_package": "CSI_Shield_Logo_Package",
+    "source_relative_path": "PNG/CSI-shield-color-transparent-256px.png",
+    "sha256": "ab71a9f76755781a98ee1ed21f6320d6ca5ddb2d95289d2d57163dda036270ec",
+    "modified": false
+  }
+]

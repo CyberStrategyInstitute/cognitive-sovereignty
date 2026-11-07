@@ -1,6 +1,6 @@
 # Framework Evolution
 
-The Cognitive Sovereignty Framework is a versioned, living doctrine. This document records all significant additions, revisions, and expansions to the framework over time.
+The Cognitive Sovereignty Framework is versioned. This document separates inherited history from current implementation and the remaining roadmap. Historical coverage estimates and architectural guarantee language below do not establish measured protection. See the current registry and implementation evidence.
 
 ---
 
@@ -43,13 +43,27 @@ v1.0 → v2.0: ~80% → 92% overall coverage
 
 ---
 
-## Roadmap (Planned)
+## Roadmap status, reviewed November 7, 2026
 
-| Priority | Addition | Target |
-|---|---|---|
-| High | Neuro-swarm integration techniques | v2.1 |
-| High | Quantum acceleration threat class | v2.1 |
-| Medium | Individual-level CTSS assessment tool | v2.1 |
-| Medium | Unit-level cognitive readiness scorecard | v2.2 |
-| Low | Legislative response integration | v2.2 |
-| Low | Defense industrial base application guide | v2.3 |
+The work advances the research foundation and unit-scorecard prototype. It does not complete every v2.1 milestone. Targets are version labels, not dated commitments, so calendar progress cannot be assessed from this roadmap alone. Framework metadata currently says v2.1.0; that label is not evidence that all v2.1 roadmap items shipped.
+
+| Priority | Planned addition | Original target | Current state | Evidence and next step |
+|---|---|---|---|---|
+| High | Neuro-swarm integration techniques | v2.1 | Research open | [The taxonomy and Biological controls identify the intersection; no distinct validated technique or protocol is delivered.](research/010_domain_controls_and_readiness.md) Retain as research until a distinct mechanism, primary evidence, and test justify an entry. |
+| High | Quantum acceleration threat class | v2.1 | Research open | [A watch item exists; no evidence-backed distinct threat class is implemented.](taxonomy/civilizational-drivers.md) Review whether quantum capabilities add a distinct mechanism beyond CD-005 before adding a class. |
+| Medium | Individual-level CTSS assessment tool | v2.1 | Partial | [The calculator and item-level CTSS records work. Individual exposure profiling and calibration are not delivered.](examples/ctss_calculator.py) Specify a personal exposure workflow while keeping threat severity separate from personal capability. |
+| Medium | Unit-level cognitive readiness scorecard | v2.2 | Prototype delivered | [Six-domain control catalog, worksheet, evidenced-rating tool, and reproducible fictional example exist. Observed unit validation is absent.](examples/unit_readiness_assessment.md) Run the same bounded cases in an authorized unit workflow and retain failures, burden, and reassessment. |
+| Low | Legislative response integration | v2.2 | Partial | [The U.S. founding-principles lens and UAS crosswalk are documented; no comprehensive current-law response catalog exists.](lenses/founding-baseline-assessment.md) Define jurisdiction, applicable authorities, effective dates, and a legal-review owner. |
+| Low | Defense industrial base application guide | v2.3 | Planned | [The crosswalk and unit example are reusable inputs; a dedicated DIB application guide is absent.](06-digital-ai-symbiosis/federal-procurement-alignment.md) Scope one supplier workflow and its evidence needs before writing a sector guide. |
+
+## Research-to-control update in the current PR
+
+- Keep the six domains, five causal layers, taxonomy IDs, and CTSS weights.
+- Preserve 44 inherited mitigation IDs, refine 20 controls, and add 12 research-linked controls, two per domain.
+- Expand domain exposure mappings and capability checks without claiming increased incidence or demonstrated readiness.
+- Provide a shared catalog, resources workflow, worked unit example, and agent-readable data.
+- Update the Learning Hub, Threat Explorer, Command Center, and README to connect the model with research, controls, and assessment.
+
+[Detailed change assessment](research/010_domain_controls_and_readiness.md) | [Implementation record](IMPLEMENTATION.md) | [Machine-readable roadmap](monitoring/roadmap.json)
+
+Next owner priorities: review the controls and their burden, select a bounded unit workflow, and decide whether the two high-priority research items remain release requirements. Do not silently mark them complete to match a version label.

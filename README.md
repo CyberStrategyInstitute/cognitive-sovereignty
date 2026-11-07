@@ -1,3 +1,5 @@
+<img src="docs/assets/brand/csi-shield-color.png" width="96" alt="Cyber Strategy Institute shield">
+
 # Cognitive Sovereignty Framework
 
 CSF helps people and organizations examine whether they retain the ability to understand, choose, challenge, and govern AI-mediated decisions. Cyber Strategy Institute maintains the model, taxonomy, research, and CTSS assessments.
@@ -11,6 +13,8 @@ The core remains **six domains, five causal layers, and the existing CTSS formul
 | Understand the model | [Framework reference](FRAMEWORK.md) and [six domains](#the-six-domains) |
 | Read the research and individual scores | [Research hub](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/research.html) or [complete report](research/intake/reports/research-assessment.md) |
 | Inspect the weekly baseline | [Seven weekly reports and trends](research/intake/reports/baseline.md), [CSV](research/intake/event-scores.csv), [JSON](research/intake/events.json) |
+| Apply controls and assess readiness | [Control catalog](resources/mitigation-catalog.md), [resources workflow](resources/README.md), [worked unit example](examples/unit_readiness_assessment.md) |
+| Check the roadmap | [Evidence and remaining milestones](EVOLUTION.md) |
 | Find the next action | [Watch/action register](research/intake/signals/README.md) |
 | Assess a new item | [Intake method](research/intake/README.md), [scorecard template](resources/scorecard-template.md), [decision record](resources/decision-record.md) |
 | Use another declared perspective | [Baseline and lens assessment](lenses/founding-baseline-assessment.md) |
@@ -23,12 +27,12 @@ New website pages and exports become live only after the owner approves and the 
 
 | Domain | What it covers |
 |---|---|
-| Biological | Sleep, metabolism, nervous-system regulation, and physiological integrity |
-| Cognitive | Attention, reasoning, memory, learning, and independent judgment |
-| Emotional | Regulation, stress tolerance, identity stability, and recovery |
-| Social | Trust networks, relationships, belonging, and community coordination |
-| Purpose and Moral | Values, meaning, responsibility, and moral reasoning |
-| Digital and AI Symbiosis | Working with AI while retaining capability, authority, and resistance to manipulation |
+| [Biological](01-biological/README.md) | Sleep, metabolism, nervous-system regulation, and physiological integrity |
+| [Cognitive](02-cognitive/README.md) | Attention, reasoning, memory, learning, and independent judgment |
+| [Emotional](03-emotional/README.md) | Regulation, stress tolerance, identity stability, and recovery |
+| [Social](04-social/README.md) | Trust networks, relationships, belonging, and community coordination |
+| [Purpose and Moral](05-purpose-moral/README.md) | Values, meaning, responsibility, and moral reasoning |
+| [Digital and AI Symbiosis](06-digital-ai-symbiosis/README.md) | Working with AI while retaining capability, authority, and resistance to manipulation |
 
 The causal layers remain civilizational drivers, substrate threats, manipulation techniques, delivery/scale, and human outcomes. See the [taxonomy architecture](taxonomy/threat-architecture.md), [registry](taxonomy/registry.json), and [generated technique rankings](taxonomy/ctss-rankings.md).
 
@@ -48,10 +52,26 @@ Every item retains original analysis, sources, input reasons, action, and resear
 
 The [six safeguards](resources/practical-safeguards.md), [additional research checks](resources/advanced-checks.md), and [pilot plan](monitoring/pilot-plan.md) turn findings into reviewable work. Claims of population protection or architectural guarantees require the relevant implementation and test evidence.
 
+## Repository structure
+
+```text
+01-biological/ ... 06-digital-ai-symbiosis/  Domain doctrine, threats, controls, readiness
+research/             Notes, original intake, scores, and weekly reports
+resources/            Assessment workflow, mitigation catalog, and worksheets
+examples/             Reproducible fictional assessments
+monitoring/           Observed results, protocols, and roadmap status
+docs/                 Learning Hub, Explorer, Command Center, and practice pages
+integration/          Agent and optional MCP access
+tools/ and tests/     Shared calculations, builds, and verification
+```
+
+The control catalog now has 56 entries: 44 inherited IDs, including 20 refinements, plus 12 additions. [Research note 010](research/010_domain_controls_and_readiness.md) explains each domain’s changes and the separate readiness profiles. More documented controls do not establish measured readiness.
+
 ## Read it in a browser
 
 - [Learning hub](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/)
 - [Research, scores, and signals](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/research.html)
+- [Controls, resources, and readiness](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/practice.html)
 - [Threat explorer](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/csf-explorer.html)
 - [Command center](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/csf-command-center.html)
 - [How to use and build it](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/guide.html)

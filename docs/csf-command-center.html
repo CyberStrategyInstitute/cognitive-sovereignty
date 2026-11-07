@@ -196,9 +196,10 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
 @media(max-width:700px){.grid{grid-template-columns:1fr}.span-2c,.span-3c{grid-column:span 1}.domain-grid-mini{grid-template-columns:1fr 1fr}.swarm-phases-mini{grid-template-columns:1fr}.edge-mini{grid-template-columns:1fr}}
 </style>
 <link rel="stylesheet" href="assets/site.css">
+<script src="assets/practice.js" defer></script>
 </head>
 <body>
-<!-- CSF shared navigation --><nav class="csf-site-nav" aria-label="Main"><strong>CSI / Cognitive Sovereignty</strong><a href="index.html">Learn</a><a href="research.html">Research and scores</a><a href="csf-explorer.html">Taxonomy</a><a href="csf-command-center.html" aria-current="page">Command center</a><a href="guide.html">How to use it</a><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>
+<!-- CSF shared navigation --><nav class="csf-site-nav" aria-label="Main"><a class="csf-brand" href="index.html"><img src="assets/brand/csi-shield-white-orange.svg" width="32" height="48" alt="Cyber Strategy Institute shield"><span>CSI / Cognitive Sovereignty</span></a><a href="index.html">Learn</a><a href="research.html">Research and scores</a><a href="csf-explorer.html">Taxonomy</a><a href="practice.html">Controls and readiness</a><a href="csf-command-center.html" aria-current="page">Command center</a><a href="guide.html">How to use it</a><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>
 <p style="padding:12px;background:#fff4df;color:#231b10;position:relative;z-index:101">Reference framework view. Scores are analyst estimates; coverage and human protection have not been validated. <a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty/blob/main/monitoring/README.md">Measurement method</a>.</p>
 
 <svg width="0" height="0" style="position:absolute;overflow:hidden">
@@ -231,10 +232,10 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
 
 <header>
   <div class="h-brand">
-    <svg width="32" height="32" viewBox="0 0 200 200" style="color:var(--gold)"><use href="#cseal"/></svg>
+    <img class="csf-shield" src="assets/brand/csi-shield-white-orange.svg" alt="CSI shield" width="42" height="54">
     <div>
       <div class="h-brand-name">Cognitive Sovereignty Framework</div>
-      <div class="h-brand-sub">Command Center · v2.0 · Cyber Strategy Institute</div>
+      <div class="h-brand-sub">Command Center · v2.1.0 · Cyber Strategy Institute</div>
     </div>
   </div>
   <div class="h-status">
@@ -248,12 +249,13 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
     <a class="h-link" href="csf-explorer.html">Threat Explorer</a>
   </div>
 </header>
+<!-- CSF practice summary:start --><section class="csf-practice-summary" aria-label="Domain controls and readiness"><h2>From research to tested capability</h2><p>44 inherited controls retained, 20 refined, and 12 added. Readiness is unknown until a scoped assessment supplies results.</p><nav class="jump" aria-label="Practice resources"><a href="practice.html#domains">Six domains</a><a href="practice.html#controls">Control catalog</a><a href="practice.html#resources">Assessment resources</a><a href="practice.html#roadmap">Roadmap status</a></nav><div data-domain-summary></div></section><!-- CSF practice summary:end -->
 
 <div class="grid" id="grid">
 
   <!-- DOCTRINE PANEL — Column 1, Rows 1-2 -->
   <div class="doctrine-panel" style="grid-row:span 2">
-    <div class="dp-seal"><svg width="260" height="260" viewBox="0 0 200 200" style="color:var(--gold)"><use href="#cseal"/></svg></div>
+    <div class="dp-seal"><img class="csf-shield" src="assets/brand/csi-shield-white-orange.svg" alt="CSI shield" width="260" height="260"></div>
     <div>
       <div class="dp-kicker">Open-Source Doctrine · February 2026</div>
       <div class="dp-title">Cognitive<strong>Sovereignty</strong></div>
@@ -533,7 +535,7 @@ LAYERS.forEach(l=>{
 // Domains
 const dg=document.getElementById('domain-grid');
 DOMAINS.forEach(d=>{
-  dg.innerHTML+=`<div class="dm-item${d.isNew?' is-new':''}"><div class="dm-num">${d.n}</div><div class="dm-name">${d.name}</div><div class="dm-line"></div>${d.isNew?'<div class="new-pip">★ NEW</div>':''}</div>`;
+  dg.innerHTML+=`<div class="dm-item${d.isNew?' is-new':''}"><div class="dm-num">${d.n}</div><div class="dm-name"><a href="practice.html?domain=D${Number(d.n)}#controls">${d.name}</a></div><div class="dm-line"></div>${d.isNew?'<div class="new-pip">★ NEW</div>':''}</div>`;
 });
 
 // Components

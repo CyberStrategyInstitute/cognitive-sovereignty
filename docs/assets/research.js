@@ -68,7 +68,7 @@ function showScorecard(event) {
   panel.append(
     el(
       "p",
-      event.id + " · " + event.assessment_date + " · " + event.score_status,
+      event.id + " Â· " + event.assessment_date + " Â· " + event.score_status,
       "eyebrow",
     ),
     el("h3", event.title),
@@ -79,7 +79,7 @@ function showScorecard(event) {
   overall.append(
     el("span", "CSI CTSS assessment"),
     el("strong", event.ctss, "number"),
-    el("span", "/100 · " + event.priority),
+    el("span", "/100 Â· " + event.priority),
     el("span", event.role + " evidence", "muted"),
   );
   const right = el("div");
@@ -105,7 +105,7 @@ function showScorecard(event) {
   details.append(el("summary", "Inspect each input and its reason"));
   for (const [key, [label]] of Object.entries(labels)) {
     details.append(
-      el("h4", label + " · " + event.inputs[key] + "/5"),
+      el("h4", label + " Â· " + event.inputs[key] + "/5"),
       el("p", event.input_reasons[key]),
     );
   }
@@ -168,13 +168,23 @@ function showSignals() {
       el("p", s.review_trigger),
       el("p", s.validation_status),
     );
+    for (const id of s.related_control_ids || []) {
+      const p = el("p");
+      p.append(
+        link(
+          "Control " + id,
+          "practice.html?control=" + encodeURIComponent(id) + "#controls",
+        ),
+      );
+      details.append(p);
+    }
     s.evidence_paths.forEach((path) => {
       const p = el("p");
       p.append(link(path, repo + path));
       details.append(p);
     });
     for (const h of s.history)
-      details.append(el("p", h.date + " · " + h.status + " · " + h.note));
+      details.append(el("p", h.date + " Â· " + h.status + " Â· " + h.note));
     next.append(details);
     tr.append(description, status, owner, next);
     $("signal-rows").append(tr);
@@ -261,6 +271,8 @@ async function init() {
         ),
       ),
     );
+    const signalQuery = new URLSearchParams(location.search).get("signal");
+    if (signalQuery) $("signal-search").value = signalQuery;
     showEvents();
     showSignals();
     if (events.length)

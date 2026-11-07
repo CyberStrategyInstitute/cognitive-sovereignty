@@ -1,0 +1,68 @@
+[
+  {
+    "id": "RES-01",
+    "title": "Scope the assessment",
+    "path": "resources/assessment-template.md",
+    "outcome": "Start with the workflow, people, and evidence gaps."
+  },
+  {
+    "id": "RES-02",
+    "title": "Score a threat",
+    "path": "resources/ctss-calculator.md",
+    "outcome": "Calculate CTSS from five reasoned inputs."
+  },
+  {
+    "id": "RES-03",
+    "title": "Select controls",
+    "path": "resources/mitigation-catalog.md",
+    "outcome": "Choose stable mitigation IDs and tests."
+  },
+  {
+    "id": "RES-04",
+    "title": "Test capability",
+    "path": "resources/readiness-worksheet.md",
+    "outcome": "Record evidence-backed ratings, unknowns, and repairs."
+  },
+  {
+    "id": "RES-05",
+    "title": "Learn from the unit example",
+    "path": "examples/unit_readiness_assessment.md",
+    "outcome": "Follow a synthetic case across all six domains."
+  },
+  {
+    "id": "RES-06",
+    "title": "Collect Domain 6 self-report",
+    "path": "resources/domain6-checklist.md",
+    "outcome": "Use habits to choose observed checks; do not call self-report demonstrated capability."
+  },
+  {
+    "id": "RES-07",
+    "title": "Record a decision",
+    "path": "resources/decision-record.md",
+    "outcome": "Keep criteria, evidence, dissent, scope, and authorization."
+  },
+  {
+    "id": "RES-08",
+    "title": "Explain safeguards",
+    "path": "resources/practical-safeguards.md",
+    "outcome": "Give the team a short instruction linked to controls."
+  },
+  {
+    "id": "RES-09",
+    "title": "Investigate a recurring signal",
+    "path": "resources/advanced-checks.md",
+    "outcome": "Define the question, protocol, and trigger."
+  },
+  {
+    "id": "RES-10",
+    "title": "Explain a score",
+    "path": "resources/scorecard-template.md",
+    "outcome": "Show the factors, reasons, evidence, and action."
+  },
+  {
+    "id": "RES-11",
+    "title": "Plan a bounded pilot",
+    "path": "monitoring/pilot-plan.md",
+    "outcome": "Set benefit, burden, consent, and stop criteria before participant work."
+  }
+]

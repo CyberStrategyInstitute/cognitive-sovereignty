@@ -19,3 +19,9 @@ Record whether exit and correction work. Minimize personal data. Do not collect 
 ## Decision
 
 Begin with a source review and product-interface checks. Expand testing only when the evidence and study design support it. [Safeguard 5](../resources/practical-safeguards.md) defines the initial expected outcome.
+
+## Apply this note through controls
+
+[M-003d: Emotional awareness training](../resources/mitigation-catalog.md#m-003d), [M-003d2: Rapid recovery access](../resources/mitigation-catalog.md#m-003d2), [M-016b: Limits on sensitive-state targeting](../resources/mitigation-catalog.md#m-016b), [M-005d2: Relationship role and exit clarity](../resources/mitigation-catalog.md#m-005d2), [M-016d2: Vulnerability-sensitive advice review](../resources/mitigation-catalog.md#m-016d2), [M-005g: Memory, bystander consent, and exit](../resources/mitigation-catalog.md#m-005g).
+
+Use [the readiness worksheet](../resources/readiness-worksheet.md) to retain results. These mappings are documented design decisions, not evidence of field effectiveness.

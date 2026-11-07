@@ -70,6 +70,7 @@ def validate(records):
     raw=read_json(ROOT/'research/intake/signals.json')
     originals={(r['source_id'],r['paragraph']):r['text'] for r in raw}
     events={e['id'] for e in read_json(ROOT/'research/intake/events.json')}
+    controls={c['id'] for c in read_json(ROOT/'resources/controls.json')}
     ids=set()
     for r in records:
         if r['id'] in ids:raise ValueError('Duplicate signal ID')
@@ -79,6 +80,7 @@ def validate(records):
         date.fromisoformat(r['review_on'])
         if r['status']=='closed' and (not r.get('closure_evidence') or not r.get('closure_note')):raise ValueError('Closure needs evidence and a reason')
         if set(r['related_event_ids'])-events:raise ValueError('Signal has an unknown event link')
+        if set(r.get('related_control_ids',[]))-controls:raise ValueError('Signal has an unknown mitigation link')
         for path in r['evidence_paths']:
             evidence_file(path)
         for entry in r['history']:

@@ -225,9 +225,10 @@
   }
 </style>
 <link rel="stylesheet" href="../docs/assets/site.css">
+<script src="../docs/assets/practice.js" defer></script>
 </head>
 <body>
-<!-- CSF shared navigation --><nav class="csf-site-nav" aria-label="Main"><strong>CSI / Cognitive Sovereignty</strong><a href="../docs/index.html">Learn</a><a href="../docs/research.html">Research and scores</a><a href="../docs/guide.html">How to use it</a></nav>
+<!-- CSF shared navigation --><nav class="csf-site-nav" aria-label="Main"><a class="csf-brand" href="../docs/index.html"><img src="../docs/assets/brand/csi-shield-white-orange.svg" width="32" height="48" alt="Cyber Strategy Institute shield"><span>CSI / Cognitive Sovereignty</span></a><a href="../docs/index.html">Learn</a><a href="../docs/research.html">Research and scores</a><a href="../docs/csf-explorer.html">Taxonomy</a><a href="../docs/practice.html">Controls and readiness</a><a href="../docs/csf-command-center.html" aria-current="page">Command center</a><a href="../docs/guide.html">How to use it</a><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>
 <p style="padding:12px;background:#fff4df;color:#231b10;position:relative;z-index:101">Reference framework view. Scores are analyst estimates; coverage and human protection have not been validated. <a href="../monitoring/README.md">Measurement method</a>.</p>
 
 <header>
@@ -244,6 +245,7 @@
     <span class="badge badge-blue"><span class="pulse"></span>&nbsp; Live Registry</span>
   </div>
 </header>
+<!-- CSF practice summary:start --><section class="csf-practice-summary" aria-label="Domain controls and readiness"><h2>From research to tested capability</h2><p>44 inherited controls retained, 20 refined, and 12 added. Readiness is unknown until a scoped assessment supplies results.</p><nav class="jump" aria-label="Practice resources"><a href="../docs/practice.html#domains">Six domains</a><a href="../docs/practice.html#controls">Control catalog</a><a href="../docs/practice.html#resources">Assessment resources</a><a href="../docs/practice.html#roadmap">Roadmap status</a></nav><div data-domain-summary></div></section><!-- CSF practice summary:end -->
 
 <div class="main">
 
@@ -516,7 +518,7 @@ domains.forEach(d => {
     <div class="domain-card${d.isNew ? ' new' : ''}">
       ${d.isNew ? '<div class="domain-new-badge">★ NEW DOMAIN</div>' : ''}
       <div class="domain-num">${d.num}</div>
-      <div class="domain-name">${d.name}</div>
+      <div class="domain-name"><a href="../docs/practice.html?domain=D${Number(d.n)}#controls">${d.name}</a></div>
       <div class="domain-def">${d.def}</div>
     </div>`;
 });

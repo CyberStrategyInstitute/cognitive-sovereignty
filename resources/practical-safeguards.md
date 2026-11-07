@@ -14,3 +14,16 @@ These support the existing CSF domains and threat IDs. They are proposed practic
 Use [one decision record](decision-record.md) for the evidence. Use [the pilot plan](../monitoring/pilot-plan.md) for human-outcome tests. Routine, low-consequence tasks need proportionate checks. Preserve accessibility and useful delegation; independent judgment does not require doing every task without assistance.
 
 Machine enforcement belongs in the implementing system and its AI SAFE² evidence. CSF documents the human-layer requirement and checks whether it worked. New paperwork does not create an interlock.
+
+## Apply the safeguards through stable control IDs
+
+| Safeguard | Catalog controls to start with |
+|---|---|
+| Independent judgment | M-006c, M-S03c, M-006g |
+| Evidence | M-007c, M-007c2, M-S06g |
+| Objectives | M-015f2, M-016d2, M-016b |
+| Authorization | M-006g2, M-HO5f, M-014b |
+| Exit and recourse | M-005d2, M-005g, M-HO5f2 |
+| Influence campaigns | M-008c, M-005e2, M-008e2 |
+
+The [catalog](mitigation-catalog.md) supplies the implementation, check, expected outcome, research link, and failure response. The [unit example](../examples/unit_readiness_assessment.md) shows how to record the results without confusing capability with threat severity.

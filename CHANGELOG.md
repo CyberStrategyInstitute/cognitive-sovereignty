@@ -13,3 +13,10 @@ This PR retains the v2.1.0 framework identity. It does not create a release, cha
 - Add validation, contributor templates, corrected code ownership, pinned CI actions, and documented review boundaries.
 
 The inherited CTSS method remains an assessed prioritization method. Provisional event scores, reference estimates, observations, and illustrative lenses stay separate. Broader field effectiveness and full source re-verification remain ongoing research.
+
+## Domain-control integration follow-up
+
+- Retain 44 mitigation IDs, refine 20 implementations with prior wording and reasons preserved, and add 12 research-linked controls across all six domains.
+- Add explicit exposure mappings, separate readiness-extension checks, a catalog, worksheet, schemas, and a reproducible fictional unit assessment. Observed readiness remains unknown.
+- Link the 217 signals to proposed control routes without changing their source text, disposition, or field-validation status.
+- Integrate resources, original shield assets, README alignment, domain/control navigation, Explorer search/sorting, and a candid six-item roadmap status.

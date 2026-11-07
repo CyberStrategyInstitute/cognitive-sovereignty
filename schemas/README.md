@@ -12,3 +12,5 @@ Version 1.0 schemas use JSON Schema draft 2020-12. These describe the interchang
 The Python validators add checks a schema alone cannot establish: IDs must resolve to the taxonomy, original signal text must remain intact, source history must be retained, generated files must match, and file references must exist. Schemas allow additional provenance fields so records can grow without discarding original analysis.
 
 The [catalog](../docs/data/catalog.json) describes exports and canonical paths. Optional SDK testing also validates all current event, signal, and lens records against these schemas. The core tools do not need a schema-library dependency.
+
+[Control schema](control.schema.json) requires the mitigation’s domain, threats, action, expected outcome, test, failure response, research, and evidence status. [Readiness schema](readiness.schema.json) requires scope, protocol, cases, catalog revision, explicit result kind, and evidenced ratings. Known absence is zero; missing results stay null. A rating of 5 requires an adverse-case pass.

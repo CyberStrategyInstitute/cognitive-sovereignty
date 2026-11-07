@@ -117,7 +117,7 @@ For unit commanders, collect individual assessments and calculate:
 1. **Unit average score** by section — identifies collective capability gaps
 2. **Distribution of scores** — a bimodal distribution (high scorers and low scorers) indicates training is not reaching all personnel
 3. **Lowest 20th percentile** — use the pattern to offer support and investigate training access; self-report does not establish individual risk
-4. **Trend over time** — scores should improve with training; stable or declining scores after training indicate an ineffective training program
+4. **Trend over time** — compare the same items and collection conditions; stable or declining self-report triggers investigation and does not alone establish ineffective training
 
 ---
 
@@ -127,3 +127,5 @@ For unit commanders, collect individual assessments and calculate:
 - **Full Six-Domain Assessment:** See `/resources/assessment-template.md`
 - **CTSS Scoring:** See `/taxonomy/ctss-scoring.md` for threat prioritization
 - **Technical Enforcement:** See `/06-digital-ai-symbiosis/README.md` for EFA/E7 architecture
+
+Use [the readiness worksheet](readiness-worksheet.md) to observe the catalog’s capability checks. Keep this 0-4 self-report instrument separate from 0-5 capability ratings and threat CTSS. Follow [the worked unit example](../examples/unit_readiness_assessment.md) for the full assessment path.

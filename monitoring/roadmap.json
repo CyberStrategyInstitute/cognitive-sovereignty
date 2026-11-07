@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ROAD-01",
+    "title": "Neuro-swarm integration techniques",
+    "priority": "High",
+    "target": "v2.1",
+    "status": "Research open",
+    "evidence": "The taxonomy and Biological controls identify the intersection; no distinct validated technique or protocol is delivered.",
+    "next_action": "Retain as research until a distinct mechanism, primary evidence, and test justify an entry.",
+    "path": "research/010_domain_controls_and_readiness.md",
+    "reviewed_on": "2026-11-07"
+  },
+  {
+    "id": "ROAD-02",
+    "title": "Quantum acceleration threat class",
+    "priority": "High",
+    "target": "v2.1",
+    "status": "Research open",
+    "evidence": "A watch item exists; no evidence-backed distinct threat class is implemented.",
+    "next_action": "Review whether quantum capabilities add a distinct mechanism beyond CD-005 before adding a class.",
+    "path": "taxonomy/civilizational-drivers.md",
+    "reviewed_on": "2026-11-07"
+  },
+  {
+    "id": "ROAD-03",
+    "title": "Individual-level CTSS assessment tool",
+    "priority": "Medium",
+    "target": "v2.1",
+    "status": "Partial",
+    "evidence": "The calculator and item-level CTSS records work. Individual exposure profiling and calibration are not delivered.",
+    "next_action": "Specify a personal exposure workflow while keeping threat severity separate from personal capability.",
+    "path": "examples/ctss_calculator.py",
+    "reviewed_on": "2026-11-07"
+  },
+  {
+    "id": "ROAD-04",
+    "title": "Unit-level cognitive readiness scorecard",
+    "priority": "Medium",
+    "target": "v2.2",
+    "status": "Prototype delivered",
+    "evidence": "Six-domain control catalog, worksheet, evidenced-rating tool, and reproducible fictional example exist. Observed unit validation is absent.",
+    "next_action": "Run the same bounded cases in an authorized unit workflow and retain failures, burden, and reassessment.",
+    "path": "examples/unit_readiness_assessment.md",
+    "reviewed_on": "2026-11-07"
+  },
+  {
+    "id": "ROAD-05",
+    "title": "Legislative response integration",
+    "priority": "Low",
+    "target": "v2.2",
+    "status": "Partial",
+    "evidence": "The U.S. founding-principles lens and UAS crosswalk are documented; no comprehensive current-law response catalog exists.",
+    "next_action": "Define jurisdiction, applicable authorities, effective dates, and a legal-review owner.",
+    "path": "lenses/founding-baseline-assessment.md",
+    "reviewed_on": "2026-11-07"
+  },
+  {
+    "id": "ROAD-06",
+    "title": "Defense industrial base application guide",
+    "priority": "Low",
+    "target": "v2.3",
+    "status": "Planned",
+    "evidence": "The crosswalk and unit example are reusable inputs; a dedicated DIB application guide is absent.",
+    "next_action": "Scope one supplier workflow and its evidence needs before writing a sector guide.",
+    "path": "06-digital-ai-symbiosis/federal-procurement-alignment.md",
+    "reviewed_on": "2026-11-07"
+  }
+]

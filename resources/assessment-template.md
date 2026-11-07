@@ -18,7 +18,7 @@ Apply this template to **any system, institution, technology, or policy** you wa
 *Identify the specific technology, institution, media system, policy, or environment under evaluation.*
 
 ```
-Domain:         _______________________________________________
+System / workflow: _______________________________________________
 Description:    _______________________________________________
 Assessment Date: _______________________________________________
 Analyst(s):     _______________________________________________
@@ -152,12 +152,11 @@ Record whether each condition was tested, passed, failed, or remains unknown. Th
 
 ---
 
-## Example Completed Assessments
+## Worked example and next action
 
-See `/examples/` for completed assessment templates applied to:
-- A unit-level AI copilot deployment
-- A social platform exposure scenario
-- A military family resilience program evaluation
+Use [the fictional unit assessment](../examples/unit_readiness_assessment.md) to connect this threat review with CTSS, mitigation IDs, readiness checks, and remediation. It includes reproducible inputs and synthetic fixtures. This repository does not supply completed social-platform or military-family assessments.
+
+Select controls from [the catalog](mitigation-catalog.md), then record capability evidence with [the readiness worksheet](readiness-worksheet.md). Use [the resource guide](README.md) to follow the workflow in order.
 
 ---
 

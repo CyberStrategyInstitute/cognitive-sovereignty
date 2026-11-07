@@ -8,6 +8,9 @@ Read [README.md](README.md) for the model and [integration/README.md](integratio
 - `research/intake/events.json`: item-level assessments, sources, original analysis, and revisions.
 - `research/intake/signals/register.json`: dispositions, responsibilities, review triggers, and history for source signals.
 - `lenses/profiles.json`: declared baseline and optional perspective templates.
+- `resources/controls.json`, `resources/domains.json`, and `resources/index.json`: controls, domain mappings, and assessment resources.
+- `monitoring/readiness-assessments.json`: observed capability evidence; keep synthetic examples separate.
+- `monitoring/roadmap.json`: implementation status and remaining milestones.
 - `research/evidence.json`: selected research-note references, not the complete intake.
 
 Edit canonical records, then run `python -m tools.build`. Do not hand-edit `docs/data/`, generated rankings, or the score JavaScript. Preserve original evidence and history. An event assessment, a taxonomy reference score, a measured outcome, and an illustrative lens result are different records.
