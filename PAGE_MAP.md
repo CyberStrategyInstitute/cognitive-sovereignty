@@ -1,6 +1,6 @@
 # Complete CSF page map
 
-98 Markdown and HTML pages are listed, including section indexes, contribution templates, research notes, assessment resources, and historical reports. This map is generated from repository files. Stable PAGE IDs are derived from paths.
+99 Markdown and HTML pages are listed, including section indexes, contribution templates, research notes, assessment resources, and historical reports. This map is generated from repository files. Stable PAGE IDs are derived from paths.
 
 Framework 3.0.0 is published. New standards documentation in this follow-up is distinguished from changes already delivered in 3.0. [Baseline and change meanings](REPOSITORY_REVIEW.md#change-labels).
 
@@ -87,6 +87,7 @@ Framework 3.0.0 is published. New standards documentation in this follow-up is d
 
 | Page | Change comparison | Interpretation |
 |---|---|---|
+| [CSF 3.0 Release Notes](docs/CSF-3.0.0-release-notes.html) | NEW after published 3.0 baseline | Repository documentation; implementation limits remain explicit |
 | [Web documentation](docs/README.md) | NEW standards documentation | Repository documentation; implementation limits remain explicit |
 | [CSF Command Center — Cognitive Sovereignty Framework](docs/csf-command-center.html) | UPDATED in 3.0 | Repository documentation; implementation limits remain explicit |
 | [CSF Threat Explorer — Cognitive Sovereignty Framework](docs/csf-explorer.html) | UPDATED in 3.0 | Repository documentation; implementation limits remain explicit |

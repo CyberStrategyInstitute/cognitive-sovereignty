@@ -13,6 +13,7 @@ Use this index to find the section’s documents, tools, and data. Source record
 <!-- csf-section-files:start -->
 ## Section files
 
+- [CSF-3.0.0-release-notes.html](CSF-3.0.0-release-notes.html)
 - [assets/](assets/)
 - [csf-command-center.html](csf-command-center.html)
 - [csf-explorer.html](csf-explorer.html)

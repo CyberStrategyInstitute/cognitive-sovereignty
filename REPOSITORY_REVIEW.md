@@ -47,4 +47,8 @@ Run the existing evidence, export, version, lens, and MCP checks, plus `python -
 [Repository home](README.md) · [Complete page map](PAGE_MAP.md) · [Resources](resources/README.md) · [Research](research/README.md) · [Data catalog](docs/data/catalog.json)
 <!-- csf-return-navigation:end -->
 
-Local verification passed: 60 Python tests, the standalone evidence-check command, page-map coverage, input/banner preservation for this review, export freshness, version consistency, Markdown/HTML links and anchors, eight browser-script entrypoints, and actual MCP protocol checks including page discovery. Input hashes are a dated review receipt, not a permanent restriction on later authorized research changes.
+Local verification passed: 60 Python tests, the standalone evidence-check command, page-map coverage, input/banner preservation for this review, export freshness, version consistency, Markdown/HTML links and anchors, nine browser-script entrypoints, and actual MCP protocol checks including page discovery. Input hashes are a dated review receipt, not a permanent restriction on later authorized research changes.
+
+Concurrent main-branch update: the uploaded HTML release notes are preserved, indexed, linked from shared navigation, and included in the version/sitemap checks. Their stale unpublished-release footer is corrected using the verified publication record.
+
+Rendered review: GitHub’s root README was inspected at the default browser width, including the preserved banner, wrapped badges, and left-aligned body text. The Biological domain header and textual statuses were inspected at default and 390-pixel widths; the viewport override was restored. Other domains share the tested header generator. The new custom page-map UI and full website/mobile journeys have script/contract checks but were not visually exercised before deployment. This is a sampled layout review, not an accessibility certification.
