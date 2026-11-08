@@ -32,15 +32,17 @@ CSF 3.0 connects a news item to a score, a proposed action, a domain control, an
 
 **Comparison:** published 3.0 versus the recorded [pre-3.0 baseline](REPOSITORY_REVIEW.md#change-labels). These capabilities were already published in 3.0; this README update makes them easier to find.
 
+![NEW in 3.0](assets/badges/change-new.svg) ![UPDATED in 3.0](assets/badges/change-updated.svg) ![RETAINED in 3.0](assets/badges/change-retained.svg)
+
 | Change | What changed | What you can do now |
 |---|---|---|
-| ![NEW in 3.0](assets/badges/change-new.svg) | [Research intake and CTSS records](research/intake/README.md) preserve individual items, sources, input reasons, and revisions. | Review each assessment and compare the declared weekly sample over time. |
-| ![NEW in 3.0](assets/badges/change-new.svg) | 12 research-linked controls added across all six domains. | Follow the [control catalog](resources/mitigation-catalog.md) to its research rationale, owner role, test, and failure response. |
-| ![UPDATED in 3.0](assets/badges/change-updated.svg) | 20 inherited controls refined; prior wording remains in the records. | See what changed and why before updating your local implementation. |
-| ![NEW in 3.0](assets/badges/change-new.svg) | [Signal tracking](research/intake/signals/README.md) links source excerpts to dispositions, proposed responsible roles, and review triggers. | Track watch items and research needs without counting every excerpt as a separate incident. |
-| ![UPDATED in 3.0](assets/badges/change-updated.svg) | [Readiness criteria](resources/readiness-worksheet.md) separate inherited capabilities from research extensions. | Use the [worked unit assessment](examples/unit_readiness_assessment.md) and keep missing evidence unknown. Start a new comparison when criteria change. |
-| ![NEW in 3.0](assets/badges/change-new.svg) | [Baseline and perspective documentation](lenses/founding-baseline-assessment.md), [schemas and agent/MCP access](integration/README.md), and linked web views. | Declare the lens behind a judgment and reuse structured records. Lens profiles remain draft templates. |
-| ![RETAINED in 3.0](assets/badges/change-retained.svg) | Six domains, five causal layers, CTSS weights, and stable inherited control IDs. 24 controls retain their inherited implementation. | Keep the core model and trace earlier records. 20 other inherited IDs have updated guidance. |
+| **NEW** | [Research intake and CTSS records](research/intake/README.md) preserve individual items, sources, input reasons, and revisions. | Review each assessment and compare the declared weekly sample over time. |
+| **NEW** | 12 research-linked controls added across all six domains. | Follow the [control catalog](resources/mitigation-catalog.md) to its research rationale, owner role, test, and failure response. |
+| **UPDATED** | 20 inherited controls refined; prior wording remains in the records. | See what changed and why before updating your local implementation. |
+| **NEW** | [Signal tracking](research/intake/signals/README.md) links source excerpts to dispositions, proposed responsible roles, and review triggers. | Track watch items and research needs without counting every excerpt as a separate incident. |
+| **UPDATED** | [Readiness criteria](resources/readiness-worksheet.md) separate inherited capabilities from research extensions. | Use the [worked unit assessment](examples/unit_readiness_assessment.md) and keep missing evidence unknown. Start a new comparison when criteria change. |
+| **NEW** | [Baseline and perspective documentation](lenses/founding-baseline-assessment.md), [schemas and agent/MCP access](integration/README.md), and linked web views. | Declare the lens behind a judgment and reuse structured records. Lens profiles remain draft templates. |
+| **RETAINED** | Six domains, five causal layers, CTSS weights, and stable inherited control IDs. 24 controls retain their inherited implementation. | Keep the core model and trace earlier records. 20 other inherited IDs have updated guidance. |
 
 ### Changes across the six domains
 
