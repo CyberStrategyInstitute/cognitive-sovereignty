@@ -143,3 +143,7 @@ See: [human-outcomes.md](./human-outcomes.md)
 1. **Adversarial Reproduction Test:** Opponents using the same data must arrive at the same measurements, even if they disagree about interpretation.
 2. **Predictive Power Test:** The framework must forecast instability before mainstream recognition.
 3. **Policy Neutrality Test:** Metrics must remain valid under any administration or ideology.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

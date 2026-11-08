@@ -13,3 +13,7 @@ Record relevant checks and failed cases. State whether browser changes were chec
 ## Owner review
 
 No merge, release, deployment, or external publication is implied by this PR. Identify any owner decision needed.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

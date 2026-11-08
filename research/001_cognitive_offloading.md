@@ -1,3 +1,7 @@
+<!-- csf-research-status:start -->
+**UPDATED in 3.0.** Research note 001. Published as documentation in CSF 3.0.0; proposal, source-review, and validation limits below remain in force.
+<!-- csf-research-status:end -->
+
 # Research: Cognitive Offloading and Skill Atrophy
 
 ## ST-003, T-CT-006, HO-005 | Countermeasure: Domain 2 Cognitive Independence Protocols
@@ -109,3 +113,7 @@ Convenience is the delivery mechanism, so friction is a countermeasure. Domain 2
 ## Evidence update, November 7, 2026
 
 Read [note 006](006_independent_judgment.md) for newer evidence and contrary findings. The cycle above is a proposed mechanism, not a universal progression. Agreement, assistance, and offloading can be useful. Test immediate performance and retained capability separately.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

@@ -73,3 +73,7 @@ Start with `us-founding-v1` and reusable templates for nation-state, political, 
 3. Test ideology substitution: exchange the favored party, nation, or faith while preserving coercion, deception, authority, and exit facts. Any unexplained score change requires correction.
 4. Invite critics to reproduce scores and challenge inputs using the same evidence. Publish corrections and model failures with the same visibility as supporting cases.
 5. Expand lens packs only after the record format, side-by-side display, and history tests pass. No new domain, causal layer, or weighting scheme is required.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

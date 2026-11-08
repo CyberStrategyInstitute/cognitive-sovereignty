@@ -12,6 +12,8 @@ for (const [name, variable, field] of [
   ['docs/research.html', null, null],
   ['docs/guide.html', null, null],
   ['docs/practice.html', null, null],
+  ['docs/page-map.html', null, null],
+  ['docs/CSF-3.0.0-release-notes.html', null, null],
 ]) {
   const html = fs.readFileSync(path.join(root, name), 'utf8');
   const scripts = [...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];
@@ -60,4 +62,4 @@ for (const [name, variable, field] of [
     assert.equal(grid.children.length, 0);
   }
 }
-console.log('PASS: seven pages and local scripts parse; shared scores, ranking, combined search/domain/tier filtering, and sorting pass. Rendered layout is not tested here.');
+console.log('PASS: nine pages and local scripts parse; shared scores, ranking, combined search/domain/tier filtering, and sorting pass. Rendered layout is not tested here.');

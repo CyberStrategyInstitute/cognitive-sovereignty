@@ -30,3 +30,7 @@ Violations may result in contribution rejection, temporary ban, or permanent ban
 ## Reporting
 
 Report conduct concerns to the project maintainers through GitHub's reporting tools or by contacting Cyber Strategy Institute directly at cyberstrategyinstitute.com.
+
+<!-- csf-return-navigation:start -->
+[Repository home](README.md) · [Complete page map](PAGE_MAP.md) · [Resources](resources/README.md) · [Research](research/README.md) · [Data catalog](docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

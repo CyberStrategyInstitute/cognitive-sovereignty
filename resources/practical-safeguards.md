@@ -27,3 +27,7 @@ Machine enforcement belongs in the implementing system and its AI SAFE² evidenc
 | Influence campaigns | M-008c, M-005e2, M-008e2 |
 
 The [catalog](mitigation-catalog.md) supplies the implementation, check, expected outcome, research link, and failure response. The [unit example](../examples/unit_readiness_assessment.md) shows how to record the results without confusing capability with threat severity.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

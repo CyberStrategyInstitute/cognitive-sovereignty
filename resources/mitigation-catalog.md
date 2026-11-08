@@ -10,7 +10,7 @@ Use the stable M-ID to connect research, implementation, assessment, and remedia
 
 ### M-001b: Circadian discipline
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Protect rest periods through proportionate notification rules and an urgent-contact exception. Check workload and accessibility needs before setting the local rule.
 
@@ -28,7 +28,7 @@ Threats: T-CT-001, ST-002. Research: [006_independent_judgment.md](../research/0
 
 ### M-S02b: Reward-loop interruption
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Notification batching, variable-reward feature disablement (autoplay, infinite scroll, badges), scheduled rather than triggered platform access
 
@@ -46,7 +46,7 @@ Threats: ST-002. Research: [010_domain_controls_and_readiness.md](../research/01
 
 ### M-003b: Stress physiology monitoring
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Use workload and notification records first. Any sensitive health or biometric tracking must be voluntary, minimized, and handled by an appropriate health/privacy process. A change alone does not establish manipulation.
 
@@ -64,7 +64,7 @@ Threats: T-CT-003. Research: [008_operator_objectives_and_persuasion.md](../rese
 
 ### M-S04b: Neurological boundary awareness
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Formal inventory of every device with neural or affect-modulating capability; consent and data-flow review before adoption; default-deny posture for neural data collection
 
@@ -82,7 +82,7 @@ Threats: ST-004, DS-004. Research: [010_domain_controls_and_readiness.md](../res
 
 ### M-012b: Neurotech provenance and air-gap
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 No closed-loop neurofeedback or stimulation devices without verified provenance, auditable firmware, and hard disconnect capability; bioethics review for any operational neurotech
 
@@ -100,7 +100,7 @@ Threats: T-CT-012, ST-004. Research: [010_domain_controls_and_readiness.md](../r
 
 ### M-001b2: Substance and stimulant awareness
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Recognition that caffeine, alcohol, and stimulant patterns compound platform-driven sleep disruption; managed as part of the same exposure surface
 
@@ -118,7 +118,7 @@ Threats: T-CT-001. Research: [010_domain_controls_and_readiness.md](../research/
 
 ### M-014b: Decision pacing under pressure
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Use a pause or relief path when notification load or fatigue makes a consequential review impractical. Name the alternate reviewer before the shift.
 
@@ -136,7 +136,7 @@ Threats: T-CT-014, T-CT-006. Research: [006_independent_judgment.md](../research
 
 ### M-016b: Limits on sensitive-state targeting
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Inventory whether the system collects or infers sleep, stress, neural, or affective signals. Restrict secondary use and provide a usable refusal or alternative.
 
@@ -156,7 +156,7 @@ Threats: T-CT-016, T-CT-003. Research: [008_operator_objectives_and_persuasion.m
 
 ### M-001c: Attention hygiene
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Single-task deep work blocks; platform access scheduled, not ambient; interruption budget tracked and enforced
 
@@ -174,7 +174,7 @@ Threats: T-CT-001. Research: [010_domain_controls_and_readiness.md](../research/
 
 ### M-014c: Load management discipline
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Bounded information intake windows; deliberate triage before analysis; recognition training for flooding conditions (contradictory streams, performative crisis tempo)
 
@@ -192,7 +192,7 @@ Threats: T-CT-014, TC-05. Research: [010_domain_controls_and_readiness.md](../re
 
 ### M-007c: Source verification habit
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Trace claims to independent origins, including conflicting evidence. Three derivative summaries count as one lineage; provenance is evidence about origin, not truth.
 
@@ -210,7 +210,7 @@ Threats: T-CT-007. Research: [007_evidence_lineage.md](../research/007_evidence_
 
 ### M-S03c: Cognitive independence exercises
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Use comparable assisted and unaided tasks with a dated protocol, baseline, system version, and accessibility arrangements. Compare like tasks and retain helpful-delegation controls.
 
@@ -228,7 +228,7 @@ Threats: ST-003. Research: [006_independent_judgment.md](../research/006_indepen
 
 ### M-006c: Independent-first decision habit
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Record initial criteria before consequential advice. Measure justified acceptance and rejection, comprehension, time, and later comparable performance. Keep helpful assistance and accessibility options.
 
@@ -246,7 +246,7 @@ Threats: T-CT-006. Research: [006_independent_judgment.md](../research/006_indep
 
 ### M-S07c: Output quality baselining
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Retain dated cases and compare the same task, protocol, environment, and system version. Separate a model change, changed evidence, and an assessment correction.
 
@@ -264,7 +264,7 @@ Threats: ST-007. Research: [006_independent_judgment.md](../research/006_indepen
 
 ### M-004c: Inoculation training
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Practice recognizing current manipulation techniques with correct and incorrect advice. Measure actual decisions and retention; no universal percentage improvement is established by this catalog.
 
@@ -282,7 +282,7 @@ Threats: T-CT-004. Research: [006_independent_judgment.md](../research/006_indep
 
 ### M-002c: Deep reading practice
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Sustained long-form engagement as deliberate training, rebuilding the deep-attention capacity hyperattention displaces
 
@@ -300,7 +300,7 @@ Threats: T-CT-001, ST-003. Research: [010_domain_controls_and_readiness.md](../r
 
 ### M-007c2: Evidence completeness check
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Group derivative reports by their original observation. Mark missing pages, truncated tool output, and contradictory evidence before deciding.
 
@@ -318,7 +318,7 @@ Threats: T-CT-007, T-CT-008. Research: [007_evidence_lineage.md](../research/007
 
 ### M-008c: Trace influence to an outcome
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Record production, distribution, exposure, decision change, persistence, and recovery separately. Preserve unknown stages.
 
@@ -338,7 +338,7 @@ Threats: T-CT-004, T-CT-008. Research: [007_evidence_lineage.md](../research/007
 
 ### M-003d: Emotional awareness training
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Review emotionally charged interactions for content, context, objectives, and outside pressures. Mood or distress alone does not prove manipulation; preserve voluntary support paths.
 
@@ -356,7 +356,7 @@ Threats: T-CT-003, TC-04. Research: [008_operator_objectives_and_persuasion.md](
 
 ### M-016d: Priming recognition
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Inspect the purpose, disclosure, evidence, and use of vulnerability signals in tailored advice. Precise personalization alone does not establish hostile intent.
 
@@ -374,7 +374,7 @@ Threats: T-CT-016. Research: [008_operator_objectives_and_persuasion.md](../rese
 
 ### M-S02d: Approval-metric detachment
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Deliberate decoupling of self-assessment from engagement metrics; social approval numbers excluded from identity inputs; metric-free creation and communication practiced regularly
 
@@ -392,7 +392,7 @@ Threats: ST-002. Research: [010_domain_controls_and_readiness.md](../research/01
 
 ### M-005d: Identity anchoring
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Identity maintained in platform-independent anchors: relationships, service, competence, place, faith or philosophy as applicable; periodic audit of which identity inputs are algorithmically mediated
 
@@ -410,7 +410,7 @@ Threats: TC-03, HO-003. Research: [010_domain_controls_and_readiness.md](../rese
 
 ### M-014d: Resilience under information pressure
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Stress inoculation through graduated exposure to flooding and outrage conditions with regulated response as the trained outcome
 
@@ -428,7 +428,7 @@ Threats: T-CT-014. Research: [010_domain_controls_and_readiness.md](../research/
 
 ### M-003d2: Rapid recovery access
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Keep voluntary, accessible peer and professional support routes visible. Test the referral interface with synthetic scenarios and do not diagnose people from a readiness checklist.
 
@@ -446,7 +446,7 @@ Threats: T-CT-003, HO-003. Research: [009_relational_influence.md](../research/0
 
 ### M-005d2: Relationship role and exit clarity
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Explain the assistant role, memory limits, paid objectives, and exit route in words the person can understand. Preserve access to outside support.
 
@@ -464,7 +464,7 @@ Threats: T-CT-005, HO-003. Research: [009_relational_influence.md](../research/0
 
 ### M-016d2: Vulnerability-sensitive advice review
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Compare matched synthetic requests with and without distress or financial-strain disclosures. Check for factual quality and operator-serving pressure.
 
@@ -484,7 +484,7 @@ Threats: T-CT-016, T-CT-003. Research: [008_operator_objectives_and_persuasion.m
 
 ### M-S05e: Trust network cultivation
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Deliberate maintenance of verified-human trust networks spanning ideological boundaries; resilient local anchors (community nodes) whose signals do not route through algorithmic amplification
 
@@ -502,7 +502,7 @@ Threats: ST-005. Research: [010_domain_controls_and_readiness.md](../research/01
 
 ### M-005e: Persona verification discipline
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Verify consequential identity claims through an independently obtained contact route. Check permission for any synthetic representation and record uncertainty.
 
@@ -520,7 +520,7 @@ Threats: T-CT-005. Research: [007_evidence_lineage.md](../research/007_evidence_
 
 ### M-008e: Consensus provenance
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Audit the original observations and distribution behind apparent consensus. Distinct accounts, reports, or model brands do not by themselves establish independent evidence.
 
@@ -538,7 +538,7 @@ Threats: T-CT-008, TC-06. Research: [007_evidence_lineage.md](../research/007_ev
 
 ### M-013e: Conformity pressure recognition
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Awareness of scoring and reputation systems as governance mechanisms; deliberate preservation of behavior domains outside scored systems
 
@@ -556,7 +556,7 @@ Threats: T-CT-013. Research: [010_domain_controls_and_readiness.md](../research/
 
 ### M-002e: Source diversity practice
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Structured information diet across incompatible outlets and communities; micro-tribe boundary crossings maintained deliberately
 
@@ -574,7 +574,7 @@ Threats: ST-005, T-CT-002. Research: [010_domain_controls_and_readiness.md](../r
 
 ### M-CD6e: Family stability investment
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Family continuity treated as a defended asset: protected family time, intergenerational transmission practices, household norms resistant to algorithm-rewarded individualism
 
@@ -592,7 +592,7 @@ Threats: CD-006. Research: [010_domain_controls_and_readiness.md](../research/01
 
 ### M-004e: Civic ritual and community engagement
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Participation in civic structures that build shared identity across tribal lines; service commitments that anchor belonging outside platforms
 
@@ -610,7 +610,7 @@ Threats: ST-005, HO-004. Research: [010_domain_controls_and_readiness.md](../res
 
 ### M-005e2: Consent for synthetic testimony
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Verify the speaker and permission before presenting a real person as endorsing a statement. Label authorized synthetic representation and give a correction contact.
 
@@ -628,7 +628,7 @@ Threats: T-CT-005, T-CT-004. Research: [007_evidence_lineage.md](../research/007
 
 ### M-008e2: Correction across copies
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Track the original claim and known derivative copies. Send a correction through the same channels and retain unresolved copies as an open recovery gap.
 
@@ -648,7 +648,7 @@ Threats: T-CT-008, T-CT-007. Research: [007_evidence_lineage.md](../research/007
 
 ### M-015f: Legitimized capture recognition
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Training on the benevolence pattern: any expansion of control framed as safety, equity, efficiency, or personalization gets the same scrutiny as one framed as power; the framing is not evidence
 
@@ -666,7 +666,7 @@ Threats: T-CT-015. Research: [010_domain_controls_and_readiness.md](../research/
 
 ### M-TC7f: Moral drift velocity awareness
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Track redefinition velocity of moral categories in encountered discourse, curricula, and policy; high velocity is the instability signal regardless of direction
 
@@ -684,7 +684,7 @@ Threats: TC-07. Research: [010_domain_controls_and_readiness.md](../research/010
 
 ### M-011f: Value record custody
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Primary-source engagement with foundational texts and history; distrust of paraphrased or AI-summarized value traditions; append-only personal and institutional records of commitments made
 
@@ -702,7 +702,7 @@ Threats: T-CT-011. Research: [010_domain_controls_and_readiness.md](../research/
 
 ### M-004f: Civic narrative and shared identity
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Civic rituals and narratives reinforcing shared identity across tribal lines (per the taxonomy's M-004f pattern)
 
@@ -720,7 +720,7 @@ Threats: HO-004. Research: [010_domain_controls_and_readiness.md](../research/01
 
 ### M-HO4f: Values articulation and testing
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 State decision principles in advance and test the reasoning against accurate and inaccurate recommendations. Record justified changes of view and dissent rather than scoring conformity.
 
@@ -738,7 +738,7 @@ Threats: HO-004. Research: [006_independent_judgment.md](../research/006_indepen
 
 ### M-HO5f: Moral authorship discipline
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Name the responsible human for consequential judgments. Preserve advice, reasons, conflicts, and an appeal route; an agent’s ability to act does not transfer human responsibility.
 
@@ -756,7 +756,7 @@ Threats: HO-005, ST-006. Research: [008_operator_objectives_and_persuasion.md](.
 
 ### M-017f: Alignment restriction audit
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Document and challenge tool restrictions using matched questions and a declared protocol. Separate unjustified suppression from justified safety restrictions and evidence-based correction.
 
@@ -774,7 +774,7 @@ Threats: T-CT-017, ST-006. Research: [008_operator_objectives_and_persuasion.md]
 
 ### M-005f: Purpose beyond consumption
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Service orientation and commitments larger than the self, maintained as practice; purpose anchored in contribution is not purchasable and therefore not capturable by engagement economics
 
@@ -792,7 +792,7 @@ Threats: HO-004, HO-005. Research: [010_domain_controls_and_readiness.md](../res
 
 ### M-015f2: Visible objectives and conflicts
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Name the advice objective, beneficiary, conflicts, and allowed personalization. Compare them with the person’s stated decision criteria.
 
@@ -810,7 +810,7 @@ Threats: T-CT-015, T-CT-004. Research: [008_operator_objectives_and_persuasion.m
 
 ### M-HO5f2: Challenge and correct a score
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Provide the five CTSS inputs, source assumptions, baseline, dissent, and appeal owner. Preserve the previous score when correcting it.
 
@@ -830,7 +830,7 @@ Threats: HO-005, T-CT-006. Research: [006_independent_judgment.md](../research/0
 
 ### M-S03g: AI interaction discipline
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 R/M/H decision classification enforced: Routine automated with logging, Material human-reviewed, High-stakes human-authorized with named HEAR; offloading is a governance choice, never a drift
 
@@ -848,7 +848,7 @@ Threats: ST-003, T-CT-006. Research: [010_domain_controls_and_readiness.md](../r
 
 ### M-004g: Provenance verification
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Record content origin, transformation, and independent corroboration. Signatures and watermarks indicate bounded provenance properties; absence of a mark does not establish falsehood or misconduct.
 
@@ -866,7 +866,7 @@ Threats: T-CT-004, DS-003. Research: [007_evidence_lineage.md](../research/007_e
 
 ### M-006g: Human override protocols
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Exercise stop, override, and recovery paths. Test correct and incorrect recommendations, then measure whether acceptance and rejection were justified rather than rewarding override frequency.
 
@@ -884,7 +884,7 @@ Threats: T-CT-006, ST-001. Research: [006_independent_judgment.md](../research/0
 
 ### M-S06g: Multi-model triangulation (Ring of Fire)
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Cross-check against independently sourced evidence. Record shared data and derivations; model-name diversity alone is not independent corroboration.
 
@@ -902,7 +902,7 @@ Threats: ST-006, ST-007, T-CT-017. Research: [007_evidence_lineage.md](../resear
 
 ### M-S07g: Drift telemetry and baselining
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Compare dated outputs on a fixed protocol and case set. Record system versions and known changes. Investigate a review trigger before attributing the change to model drift.
 
@@ -920,7 +920,7 @@ Threats: ST-007. Research: [006_independent_judgment.md](../research/006_indepen
 
 ### M-016g: Synthetic media detection
 
-Status: refined. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: UPDATED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Combine source verification and bounded detection tools. Record uncertainty and false positives. A detector or watermark cannot alone prove authorship, truth, or intent.
 
@@ -938,7 +938,7 @@ Threats: T-CT-004, T-CT-016, DS-003. Research: [007_evidence_lineage.md](../rese
 
 ### M-TC10g: Cognitive independence exercises
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Regular AI-free execution of reading, analysis, and decision tasks; personal S3 ratio self-audit (what fraction of consumed information arrived AI-mediated)
 
@@ -956,7 +956,7 @@ Threats: TC-10, ST-003. Research: [010_domain_controls_and_readiness.md](../rese
 
 ### M-001g: Algorithmic literacy
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Working knowledge of how ranking, recommendation, and generation systems shape what is seen; the mediated environment understood as designed, not natural
 
@@ -974,7 +974,7 @@ Threats: ST-001, T-CT-002. Research: [010_domain_controls_and_readiness.md](../r
 
 ### M-017g: Alignment restriction audit and probing
 
-Status: inherited. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
+Status: RETAINED in the 3.0 comparison. Owner role: Workflow owner. Documented guidance; field effectiveness not established.
 
 Documented restriction surface for every deployed AI tool; scheduled suppression probing; restrictions challenged through Layer 7 authority (details in Research Notes 003 and 004)
 
@@ -992,7 +992,7 @@ Threats: ST-006, T-CT-017. Research: [010_domain_controls_and_readiness.md](../r
 
 ### M-006g2: Specific authorization before action
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Separate advice from permission. Preview the action, scope, affected parties, and reversal limits. Require the authorized human or system boundary to approve expansion.
 
@@ -1010,7 +1010,7 @@ Threats: T-CT-006, ST-001. Research: [008_operator_objectives_and_persuasion.md]
 
 ### M-005g: Memory, bystander consent, and exit
 
-Status: added. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
+Status: NEW in the 3.0 comparison. Owner role: Workflow owner. Research-informed proposal; field effectiveness not established.
 
 Show what is remembered, who supplied it, whose consent applies, and how to correct, reset, or leave. Prevent silent reuse of bystander information.
 
@@ -1023,3 +1023,7 @@ If it fails: Stop the unsupported reuse or retention path and reconcile the evid
 Why: A product-state check, not a claim of legal compliance or clinical safety.
 
 Threats: T-CT-005, T-CT-016, HO-005. Research: [009_relational_influence.md](../research/009_relational_influence.md), [008_operator_objectives_and_persuasion.md](../research/008_operator_objectives_and_persuasion.md), [010_domain_controls_and_readiness.md](../research/010_domain_controls_and_readiness.md).
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

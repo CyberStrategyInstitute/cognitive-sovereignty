@@ -19,3 +19,7 @@ These refine existing taxonomy entries. They add no domain, causal layer, CTSS w
 | Belief offloading and authority transfer | Initial reasons, AI contribution, simulated expertise or concern, and final reconstruction | A person can explain why they hold a consequential belief without merely pointing to the assistant | ST-003, T-CT-006, HO-004 |
 
 Use the [decision record](decision-record.md), [practical safeguards](practical-safeguards.md), and [pilot plan](../monitoring/pilot-plan.md). The [signal register](../research/intake/signals/README.md) tracks research and field-validation work that remains open.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

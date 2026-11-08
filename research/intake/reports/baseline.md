@@ -68,3 +68,7 @@ The inherited CTSS 90 reference is preserved with its original item. It is a fam
 A source record is not automatically accepted as fact. Legal allegations, platform claims, simulations, human experiments, policy proposals, and documented outcomes retain distinct evidence descriptions in the original analysis. Each provisional assessment states a research trigger. Review can revise any input; keep the previous dated revision and explain why. A reproduced score can still be a wrong judgment.
 
 Use the [intake method](../README.md) for future collection and the [lens assessment](../../../lenses/founding-baseline-assessment.md) for the baseline choice.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../../../README.md) · [Complete page map](../../../PAGE_MAP.md) · [Resources](../../../resources/README.md) · [Research](../../README.md) · [Data catalog](../../../docs/data/catalog.json) · [Section index](../../README.md)
+<!-- csf-return-navigation:end -->

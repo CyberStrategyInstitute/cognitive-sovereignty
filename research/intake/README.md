@@ -1,3 +1,11 @@
+<!-- csf-module-header:start -->
+![RES: Research and intelligence. CSF 3.0.0. Status is repeated in text below.](../../assets/headers/research.svg)
+
+CSF 3.0.0. Documentation: NEW in 3.0. Research intake; event CTSS judgments remain provisional.
+
+[![Framework 3.0.0](../../assets/badges/version.svg)](../../VERSION) [![Documentation license: CC BY-SA 4.0](../../assets/badges/docs-license.svg)](../../LICENSE)
+<!-- csf-module-header:end -->
+
 # Weekly intake: keep every relevant item
 
 The unit of intake is one event, news item, report, study, or distinct insight. Each item retains its evidence and its own assessment. A short editorial brief can select highlights; the research ledger keeps the rest.
@@ -54,3 +62,23 @@ The original Top 12 selection cannot reveal minor items that were never collecte
 No October 16-23 ranked edition was found. The user clarified that scoring images belong to another research folder and withdrew that recovery request. The supplied scorecard ZIP is a separate template. The 217 watch/action signals are preserved as research leads, not fabricated incidents. They enter the scored event ledger when tied to a specific source or assessed scenario. The initial scoring is ready for review; underlying sources are not all newly reverified.
 
 Repository report receipts hash UTF-8 text with LF line endings, so Windows and Linux rebuilds match. Original source-file hashes in the import manifest remain byte-for-byte hashes. Report receipts use the latest assessment date rather than the day a rebuild happens.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../../README.md) · [Complete page map](../../PAGE_MAP.md) · [Resources](../../resources/README.md) · [Research](../README.md) · [Data catalog](../../docs/data/catalog.json) · [Section index](../README.md)
+<!-- csf-return-navigation:end -->
+
+<!-- csf-section-files:start -->
+## Section files
+
+- [event-template.json](event-template.json)
+- [events.json](events.json)
+- [manifest.json](manifest.json)
+- [occurrences.json](occurrences.json)
+- [raw/](raw/)
+- [report-receipt.json](report-receipt.json)
+- [reports/](reports/)
+- [signals/](signals/README.md)
+- [signals.json](signals.json)
+- [slow-signal-flags.json](slow-signal-flags.json)
+- [weekly-trends.json](weekly-trends.json)
+<!-- csf-section-files:end -->

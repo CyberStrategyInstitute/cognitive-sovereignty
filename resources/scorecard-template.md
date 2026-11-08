@@ -29,3 +29,7 @@ Use charcoal, warm white, CSI orange for structure and emphasis, and maroon for 
 The attached Anthropic watermark case is dated September 3, 2026. Its inputs 5/4/5/4/3 calculate to 87. Preserve that historical example without implying that its deployment or harm claims were newly verified in this task. It is excluded from the 87-item weekly intake cohort. Its projected escalation to 95 does not supply changed inputs, so a new calculation must state those inputs before using that projection as a reproducible result.
 
 [Source-panel reference and hashes](../docs/assets/scorecard-template/reference.json) · [Overall panel](../docs/assets/scorecard-template/01-ctss-overall.png) · [Likelihood](../docs/assets/scorecard-template/02-likelihood.png) · [Agency impact](../docs/assets/scorecard-template/03-impact-on-agency.png) · [Reach](../docs/assets/scorecard-template/04-population-reach.png) · [Detection](../docs/assets/scorecard-template/05-detection-difficulty.png) · [Recovery](../docs/assets/scorecard-template/06-recovery-difficulty.png)
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

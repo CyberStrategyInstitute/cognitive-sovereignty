@@ -3,10 +3,10 @@ import re
 from tools.csf import ROOT,read_json
 from tools.version import VERSION
 
-PAGES=[('docs/index.html','Learn'),('docs/csf-explorer.html','Taxonomy'),('docs/csf-command-center.html','Command center'),('docs/research.html','Research and scores'),('docs/guide.html','How to use it'),('docs/practice.html','Controls and readiness'),('command-center/index.html','Command center')]
+PAGES=[('docs/index.html','Learn'),('docs/csf-explorer.html','Taxonomy'),('docs/csf-command-center.html','Command center'),('docs/research.html','Research and scores'),('docs/guide.html','How to use it'),('docs/practice.html','Controls and readiness'),('command-center/index.html','Command center'),('docs/page-map.html','Page map'),('docs/CSF-3.0.0-release-notes.html','Release notes')]
 
 def navigation(active,prefix):
-    links=[('index.html','Learn'),('research.html','Research and scores'),('csf-explorer.html','Taxonomy'),('practice.html','Controls and readiness'),('csf-command-center.html','Command center'),('guide.html','How to use it')]
+    links=[('index.html','Learn'),('research.html','Research and scores'),('csf-explorer.html','Taxonomy'),('practice.html','Controls and readiness'),('csf-command-center.html','Command center'),('guide.html','How to use it'),('page-map.html','Page map'),('CSF-3.0.0-release-notes.html','Release notes')]
     nav='<nav class="csf-site-nav" aria-label="Main"><a class="csf-brand" href="'+prefix+'index.html"><img src="'+prefix+'assets/brand/csi-shield-white-orange.svg" width="32" height="48" alt="Cyber Strategy Institute shield"><span>CSI / CSF v'+VERSION+'</span></a>'
     for href,label in links:nav+='<a href="'+prefix+href+'"'+(' aria-current="page"' if label==active else '')+'>'+label+'</a>'
     return nav+'<a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>'
@@ -19,9 +19,11 @@ def summary(prefix):
 def build():
     for name,active in PAGES:
         path=ROOT/name;text=path.read_text(encoding='utf-8');prefix='../docs/' if name.startswith('command-center/') else ''
-        text=re.sub(r'<nav class="csf-site-nav".*?</nav>',lambda _:navigation(active,prefix),text,flags=re.S)
+        if '<nav class="csf-site-nav"' in text:text=re.sub(r'<nav class="csf-site-nav".*?</nav>',lambda _:navigation(active,prefix),text,flags=re.S)
+        else:text=re.sub(r'(<body[^>]*>)',lambda m:m[1]+navigation(active,prefix),text,count=1)
         if 'assets/site.css' not in text:text=text.replace('</head>','<link rel="stylesheet" href="'+prefix+'assets/site.css">\n</head>')
         if 'assets/practice.js' not in text:text=text.replace('</head>','<script src="'+prefix+'assets/practice.js" defer></script>\n</head>')
+        if 'rel="sitemap"' not in text:text=text.replace('</head>','<link rel="sitemap" type="application/xml" href="'+prefix+'sitemap.xml">\n</head>')
         if name in {'docs/index.html','docs/csf-explorer.html','docs/csf-command-center.html','command-center/index.html'}:
             block=summary(prefix)
             if '<!-- CSF practice summary:start -->' in text:text=re.sub(r'<!-- CSF practice summary:start -->.*?<!-- CSF practice summary:end -->',lambda _:block,text,flags=re.S)

@@ -82,3 +82,7 @@ The work advances the research foundation and unit-scorecard prototype. It does 
 [Detailed change assessment](research/010_domain_controls_and_readiness.md) | [Implementation record](IMPLEMENTATION.md) | [Machine-readable roadmap](monitoring/roadmap.json)
 
 Next owner priorities: review the controls and their burden, select a bounded unit workflow, and decide whether the two high-priority research items remain release requirements. Do not silently mark them complete to match a version label.
+
+<!-- csf-return-navigation:start -->
+[Repository home](README.md) · [Complete page map](PAGE_MAP.md) · [Resources](resources/README.md) · [Research](research/README.md) · [Data catalog](docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

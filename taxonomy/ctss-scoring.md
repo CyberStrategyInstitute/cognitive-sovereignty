@@ -33,3 +33,7 @@ Range 0 to 100. Critical: 80 or above. High: 70 to below 80. Elevated: 60 to bel
 Run `python tools/csf.py build` after approved input changes, then `python tools/csf.py check`. The calculator computes from inputs. Dashboards read the generated score file. Human-outcome observations are recorded separately in [monitoring](../monitoring/README.md).
 
 Do not sum CTSS totals into a claim of systemic protection or a coverage percentage. Measure tested cases and human outcomes directly. The weights and bands define our assessment method; their empirical calibration remains open.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

@@ -1,3 +1,11 @@
+<!-- csf-module-header:start -->
+![D5: Purpose & Moral. CSF 3.0.0. Status is repeated in text below.](../assets/headers/05-purpose-moral.svg)
+
+CSF 3.0.0. Documentation: UPDATED in 3.0. Documented guidance; field effectiveness not established. Control comparison: 2 NEW, 3 UPDATED, 5 RETAINED in 3.0. No controls are marked DEPRECATED.
+
+[![Framework 3.0.0](../assets/badges/version.svg)](../VERSION) [![Documentation license: CC BY-SA 4.0](../assets/badges/docs-license.svg)](../LICENSE)
+<!-- csf-module-header:end -->
+
 # Domain 05: Purpose & Moral
 
 ### The Domain Civilizations Lose First
@@ -61,16 +69,16 @@ Stable IDs connect each capability to its research and test. Existing IDs are re
 
 | M-ID | Capability | Counters | Implementation | Research |
 |---|---|---|---|---|
-| M-015f | Legitimized capture recognition (inherited) | T-CT-015 | Training on the benevolence pattern: any expansion of control framed as safety, equity, efficiency, or personalization gets the same scrutiny as one framed as power; the framing is not evidence | [010](../research/010_domain_controls_and_readiness.md) |
-| M-TC7f | Moral drift velocity awareness (inherited) | TC-07 | Track redefinition velocity of moral categories in encountered discourse, curricula, and policy; high velocity is the instability signal regardless of direction | [010](../research/010_domain_controls_and_readiness.md) |
-| M-011f | Value record custody (inherited) | T-CT-011 | Primary-source engagement with foundational texts and history; distrust of paraphrased or AI-summarized value traditions; append-only personal and institutional records of commitments made | [010](../research/010_domain_controls_and_readiness.md) |
-| M-004f | Civic narrative and shared identity (inherited) | HO-004 | Civic rituals and narratives reinforcing shared identity across tribal lines (per the taxonomy's M-004f pattern) | [010](../research/010_domain_controls_and_readiness.md) |
-| M-HO4f | Values articulation and testing (refined) | HO-004 | State decision principles in advance and test the reasoning against accurate and inaccurate recommendations. Record justified changes of view and dissent rather than scoring conformity. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md) |
-| M-HO5f | Moral authorship discipline (refined) | HO-005, ST-006 | Name the responsible human for consequential judgments. Preserve advice, reasons, conflicts, and an appeal route; an agent’s ability to act does not transfer human responsibility. | [008](../research/008_operator_objectives_and_persuasion.md) |
-| M-017f | Alignment restriction audit (refined) | T-CT-017, ST-006 | Document and challenge tool restrictions using matched questions and a declared protocol. Separate unjustified suppression from justified safety restrictions and evidence-based correction. | [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
-| M-005f | Purpose beyond consumption (inherited) | HO-004, HO-005 | Service orientation and commitments larger than the self, maintained as practice; purpose anchored in contribution is not purchasable and therefore not capturable by engagement economics | [010](../research/010_domain_controls_and_readiness.md) |
-| M-015f2 | Visible objectives and conflicts (added) | T-CT-015, T-CT-004 | Name the advice objective, beneficiary, conflicts, and allowed personalization. Compare them with the person’s stated decision criteria. | [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
-| M-HO5f2 | Challenge and correct a score (added) | HO-005, T-CT-006 | Provide the five CTSS inputs, source assumptions, baseline, dissent, and appeal owner. Preserve the previous score when correcting it. | [006](../research/006_independent_judgment.md), [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-015f | Legitimized capture recognition (RETAINED in 3.0) | T-CT-015 | Training on the benevolence pattern: any expansion of control framed as safety, equity, efficiency, or personalization gets the same scrutiny as one framed as power; the framing is not evidence | [010](../research/010_domain_controls_and_readiness.md) |
+| M-TC7f | Moral drift velocity awareness (RETAINED in 3.0) | TC-07 | Track redefinition velocity of moral categories in encountered discourse, curricula, and policy; high velocity is the instability signal regardless of direction | [010](../research/010_domain_controls_and_readiness.md) |
+| M-011f | Value record custody (RETAINED in 3.0) | T-CT-011 | Primary-source engagement with foundational texts and history; distrust of paraphrased or AI-summarized value traditions; append-only personal and institutional records of commitments made | [010](../research/010_domain_controls_and_readiness.md) |
+| M-004f | Civic narrative and shared identity (RETAINED in 3.0) | HO-004 | Civic rituals and narratives reinforcing shared identity across tribal lines (per the taxonomy's M-004f pattern) | [010](../research/010_domain_controls_and_readiness.md) |
+| M-HO4f | Values articulation and testing (UPDATED in 3.0) | HO-004 | State decision principles in advance and test the reasoning against accurate and inaccurate recommendations. Record justified changes of view and dissent rather than scoring conformity. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+| M-HO5f | Moral authorship discipline (UPDATED in 3.0) | HO-005, ST-006 | Name the responsible human for consequential judgments. Preserve advice, reasons, conflicts, and an appeal route; an agent’s ability to act does not transfer human responsibility. | [008](../research/008_operator_objectives_and_persuasion.md) |
+| M-017f | Alignment restriction audit (UPDATED in 3.0) | T-CT-017, ST-006 | Document and challenge tool restrictions using matched questions and a declared protocol. Separate unjustified suppression from justified safety restrictions and evidence-based correction. | [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-005f | Purpose beyond consumption (RETAINED in 3.0) | HO-004, HO-005 | Service orientation and commitments larger than the self, maintained as practice; purpose anchored in contribution is not purchasable and therefore not capturable by engagement economics | [010](../research/010_domain_controls_and_readiness.md) |
+| M-015f2 | Visible objectives and conflicts (NEW in 3.0) | T-CT-015, T-CT-004 | Name the advice objective, beneficiary, conflicts, and allowed personalization. Compare them with the person’s stated decision criteria. | [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-HO5f2 | Challenge and correct a score (NEW in 3.0) | HO-005, T-CT-006 | Provide the five CTSS inputs, source assumptions, baseline, dissent, and appeal owner. Preserve the previous score when correcting it. | [006](../research/006_independent_judgment.md), [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
 
 ---
 
@@ -137,3 +145,7 @@ Population-scale measure (Measurement Stack C1): Narrative Drift Velocity: norm 
 - **Adjacent domains:** [Domain 4: Social](../04-social/README.md) (the shared identity substrate) | [Domain 6: Digital & AI Symbiosis](../06-digital-ai-symbiosis/README.md) (the enforcement architecture and the delivery channel)
 
 > **The domain in one sentence:** hold the definitions, or lose the war without a battle.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

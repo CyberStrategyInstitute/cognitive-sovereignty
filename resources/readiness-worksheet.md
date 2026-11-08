@@ -32,3 +32,7 @@ Keep the baseline and every later dated result. Compare only matching scope, pop
 ## Act on the evidence
 
 Record the failed case, responsible owner, due date, and retest. Preserve unresolved gaps in the [decision record](decision-record.md). A failed test can trigger remediation without diagnosing a person or declaring that every other domain has failed. Reassess after the repair using the same cases and retain contrary results.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

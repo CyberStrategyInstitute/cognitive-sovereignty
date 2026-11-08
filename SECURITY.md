@@ -27,3 +27,7 @@ We will respond within 72 hours and coordinate disclosure with you.
 - Social engineering of CSI staff
 - Physical security
 - Denial of service against GitHub infrastructure
+
+<!-- csf-return-navigation:start -->
+[Repository home](README.md) · [Complete page map](PAGE_MAP.md) · [Resources](resources/README.md) · [Research](research/README.md) · [Data catalog](docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

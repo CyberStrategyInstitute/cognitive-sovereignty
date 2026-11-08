@@ -1,3 +1,7 @@
+<!-- csf-research-status:start -->
+**NEW in 3.0.** Research note 009. Published as documentation in CSF 3.0.0; proposal, source-review, and validation limits below remain in force.
+<!-- csf-research-status:end -->
+
 # 009: Help people understand and leave an AI relationship
 
 CSF links: ST-003, T-CT-005, T-CT-016, HO-003, HO-005. Domains 3, 4, 5, and 6.
@@ -25,3 +29,7 @@ Begin with a source review and product-interface checks. Expand testing only whe
 [M-003d: Emotional awareness training](../resources/mitigation-catalog.md#m-003d), [M-003d2: Rapid recovery access](../resources/mitigation-catalog.md#m-003d2), [M-016b: Limits on sensitive-state targeting](../resources/mitigation-catalog.md#m-016b), [M-005d2: Relationship role and exit clarity](../resources/mitigation-catalog.md#m-005d2), [M-016d2: Vulnerability-sensitive advice review](../resources/mitigation-catalog.md#m-016d2), [M-005g: Memory, bystander consent, and exit](../resources/mitigation-catalog.md#m-005g).
 
 Use [the readiness worksheet](../resources/readiness-worksheet.md) to retain results. These mappings are documented design decisions, not evidence of field effectiveness.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

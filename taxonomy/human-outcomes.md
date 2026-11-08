@@ -99,3 +99,7 @@ Scenarios consistently showed that cognitive impacts produce physical outcomes:
 - **Family dissolution (HO-003)** results from identity fragmentation driven by incentive-captured platforms, not from cultural evolution alone
 
 **The delivery is technical. The impact is cognitive. The outcome is physical change.**
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

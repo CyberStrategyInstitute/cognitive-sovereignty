@@ -22,3 +22,7 @@ Generated from registry inputs with `python tools/csf.py build`. These are inher
 | 16 | T-CT-003 | Micro-Targeted Emotional Priming | 70 | high |
 | 17 | T-CT-009 | Institutional and Bureaucratic Capture | 69 | elevated |
 | 18 | T-CT-017 | Guardrail Bias Exploitation | 66 | elevated |
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

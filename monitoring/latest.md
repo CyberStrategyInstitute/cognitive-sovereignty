@@ -177,3 +177,7 @@ Action: Group claims by originating observation and test both appropriate accept
 Limits: Research-led assessment, not an observed U.S. incident rate. Some source tasks and populations are outside the U.S. Evidence transfer and maximum reach are explicit scenario assumptions. The inputs can be challenged individually.
 
 Sources: [R-004: AI-Assisted Classification under Correlation Neglect and Trust](https://arxiv.org/abs/2611.05870v1), [R-005: Provenance-Aware Belief Updating in Human-AI Feedback Loops](https://arxiv.org/abs/2610.13008v2).
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

@@ -1,3 +1,11 @@
+<!-- csf-module-header:start -->
+![MON: Monitoring and outcomes. CSF 3.0.0. Status is repeated in text below.](../assets/headers/monitoring.svg)
+
+CSF 3.0.0. Documentation: NEW in 3.0. Repository documentation; implementation limits remain explicit.
+
+[![Framework 3.0.0](../assets/badges/version.svg)](../VERSION) [![Documentation license: CC BY-SA 4.0](../assets/badges/docs-license.svg)](../LICENSE)
+<!-- csf-module-header:end -->
+
 # Measure, compare, explain
 
 CSF monitoring should answer three questions: What did we check? What changed? What should we do?
@@ -6,7 +14,7 @@ The main baseline is the [complete weekly intake](../research/intake/reports/bas
 
 ## What works now
 
-The offline tool checks registry arithmetic, generated files, research records, and measurement records. It produces a draft report. It makes no network calls and incurs no model charges. Repository checks run automatically on a proposed change once the included GitHub workflow is merged. The existing CSI weekly briefs automation was updated November 7 with the complete CSF intake and scoring requirements; its schedule and other topic instructions were preserved. No new scheduled run or live human/model evaluation was performed in this task.
+The offline tool checks registry arithmetic, generated files, research records, and measurement records. It produces a draft report. It makes no network calls and incurs no model charges. Repository checks run automatically on pull requests and main-branch updates through the merged GitHub workflow. The existing CSI weekly briefs automation was updated November 7 with the complete CSF intake and scoring requirements; its schedule and other topic instructions were preserved. No new scheduled run or live human/model evaluation was performed in this task.
 
 ```
 python tools/csf.py check
@@ -75,3 +83,23 @@ A monitoring result is a scoped finding. It does not establish that CSF prevents
 ## Domain capability results
 
 Use [the readiness worksheet](../resources/readiness-worksheet.md), [catalog](../resources/mitigation-catalog.md), and [worked unit example](../examples/unit_readiness_assessment.md). `readiness-assessments.json` starts empty. The read-only summary excludes synthetic examples and keeps inherited capability profiles separate from the two new checks per domain. No observed unit readiness increase is claimed. `python -m tools.readiness` reports the current observed collection.
+
+<!-- csf-section-files:start -->
+## Section files
+
+- [assessments.json](assessments.json)
+- [automation-update-2026-11-07.json](automation-update-2026-11-07.json)
+- [example-measurements.json](example-measurements.json)
+- [latest.json](latest.json)
+- [latest.md](latest.md)
+- [measurements.json](measurements.json)
+- [pilot-plan.md](pilot-plan.md)
+- [readiness-assessments.json](readiness-assessments.json)
+- [roadmap.json](roadmap.json)
+- [runs/](runs/)
+- [weekly-intake-prompt.md](weekly-intake-prompt.md)
+<!-- csf-section-files:end -->
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

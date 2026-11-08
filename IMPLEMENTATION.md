@@ -16,7 +16,7 @@ Use CSF as the source of record for U.S.-focused analysis and CTSS assessments. 
 
 Build repeatable checks that count observable results. Compare like with like. Missing data stays unknown. Preserve the baseline and the evidence behind each change. Prepare readable draft reports; keep external publication and release under owner control. Never present a synthetic exercise, researcher-reported result, or documentation check as measured human protection.
 
-## Delivered in this branch
+## Delivered in published CSF 3.0
 
 | Work | Why | Outcome |
 |---|---|---|
@@ -30,7 +30,7 @@ Build repeatable checks that count observable results. Compare like with like. M
 
 Scope clarified November 7: CSF is the source of record for its own U.S.-focused assessments. The first edition now includes six scored scenarios, individual input rationales, a sample aggregate, and revision comparison. Experiments support validation but are not a gate on issuing an analytical judgment. The first sample mean is 53.2; there is no prior assessment edition from which to infer a time trend.
 
-1. Review the pull request before merging or publishing the resulting reports.
+1. CSF 3.0 is merged and published. Review later assessment reports and changes on their own evidence before publication.
 2. Continue the U.S.-focused assessment series and prepare its individual scores, aggregate, reasoning, and limits for publication. Alongside it, choose one advisory workflow and a consenting adult pilot group. The workflow owner defines acceptable errors, accessibility needs, and stop conditions before collecting results.
 3. Run the same cases before and after a change. Record model versions, evidence, and failures. A small pilot describes that pilot; it cannot establish population-wide protection.
 4. Verify the next execution of the existing weekly brief automation. Its CSF intake instructions were updated without changing its schedule. No automatic report publication is enabled.
@@ -41,7 +41,7 @@ Start with [practical safeguards](resources/practical-safeguards.md), [research]
 
 Fifty-one Python tests passed, covering intake retention, original analysis integrity, item scores, role-separated aggregates, recurring signals, missing weeks, dated revisions, baseline preservation, signal closure evidence, bounded queries, export freshness, and rejection of hidden lens weight changes. Seven browser pages and their scripts parse; three reference dashboards use the shared scoring data. All 1,430 local document links and HTML anchors resolve. The optional MCP adapter passed real client/server protocol checks with SDK 1.30.0, including discovery, lookup, pagination, calculation, missing inputs, and rejection of invalid inputs or arbitrary paths. All 16 originals and archive copies matched their recorded hashes.
 
-Rendered desktop/mobile layout remains unverified because the in-app browser could not reach the preview and the local-browser access approval timed out. Shared styling and responsive rules have code checks, which do not establish rendered accessibility or layout. The branch is prepared for an owner-reviewed PR. No merge, release, deployment, participant study, or automatic publication is authorized by this change.
+Rendered desktop/mobile layout remains unverified because the in-app browser could not reach the preview and the local-browser access approval timed out. Shared styling and responsive rules have code checks, which do not establish rendered accessibility or layout. [PR #3](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/pull/3) was merged, the 3.0 release was published, and GitHub Pages reported a completed main/docs build. No participant study or automatic report publication is established by that publication.
 
 The existing `csi-weekly-briefs-and-catch-up` heartbeat was updated through the app on November 7. It remains active with its previous schedule and target chat. Only a CSF-specific intake/scoring appendix was added; the other brief topics and existing delivery boundaries remain. The update requests the item ledger, CTSS CSV, full research report, lower-salience retention, and explicit baseline/lens handling. Its next successful due run remains to be verified.
 
@@ -57,4 +57,12 @@ New checks cover inherited denominators, unknown/zero distinctions, evidence-bac
 
 ## Framework version 3.0.0
 
-The owner designated this as the CSF 3.0 major update. Current framework labels use v3.0.0, driven by `VERSION` and checked across all seven pages, the README/reference, citation, registry, and data catalog. Historical source and assessment versions are preserved. The CTSS formula and six-domain/five-layer model remain intact. Open research milestones remain open, and the major version does not establish field effectiveness.
+The owner designated this as the CSF 3.0 major update. Current framework labels use v3.0.0, driven by `VERSION` and checked across all website entrypoints, the README/reference, citation, registry, and data catalog. Historical source and assessment versions are preserved. The CTSS formula and six-domain/five-layer model remain intact. Open research milestones remain open, and the major version does not establish field effectiveness.
+
+## Repository standards follow-up
+
+The November 8 standards follow-up changes presentation, navigation, publication wording, page discovery, and verification. It does not add to the 56 controls or alter the 3.0 assessment method. [Review findings and baseline](REPOSITORY_REVIEW.md). Version remains 3.0.0.
+
+<!-- csf-return-navigation:start -->
+[Repository home](README.md) · [Complete page map](PAGE_MAP.md) · [Resources](resources/README.md) · [Research](research/README.md) · [Data catalog](docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

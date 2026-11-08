@@ -203,3 +203,7 @@ Substrate threat layer coverage: approximately **92%**. The primary remaining ga
 - Neuro-swarm integration (ST-004 × DS-002)
 - Undiscovered feedback loops between substrate conditions
 - Long-arc measurement of ST-003 aggregate effects across populations
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

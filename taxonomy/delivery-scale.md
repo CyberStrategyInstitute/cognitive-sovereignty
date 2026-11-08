@@ -83,3 +83,7 @@ See: [research/002_swarm_threat_scaling.md](../research/002_swarm_threat_scaling
 **Phase C — Fully Autonomous Agent Swarms (Near-Future):** Parallel narrative ecosystems, market reality distortion, cognitive displacement. When AI companions replace relationships and AI feeds replace exploration, humans become consumers of machine-curated existence.
 
 > The question is not whether this will happen. The question is whether we will have the mechanisms to detect it, measure it, and respond to it before it becomes irreversible.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->
