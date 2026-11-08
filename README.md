@@ -1,6 +1,6 @@
-<img src="docs/assets/brand/csi-shield-color.png" width="96" alt="Cyber Strategy Institute shield">
+<img src="assets/CSF-Human-Control-Plane-v2.png" alt="Cyber Strategy Institute shield">
 
-# Cognitive Sovereignty Framework 3.0
+# Cognitive Sovereignty Framework v3.0
 
 CSF helps people and organizations examine whether they retain the ability to understand, choose, challenge, and govern AI-mediated decisions. Cyber Strategy Institute maintains the model, taxonomy, research, and CTSS assessments.
 
