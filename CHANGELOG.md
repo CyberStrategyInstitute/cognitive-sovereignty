@@ -1,6 +1,12 @@
 # Change log
 
-## Unreleased: repository standards follow-up
+## Unreleased: README release highlights and embedded Star History
+
+- Bring the published 3.0 changes onto the root README with colored NEW, UPDATED, and RETAINED labels, practical outcomes, source links, and generated domain-control counts.
+- Add an on-page contents bar and a visible browser page-map entry. Restore the theme-aware Star History image on the root page, with an interactive fallback link.
+- These are presentation repairs. No controls, taxonomy classes, CTSS inputs, or readiness observations are added by this follow-up. Version remains 3.0.0.
+
+## Repository standards follow-up (merged in PR #5)
 
 Presentation and discovery repairs against the updated repository standard. Version remains 3.0.0. The controls, scored intake, readiness method, and MCP adapter were already delivered in the published 3.0 release; this follow-up does not add to those substantive counts.
 
