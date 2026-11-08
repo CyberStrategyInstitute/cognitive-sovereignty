@@ -38,6 +38,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(11,31,51,0.9
 /* ── HERO ────────────────────────────────── */
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 40px 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse 80% 80% at 50% 40%, #0d2744 0%, var(--navy) 65%)}
 .hero::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:repeating-linear-gradient(transparent 0px,transparent 39px,rgba(198,167,94,0.022) 39px,rgba(198,167,94,0.022) 40px)}
+.learn-hero-logo{width:168px;height:216px;max-width:100%;object-fit:contain}
+.hero-acts{flex-wrap:wrap}
 .hero-seal-wrap{position:relative;margin-bottom:36px;opacity:0;animation:fadeUp 1s ease 0.2s forwards}
 .hero-seal-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(198,167,94,0.1) 0%,transparent 70%);animation:breathe 4s ease-in-out infinite}
 @keyframes breathe{0%,100%{opacity:0.5;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.08)}}
@@ -311,7 +313,7 @@ footer{background:var(--navy);border-top:1px solid var(--gb);padding:26px 44px;d
 <section class="hero">
   <div class="hero-seal-wrap">
     <div class="hero-seal-glow"></div>
-    <img class="csf-shield" src="assets/brand/csi-shield-white-orange.svg" alt="CSI shield" width="42" height="54">
+    <img class="csf-shield learn-hero-logo" src="assets/brand/csi-shield-white-orange.svg" alt="Cyber Strategy Institute shield" width="168" height="216">
   </div>
   <div class="hero-stamp">Open-Source Doctrine · Cyber Strategy Institute · February 2026</div>
   <h1 class="hero-title">Cognitive<strong>Sovereignty</strong></h1>
@@ -325,6 +327,7 @@ footer{background:var(--navy);border-top:1px solid var(--gb);padding:26px 44px;d
     <div class="hero-stat"><div class="hero-stat-n">5</div><div class="hero-stat-l">Causal Layers</div></div>
   </div>
   <div class="hero-acts">
+    <a class="btn-out" href="page-map.html">Complete page map</a>
     <a class="btn-gold" href="#doctrine">What This Is ↓</a>
     <a class="btn-gold" href="csf-explorer.html">Threat Explorer</a>
     <a class="btn-out" href="csf-command-center.html">Command Center →</a>

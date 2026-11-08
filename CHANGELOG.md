@@ -4,6 +4,7 @@
 
 Presentation and discovery repairs against the updated repository standard. Version remains 3.0.0. The controls, scored intake, readiness method, and MCP adapter were already delivered in the published 3.0 release; this follow-up does not add to those substantive counts.
 
+- Link directly to the hosted HTML page map from the root README and Learn hero; enlarge only the Learn hero logo from 42 × 54 to 168 × 216 pixels, preserving navigation logos.
 - Preserve the selected root banner and Star History; add linked fact badges and accessible domain/module headers.
 - Replace stale unmerged/publication wording with verified 3.0 status while retaining research proposals and historical records.
 - Label NEW, UPDATED, RETAINED, and DEPRECATED meanings against the recorded pre-3.0 baseline. Distinguish new standards pages from published 3.0 additions.

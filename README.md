@@ -16,7 +16,7 @@
 
 Framework 3.0.0 is published. Scope: six domains and five causal layers; 56 documented controls and 54 taxonomy entries. Code and machine-readable data: MIT. Documentation: CC BY-SA 4.0. UAS mapping is a documented crosswalk, not certification. Event CTSS values remain provisional CSI judgments. The workflow badge reports CI status, not control efficacy.
 
-[Complete page map](PAGE_MAP.md) · [Change legend and baseline](REPOSITORY_REVIEW.md#change-labels) · [Published release](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/releases/tag/Cognitive_Sovereignty_Framework-v3.0)
+[Complete page map (HTML)](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/page-map.html) · [Markdown page map](PAGE_MAP.md) · [Change legend and baseline](REPOSITORY_REVIEW.md#change-labels) · [Published release](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/releases/tag/Cognitive_Sovereignty_Framework-v3.0)
 <!-- csf-root-status:end -->
 
 CSF helps people and organizations examine whether they retain the ability to understand, choose, challenge, and govern AI-mediated decisions. Cyber Strategy Institute maintains the model, taxonomy, research, and CTSS assessments.
