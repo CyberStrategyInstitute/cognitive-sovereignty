@@ -43,6 +43,14 @@ The [catalog](docs/data/catalog.json) identifies owning data files. The [page ma
 
 Run the existing evidence, export, version, lens, and MCP checks, plus `python -m tools.presentation check`, the strengthened local-link/anchor check, and the generated-content rebuild. Presentation checks do not establish empirical control effectiveness. Rendered layout review is recorded with the PR results; any access limitation must remain explicit.
 
+## README discoverability follow-up: 2026-11-08
+
+After PR #5 merged, reader feedback identified two gaps on the root README: published 3.0 change labels were buried in linked pages, and Star History appeared only as a link. The README now has a prominent release comparison, colored labels repeated as text, practical outcomes, generated per-domain control counts, a short on-page contents bar, and an embedded theme-aware Star History chart with an interactive fallback.
+
+The comparison draws control counts from `resources/controls.json`; the generator preserves owning records. The 12 new controls and 20 refinements were already published in 3.0. This follow-up introduces no new domain, taxonomy class, scoring method, or observed readiness result.
+
+Rendered GitHub review covered the final release labels and embedded chart at default and 390-pixel widths. Badges stack at phone width, the chart scales, and comparison tables use GitHub's horizontal scrolling. The viewport override was restored. Dark-theme source markup is present but dark appearance was not visually exercised. Chart availability remains dependent on Star History. This review does not establish full-site accessibility or field effectiveness.
+
 <!-- csf-return-navigation:start -->
 [Repository home](README.md) · [Complete page map](PAGE_MAP.md) · [Resources](resources/README.md) · [Research](research/README.md) · [Data catalog](docs/data/catalog.json)
 <!-- csf-return-navigation:end -->
