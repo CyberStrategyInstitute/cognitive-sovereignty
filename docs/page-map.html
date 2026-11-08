@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CSF Complete Page Map | CSF v3.0.0</title>
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/page-map.js" defer></script>
+    <script src="assets/practice.js" defer></script>
+    <meta name="csf-version" content="3.0.0">
+    <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+  </head>
+  <body class="hub">
+    <nav class="csf-site-nav" aria-label="Main"><a class="csf-brand" href="index.html"><img src="assets/brand/csi-shield-white-orange.svg" width="32" height="48" alt="Cyber Strategy Institute shield"><span>CSI / CSF v3.0.0</span></a><a href="index.html">Learn</a><a href="research.html">Research and scores</a><a href="csf-explorer.html">Taxonomy</a><a href="practice.html">Controls and readiness</a><a href="csf-command-center.html">Command center</a><a href="guide.html">How to use it</a><a href="page-map.html" aria-current="page">Page map</a><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>
+    <main id="main">
+      <a class="skip-link" href="#pages">Skip to page list</a>
+      <p class="eyebrow">People / screen readers / agents / crawlers</p>
+      <h1>Find every CSF page.</h1>
+      <p class="lead">
+        Browse the domains, research, controls, playbooks, exercises, tools,
+        data contracts, contribution guidance, and historical reports. Change
+        labels identify the published 3.0 baseline or this separate standards
+        follow-up.
+      </p>
+      <p>
+        <a
+          href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty/blob/main/REPOSITORY_REVIEW.md#change-labels"
+          >Change meanings and comparison</a
+        >
+        · <a href="page-map.json">Machine-readable page map</a> ·
+        <a href="data/catalog.json">Owning data catalog</a>
+      </p>
+      <section id="pages">
+        <h2>All documentation pages</h2>
+        <div class="filters">
+          <label
+            >Search pages<input
+              id="page-search"
+              type="search"
+              placeholder="Title, path, status, or module..." /></label
+          ><label
+            >Module<select id="page-module">
+              <option value="">All modules</option>
+            </select></label
+          ><label
+            >Change comparison<select id="page-change">
+              <option value="">All changes</option>
+            </select></label
+          >
+        </div>
+        <p id="page-status" role="status" aria-live="polite">
+          Loading page map...
+        </p>
+        <div class="table-wrap">
+          <table>
+            <caption>
+              Every Markdown and HTML page, with stable paths and interpretation
+              limits
+            </caption>
+            <thead>
+              <tr>
+                <th>Page</th>
+                <th>Module</th>
+                <th>Change comparison</th>
+                <th>Status and limits</th>
+              </tr>
+            </thead>
+            <tbody id="page-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Cyber Strategy Institute ·
+      <a href="guide.html">How to use and build CSF</a>
+    </footer>
+  </body>
+</html>

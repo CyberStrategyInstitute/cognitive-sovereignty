@@ -18,3 +18,7 @@ For the current collection, use `research/intake/manifest.json` and preserve all
 # Update the supporting controls when the research warrants it
 
 For each relevant finding, identify the affected domain, existing mitigation IDs, and corresponding research note. Propose a targeted control refinement or addition with the reason, expected outcome, check, and failure response. Preserve prior wording and evidence when revising the catalog. Refresh generated domain tables and webpages from the shared data. Do not increase CTSS or capability readiness merely because guidance was added. Retain control failures and compare matching assessment versions.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

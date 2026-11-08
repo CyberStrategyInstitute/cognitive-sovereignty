@@ -1,3 +1,11 @@
+<!-- csf-module-header:start -->
+![D1: Biological. CSF 3.0.0. Status is repeated in text below.](../assets/headers/01-biological.svg)
+
+CSF 3.0.0. Documentation: UPDATED in 3.0. Documented guidance; field effectiveness not established. Control comparison: 2 NEW, 2 UPDATED, 4 RETAINED in 3.0. No controls are marked DEPRECATED.
+
+[![Framework 3.0.0](../assets/badges/version.svg)](../VERSION) [![Documentation license: CC BY-SA 4.0](../assets/badges/docs-license.svg)](../LICENSE)
+<!-- csf-module-header:end -->
+
 # Domain 01: Biological
 
 ### The Substrate the Adversary Reaches First
@@ -60,14 +68,14 @@ Stable IDs connect each capability to its research and test. Existing IDs are re
 
 | M-ID | Capability | Counters | Implementation | Research |
 |---|---|---|---|---|
-| M-001b | Circadian discipline (refined) | T-CT-001, ST-002 | Protect rest periods through proportionate notification rules and an urgent-contact exception. Check workload and accessibility needs before setting the local rule. | [006](../research/006_independent_judgment.md), [010](../research/010_domain_controls_and_readiness.md) |
-| M-S02b | Reward-loop interruption (inherited) | ST-002 | Notification batching, variable-reward feature disablement (autoplay, infinite scroll, badges), scheduled rather than triggered platform access | [010](../research/010_domain_controls_and_readiness.md) |
-| M-003b | Stress physiology monitoring (refined) | T-CT-003 | Use workload and notification records first. Any sensitive health or biometric tracking must be voluntary, minimized, and handled by an appropriate health/privacy process. A change alone does not establish manipulation. | [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
-| M-S04b | Neurological boundary awareness (inherited) | ST-004, DS-004 | Formal inventory of every device with neural or affect-modulating capability; consent and data-flow review before adoption; default-deny posture for neural data collection | [010](../research/010_domain_controls_and_readiness.md) |
-| M-012b | Neurotech provenance and air-gap (inherited) | T-CT-012, ST-004 | No closed-loop neurofeedback or stimulation devices without verified provenance, auditable firmware, and hard disconnect capability; bioethics review for any operational neurotech | [010](../research/010_domain_controls_and_readiness.md) |
-| M-001b2 | Substance and stimulant awareness (inherited) | T-CT-001 | Recognition that caffeine, alcohol, and stimulant patterns compound platform-driven sleep disruption; managed as part of the same exposure surface | [010](../research/010_domain_controls_and_readiness.md) |
-| M-014b | Decision pacing under pressure (added) | T-CT-014, T-CT-006 | Use a pause or relief path when notification load or fatigue makes a consequential review impractical. Name the alternate reviewer before the shift. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
-| M-016b | Limits on sensitive-state targeting (added) | T-CT-016, T-CT-003 | Inventory whether the system collects or infers sleep, stress, neural, or affective signals. Restrict secondary use and provide a usable refusal or alternative. | [008](../research/008_operator_objectives_and_persuasion.md), [009](../research/009_relational_influence.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-001b | Circadian discipline (UPDATED in 3.0) | T-CT-001, ST-002 | Protect rest periods through proportionate notification rules and an urgent-contact exception. Check workload and accessibility needs before setting the local rule. | [006](../research/006_independent_judgment.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-S02b | Reward-loop interruption (RETAINED in 3.0) | ST-002 | Notification batching, variable-reward feature disablement (autoplay, infinite scroll, badges), scheduled rather than triggered platform access | [010](../research/010_domain_controls_and_readiness.md) |
+| M-003b | Stress physiology monitoring (UPDATED in 3.0) | T-CT-003 | Use workload and notification records first. Any sensitive health or biometric tracking must be voluntary, minimized, and handled by an appropriate health/privacy process. A change alone does not establish manipulation. | [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-S04b | Neurological boundary awareness (RETAINED in 3.0) | ST-004, DS-004 | Formal inventory of every device with neural or affect-modulating capability; consent and data-flow review before adoption; default-deny posture for neural data collection | [010](../research/010_domain_controls_and_readiness.md) |
+| M-012b | Neurotech provenance and air-gap (RETAINED in 3.0) | T-CT-012, ST-004 | No closed-loop neurofeedback or stimulation devices without verified provenance, auditable firmware, and hard disconnect capability; bioethics review for any operational neurotech | [010](../research/010_domain_controls_and_readiness.md) |
+| M-001b2 | Substance and stimulant awareness (RETAINED in 3.0) | T-CT-001 | Recognition that caffeine, alcohol, and stimulant patterns compound platform-driven sleep disruption; managed as part of the same exposure surface | [010](../research/010_domain_controls_and_readiness.md) |
+| M-014b | Decision pacing under pressure (NEW in 3.0) | T-CT-014, T-CT-006 | Use a pause or relief path when notification load or fatigue makes a consequential review impractical. Name the alternate reviewer before the shift. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-016b | Limits on sensitive-state targeting (NEW in 3.0) | T-CT-016, T-CT-003 | Inventory whether the system collects or infers sleep, stress, neural, or affective signals. Restrict secondary use and provide a usable refusal or alternative. | [008](../research/008_operator_objectives_and_persuasion.md), [009](../research/009_relational_influence.md), [010](../research/010_domain_controls_and_readiness.md) |
 
 ---
 
@@ -131,3 +139,7 @@ Domain-specific measures: sleep architecture trend (duration, continuity, timing
 - **Adjacent domains:** [Domain 2: Cognitive](../02-cognitive/README.md) (immediate upward cascade target) | [Domain 6: Digital & AI Symbiosis](../06-digital-ai-symbiosis/README.md) (delivery-side governance)
 
 > **The domain in one sentence:** protect the hardware, or nothing running on it can be protected.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

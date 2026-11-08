@@ -26,7 +26,7 @@ def check():
     for name in ['README.md','FRAMEWORK.md','CHANGELOG.md','EVOLUTION.md']:
         if 'v'+VERSION not in (ROOT/name).read_text(encoding='utf-8'):errors.append(name+': missing current framework version')
     if errors:raise ValueError('\n'.join(errors))
-    print(f'PASS: CSF v{VERSION} matches all seven pages, citation, current documentation, taxonomy, and data catalog.')
+    print(f'PASS: CSF v{VERSION} matches all {len(PAGES)} published page entrypoints, citation, current documentation, taxonomy, and data catalog.')
 
 
 if __name__=='__main__':check()

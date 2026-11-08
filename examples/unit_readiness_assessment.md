@@ -55,3 +55,7 @@ Roles are proposed, not assigned to real people. A responsible owner sets the da
 Run `python -m tools.readiness examples/unit-readiness.json` to reproduce this example. For a real assessment, retain a new dated record with kind `observed`, the exact protocol, case set, catalog revision, assessor, and permissible evidence. Keep detailed private evidence in its approved system and publish only appropriate aggregate results.
 
 Retest repaired capabilities with the same cases before claiming improvement. Preserve the initial record and any adverse results. Use [monitoring](../monitoring/README.md) for results and [the research intake](../research/intake/README.md) for new events. Threat CTSS, capability readiness, self-report, and case pass rates remain separate throughout the process.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

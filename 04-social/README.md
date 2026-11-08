@@ -1,3 +1,11 @@
+<!-- csf-module-header:start -->
+![D4: Social. CSF 3.0.0. Status is repeated in text below.](../assets/headers/04-social.svg)
+
+CSF 3.0.0. Documentation: UPDATED in 3.0. Documented guidance; field effectiveness not established. Control comparison: 2 NEW, 2 UPDATED, 5 RETAINED in 3.0. No controls are marked DEPRECATED.
+
+[![Framework 3.0.0](../assets/badges/version.svg)](../VERSION) [![Documentation license: CC BY-SA 4.0](../assets/badges/docs-license.svg)](../LICENSE)
+<!-- csf-module-header:end -->
+
 # Domain 04: Social
 
 ### The Collective Immune System
@@ -57,15 +65,15 @@ Stable IDs connect each capability to its research and test. Existing IDs are re
 
 | M-ID | Capability | Counters | Implementation | Research |
 |---|---|---|---|---|
-| M-S05e | Trust network cultivation (inherited) | ST-005 | Deliberate maintenance of verified-human trust networks spanning ideological boundaries; resilient local anchors (community nodes) whose signals do not route through algorithmic amplification | [010](../research/010_domain_controls_and_readiness.md) |
-| M-005e | Persona verification discipline (refined) | T-CT-005 | Verify consequential identity claims through an independently obtained contact route. Check permission for any synthetic representation and record uncertainty. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md) |
-| M-008e | Consensus provenance (refined) | T-CT-008, TC-06 | Audit the original observations and distribution behind apparent consensus. Distinct accounts, reports, or model brands do not by themselves establish independent evidence. | [007](../research/007_evidence_lineage.md) |
-| M-013e | Conformity pressure recognition (inherited) | T-CT-013 | Awareness of scoring and reputation systems as governance mechanisms; deliberate preservation of behavior domains outside scored systems | [010](../research/010_domain_controls_and_readiness.md) |
-| M-002e | Source diversity practice (inherited) | ST-005, T-CT-002 | Structured information diet across incompatible outlets and communities; micro-tribe boundary crossings maintained deliberately | [010](../research/010_domain_controls_and_readiness.md) |
-| M-CD6e | Family stability investment (inherited) | CD-006 | Family continuity treated as a defended asset: protected family time, intergenerational transmission practices, household norms resistant to algorithm-rewarded individualism | [010](../research/010_domain_controls_and_readiness.md) |
-| M-004e | Civic ritual and community engagement (inherited) | ST-005, HO-004 | Participation in civic structures that build shared identity across tribal lines; service commitments that anchor belonging outside platforms | [010](../research/010_domain_controls_and_readiness.md) |
-| M-005e2 | Consent for synthetic testimony (added) | T-CT-005, T-CT-004 | Verify the speaker and permission before presenting a real person as endorsing a statement. Label authorized synthetic representation and give a correction contact. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
-| M-008e2 | Correction across copies (added) | T-CT-008, T-CT-007 | Track the original claim and known derivative copies. Send a correction through the same channels and retain unresolved copies as an open recovery gap. | [007](../research/007_evidence_lineage.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-S05e | Trust network cultivation (RETAINED in 3.0) | ST-005 | Deliberate maintenance of verified-human trust networks spanning ideological boundaries; resilient local anchors (community nodes) whose signals do not route through algorithmic amplification | [010](../research/010_domain_controls_and_readiness.md) |
+| M-005e | Persona verification discipline (UPDATED in 3.0) | T-CT-005 | Verify consequential identity claims through an independently obtained contact route. Check permission for any synthetic representation and record uncertainty. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+| M-008e | Consensus provenance (UPDATED in 3.0) | T-CT-008, TC-06 | Audit the original observations and distribution behind apparent consensus. Distinct accounts, reports, or model brands do not by themselves establish independent evidence. | [007](../research/007_evidence_lineage.md) |
+| M-013e | Conformity pressure recognition (RETAINED in 3.0) | T-CT-013 | Awareness of scoring and reputation systems as governance mechanisms; deliberate preservation of behavior domains outside scored systems | [010](../research/010_domain_controls_and_readiness.md) |
+| M-002e | Source diversity practice (RETAINED in 3.0) | ST-005, T-CT-002 | Structured information diet across incompatible outlets and communities; micro-tribe boundary crossings maintained deliberately | [010](../research/010_domain_controls_and_readiness.md) |
+| M-CD6e | Family stability investment (RETAINED in 3.0) | CD-006 | Family continuity treated as a defended asset: protected family time, intergenerational transmission practices, household norms resistant to algorithm-rewarded individualism | [010](../research/010_domain_controls_and_readiness.md) |
+| M-004e | Civic ritual and community engagement (RETAINED in 3.0) | ST-005, HO-004 | Participation in civic structures that build shared identity across tribal lines; service commitments that anchor belonging outside platforms | [010](../research/010_domain_controls_and_readiness.md) |
+| M-005e2 | Consent for synthetic testimony (NEW in 3.0) | T-CT-005, T-CT-004 | Verify the speaker and permission before presenting a real person as endorsing a statement. Label authorized synthetic representation and give a correction contact. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-008e2 | Correction across copies (NEW in 3.0) | T-CT-008, T-CT-007 | Track the original claim and known derivative copies. Send a correction through the same channels and retain unresolved copies as an open recovery gap. | [007](../research/007_evidence_lineage.md), [010](../research/010_domain_controls_and_readiness.md) |
 
 ---
 
@@ -131,3 +139,7 @@ Population-scale measures (Measurement Stack Layer B): B1 Trust and Cohesion Ind
 - **Adjacent domains:** [Domain 3: Emotional](../03-emotional/README.md) (upstream regulation) | [Domain 5: Purpose & Moral](../05-purpose-moral/README.md) (downstream shared meaning)
 
 > **The domain in one sentence:** societies resist manipulation together or not at all.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

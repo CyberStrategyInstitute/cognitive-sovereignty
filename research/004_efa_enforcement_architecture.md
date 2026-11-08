@@ -1,3 +1,7 @@
+<!-- csf-research-status:start -->
+**UPDATED in 3.0.** Research note 004. Published as documentation in CSF 3.0.0; proposal, source-review, and validation limits below remain in force.
+<!-- csf-research-status:end -->
+
 # Research: Guardrail Alignment Drift and EFA Enforcement Architecture
 ## ST-006, T-CT-017 | Technical Countermeasure: EFA/E7/HEAR
 
@@ -118,3 +122,7 @@ Domain 6 of the CSF trains personnel to recognize these gaps and maintain cognit
 ## Evidence update, November 7, 2026
 
 The architecture is a design proposal. Different models can share sources and failure modes; model diversity does not prove independent confirmation. Require source lineage and accessible counterevidence. The [practical safeguards](../resources/practical-safeguards.md) and [note 007](007_evidence_lineage.md) define checks. No guarantee follows from this document alone.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

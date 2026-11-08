@@ -223,3 +223,7 @@ Rapid counseling resources and community moderators to reduce emotional hotspots
 |---|---|
 | 2.0 | Added retroactive injection edge case; updated actor class table to include adversarial swarms; CTSS unchanged |
 | 1.0 | Initial entry |
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

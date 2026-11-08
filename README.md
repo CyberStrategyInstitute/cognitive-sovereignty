@@ -1,6 +1,23 @@
-<img src="assets/CSF-Human-Control-Plane-v2.png" alt="Cyber Strategy Institute shield">
+<img src="assets/CSF-Human-Control-Plane-v2.png" alt="CSF human control-plane architecture: external pressures, six domains, and intended sovereignty outcomes">
 
 # Cognitive Sovereignty Framework v3.0
+
+<!-- csf-root-status:start -->
+[![Framework: 3.0.0](assets/badges/version.svg)](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/releases/tag/Cognitive_Sovereignty_Framework-v3.0)
+[![Documentation: CC BY-SA 4.0](assets/badges/docs-license.svg)](LICENSE)
+[![Code and data: MIT](assets/badges/code-license.svg)](LICENSE)
+[![Scope: 6 domains / 5 layers](assets/badges/domains.svg)](FRAMEWORK.md)
+[![Controls: 56 documented](assets/badges/controls.svg)](resources/mitigation-catalog.md)
+[![Taxonomy: 54 stable entries](assets/badges/taxonomy.svg)](taxonomy/README.md)
+[![Contracts: 6 schemas](assets/badges/contracts.svg)](schemas/README.md)
+[![UAS crosswalk: documented / not certification](assets/badges/mapping.svg)](06-digital-ai-symbiosis/federal-procurement-alignment.md)
+[![Event CTSS: provisional judgments](assets/badges/scores.svg)](research/intake/README.md)
+[![Latest CSF evidence-check workflow status](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/actions/workflows/evidence-check.yml/badge.svg)](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/actions/workflows/evidence-check.yml)
+
+Framework 3.0.0 is published. Scope: six domains and five causal layers; 56 documented controls and 54 taxonomy entries. Code and machine-readable data: MIT. Documentation: CC BY-SA 4.0. UAS mapping is a documented crosswalk, not certification. Event CTSS values remain provisional CSI judgments. The workflow badge reports CI status, not control efficacy.
+
+[Complete page map](PAGE_MAP.md) · [Change legend and baseline](REPOSITORY_REVIEW.md#change-labels) · [Published release](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/releases/tag/Cognitive_Sovereignty_Framework-v3.0)
+<!-- csf-root-status:end -->
 
 CSF helps people and organizations examine whether they retain the ability to understand, choose, challenge, and govern AI-mediated decisions. Cyber Strategy Institute maintains the model, taxonomy, research, and CTSS assessments.
 
@@ -21,7 +38,7 @@ The core remains **six domains, five causal layers, and the existing CTSS formul
 | Use CSF from an agent or MCP server | [Integration guide](integration/README.md), [catalog](docs/data/catalog.json), [schemas](schemas/README.md) |
 | See what changed and remains open | [Recommendation coverage](RECOMMENDATIONS.md), [change log](CHANGELOG.md) |
 
-New website pages and exports become live only after the owner approves and the repository's Pages publication process runs. All of the linked repository records can be reviewed in the PR first.
+CSF 3.0 is [published](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/releases/tag/Cognitive_Sovereignty_Framework-v3.0), and the documentation site is built from `main/docs`. Research and readiness limitations remain stated with each record. The banner illustrates the intended architecture; deployment and effectiveness require implementation evidence.
 
 ## The six domains
 
@@ -80,7 +97,7 @@ For a local preview, run `python -m http.server 8000 --directory docs` from the 
 
 ## Build, check, and contribute
 
-Python 3.12 and Node 22 are the CI baseline. Local checks also passed with Node 24. `VERSION` is the single framework-version source. `python -m tools.version` checks all seven webpages, citation, taxonomy, and data catalog. Core Python tools use the standard library. The MCP adapter is optional and has its own dependency file.
+Python 3.12 and Node 22 are the CI baseline. Local checks also passed with Node 24. `VERSION` is the single framework-version source. `python -m tools.version` checks all website entrypoints, citation, taxonomy, and data catalog. Core Python tools use the standard library. The MCP adapter is optional and has its own dependency file.
 
 ```text
 python -m tools.build
@@ -89,6 +106,7 @@ python -m tools.event_monitor check
 python -m tools.signals check
 python -m tools.export check
 python -m tools.version
+python -m tools.presentation check
 python -m tools.check_repo
 python -m unittest discover -s tests
 node tests/check_dashboards.cjs
@@ -96,8 +114,16 @@ node tests/check_dashboards.cjs
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), [AGENTS.md](AGENTS.md), and [SECURITY.md](SECURITY.md). Changes belong in a PR for owner review. CODEOWNERS and automated checks support review; they do not replace branch-protection settings or authorize a merge.
 
-[AI SAFEÃ‚Â²](https://github.com/CyberStrategyInstitute/ai-safe2-framework) is the companion machine-side governance framework. The [UAS crosswalk](06-digital-ai-symbiosis/federal-procurement-alignment.md) explains the profile relationship and its limits.
+[AI SAFE²](https://github.com/CyberStrategyInstitute/ai-safe2-framework) is the companion machine-side governance framework. The [UAS crosswalk](06-digital-ai-symbiosis/federal-procurement-alignment.md) explains the profile relationship and its limits.
 
 ## License and citation
 
 The existing [dual license](LICENSE) remains: MIT for the covered code/machine-readable components and CC BY-SA 4.0 for framework documentation. Retain attribution and source rights. [CITATION.cff](CITATION.cff) provides citation metadata. Use a pinned commit when reproducibility matters.
+
+## Star History
+
+[View the Star History chart and theme-aware integration](FRAMEWORK.md#star-history).
+
+<!-- csf-return-navigation:start -->
+[Repository home](README.md) · [Complete page map](PAGE_MAP.md) · [Resources](resources/README.md) · [Research](research/README.md) · [Data catalog](docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

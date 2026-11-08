@@ -1,3 +1,11 @@
+<!-- csf-module-header:start -->
+![API: Agent and MCP integration. CSF 3.0.0. Status is repeated in text below.](../assets/headers/integration.svg)
+
+CSF 3.0.0. Documentation: NEW in 3.0. Repository documentation; implementation limits remain explicit.
+
+[![Framework 3.0.0](../assets/badges/version.svg)](../VERSION) [![Documentation license: CC BY-SA 4.0](../assets/badges/docs-license.svg)](../LICENSE)
+<!-- csf-module-header:end -->
+
 # Use CSF from agents and MCP servers
 
 Start with [the catalog](../docs/data/catalog.json). Stable IDs connect taxonomy, event assessments, source signals, lenses, domain controls, assessment resources, and roadmap status. Every result should retain source, assessment date, method, scope, baseline, and provisional status.
@@ -14,6 +22,7 @@ python -m tools.query taxonomy --id T-CT-006
 python -m tools.query controls --id M-006g2
 python -m tools.query domains --id D2
 python -m tools.query resources --limit 20
+python -m tools.query pages --text readiness --limit 5
 ```
 
 Queries are read-only, use fixed collections, return bounded pages, and do not access the network. `get_record` returns full original analysis and provenance; list/search return summaries. Use `next_offset` until it is null. A search result is not a completeness guarantee for all world events.
@@ -30,7 +39,7 @@ python -m venv .venv-mcp
 
 On Linux/macOS use `.venv-mcp/bin/python`. Configure the client to launch the module from the repository root. Tools expose collection search, record lookup, and CTSS calculation. The `csf://catalog` resource provides discovery. The adapter runs locally over standard input/output; it does not start an HTTP service or implement remote authentication. An MCP tool annotation is descriptive, not an authorization boundary.
 
-All paths and collections are allowlisted. No tool accepts an arbitrary file path or URL. It cannot alter records, execute source instructions, publish, send messages, or fetch new research. Apply client permissions and review retrieved content as untrusted data. A remote deployment would require its own authentication, transport, rate limits, and review; this PR does not deploy one.
+All paths and collections are allowlisted. No tool accepts an arbitrary file path or URL. It cannot alter records, execute source instructions, publish, send messages, or fetch new research. Apply client permissions and review retrieved content as untrusted data. A remote deployment would require its own authentication, transport, rate limits, and review; the published adapter does not deploy one.
 
 See [integration validation](VALIDATION.md) for the tested SDK version, checks, and limits.
 
@@ -43,3 +52,16 @@ Reference scores describe technique scenarios. Event CTSS values are CSI assessm
 The control catalog is canonical at `resources/controls.json`, domain mappings at `resources/domains.json`, and resource discovery at `resources/index.json`. The read-only MCP tools expose these allowlisted collections. Observed readiness is exported separately and excludes synthetic unit examples. Follow each control’s research links rather than inferring efficacy from its presence.
 
 Framework version: v3.0.0, sourced from `VERSION` and exported in the catalog. Schema, method, lens, and catalog format versions are independent. Pin the commit as well as the framework version when reproducing an assessment.
+
+Use [the complete page map](../PAGE_MAP.md) or [machine-readable map](../docs/page-map.json) to discover every documentation page, including historical reports. The page-map format version is separate from the framework and existing schema versions.
+
+<!-- csf-section-files:start -->
+## Section files
+
+- [VALIDATION.md](VALIDATION.md)
+- [mcp_server.py](mcp_server.py)
+<!-- csf-section-files:end -->
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

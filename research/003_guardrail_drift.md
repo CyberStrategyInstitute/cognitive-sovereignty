@@ -1,3 +1,7 @@
+<!-- csf-research-status:start -->
+**UPDATED in 3.0.** Research note 003. Published as documentation in CSF 3.0.0; proposal, source-review, and validation limits below remain in force.
+<!-- csf-research-status:end -->
+
 # Research: Guardrail and Model Drift, the Invisible Substrate Pair
 
 ## ST-006, ST-007 | Threat Mechanics and Evidence (Countermeasure Architecture: Research Note 004)
@@ -92,3 +96,7 @@ The Domain 2 complement: unassisted baseline testing (Research Note 001) protect
 - Research Note 001: Cognitive Offloading (the compounding substrate)
 - AI SAFE² Framework: F3.4 (Behavioral Drift Baseline and Rollback), M4.8 (cloud guardrail attack paths), CP.10 (HEAR)
 - E7 Protocol Stack (Rupp, January 2026; DOI: 10.5281/zenodo.18304066)
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

@@ -285,3 +285,7 @@ New technique entries must pass the red-team validation standard:
 5. Would the entry flag misuse of this technique regardless of the ideology of the actor?
 
 To propose a new entry, use the [New Threat Entry template](../.github/ISSUE_TEMPLATE/new-threat-entry.md).
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

@@ -1,3 +1,11 @@
+<!-- csf-module-header:start -->
+![D6: Digital & AI Symbiosis. CSF 3.0.0. Status is repeated in text below.](../assets/headers/06-digital-ai-symbiosis.svg)
+
+CSF 3.0.0. Documentation: UPDATED in 3.0. Documented guidance; field effectiveness not established. Control comparison: 2 NEW, 5 UPDATED, 4 RETAINED in 3.0. No controls are marked DEPRECATED.
+
+[![Framework 3.0.0](../assets/badges/version.svg)](../VERSION) [![Documentation license: CC BY-SA 4.0](../assets/badges/docs-license.svg)](../LICENSE)
+<!-- csf-module-header:end -->
+
 # Domain 06: Digital & AI Symbiosis
 
 ### The Missing Pillar. Structurally Enforced.
@@ -62,17 +70,17 @@ Stable IDs connect each capability to its research and test. Existing IDs are re
 
 | M-ID | Capability | Counters | Implementation | Research |
 |---|---|---|---|---|
-| M-S03g | AI interaction discipline (inherited) | ST-003, T-CT-006 | R/M/H decision classification enforced: Routine automated with logging, Material human-reviewed, High-stakes human-authorized with named HEAR; offloading is a governance choice, never a drift | [010](../research/010_domain_controls_and_readiness.md) |
-| M-004g | Provenance verification (refined) | T-CT-004, DS-003 | Record content origin, transformation, and independent corroboration. Signatures and watermarks indicate bounded provenance properties; absence of a mark does not establish falsehood or misconduct. | [007](../research/007_evidence_lineage.md) |
-| M-006g | Human override protocols (refined) | T-CT-006, ST-001 | Exercise stop, override, and recovery paths. Test correct and incorrect recommendations, then measure whether acceptance and rejection were justified rather than rewarding override frequency. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md) |
-| M-S06g | Multi-model triangulation (Ring of Fire) (refined) | ST-006, ST-007, T-CT-017 | Cross-check against independently sourced evidence. Record shared data and derivations; model-name diversity alone is not independent corroboration. | [007](../research/007_evidence_lineage.md) |
-| M-S07g | Drift telemetry and baselining (refined) | ST-007 | Compare dated outputs on a fixed protocol and case set. Record system versions and known changes. Investigate a review trigger before attributing the change to model drift. | [006](../research/006_independent_judgment.md), [007](../research/007_evidence_lineage.md) |
-| M-016g | Synthetic media detection (refined) | T-CT-004, T-CT-016, DS-003 | Combine source verification and bounded detection tools. Record uncertainty and false positives. A detector or watermark cannot alone prove authorship, truth, or intent. | [007](../research/007_evidence_lineage.md) |
-| M-TC10g | Cognitive independence exercises (inherited) | TC-10, ST-003 | Regular AI-free execution of reading, analysis, and decision tasks; personal S3 ratio self-audit (what fraction of consumed information arrived AI-mediated) | [010](../research/010_domain_controls_and_readiness.md) |
-| M-001g | Algorithmic literacy (inherited) | ST-001, T-CT-002 | Working knowledge of how ranking, recommendation, and generation systems shape what is seen; the mediated environment understood as designed, not natural | [010](../research/010_domain_controls_and_readiness.md) |
-| M-017g | Alignment restriction audit and probing (inherited) | ST-006, T-CT-017 | Documented restriction surface for every deployed AI tool; scheduled suppression probing; restrictions challenged through Layer 7 authority (details in Research Notes 003 and 004) | [010](../research/010_domain_controls_and_readiness.md) |
-| M-006g2 | Specific authorization before action (added) | T-CT-006, ST-001 | Separate advice from permission. Preview the action, scope, affected parties, and reversal limits. Require the authorized human or system boundary to approve expansion. | [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
-| M-005g | Memory, bystander consent, and exit (added) | T-CT-005, T-CT-016, HO-005 | Show what is remembered, who supplied it, whose consent applies, and how to correct, reset, or leave. Prevent silent reuse of bystander information. | [009](../research/009_relational_influence.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-S03g | AI interaction discipline (RETAINED in 3.0) | ST-003, T-CT-006 | R/M/H decision classification enforced: Routine automated with logging, Material human-reviewed, High-stakes human-authorized with named HEAR; offloading is a governance choice, never a drift | [010](../research/010_domain_controls_and_readiness.md) |
+| M-004g | Provenance verification (UPDATED in 3.0) | T-CT-004, DS-003 | Record content origin, transformation, and independent corroboration. Signatures and watermarks indicate bounded provenance properties; absence of a mark does not establish falsehood or misconduct. | [007](../research/007_evidence_lineage.md) |
+| M-006g | Human override protocols (UPDATED in 3.0) | T-CT-006, ST-001 | Exercise stop, override, and recovery paths. Test correct and incorrect recommendations, then measure whether acceptance and rejection were justified rather than rewarding override frequency. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+| M-S06g | Multi-model triangulation (Ring of Fire) (UPDATED in 3.0) | ST-006, ST-007, T-CT-017 | Cross-check against independently sourced evidence. Record shared data and derivations; model-name diversity alone is not independent corroboration. | [007](../research/007_evidence_lineage.md) |
+| M-S07g | Drift telemetry and baselining (UPDATED in 3.0) | ST-007 | Compare dated outputs on a fixed protocol and case set. Record system versions and known changes. Investigate a review trigger before attributing the change to model drift. | [006](../research/006_independent_judgment.md), [007](../research/007_evidence_lineage.md) |
+| M-016g | Synthetic media detection (UPDATED in 3.0) | T-CT-004, T-CT-016, DS-003 | Combine source verification and bounded detection tools. Record uncertainty and false positives. A detector or watermark cannot alone prove authorship, truth, or intent. | [007](../research/007_evidence_lineage.md) |
+| M-TC10g | Cognitive independence exercises (RETAINED in 3.0) | TC-10, ST-003 | Regular AI-free execution of reading, analysis, and decision tasks; personal S3 ratio self-audit (what fraction of consumed information arrived AI-mediated) | [010](../research/010_domain_controls_and_readiness.md) |
+| M-001g | Algorithmic literacy (RETAINED in 3.0) | ST-001, T-CT-002 | Working knowledge of how ranking, recommendation, and generation systems shape what is seen; the mediated environment understood as designed, not natural | [010](../research/010_domain_controls_and_readiness.md) |
+| M-017g | Alignment restriction audit and probing (RETAINED in 3.0) | ST-006, T-CT-017 | Documented restriction surface for every deployed AI tool; scheduled suppression probing; restrictions challenged through Layer 7 authority (details in Research Notes 003 and 004) | [010](../research/010_domain_controls_and_readiness.md) |
+| M-006g2 | Specific authorization before action (NEW in 3.0) | T-CT-006, ST-001 | Separate advice from permission. Preview the action, scope, affected parties, and reversal limits. Require the authorized human or system boundary to approve expansion. | [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-005g | Memory, bystander consent, and exit (NEW in 3.0) | T-CT-005, T-CT-016, HO-005 | Show what is remembered, who supplied it, whose consent applies, and how to correct, reset, or leave. Prevent silent reuse of bystander information. | [009](../research/009_relational_influence.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
 
 ---
 
@@ -179,3 +187,13 @@ Population-scale measures: Measurement Stack A2 (Autonomy Degradation Indicators
 ## Evidence and practical checks
 
 Use the [six safeguards](../resources/practical-safeguards.md), [decision record](../resources/decision-record.md), and [measurement method](../monitoring/README.md). Self-report, demonstrated capability, retained authority, exit, and recovery are separate results.
+
+<!-- csf-section-files:start -->
+## Section files
+
+- [federal-procurement-alignment.md](federal-procurement-alignment.md)
+<!-- csf-section-files:end -->
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

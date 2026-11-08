@@ -1,6 +1,7 @@
 """Build domain control views from the shared catalog; preserve the six-domain model."""
 import re
 from tools.csf import ROOT, read_json
+from tools.presentation import decorate,STATUS_LABELS
 
 
 def validate(controls,domains):
@@ -37,13 +38,13 @@ def views():
         selected=[c for c in controls if c['domain_id']==d['id']]
         lines+=['## '+d['id']+': '+d['name'],'']
         for c in selected:
-            lines += [f'<a id="{c["id"].lower()}"></a>','', '### '+c['id']+': '+c['name'],'',f"Status: {c['kind']}. Owner role: {c['owner_role']}. {c['evidence_status']}.",'',c['implementation'],'','Expected outcome: '+c['expected_outcome'],'','Check: '+c['test'],'','If it fails: '+c['failure_response'],'','Why: '+c['rationale'],'','Threats: '+', '.join(c['taxonomy'])+'. Research: '+', '.join(f'[{p.rsplit("/",1)[-1]}](../{p})' for p in c['research_notes'])+'.','']
+            lines += [f'<a id="{c["id"].lower()}"></a>','', '### '+c['id']+': '+c['name'],'',f"Status: {STATUS_LABELS[c['kind']]} in the 3.0 comparison. Owner role: {c['owner_role']}. {c['evidence_status']}.",'',c['implementation'],'','Expected outcome: '+c['expected_outcome'],'','Check: '+c['test'],'','If it fails: '+c['failure_response'],'','Why: '+c['rationale'],'','Threats: '+', '.join(c['taxonomy'])+'. Research: '+', '.join(f'[{p.rsplit("/",1)[-1]}](../{p})' for p in c['research_notes'])+'.','']
         path=ROOT/d['path'];text=path.read_text(encoding='utf-8')
         a=text.index('## 4.');b=text.index('## 5.',a)
         rows=['## 4. Protective Capabilities and Mitigation Catalog','','Stable IDs connect each capability to its research and test. Existing IDs are retained. See the [full catalog](../resources/mitigation-catalog.md) for expected outcomes, owner roles, checks, and failure responses.','','| M-ID | Capability | Counters | Implementation | Research |','|---|---|---|---|---|']
         for c in selected:
             refs=', '.join(f'[{p.rsplit("/",1)[-1].split("_")[0]}](../{p})' for p in c['research_notes'])
-            rows.append(f"| {c['id']} | {c['name']} ({c['kind']}) | "+', '.join(c['taxonomy'])+' | '+c['implementation']+' | '+refs+' |')
+            rows.append(f"| {c['id']} | {c['name']} ({STATUS_LABELS[c['kind']]} in 3.0) | "+', '.join(c['taxonomy'])+' | '+c['implementation']+' | '+refs+' |')
         text=text[:a]+'\n'.join(rows)+'\n\n---\n\n'+text[b:]
         for c in selected:
             if c.get('readiness_label'):
@@ -66,7 +67,7 @@ def views():
             text=text[:where]+f'\n<!-- {key}:start -->\n<!-- {key}:end -->\n'+text[where:]
         text=replace_block(text,key,'\n'.join(extra))
         results[path]=text
-    results[ROOT/'resources/mitigation-catalog.md']='\n'.join(lines).rstrip()+'\n'
+    results[ROOT/'resources/mitigation-catalog.md']=decorate(ROOT/'resources/mitigation-catalog.md','\n'.join(lines).rstrip()+'\n')
     return results
 
 

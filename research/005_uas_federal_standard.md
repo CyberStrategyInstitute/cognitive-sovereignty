@@ -1,3 +1,7 @@
+<!-- csf-research-status:start -->
+**UPDATED in 3.0.** Research note 005. Published as documentation in CSF 3.0.0; proposal, source-review, and validation limits below remain in force.
+<!-- csf-research-status:end -->
+
 # 005: Human evidence in AI procurement
 
 Revised November 7, 2026. This note supersedes the earlier CP.11 description and operator CTSS-delta thresholds. Those thresholds were not established human-capability measures.
@@ -15,3 +19,7 @@ The [UAS regulatory profile](https://github.com/CyberStrategyInstitute/ai-safe2-
 ## Decision
 
 Use the actual contract and owning standard to determine applicability. Agree task-specific acceptance evidence before testing. Do not prescribe a CTSS percentage change as proof that operators retained capability. This note establishes no government recognition, enforceability, or safe harbor.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

@@ -30,3 +30,7 @@ Also record confidence, time, workload, failed exits, and accessibility problems
 Declare the case set, sample-size rationale, scoring rubric, baseline, acceptable errors, and stop conditions in the decision record. Do not choose a sample size and then claim statistical power without a calculation. Stop for participant distress, unsafe action, material privacy problems, or inaccessible procedures. No real purchases, public submissions, or permission expansion are needed.
 
 Report the observed counts and failures, including null or adverse findings. A pilot can support a decision to improve or reject the tested procedure. Broader claims require stronger evidence.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

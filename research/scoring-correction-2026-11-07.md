@@ -26,3 +26,7 @@ Baseline: main commit `6125cbd252d785efdbc27fc05fe677ff7a8288e1`. Seventeen of 1
 Noncanonical domain labels were retained as context tags and mapped to the existing six domains for registry consistency. Informational and Epistemic map to Cognitive; Informational also maps to Digital & AI Symbiosis. Institutional maps to Social and Purpose & Moral. Economic maps to Purpose & Moral and Social. These are editorial mappings for review, not new domains.
 
 Legacy coverage percentages were archived as unvalidated estimates, not silently converted to measured results. New observations must use the monitoring record and do not overwrite this history.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

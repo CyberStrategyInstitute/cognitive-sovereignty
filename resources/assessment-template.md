@@ -168,3 +168,7 @@ Select controls from [the catalog](mitigation-catalog.md), then record capabilit
 - Python CTSS calculator: See [`/examples/ctss_calculator.py`](../examples/ctss_calculator.py)
 
 The vector thresholds above are proposed review triggers, not validated risk bands. Use [the decision record](decision-record.md) to preserve reasons and sources.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

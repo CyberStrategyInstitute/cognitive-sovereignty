@@ -1,3 +1,7 @@
+<!-- csf-research-status:start -->
+**NEW in 3.0.** Research note 008. Published as documentation in CSF 3.0.0; proposal, source-review, and validation limits below remain in force.
+<!-- csf-research-status:end -->
+
 # 008: Make the purpose of advice visible
 
 CSF links: T-CT-004, T-CT-006, T-CT-016. Domains 2, 3, 5, and 6. Status: proposed control; no local customer-effect study.
@@ -23,3 +27,7 @@ Use matched synthetic scenarios with the same facts and different vulnerability 
 [M-003b: Stress physiology monitoring](../resources/mitigation-catalog.md#m-003b), [M-004c: Inoculation training](../resources/mitigation-catalog.md#m-004c), [M-003d: Emotional awareness training](../resources/mitigation-catalog.md#m-003d), [M-016d: Priming recognition](../resources/mitigation-catalog.md#m-016d), [M-005e: Persona verification discipline](../resources/mitigation-catalog.md#m-005e), [M-HO4f: Values articulation and testing](../resources/mitigation-catalog.md#m-ho4f), [M-HO5f: Moral authorship discipline](../resources/mitigation-catalog.md#m-ho5f), [M-017f: Alignment restriction audit](../resources/mitigation-catalog.md#m-017f), [M-006g: Human override protocols](../resources/mitigation-catalog.md#m-006g), [M-014b: Decision pacing under pressure](../resources/mitigation-catalog.md#m-014b), [M-016b: Limits on sensitive-state targeting](../resources/mitigation-catalog.md#m-016b), [M-008c: Trace influence to an outcome](../resources/mitigation-catalog.md#m-008c), [M-016d2: Vulnerability-sensitive advice review](../resources/mitigation-catalog.md#m-016d2), [M-005e2: Consent for synthetic testimony](../resources/mitigation-catalog.md#m-005e2), [M-015f2: Visible objectives and conflicts](../resources/mitigation-catalog.md#m-015f2), [M-HO5f2: Challenge and correct a score](../resources/mitigation-catalog.md#m-ho5f2), [M-006g2: Specific authorization before action](../resources/mitigation-catalog.md#m-006g2), [M-005g: Memory, bystander consent, and exit](../resources/mitigation-catalog.md#m-005g).
 
 Use [the readiness worksheet](../resources/readiness-worksheet.md) to retain results. These mappings are documented design decisions, not evidence of field effectiveness.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

@@ -1,3 +1,7 @@
+<!-- csf-research-status:start -->
+**NEW in 3.0.** Research note 010. Published as documentation in CSF 3.0.0; proposal, source-review, and validation limits below remain in force.
+<!-- csf-research-status:end -->
+
 # 010: Put research into domain controls
 
 The first research PR preserved the intake and added shared safeguards. It did not fully update the six domain catalogs. This revision closes that implementation gap: 44 inherited mitigation IDs remain, 20 controls are refined, and 12 are added. The core domains, causal layers, threat IDs, CTSS inputs, and weights remain unchanged.
@@ -32,3 +36,7 @@ Adding two new items to an old readiness average would change its denominator an
 The 20 refined controls also have clearer readiness anchors. Their previous implementation wording and anchors are retained in the JSON catalog. The inherited capability counts and mean-times-20 calculation stay intact. Because the criteria are refined, start a new comparison at the revised catalog version rather than silently comparing it with an older score.
 
 Adopt the documented controls for review, run the [worked example](../examples/unit_readiness_assessment.md), and gather task-specific results with the [worksheet](../resources/readiness-worksheet.md). Revise a control when its benefit, burden, failure cases, or contrary evidence justify a change. Do not increase a threat score or claim better human protection merely because the catalog grew.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

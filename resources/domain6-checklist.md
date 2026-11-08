@@ -129,3 +129,7 @@ For unit commanders, collect individual assessments and calculate:
 - **Technical Enforcement:** See `/06-digital-ai-symbiosis/README.md` for EFA/E7 architecture
 
 Use [the readiness worksheet](readiness-worksheet.md) to observe the catalog’s capability checks. Keep this 0-4 self-report instrument separate from 0-5 capability ratings and threat CTSS. Follow [the worked unit example](../examples/unit_readiness_assessment.md) for the full assessment path.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

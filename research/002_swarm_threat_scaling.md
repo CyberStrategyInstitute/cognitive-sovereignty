@@ -1,3 +1,7 @@
+<!-- csf-research-status:start -->
+**UPDATED in 3.0.** Research note 002. Published as documentation in CSF 3.0.0; proposal, source-review, and validation limits below remain in force.
+<!-- csf-research-status:end -->
+
 # Research: Swarm Threat Scaling and Parallel Reality Formation
 
 ## T-CT-008, DS-002, E1, E2 | Countermeasure: S1-S3 Detection Module, AI SAFE² Swarm Governance
@@ -104,3 +108,7 @@ The S1-S3 sensors above are proposed concepts. This repository does not provide 
 Describe observed automation with provisional Swarm Operational Autonomy Levels: SAL-0 human-authored; SAL-1 generated content; SAL-2 automated distribution; SAL-3 persona/account operations; SAL-4 adaptive narrative testing; SAL-5 cross-platform orchestration. Record each observed function separately; the levels need not form a linear progression. This descriptive rubric does not change CTSS.
 
 For each case, distinguish production, distribution, exposure, effect, persistence, and recovery. Mark each stage observed, reported, inferred, or unknown. Account counts are not persuasion outcomes. For media tests, count both false-content acceptance and authentic-content rejection. See [note 007](007_evidence_lineage.md).
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

@@ -1,3 +1,7 @@
+<!-- csf-research-status:start -->
+**NEW in 3.0.** Research note 006. Published as documentation in CSF 3.0.0; proposal, source-review, and validation limits below remain in force.
+<!-- csf-research-status:end -->
+
 # 006: Keep the thinking needed for the decision
 
 CSF links: ST-001, ST-003, T-CT-006, HO-005. Domains 2 and 6. Status: research-backed evaluation proposal; safeguard effectiveness untested locally.
@@ -25,3 +29,7 @@ Neither paper validates CSF or proves inevitable atrophy. See [safeguard 1](../r
 [M-001b: Circadian discipline](../resources/mitigation-catalog.md#m-001b), [M-S03c: Cognitive independence exercises](../resources/mitigation-catalog.md#m-s03c), [M-006c: Independent-first decision habit](../resources/mitigation-catalog.md#m-006c), [M-S07c: Output quality baselining](../resources/mitigation-catalog.md#m-s07c), [M-004c: Inoculation training](../resources/mitigation-catalog.md#m-004c), [M-HO4f: Values articulation and testing](../resources/mitigation-catalog.md#m-ho4f), [M-006g: Human override protocols](../resources/mitigation-catalog.md#m-006g), [M-S07g: Drift telemetry and baselining](../resources/mitigation-catalog.md#m-s07g), [M-014b: Decision pacing under pressure](../resources/mitigation-catalog.md#m-014b), [M-HO5f2: Challenge and correct a score](../resources/mitigation-catalog.md#m-ho5f2).
 
 Use [the readiness worksheet](../resources/readiness-worksheet.md) to retain results. These mappings are documented design decisions, not evidence of field effectiveness.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

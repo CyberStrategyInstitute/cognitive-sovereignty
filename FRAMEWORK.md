@@ -431,3 +431,7 @@ You may share, adapt, and redistribute. **You must attribute the Cyber Strategy 
 Managed by [Cyber Strategy Institute](https://cyberstrategyinstitute.com) | Copyright © 2026. All Rights Reserved.
 
 > *"The question is not whether we build the defenses. The question is whether we build them before the substrate is too degraded to support them."*
+
+<!-- csf-return-navigation:start -->
+[Repository home](README.md) · [Complete page map](PAGE_MAP.md) · [Resources](resources/README.md) · [Research](research/README.md) · [Data catalog](docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

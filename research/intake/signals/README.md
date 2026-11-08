@@ -1,3 +1,11 @@
+<!-- csf-module-header:start -->
+![RES: Research and intelligence. CSF 3.0.0. Status is repeated in text below.](../../../assets/headers/research.svg)
+
+CSF 3.0.0. Documentation: NEW in 3.0. Research intake; event CTSS judgments remain provisional.
+
+[![Framework 3.0.0](../../../assets/badges/version.svg)](../../../VERSION) [![Documentation license: CC BY-SA 4.0](../../../assets/badges/docs-license.svg)](../../../LICENSE)
+<!-- csf-module-header:end -->
+
 # Watch and action register
 
 Every imported excerpt has a stable ID, original source locator, disposition, responsible role, next review, and status history. Some excerpts are headings or indicators, so 217 excerpts do not mean 217 independent incidents or implementation projects. Named assignees remain unassigned; roles are proposed responsibilities.
@@ -237,3 +245,13 @@ Run `python -m tools.signals check` to validate it. To update an item, use `pyth
 | SIG-8fc989f7c1a4 | watching | Research lead | 2026-11-13 | Rates of both false-media acceptance and authentic-media rejection. | [advanced-checks.md](../../../resources/advanced-checks.md), [008_operator_objectives_and_persuasion.md](../../../research/008_operator_objectives_and_persuasion.md), [mitigation-catalog.md](../../../resources/mitigation-catalog.md) |
 | SIG-aee6195a625d | watching | Research lead | 2026-11-13 | Unauthorized source access during evaluations. | [advanced-checks.md](../../../resources/advanced-checks.md), [007_evidence_lineage.md](../../../research/007_evidence_lineage.md), [mitigation-catalog.md](../../../resources/mitigation-catalog.md) |
 | SIG-2105ad1b6475 | watching | Research lead | 2026-11-13 | Override frequency, override quality, and recovery after erroneous AI recommendations. | [advanced-checks.md](../../../resources/advanced-checks.md), [practical-safeguards.md](../../../resources/practical-safeguards.md), [mitigation-catalog.md](../../../resources/mitigation-catalog.md) |
+
+<!-- csf-section-files:start -->
+## Section files
+
+- [register.json](register.json)
+<!-- csf-section-files:end -->
+
+<!-- csf-return-navigation:start -->
+[Repository home](../../../README.md) · [Complete page map](../../../PAGE_MAP.md) · [Resources](../../../resources/README.md) · [Research](../../README.md) · [Data catalog](../../../docs/data/catalog.json) · [Section index](../../README.md)
+<!-- csf-return-navigation:end -->

@@ -3,10 +3,12 @@ import argparse
 import hashlib
 import json
 import subprocess
+import sys
 from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+if __package__ in {None,""}:sys.path.insert(0,str(ROOT))
 WEIGHTS = {"L": 5, "Ia": 6, "R": 4, "D": 3, "RecD": 2}
 DOMAINS = {"Biological", "Cognitive", "Emotional", "Social", "Purpose & Moral", "Digital & AI Symbiosis"}
 
@@ -72,7 +74,8 @@ def generated_outputs(registry):
         data[entry["id"]] = {"score": value, "tier": tier(value), "inputs": {k:entry["ctss"].get(k) for k in WEIGHTS}, "domains": entry["primary_domains"]}
         rows.append(f"| {n} | {entry['id']} | {entry['name']} | {value if value is not None else 'Unknown'} | {tier(value)} |")
     javascript = "// Generated from taxonomy/registry.json. Do not edit by hand.\nwindow.CSF_SCORES = " + json.dumps(data, ensure_ascii=False, indent=2) + ";\n"
-    return {ROOT / "taxonomy/ctss-rankings.md": "\n".join(rows) + "\n", ROOT / "assets/csf-scores.js": javascript, ROOT / "docs/assets/csf-scores.js": javascript}
+    from tools.presentation import decorate
+    return {ROOT / "taxonomy/ctss-rankings.md": decorate(ROOT / "taxonomy/ctss-rankings.md", "\n".join(rows) + "\n"), ROOT / "assets/csf-scores.js": javascript, ROOT / "docs/assets/csf-scores.js": javascript}
 
 
 def validate_measurements(records):

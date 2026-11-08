@@ -54,3 +54,7 @@ Optional national, political, ideological, and religious lenses can reveal diffe
 3. Use the updated weekly automation to produce a complete item ledger, CTSS CSV, research report, and editorial selection for each new CSF edition.
 4. Test the baseline and two declared lenses against the same five cases. Examine score changes caused only by a swapped nation, party, or faith label.
 5. Publish assessed scores and reasons after owner review, then preserve and explain corrections. Test selected safeguards alongside the publication series; experiments need not delay the series itself.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../../../README.md) · [Complete page map](../../../PAGE_MAP.md) · [Resources](../../../resources/README.md) · [Research](../../README.md) · [Data catalog](../../../docs/data/catalog.json) · [Section index](../../README.md)
+<!-- csf-return-navigation:end -->

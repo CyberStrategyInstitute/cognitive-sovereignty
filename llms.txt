@@ -9,6 +9,10 @@ CSF is CSI's six-domain model for preserving human judgment and authority in AI-
 - [Framework reference](FRAMEWORK.md)
 - [CTSS method](taxonomy/ctss-scoring.md)
 
+- [Complete page map](PAGE_MAP.md)
+- [Machine-readable page map](docs/page-map.json)
+- [Published release and comparison baseline](docs/repository-baseline.json)
+
 ## Canonical records
 - [Taxonomy](taxonomy/registry.json)
 - [Event assessments](research/intake/events.json)

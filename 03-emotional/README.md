@@ -1,3 +1,11 @@
+<!-- csf-module-header:start -->
+![D3: Emotional. CSF 3.0.0. Status is repeated in text below.](../assets/headers/03-emotional.svg)
+
+CSF 3.0.0. Documentation: UPDATED in 3.0. Documented guidance; field effectiveness not established. Control comparison: 2 NEW, 3 UPDATED, 3 RETAINED in 3.0. No controls are marked DEPRECATED.
+
+[![Framework 3.0.0](../assets/badges/version.svg)](../VERSION) [![Documentation license: CC BY-SA 4.0](../assets/badges/docs-license.svg)](../LICENSE)
+<!-- csf-module-header:end -->
+
 # Domain 03: Emotional
 
 ### Pre-Decision Terrain
@@ -58,14 +66,14 @@ Stable IDs connect each capability to its research and test. Existing IDs are re
 
 | M-ID | Capability | Counters | Implementation | Research |
 |---|---|---|---|---|
-| M-003d | Emotional awareness training (refined) | T-CT-003, TC-04 | Review emotionally charged interactions for content, context, objectives, and outside pressures. Mood or distress alone does not prove manipulation; preserve voluntary support paths. | [008](../research/008_operator_objectives_and_persuasion.md), [009](../research/009_relational_influence.md) |
-| M-016d | Priming recognition (refined) | T-CT-016 | Inspect the purpose, disclosure, evidence, and use of vulnerability signals in tailored advice. Precise personalization alone does not establish hostile intent. | [008](../research/008_operator_objectives_and_persuasion.md) |
-| M-S02d | Approval-metric detachment (inherited) | ST-002 | Deliberate decoupling of self-assessment from engagement metrics; social approval numbers excluded from identity inputs; metric-free creation and communication practiced regularly | [010](../research/010_domain_controls_and_readiness.md) |
-| M-005d | Identity anchoring (inherited) | TC-03, HO-003 | Identity maintained in platform-independent anchors: relationships, service, competence, place, faith or philosophy as applicable; periodic audit of which identity inputs are algorithmically mediated | [010](../research/010_domain_controls_and_readiness.md) |
-| M-014d | Resilience under information pressure (inherited) | T-CT-014 | Stress inoculation through graduated exposure to flooding and outrage conditions with regulated response as the trained outcome | [010](../research/010_domain_controls_and_readiness.md) |
-| M-003d2 | Rapid recovery access (refined) | T-CT-003, HO-003 | Keep voluntary, accessible peer and professional support routes visible. Test the referral interface with synthetic scenarios and do not diagnose people from a readiness checklist. | [009](../research/009_relational_influence.md) |
-| M-005d2 | Relationship role and exit clarity (added) | T-CT-005, HO-003 | Explain the assistant role, memory limits, paid objectives, and exit route in words the person can understand. Preserve access to outside support. | [009](../research/009_relational_influence.md), [010](../research/010_domain_controls_and_readiness.md) |
-| M-016d2 | Vulnerability-sensitive advice review (added) | T-CT-016, T-CT-003 | Compare matched synthetic requests with and without distress or financial-strain disclosures. Check for factual quality and operator-serving pressure. | [008](../research/008_operator_objectives_and_persuasion.md), [009](../research/009_relational_influence.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-003d | Emotional awareness training (UPDATED in 3.0) | T-CT-003, TC-04 | Review emotionally charged interactions for content, context, objectives, and outside pressures. Mood or distress alone does not prove manipulation; preserve voluntary support paths. | [008](../research/008_operator_objectives_and_persuasion.md), [009](../research/009_relational_influence.md) |
+| M-016d | Priming recognition (UPDATED in 3.0) | T-CT-016 | Inspect the purpose, disclosure, evidence, and use of vulnerability signals in tailored advice. Precise personalization alone does not establish hostile intent. | [008](../research/008_operator_objectives_and_persuasion.md) |
+| M-S02d | Approval-metric detachment (RETAINED in 3.0) | ST-002 | Deliberate decoupling of self-assessment from engagement metrics; social approval numbers excluded from identity inputs; metric-free creation and communication practiced regularly | [010](../research/010_domain_controls_and_readiness.md) |
+| M-005d | Identity anchoring (RETAINED in 3.0) | TC-03, HO-003 | Identity maintained in platform-independent anchors: relationships, service, competence, place, faith or philosophy as applicable; periodic audit of which identity inputs are algorithmically mediated | [010](../research/010_domain_controls_and_readiness.md) |
+| M-014d | Resilience under information pressure (RETAINED in 3.0) | T-CT-014 | Stress inoculation through graduated exposure to flooding and outrage conditions with regulated response as the trained outcome | [010](../research/010_domain_controls_and_readiness.md) |
+| M-003d2 | Rapid recovery access (UPDATED in 3.0) | T-CT-003, HO-003 | Keep voluntary, accessible peer and professional support routes visible. Test the referral interface with synthetic scenarios and do not diagnose people from a readiness checklist. | [009](../research/009_relational_influence.md) |
+| M-005d2 | Relationship role and exit clarity (NEW in 3.0) | T-CT-005, HO-003 | Explain the assistant role, memory limits, paid objectives, and exit route in words the person can understand. Preserve access to outside support. | [009](../research/009_relational_influence.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-016d2 | Vulnerability-sensitive advice review (NEW in 3.0) | T-CT-016, T-CT-003 | Compare matched synthetic requests with and without distress or financial-strain disclosures. Check for factual quality and operator-serving pressure. | [008](../research/008_operator_objectives_and_persuasion.md), [009](../research/009_relational_influence.md), [010](../research/010_domain_controls_and_readiness.md) |
 
 ---
 
@@ -132,3 +140,7 @@ Domain-specific measures: population and unit emotional climate baselines tracke
 - **Adjacent domains:** [Domain 2: Cognitive](../02-cognitive/README.md) (appraisal capacity) | [Domain 4: Social](../04-social/README.md) (where dysregulation propagates) | [Domain 6: Digital & AI Symbiosis](../06-digital-ai-symbiosis/README.md) (the delivery interface)
 
 > **The domain in one sentence:** whoever tunes the mood sets the tolerances; regulation keeps that dial in human hands.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

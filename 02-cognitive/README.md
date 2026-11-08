@@ -1,3 +1,11 @@
+<!-- csf-module-header:start -->
+![D2: Cognitive. CSF 3.0.0. Status is repeated in text below.](../assets/headers/02-cognitive.svg)
+
+CSF 3.0.0. Documentation: UPDATED in 3.0. Documented guidance; field effectiveness not established. Control comparison: 2 NEW, 5 UPDATED, 3 RETAINED in 3.0. No controls are marked DEPRECATED.
+
+[![Framework 3.0.0](../assets/badges/version.svg)](../VERSION) [![Documentation license: CC BY-SA 4.0](../assets/badges/docs-license.svg)](../LICENSE)
+<!-- csf-module-header:end -->
+
 # Domain 02: Cognitive
 
 ### The Capacity Under Direct Attack
@@ -59,16 +67,16 @@ Stable IDs connect each capability to its research and test. Existing IDs are re
 
 | M-ID | Capability | Counters | Implementation | Research |
 |---|---|---|---|---|
-| M-001c | Attention hygiene (inherited) | T-CT-001 | Single-task deep work blocks; platform access scheduled, not ambient; interruption budget tracked and enforced | [010](../research/010_domain_controls_and_readiness.md) |
-| M-014c | Load management discipline (inherited) | T-CT-014, TC-05 | Bounded information intake windows; deliberate triage before analysis; recognition training for flooding conditions (contradictory streams, performative crisis tempo) | [010](../research/010_domain_controls_and_readiness.md) |
-| M-007c | Source verification habit (refined) | T-CT-007 | Trace claims to independent origins, including conflicting evidence. Three derivative summaries count as one lineage; provenance is evidence about origin, not truth. | [007](../research/007_evidence_lineage.md) |
-| M-S03c | Cognitive independence exercises (refined) | ST-003 | Use comparable assisted and unaided tasks with a dated protocol, baseline, system version, and accessibility arrangements. Compare like tasks and retain helpful-delegation controls. | [006](../research/006_independent_judgment.md) |
-| M-006c | Independent-first decision habit (refined) | T-CT-006 | Record initial criteria before consequential advice. Measure justified acceptance and rejection, comprehension, time, and later comparable performance. Keep helpful assistance and accessibility options. | [006](../research/006_independent_judgment.md) |
-| M-S07c | Output quality baselining (refined) | ST-007 | Retain dated cases and compare the same task, protocol, environment, and system version. Separate a model change, changed evidence, and an assessment correction. | [006](../research/006_independent_judgment.md), [007](../research/007_evidence_lineage.md) |
-| M-004c | Inoculation training (refined) | T-CT-004 | Practice recognizing current manipulation techniques with correct and incorrect advice. Measure actual decisions and retention; no universal percentage improvement is established by this catalog. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md) |
-| M-002c | Deep reading practice (inherited) | T-CT-001, ST-003 | Sustained long-form engagement as deliberate training, rebuilding the deep-attention capacity hyperattention displaces | [010](../research/010_domain_controls_and_readiness.md) |
-| M-007c2 | Evidence completeness check (added) | T-CT-007, T-CT-008 | Group derivative reports by their original observation. Mark missing pages, truncated tool output, and contradictory evidence before deciding. | [007](../research/007_evidence_lineage.md), [010](../research/010_domain_controls_and_readiness.md) |
-| M-008c | Trace influence to an outcome (added) | T-CT-004, T-CT-008 | Record production, distribution, exposure, decision change, persistence, and recovery separately. Preserve unknown stages. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-001c | Attention hygiene (RETAINED in 3.0) | T-CT-001 | Single-task deep work blocks; platform access scheduled, not ambient; interruption budget tracked and enforced | [010](../research/010_domain_controls_and_readiness.md) |
+| M-014c | Load management discipline (RETAINED in 3.0) | T-CT-014, TC-05 | Bounded information intake windows; deliberate triage before analysis; recognition training for flooding conditions (contradictory streams, performative crisis tempo) | [010](../research/010_domain_controls_and_readiness.md) |
+| M-007c | Source verification habit (UPDATED in 3.0) | T-CT-007 | Trace claims to independent origins, including conflicting evidence. Three derivative summaries count as one lineage; provenance is evidence about origin, not truth. | [007](../research/007_evidence_lineage.md) |
+| M-S03c | Cognitive independence exercises (UPDATED in 3.0) | ST-003 | Use comparable assisted and unaided tasks with a dated protocol, baseline, system version, and accessibility arrangements. Compare like tasks and retain helpful-delegation controls. | [006](../research/006_independent_judgment.md) |
+| M-006c | Independent-first decision habit (UPDATED in 3.0) | T-CT-006 | Record initial criteria before consequential advice. Measure justified acceptance and rejection, comprehension, time, and later comparable performance. Keep helpful assistance and accessibility options. | [006](../research/006_independent_judgment.md) |
+| M-S07c | Output quality baselining (UPDATED in 3.0) | ST-007 | Retain dated cases and compare the same task, protocol, environment, and system version. Separate a model change, changed evidence, and an assessment correction. | [006](../research/006_independent_judgment.md), [007](../research/007_evidence_lineage.md) |
+| M-004c | Inoculation training (UPDATED in 3.0) | T-CT-004 | Practice recognizing current manipulation techniques with correct and incorrect advice. Measure actual decisions and retention; no universal percentage improvement is established by this catalog. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+| M-002c | Deep reading practice (RETAINED in 3.0) | T-CT-001, ST-003 | Sustained long-form engagement as deliberate training, rebuilding the deep-attention capacity hyperattention displaces | [010](../research/010_domain_controls_and_readiness.md) |
+| M-007c2 | Evidence completeness check (NEW in 3.0) | T-CT-007, T-CT-008 | Group derivative reports by their original observation. Mark missing pages, truncated tool output, and contradictory evidence before deciding. | [007](../research/007_evidence_lineage.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-008c | Trace influence to an outcome (NEW in 3.0) | T-CT-004, T-CT-008 | Record production, distribution, exposure, decision change, persistence, and recovery separately. Preserve unknown stages. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
 
 ---
 
@@ -138,3 +146,7 @@ Domain-specific measures: unassisted baseline trend, assisted-versus-unassisted 
 - **Adjacent domains:** [Domain 1: Biological](../01-biological/README.md) (precondition) | [Domain 6: Digital & AI Symbiosis](../06-digital-ai-symbiosis/README.md) (the interface this domain's independence defends against)
 
 > **The domain in one sentence:** the fight is for the capacity to think, not the content of thought.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json)
+<!-- csf-return-navigation:end -->

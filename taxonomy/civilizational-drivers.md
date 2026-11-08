@@ -149,3 +149,7 @@ Civilizational Drivers are measured through the Layer B measurement stack:
 The Civilizational Driver layer is the most encompassing and slowest-changing. Coverage at this layer is approximately **90%**, with the primary remaining gap being detection of long-arc civilizational degradation before it crosses irreversible thresholds (CD-006, CD-005).
 
 These conditions cannot be addressed by military doctrine alone. They require a whole-of-society approach. The CSF positions DoD personnel and their families to withstand civilizational-level degradation while broader corrections are pursued.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

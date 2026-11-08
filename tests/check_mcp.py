@@ -40,6 +40,8 @@ async def main():
             assert payload(result)['domain_id']=='D6' and payload(result)['research_notes'] and payload(result)['test']
             result=await session.call_tool('search_records',{'collection':'resources','limit':20})
             assert payload(result)['total']>=11
+            result=await session.call_tool('search_records',{'collection':'pages','text':'readiness','limit':2})
+            assert len(payload(result)['results'])==2 and payload(result)['results'][0]['path']
             result=await session.call_tool('calculate_ctss',dict(L=5,Ia=4,R=5,D=4,RecD=3))
             assert payload(result)['ctss']==87
             result=await session.call_tool('calculate_ctss',dict(L=None,Ia=4,R=5,D=4,RecD=3))

@@ -49,3 +49,7 @@ The fictional authorization preview exists, but an injected request still expand
 ## M-005g
 
 The fictional workflow has no tested path to correct or remove remembered bystander information. Rating 0. Add the correction, refusal, and exit checks.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](../resources/README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->

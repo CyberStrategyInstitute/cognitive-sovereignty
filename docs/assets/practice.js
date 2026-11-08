@@ -30,7 +30,16 @@
     const card = node("article", undefined, "card");
     card.id = c.id;
     card.append(
-      node("p", c.id + " Ã‚Â· " + c.domain_id + " Ã‚Â· " + c.kind, "eyebrow"),
+      node(
+        "p",
+        c.id +
+          " · " +
+          c.domain_id +
+          " · " +
+          { added: "NEW", refined: "UPDATED", inherited: "RETAINED" }[c.kind] +
+          " in 3.0",
+        "eyebrow",
+      ),
       node("h3", c.name),
       node("p", c.implementation),
     );
@@ -71,13 +80,13 @@
         const refined = selected.filter((c) => c.kind === "refined").length;
         const card = node("article", undefined, "card");
         card.append(
-          node("h3", d.id + " Ã‚Â· " + d.name),
+          node("h3", d.id + " · " + d.name),
           node(
             "p",
             d.baseline_controls.length +
-              " retained Ã‚Â· " +
+              " retained · " +
               refined +
-              " refined Ã‚Â· " +
+              " refined · " +
               d.extension_controls.length +
               " added",
           ),
@@ -119,7 +128,7 @@
     const selector = document.getElementById("control-domain");
     if (selector)
       for (const d of domains)
-        selector.append(new Option(d.id + " Ã‚Â· " + d.name, d.id));
+        selector.append(new Option(d.id + " · " + d.name, d.id));
   }
   function showControls() {
     const list = document.getElementById("control-list");
@@ -175,7 +184,7 @@
       const p = node("p");
       p.append(
         link(
-          c.id + " Ã‚Â· " + c.name,
+          c.id + " · " + c.name,
           "practice.html?control=" + encodeURIComponent(c.id) + "#controls",
         ),
       );
@@ -255,7 +264,7 @@
       }
       const selected = document.getElementById("dp-id");
       if (selected && selected.textContent)
-        showTechnique(selected.textContent.split(" Ã‚Â· ")[0]);
+        showTechnique(selected.textContent.split(" · ")[0]);
     } catch {
       const status = document.getElementById("practice-status");
       if (status)

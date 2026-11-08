@@ -16,3 +16,7 @@ Use one record for a consequential decision, test, or incident. Store sensitive 
 | What can we say publicly? | Exact supported statement, denominator, limits, review status |
 
 For incidents, also record what was allowed, what happened, what the person believed happened, recognition and intervention time, and recovery. Keep completed work, safe stopping, ordinary failure, resource exhaustion, continued attempts, and out-of-scope effects distinct.
+
+<!-- csf-return-navigation:start -->
+[Repository home](../README.md) · [Complete page map](../PAGE_MAP.md) · [Resources](README.md) · [Research](../research/README.md) · [Data catalog](../docs/data/catalog.json) · [Section index](README.md)
+<!-- csf-return-navigation:end -->
