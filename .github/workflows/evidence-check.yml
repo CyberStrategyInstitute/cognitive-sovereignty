@@ -25,6 +25,7 @@ jobs:
       - run: python -m tools.event_monitor check
       - run: python -m tools.signals check
       - run: python -m tools.export check
+      - run: python -m tools.version
       - run: python -m tools.check_repo
       - run: python -m tools.lens_check
       - run: python -m unittest discover -s tests

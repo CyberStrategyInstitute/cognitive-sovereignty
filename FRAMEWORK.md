@@ -8,7 +8,7 @@
 
 ### A Six-Domain Model for Human Resilience in the AI Era
 
-[![Version](https://img.shields.io/badge/version-2.1.0-crimson.svg)](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/releases)
+[![Version](https://img.shields.io/badge/version-3.0.0-crimson.svg)](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/releases)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![DoD Aligned](https://img.shields.io/badge/Aligned-DoD_AI_Ethical_Principles-005696?style=flat-square)](https://www.ai.mil/docs/RAI_Toolkit_Intro_Oct_21.pdf)
@@ -350,6 +350,7 @@ The framework proposes four validation tests. These are evaluation requirements,
 
 | Version | Focus | Key Addition | Classification Entries |
 |---|---|---|---|
+| **v3.0.0** | Research-to-control assessment workflow | Research-linked mitigation catalog, individual CTSS intake, readiness checks, agent/MCP data | Existing taxonomy retained; 56 controls |
 | **v2.0** | Complete AI-Era Architecture | Domain 6, EFA integration, E7 Stack, HEAR Doctrine | 41 entries + 10 threat classes + 3 edge domains |
 | **v1.0** | Foundation | Six-domain model proposal, CTSS scoring baseline | 18 technique families, 4-layer stack |
 
@@ -401,13 +402,13 @@ Recognize and reward the contributors who help harden this doctrine.
 
 ```bibtex
 @misc{csf_framework_2026,
-  title   = {Cognitive Sovereignty Framework v2.0: A Six-Domain Model for Human Resilience in the AI Era},
+  title   = {Cognitive Sovereignty Framework v3.0.0: A Six-Domain Model for Human Resilience in the AI Era},
   author  = {{Cyber Strategy Institute}},
   year    = {2026},
   month   = {February},
   publisher = {Cyber Strategy Institute},
   url     = {https://github.com/CyberStrategyInstitute/cognitive-sovereignty},
-  note    = {Version 2.0. Companion to the Cognitive Threat Assessment and Cognitive Threat Taxonomy.}
+  note    = {Version 3.0.0. Companion to the Cognitive Threat Assessment and Cognitive Threat Taxonomy.}
 }
 ```
 

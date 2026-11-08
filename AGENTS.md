@@ -2,6 +2,8 @@
 
 Read [README.md](README.md) for the model and [integration/README.md](integration/README.md) for data access. Keep the six domains, five causal layers, taxonomy IDs, and CTSS weights intact unless the task explicitly authorizes a model change.
 
+The framework version comes from `VERSION`. Run `python -m tools.version` after rebuilding; current site labels, citation, registry, and catalog must agree. Keep historical source, method, schema, and lens versions intact.
+
 ## Sources of record
 
 - `taxonomy/registry.json`: taxonomy and inherited reference inputs.

@@ -1,10 +1,10 @@
 <img src="docs/assets/brand/csi-shield-color.png" width="96" alt="Cyber Strategy Institute shield">
 
-# Cognitive Sovereignty Framework
+# Cognitive Sovereignty Framework 3.0
 
 CSF helps people and organizations examine whether they retain the ability to understand, choose, challenge, and govern AI-mediated decisions. Cyber Strategy Institute maintains the model, taxonomy, research, and CTSS assessments.
 
-The core remains **six domains, five causal layers, and the existing CTSS formula**. This PR improves the supporting evidence, records, tools, and navigation. Framework identity: v2.1.0. No release or deployment is created by opening a PR.
+The core remains **six domains, five causal layers, and the existing CTSS formula**. CSF v3.0.0 connects the research intake to domain controls, assessments, tracked actions, and reusable data. The major version identifies the expanded research-to-control workflow and revised readiness criteria.
 
 ## Start with your task
 
@@ -80,7 +80,7 @@ For a local preview, run `python -m http.server 8000 --directory docs` from the 
 
 ## Build, check, and contribute
 
-Python 3.12 and Node 22 are the CI baseline. Local checks also passed with Node 24. Core Python tools use the standard library. The MCP adapter is optional and has its own dependency file.
+Python 3.12 and Node 22 are the CI baseline. Local checks also passed with Node 24. `VERSION` is the single framework-version source. `python -m tools.version` checks all seven webpages, citation, taxonomy, and data catalog. Core Python tools use the standard library. The MCP adapter is optional and has its own dependency file.
 
 ```text
 python -m tools.build
@@ -88,6 +88,7 @@ python tools/csf.py check
 python -m tools.event_monitor check
 python -m tools.signals check
 python -m tools.export check
+python -m tools.version
 python -m tools.check_repo
 python -m unittest discover -s tests
 node tests/check_dashboards.cjs

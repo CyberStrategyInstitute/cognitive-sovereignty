@@ -15,3 +15,5 @@ Research notes 006-009 add distinct source-backed review questions and implement
 ## Domain control documentation
 
 Proposed claim: the review branch retains 44 mitigation IDs, refines 20 controls and readiness anchors, and adds 12 research-linked controls. Sources: `resources/controls.json`, `resources/domains.json`, and research note 010. Evidence class: repository inventory and documentation checks, not field effectiveness. The synthetic unit record demonstrates calculation only. No observed readiness increase, population protection percentage, or government approval is established. The shield assets match the supplied package hashes. Publication remains limited to the unmerged review PR; no live Pages deployment is verified.
+
+Version update: the owner designated the review branch as CSF v3.0.0. `VERSION`, all seven page titles/navigation/version metadata, current documentation, citation, registry, and exported catalog are checked for agreement. This is version/inventory evidence, not a claim of live site publication or measured effectiveness. Historical source and method versions remain intact.

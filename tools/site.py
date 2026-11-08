@@ -1,12 +1,13 @@
 """Build shared navigation, brand assets, and domain practice entrypoints."""
 import re
 from tools.csf import ROOT,read_json
+from tools.version import VERSION
 
 PAGES=[('docs/index.html','Learn'),('docs/csf-explorer.html','Taxonomy'),('docs/csf-command-center.html','Command center'),('docs/research.html','Research and scores'),('docs/guide.html','How to use it'),('docs/practice.html','Controls and readiness'),('command-center/index.html','Command center')]
 
 def navigation(active,prefix):
     links=[('index.html','Learn'),('research.html','Research and scores'),('csf-explorer.html','Taxonomy'),('practice.html','Controls and readiness'),('csf-command-center.html','Command center'),('guide.html','How to use it')]
-    nav='<nav class="csf-site-nav" aria-label="Main"><a class="csf-brand" href="'+prefix+'index.html"><img src="'+prefix+'assets/brand/csi-shield-white-orange.svg" width="32" height="48" alt="Cyber Strategy Institute shield"><span>CSI / Cognitive Sovereignty</span></a>'
+    nav='<nav class="csf-site-nav" aria-label="Main"><a class="csf-brand" href="'+prefix+'index.html"><img src="'+prefix+'assets/brand/csi-shield-white-orange.svg" width="32" height="48" alt="Cyber Strategy Institute shield"><span>CSI / CSF v'+VERSION+'</span></a>'
     for href,label in links:nav+='<a href="'+prefix+href+'"'+(' aria-current="page"' if label==active else '')+'>'+label+'</a>'
     return nav+'<a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>'
 
@@ -33,7 +34,15 @@ def build():
         counts=Counter(tier(score(r['ctss'])) for r in read_json(ROOT/'taxonomy/registry.json')['manipulation_techniques'])
         for key,label in [('critical','Critical ≥80'),('high','High 70–79'),('elevated','Elevated 60–69')]:
             text=re.sub(re.escape(label)+r' — \d+ Techniques',lambda _:label+' — '+str(counts[key])+' Techniques',text)
-        text=text.replace('Command Center · v2.0','Command Center · v2.1.0').replace('Command Center — v2.0','Command Center · v2.1.0')
+        text=re.sub(r'(Command Center · )v\d+\.\d+(?:\.\d+)?',lambda m:m[1]+'v'+VERSION,text)
+        text=re.sub(r'(Command Center · Cyber Strategy Institute · )v\d+\.\d+(?:\.\d+)?',lambda m:m[1]+'v'+VERSION,text)
+        text=re.sub(r'(Framework · )v\d+\.\d+(?:\.\d+)?',lambda m:m[1]+'v'+VERSION,text)
+        text=re.sub(r'(Cognitive Sovereignty Framework v)\d+\.\d+(?:\.\d+)?',lambda m:m[1]+VERSION,text)
+        text=re.sub(r'(Version )\d+\.\d+(?:\.\d+)?',lambda m:m[1]+VERSION,text)
+        text=re.sub(r'<title>(.*?)</title>',lambda m:'<title>'+re.sub(r' \| CSF v\d+\.\d+(?:\.\d+)?$','',m[1])+' | CSF v'+VERSION+'</title>',text,flags=re.S)
+        meta=f'<meta name="csf-version" content="{VERSION}">'
+        if '<meta name="csf-version"' in text:text=re.sub(r'<meta name="csf-version"[^>]*>',lambda _:meta,text)
+        else:text=text.replace('</head>',meta+'\n</head>')
         path.write_text(text,encoding='utf-8',newline='\n')
 
 if __name__=='__main__':build()

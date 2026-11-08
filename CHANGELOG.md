@@ -1,8 +1,8 @@
 # Change log
 
-## Proposed research and usability update
+## v3.0.0: research-to-control framework update
 
-This PR retains the v2.1.0 framework identity. It does not create a release, change the six domains or five causal layers, or alter CTSS weights.
+The owner designated this work as CSF v3.0.0. It expands research intake, domain controls, readiness assessment, public documentation, and agent access. The six domains, five causal layers, and CTSS weights remain unchanged. The GitHub release and live site publication remain separate from this review branch.
 
 - Correct reference-score arithmetic, preserve prior values, and generate consistent totals for the calculator and dashboards.
 - Add the complete supplied weekly intake as 87 provisional item records, original analysis, seven research reports, source lineage, revisions, and cohort trends.
@@ -20,3 +20,9 @@ The inherited CTSS method remains an assessed prioritization method. Provisional
 - Add explicit exposure mappings, separate readiness-extension checks, a catalog, worksheet, schemas, and a reproducible fictional unit assessment. Observed readiness remains unknown.
 - Link the 217 signals to proposed control routes without changing their source text, disposition, or field-validation status.
 - Integrate resources, original shield assets, README alignment, domain/control navigation, Explorer search/sorting, and a candid six-item roadmap status.
+
+## Version consistency and upgrade
+
+`VERSION` defines 3.0.0. Builds apply that version to all seven page titles, navigation labels, and page metadata. The citation, current framework documentation, registry, and data catalog use the same version and are checked in CI. Historical source versions, schema versions, lens profiles, method IDs, and prior assessment records keep their own identities.
+
+Existing threat IDs and mitigation IDs remain usable. Use the revised catalog revision when testing the 20 refined controls. Keep the 12 new readiness-extension checks separate from inherited capability totals. Begin a new comparison when criteria change; do not relabel old outcomes as 3.0 observations.

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "framework": "Cognitive Sovereignty Framework",
-  "framework_version": "2.1.0",
+  "framework_version": "3.0.0",
   "method": "CTSS-existing-v1",
   "baseline": "us-founding-v1",
   "baseline_status": "draft normative profile",
@@ -39,7 +39,7 @@
     },
     "taxonomy.json": {
       "path": "docs/data/taxonomy.json",
-      "sha256_utf8_lf": "3ce6ce3adac8f4442925056ecb248d358a928fcf964a2ec94a9a5c41b0fee26f",
+      "sha256_utf8_lf": "e4fdee16115c2aedb16c122cff29eb8e2be6c016a6fe641cdaa14c7a7049eb93",
       "schema_version": "1.0"
     },
     "lenses.json": {

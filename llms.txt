@@ -1,4 +1,4 @@
-# Cognitive Sovereignty Framework
+# Cognitive Sovereignty Framework v3.0.0
 
 CSF is CSI's six-domain model for preserving human judgment and authority in AI-mediated environments.
 

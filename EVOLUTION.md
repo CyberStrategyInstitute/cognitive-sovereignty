@@ -4,6 +4,21 @@ The Cognitive Sovereignty Framework is versioned. This document separates inheri
 
 ---
 
+## v3.0.0: research-to-control framework update
+
+Designated by the owner on November 7, 2026. This major update connects research, assessments, controls, practical checks, and accountable revision. The six domains, five causal layers, existing taxonomy IDs, and CTSS weights remain unchanged.
+
+- 87 item-level provisional CTSS assessments, seven weekly collections, preserved original analysis, reports, and revision history.
+- 217 tracked source signals linked to proposed control routes.
+- 44 inherited mitigation IDs retained, 20 implementations/readiness anchors refined, and 12 research-linked controls added.
+- Separate readiness-extension checks, evidence requirements, a worksheet, and a reproducible synthetic unit example.
+- A declared baseline and optional lenses, integrated resources, updated webpages and logo, and read-only agent/MCP access.
+- One framework version source, consistent current labels, and an automated version check.
+
+This version does not claim observed readiness gains or complete the open research milestones below. Historical editions and source-document versions remain identified by their original versions. See [the change log](CHANGELOG.md) and [implementation record](IMPLEMENTATION.md).
+
+---
+
 ## v2.0 — February 2026
 **Focus:** Complete AI-Era Architecture
 
@@ -45,7 +60,7 @@ v1.0 → v2.0: ~80% → 92% overall coverage
 
 ## Roadmap status, reviewed November 7, 2026
 
-The work advances the research foundation and unit-scorecard prototype. It does not complete every v2.1 milestone. Targets are version labels, not dated commitments, so calendar progress cannot be assessed from this roadmap alone. Framework metadata currently says v2.1.0; that label is not evidence that all v2.1 roadmap items shipped.
+The work advances the research foundation and unit-scorecard prototype. It does not complete every v2.1 milestone. Targets are version labels, not dated commitments, so calendar progress cannot be assessed from this roadmap alone. The owner has designated the expanded assessment workflow as v3.0.0. That major version does not mark the inherited v2.1, v2.2, or v2.3 research targets complete.
 
 | Priority | Planned addition | Original target | Current state | Evidence and next step |
 |---|---|---|---|---|

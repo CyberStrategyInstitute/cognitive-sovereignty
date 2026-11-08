@@ -41,3 +41,5 @@ Use the existing [dual license](../LICENSE) and retain attribution. Referencing 
 Reference scores describe technique scenarios. Event CTSS values are CSI assessments. Direct human measurements and simulated examples remain separately labeled. Do not publish a claimed protection percentage by adding or averaging these unlike quantities.
 
 The control catalog is canonical at `resources/controls.json`, domain mappings at `resources/domains.json`, and resource discovery at `resources/index.json`. The read-only MCP tools expose these allowlisted collections. Observed readiness is exported separately and excludes synthetic unit examples. Follow each control’s research links rather than inferring efficacy from its presence.
+
+Framework version: v3.0.0, sourced from `VERSION` and exported in the catalog. Schema, method, lens, and catalog format versions are independent. Pin the commit as well as the framework version when reproducing an assessment.

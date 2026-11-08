@@ -1,9 +1,11 @@
 {
   "metadata": {
     "title": "Cognitive Threat Taxonomy Registry",
-    "version": "2.0",
+    "version": "3.0.0",
     "organization": "Cyber Strategy Institute",
-    "date": "2026-02-01",
+    "date": "2026-11-07",
+    "original_registry_date": "2026-02-01",
+    "previous_registry_version": "2.0",
     "description": "Complete machine-readable registry of all classified cognitive threats across the five-layer causal stack. 41 primary entries + 10 newly identified threat classes + 3 edge domain additions.",
     "total_entries": 54,
     "ctss_formula": "CTSS = (L*0.25 + Ia*0.30 + R*0.20 + D*0.15 + RecD*0.10) * 20",
