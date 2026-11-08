@@ -1,5 +1,7 @@
 # Threat Architecture: The Five-Layer Causal Stack
 
+Coverage percentages and broad outcome claims in the legacy discussion below are unvalidated estimates unless linked to a specific evidence record. They are not measured CSF results. See [the research register](../research/README.md).
+
 > **Design Principle:** The threats to human cognition operate in layers. Addressing any single layer in isolation produces incomplete defense. Most current defenses target only Layer 0 (active manipulation) while ignoring the layers beneath that make manipulation possible, and the layers above that scale its delivery.
 
 ---

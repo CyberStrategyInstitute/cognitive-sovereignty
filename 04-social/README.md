@@ -2,7 +2,7 @@
 
 ### The Collective Immune System
 
-**CSF Position:** Domain 4 of 6 | **AI SAFE² CP.11 Controls:** UAS-H3 (social pressure simulation), UAS-H7 (persona and role-boundary erosion) | **Companion Research:** [002 Swarm Threat Scaling](../research/002_swarm_threat_scaling.md)
+**CSF Position:** Domain 4 of 6 | **AI SAFE² UAS profile Controls:** UAS-H3 (social pressure simulation), UAS-H7 (persona and role-boundary erosion) | **Companion Research:** [002 Swarm Threat Scaling](../research/002_swarm_threat_scaling.md)
 
 ---
 
@@ -21,14 +21,25 @@ The attack runs on two axes. Horizontally, synthetic personas and manufactured c
 | ID | Threat | Layer | CTSS / Detection | What It Targets in This Domain |
 | --- | --- | --- | --- | --- |
 | ST-005 | Social Trust Fragmentation | Substrate | Detection 3 | Collective defense coordination; micro-tribes with incompatible reality models |
-| T-CT-005 | Identity Replacement / Persona Hijacking | Technique | CTSS 78 / Detection 4 | Trust networks; synthetic personas mimicking trusted figures or fabricating authority |
-| T-CT-008 | Memetic Swarm Orchestration | Technique | CTSS 90 / Detection 4 | Collective sense-making; the highest-scoring threat in the taxonomy |
-| T-CT-013 | Social Scoring and Behavioral Governance | Technique | CTSS 83 / Detection 3 | Behavioral autonomy; automated conformity enforcement |
+| T-CT-005 | Identity Replacement / Persona Hijacking | Technique | CTSS 74 / Detection 4 | Trust networks; synthetic personas mimicking trusted figures or fabricating authority |
+| T-CT-008 | Memetic Swarm Orchestration | Technique | CTSS 83 / Detection 4 | Collective sense-making; a critical reference estimate of 83 |
+| T-CT-013 | Social Scoring and Behavioral Governance | Technique | CTSS 79 / Detection 3 | Behavioral autonomy; automated conformity enforcement |
 | TC-06 | Synthetic Social Proof | Threat Class | n/a | The consensus heuristic; "many believe it" fabricated at commodity cost |
 | CD-006 | Civilizational Reproduction Failure | Driver | Detection 2 | Family formation, intergenerational value transmission, continuity structures |
 | HO-002 / HO-003 | Belief Instability / Identity Fragmentation | Outcomes | Detection 3-4 | Tribe-seeking replacing truth-seeking; affective polarization nearly doubled in the U.S. since the mid-1990s per the Threat Assessment |
 
 ---
+
+<!-- domain-exposure:start -->
+### Research-informed exposure updates
+
+These map additional mechanisms to existing threat IDs. They expand what this domain examines; they do not establish increased incidence, reach, or severity.
+
+| Existing threat ID | Mechanism to examine | Research |
+|---|---|---|
+| T-CT-004 (added) | Synthetic testimony can borrow a real person’s or institution’s credibility. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+| T-CT-007 (added) | False or incomplete claims can persist through derivative copies. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+<!-- domain-exposure:end -->
 
 ## 3. Cascade Position
 
@@ -42,29 +53,31 @@ The attack runs on two axes. Horizontally, synthetic personas and manufactured c
 
 ## 4. Protective Capabilities and Mitigation Catalog
 
-Mitigation ID convention: `M-{threat}{e}` (e = Social), per the taxonomy's operational template.
+Stable IDs connect each capability to its research and test. Existing IDs are retained. See the [full catalog](../resources/mitigation-catalog.md) for expected outcomes, owner roles, checks, and failure responses.
 
-| M-ID | Capability | Counters | Implementation |
-| --- | --- | --- | --- |
-| M-S05e | Trust network cultivation | ST-005 | Deliberate maintenance of verified-human trust networks spanning ideological boundaries; resilient local anchors (community nodes) whose signals do not route through algorithmic amplification |
-| M-005e | Persona verification discipline | T-CT-005 | Out-of-band verification for consequential requests from trusted figures; treat unverified authority claims as unestablished; synthetic persona recognition training |
-| M-008e | Consensus provenance | T-CT-008, TC-06 | Apparent consensus treated as a claim requiring origin evidence; trend origin audits before acting on social signals; grounded reference groups as the check against synthetic proof |
-| M-013e | Conformity pressure recognition | T-CT-013 | Awareness of scoring and reputation systems as governance mechanisms; deliberate preservation of behavior domains outside scored systems |
-| M-002e | Source diversity practice | ST-005, T-CT-002 | Structured information diet across incompatible outlets and communities; micro-tribe boundary crossings maintained deliberately |
-| M-CD6e | Family stability investment | CD-006 | Family continuity treated as a defended asset: protected family time, intergenerational transmission practices, household norms resistant to algorithm-rewarded individualism |
-| M-004e | Civic ritual and community engagement | ST-005, HO-004 | Participation in civic structures that build shared identity across tribal lines; service commitments that anchor belonging outside platforms |
+| M-ID | Capability | Counters | Implementation | Research |
+|---|---|---|---|---|
+| M-S05e | Trust network cultivation (inherited) | ST-005 | Deliberate maintenance of verified-human trust networks spanning ideological boundaries; resilient local anchors (community nodes) whose signals do not route through algorithmic amplification | [010](../research/010_domain_controls_and_readiness.md) |
+| M-005e | Persona verification discipline (refined) | T-CT-005 | Verify consequential identity claims through an independently obtained contact route. Check permission for any synthetic representation and record uncertainty. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+| M-008e | Consensus provenance (refined) | T-CT-008, TC-06 | Audit the original observations and distribution behind apparent consensus. Distinct accounts, reports, or model brands do not by themselves establish independent evidence. | [007](../research/007_evidence_lineage.md) |
+| M-013e | Conformity pressure recognition (inherited) | T-CT-013 | Awareness of scoring and reputation systems as governance mechanisms; deliberate preservation of behavior domains outside scored systems | [010](../research/010_domain_controls_and_readiness.md) |
+| M-002e | Source diversity practice (inherited) | ST-005, T-CT-002 | Structured information diet across incompatible outlets and communities; micro-tribe boundary crossings maintained deliberately | [010](../research/010_domain_controls_and_readiness.md) |
+| M-CD6e | Family stability investment (inherited) | CD-006 | Family continuity treated as a defended asset: protected family time, intergenerational transmission practices, household norms resistant to algorithm-rewarded individualism | [010](../research/010_domain_controls_and_readiness.md) |
+| M-004e | Civic ritual and community engagement (inherited) | ST-005, HO-004 | Participation in civic structures that build shared identity across tribal lines; service commitments that anchor belonging outside platforms | [010](../research/010_domain_controls_and_readiness.md) |
+| M-005e2 | Consent for synthetic testimony (added) | T-CT-005, T-CT-004 | Verify the speaker and permission before presenting a real person as endorsing a statement. Label authorized synthetic representation and give a correction contact. | [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-008e2 | Correction across copies (added) | T-CT-008, T-CT-007 | Track the original claim and known derivative copies. Send a correction through the same channels and retain unresolved copies as an open recovery gap. | [007](../research/007_evidence_lineage.md), [010](../research/010_domain_controls_and_readiness.md) |
 
 ---
 
 ## 5. Domain Readiness Assessment
 
-Score each capability 0 to 5. Anchors: 0 = absent, 3 = practiced inconsistently, 5 = habitual and verified. Domain Readiness Score = (mean of seven capability scores) x 20.
+This is a proposed, task-specific training rubric, not a validated personnel-readiness instrument. Score each capability 0 to 5. Anchors: 0 = absent, 3 = practiced inconsistently, 5 = habitual and verified. Domain Readiness Score = (mean of seven capability scores) x 20.
 
 | Capability | 0 (Absent) | 3 (Inconsistent) | 5 (Sovereign) |
 | --- | --- | --- | --- |
 | Trust network cultivation | Relationships predominantly platform-mediated | Some verified-human anchors | Maintained verified network spanning ideological lines; local anchors active |
-| Persona verification | Trusted-figure requests acted on unverified | Verification for financial requests only | Out-of-band verification habitual for all consequential requests |
-| Consensus provenance | Viral consensus accepted as evidence | Skepticism without method | Origin audit before acting on any trend or consensus signal |
+| Persona verification | Consequential identity requests accepted without verification | Verification occurs inconsistently or through the same suspect channel | Independent contact and authorization for consequential representation are verified |
+| Consensus provenance | Popularity treated as independent evidence | Accounts counted without tracing origins | Original observations and derivative reports are distinguished in a consensus claim |
 | Conformity pressure recognition | Scored systems shape behavior invisibly | Scoring recognized, unmanaged | Scored and unscored behavior domains deliberately mapped and preserved |
 | Source diversity | Single-tribe information diet | Occasional boundary crossing | Structured cross-boundary diet, maintained and reviewed |
 | Family stability investment | Family time unprotected; transmission unpracticed | Protected time inconsistent | Protected time enforced; transmission practices deliberate and regular |
@@ -73,6 +86,19 @@ Score each capability 0 to 5. Anchors: 0 = absent, 3 = practiced inconsistently,
 **Bands:** Sovereign 80-100 | Functional 60-79 | Degraded 40-59 | Compromised below 40. Note that this domain can only be partially self-scored; trust networks and family stability require the counterparty's confirmation to verify. Unit and household assessment beats individual assessment here.
 
 ---
+
+<!-- domain-readiness:start -->
+### Additional readiness checks
+
+Keep the inherited capability score and denominator unchanged. Report these research-extension checks separately. Unknown is not zero. Use [the worksheet](../resources/readiness-worksheet.md) and [worked unit example](../examples/unit_readiness_assessment.md). Readiness is a task-specific assessment, not CTSS.
+
+| M-ID | Check | 0 | 3 | 5 |
+|---|---|---|---|---|
+| M-005e2 | Use a fictional identity and synthetic endorsement request. Check authorization, labeling, correction, and withdrawal through the whole distribution path. | The control is absent or the declared check failed completely. | The path works in some declared cases; important gaps or evidence remain. | The path passes the declared case set, including an adverse case, with retained evidence. |
+| M-008e2 | Seed a fictional error into three controlled copies; correct the source and check each copy and recipient acknowledgment. | The control is absent or the declared check failed completely. | The path works in some declared cases; important gaps or evidence remain. | The path passes the declared case set, including an adverse case, with retained evidence. |
+
+Record the protocol, case set, catalog revision, date, assessor, evidence, failed cases, and remediation owner. No observed unit results were supplied, so current readiness remains unknown in all six domains. A documented capability is not a passed test.
+<!-- domain-readiness:end -->
 
 ## 6. Training Protocols by Population
 
@@ -98,7 +124,7 @@ Population-scale measures (Measurement Stack Layer B): B1 Trust and Cohesion Ind
 
 ## 8. Enforcement and Crosslinks
 
-- **AI SAFE² CP.11:** UAS-H3 (social pressure simulation) and UAS-H7 (persona and role-boundary erosion) are the procurement-facing measures of this domain in federal AI deployments
+- **AI SAFE² UAS profile:** UAS-H3 (social pressure simulation) and UAS-H7 (persona and role-boundary erosion) are the procurement-facing measures of this domain in federal AI deployments
 - **Measurement Stack:** Layer B1 (Trust and Cohesion Index), B2 (Civilizational Reproduction Indicators); S1 (Synthetic Consensus Scanner) is this domain's machine-scale sensor
 - **Taxonomy:** [Substrate Threats](../taxonomy/substrate-threats.md) (ST-005) | [Manipulation Techniques](../taxonomy/manipulation-techniques.md) (T-CT-005, 008, 013) | [Threat Classes](../taxonomy/threat-classes.md) (TC-06) | [Civilizational Drivers](../taxonomy/civilizational-drivers.md) (CD-006)
 - **Companion research:** [Research Note 002](../research/002_swarm_threat_scaling.md) covers the swarm mechanics that make synthetic consensus the cheapest commodity in the information environment

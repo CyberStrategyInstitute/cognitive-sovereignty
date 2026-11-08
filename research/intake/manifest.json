@@ -1,0 +1,149 @@
+{
+  "imported_on": "2026-11-07",
+  "files": [
+    {
+      "source_id": "DOC-76511a03731f",
+      "relative_path": "2026/2026-10-30/Cognitive Sovereignty Friday Brief.docx",
+      "sha256": "2de7f5342d1b746018ad9472a280a842b104f31c133dcfbd2c2c3789fff4f819",
+      "bytes": 33193,
+      "original_unchanged": true,
+      "paragraphs": 225,
+      "ranked_occurrences": 12,
+      "embedded_images": 0,
+      "external_images": 0
+    },
+    {
+      "source_id": "DOC-fde0effc225c",
+      "relative_path": "2026/2026-10-30/csi_cognitive-sovereignty_2026-10-30_brief.md",
+      "sha256": "03dedc3e540b74fe960a70b8e58dffef21824422c94ed471d047043ed58bf230",
+      "bytes": 5921,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-b3765763ae1d",
+      "relative_path": "2026/2026-10-30/csi_cognitive-sovereignty_2026-10-30_delivery.json",
+      "sha256": "39dfbaf1b24918ead4d944d9c02ab0d7e02fe616d7f165784549ad0dc6f52e0d",
+      "bytes": 969,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-94ebc4be5bd6",
+      "relative_path": "2026/2026-10-30/csi_cognitive-sovereignty_2026-10-30_editorial-review.md",
+      "sha256": "bbabb72b34fc7eb799b8c70079eb15dc7b702bed5c0f762ac6388a376a7163bb",
+      "bytes": 1260,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-f40c16b21ef9",
+      "relative_path": "2026/2026-10-30/csi_cognitive-sovereignty_2026-10-30_newsletter.md",
+      "sha256": "b01c188a7ac544d92ae3cd8c0ccdccc95cbf42a8db38471e1cf780b204205812",
+      "bytes": 1582,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-bf116bfd111a",
+      "relative_path": "2026/2026-10-30/csi_cognitive-sovereignty_2026-10-30_sources.json",
+      "sha256": "0fb8de8d8b814be051553a38cbf97dbf60ec05bacc90332e07cc31c12d0032fd",
+      "bytes": 4682,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-d67b523d3b96",
+      "relative_path": "2026/2026-10-30/csi_cognitive-sovereignty_2026-10-30_status.json",
+      "sha256": "f03b5663c072f594a36bbee0c9638ea1801d2dbfbe9b93fc0b5385039a6fe518",
+      "bytes": 867,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-6c12bb0e80e5",
+      "relative_path": "2026/2026-11-06/Cognitive Sovereignty Framework Friday Brief.docx",
+      "sha256": "9301f23f11ddb8e180550a2ce4ce9b90973a0158745b4b7e5c44e67fd0e95553",
+      "bytes": 34074,
+      "original_unchanged": true,
+      "paragraphs": 227,
+      "ranked_occurrences": 12,
+      "embedded_images": 0,
+      "external_images": 0
+    },
+    {
+      "source_id": "DOC-526b3d3b6697",
+      "relative_path": "2026/2026-11-06/csi_cognitive-sovereignty_2026-11-06_brief.md",
+      "sha256": "d7ca7586ca24c30a75d017cecee35e7d285857a2ff6c10d8a33296239858986f",
+      "bytes": 10249,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-c76ee4cbb1c8",
+      "relative_path": "2026/2026-11-06/csi_cognitive-sovereignty_2026-11-06_delivery.json",
+      "sha256": "82aced061fc82541eed86d7b6ebf648603e8e2215b026361333a00c123fa13b6",
+      "bytes": 969,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-fa6aae07b5c8",
+      "relative_path": "2026/2026-11-06/csi_cognitive-sovereignty_2026-11-06_editorial-review.md",
+      "sha256": "6febf2877937bd823adc03130ee4a9299b5c2f86d0ba5143bdbd4118cbe0d846",
+      "bytes": 4648,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-f96cc31e5080",
+      "relative_path": "2026/2026-11-06/csi_cognitive-sovereignty_2026-11-06_newsletter.md",
+      "sha256": "8dce7c6d318b7f5bd0f030ed00cdd39f5fc8b33cd2740d13335ce6c3961e4191",
+      "bytes": 1965,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-7b017d15e5a0",
+      "relative_path": "2026/2026-11-06/csi_cognitive-sovereignty_2026-11-06_sources.json",
+      "sha256": "f60da958718e628384218c1298a852268946b07bab0d3877b02bcef452b42e26",
+      "bytes": 8683,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-b7b985be2382",
+      "relative_path": "2026/2026-11-06/csi_cognitive-sovereignty_2026-11-06_status.json",
+      "sha256": "f046ac069c0f09bd83de782b0396e0958e03ddc26f0268435e909a44b7b80ee0",
+      "bytes": 879,
+      "original_unchanged": true,
+      "text_archived": true
+    },
+    {
+      "source_id": "DOC-9b6e19be15af",
+      "relative_path": "2026/Cognitive Sovereignty Friday Brief Sep - 23 Oct 26.docx",
+      "sha256": "6c6a760de524acd8976893183a2670ec6e51b495c0341e75bb01b0ab4afba16f",
+      "bytes": 112965,
+      "original_unchanged": true,
+      "paragraphs": 1322,
+      "ranked_occurrences": 60,
+      "embedded_images": 0,
+      "external_images": 0
+    },
+    {
+      "source_id": "DOC-755b9a268b8c",
+      "relative_path": "csi_cognitive-sovereignty_index.md",
+      "sha256": "e1e0dc021e2660cb2d771ecc0275c147a885748db9094263f79ddbfcdf8ae758",
+      "bytes": 1185,
+      "original_unchanged": true,
+      "text_archived": true
+    }
+  ],
+  "coverage_gaps": [
+    "No October 16-23 ranked edition found, despite the compilation filename.",
+    "Source selection was already curated; uncollected minor world events cannot be reconstructed from these files."
+  ],
+  "corrections": [
+    "November 7: user clarified score images were in a different research folder and withdrew the image-recovery request. The supplied ZIP is a template, handled separately."
+  ]
+}

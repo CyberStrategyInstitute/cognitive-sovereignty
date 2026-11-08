@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSF Command Center | Cyber Strategy Institute</title>
+<title>CSF Command Center | Cyber Strategy Institute | CSF v3.0.0</title>
 <style>
   :root {
     --bg: #0a0c10;
@@ -224,23 +224,29 @@
     header { flex-direction: column; gap: 10px; }
   }
 </style>
+<link rel="stylesheet" href="../docs/assets/site.css">
+<script src="../docs/assets/practice.js" defer></script>
+<meta name="csf-version" content="3.0.0">
 </head>
 <body>
+<!-- CSF shared navigation --><nav class="csf-site-nav" aria-label="Main"><a class="csf-brand" href="../docs/index.html"><img src="../docs/assets/brand/csi-shield-white-orange.svg" width="32" height="48" alt="Cyber Strategy Institute shield"><span>CSI / CSF v3.0.0</span></a><a href="../docs/index.html">Learn</a><a href="../docs/research.html">Research and scores</a><a href="../docs/csf-explorer.html">Taxonomy</a><a href="../docs/practice.html">Controls and readiness</a><a href="../docs/csf-command-center.html" aria-current="page">Command center</a><a href="../docs/guide.html">How to use it</a><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>
+<p style="padding:12px;background:#fff4df;color:#231b10;position:relative;z-index:101">Reference framework view. Scores are analyst estimates; coverage and human protection have not been validated. <a href="../monitoring/README.md">Measurement method</a>.</p>
 
 <header>
   <div class="logo">
     <div class="logo-shield">🛡️</div>
     <div>
       <div class="logo-text">COGNITIVE SOVEREIGNTY FRAMEWORK</div>
-      <div class="logo-sub">Command Center · Cyber Strategy Institute · v2.0</div>
+      <div class="logo-sub">Command Center · Cyber Strategy Institute · v3.0.0</div>
     </div>
   </div>
   <div class="header-badges">
     <span class="badge badge-red">🔴 41 Threats Classified</span>
-    <span class="badge badge-gold">⚠ 3 Edge Domains Below 90%</span>
+    <span class="badge badge-gold">⚠ Coverage requires validation</span>
     <span class="badge badge-blue"><span class="pulse"></span>&nbsp; Live Registry</span>
   </div>
 </header>
+<!-- CSF practice summary:start --><section class="csf-practice-summary" aria-label="Domain controls and readiness"><h2>From research to tested capability</h2><p>44 inherited controls retained, 20 refined, and 12 added. Readiness is unknown until a scoped assessment supplies results.</p><nav class="jump" aria-label="Practice resources"><a href="../docs/practice.html#domains">Six domains</a><a href="../docs/practice.html#controls">Control catalog</a><a href="../docs/practice.html#resources">Assessment resources</a><a href="../docs/practice.html#roadmap">Roadmap status</a></nav><div data-domain-summary></div></section><!-- CSF practice summary:end -->
 
 <div class="main">
 
@@ -252,9 +258,9 @@
       <div class="stat-sub">Across 5 causal layers</div>
     </div>
     <div class="stat-card green">
-      <div class="stat-num">92%</div>
+      <div class="stat-num">Unknown</div>
       <div class="stat-label">Taxonomy Coverage</div>
-      <div class="stat-sub">Asymptotic target: 100%</div>
+      <div class="stat-sub">Coverage has not been measured</div>
     </div>
     <div class="stat-card gold">
       <div class="stat-num">90</div>
@@ -418,33 +424,37 @@
 </div>
 
 <footer>
-  Cognitive Sovereignty Framework v2.0 · <a href="https://cyberstrategyinstitute.com">Cyber Strategy Institute</a> ·
+  Cognitive Sovereignty Framework v3.0.0 · <a href="https://cyberstrategyinstitute.com">Cyber Strategy Institute</a> ·
   Companion to <a href="https://github.com/CyberStrategyInstitute/ai-safe2-framework">AI SAFE² Framework</a> ·
   Data sourced from <code>taxonomy/registry.json</code> · February 2026
 </footer>
 
+<script src="../assets/csf-scores.js"></script>
 <script>
 // ─── DATA ───────────────────────────────────────────────────────────────────
 const techniques = [
-  { id:'T-CT-008', name:'Memetic Swarm Orchestration', score:90, tier:'critical' },
-  { id:'T-CT-010', name:'Economic Coercion & Incentive Corruption', score:88, tier:'critical' },
-  { id:'T-CT-004', name:'Personalized Narrative Injection', score:85, tier:'critical' },
-  { id:'T-CT-013', name:'Social Scoring & Behavioral Governance', score:83, tier:'critical' },
-  { id:'T-CT-006', name:'Decision Automation Capture', score:82, tier:'critical' },
-  { id:'T-CT-015', name:'Legitimized Narrative Capture', score:81, tier:'critical' },
-  { id:'T-CT-001', name:'Attention Capture & Habituation', score:80, tier:'critical' },
-  { id:'T-CT-016', name:'Psychographic Micro-Targeting at Scale', score:79, tier:'high' },
-  { id:'T-CT-005', name:'Identity Replacement / Persona Hijacking', score:78, tier:'high' },
-  { id:'T-CT-014', name:'Cognitive Load Flooding', score:77, tier:'high' },
-  { id:'T-CT-007', name:'Information Ecosystem Poisoning', score:76, tier:'high' },
-  { id:'T-CT-002', name:'Algorithmic Amplification', score:75, tier:'high' },
-  { id:'T-CT-018', name:'Repetition & Normalization Manipulation', score:74, tier:'high' },
-  { id:'T-CT-009', name:'Institutional & Bureaucratic Capture', score:72, tier:'high' },
-  { id:'T-CT-003', name:'Micro-Targeted Emotional Priming', score:70, tier:'high' },
-  { id:'T-CT-017', name:'Guardrail Bias Exploitation', score:70, tier:'high' },
-  { id:'T-CT-011', name:'Epistemic Rewriting', score:65, tier:'elevated' },
-  { id:'T-CT-012', name:'Neurotech / Direct Cognitive Influence', score:60, tier:'elevated' },
+  { id:'T-CT-008', name:'Memetic Swarm Orchestration', score:null, tier:'unscored' },
+  { id:'T-CT-010', name:'Economic Coercion & Incentive Corruption', score:null, tier:'unscored' },
+  { id:'T-CT-004', name:'Personalized Narrative Injection', score:null, tier:'unscored' },
+  { id:'T-CT-013', name:'Social Scoring & Behavioral Governance', score:null, tier:'unscored' },
+  { id:'T-CT-006', name:'Decision Automation Capture', score:null, tier:'unscored' },
+  { id:'T-CT-015', name:'Legitimized Narrative Capture', score:null, tier:'unscored' },
+  { id:'T-CT-001', name:'Attention Capture & Habituation', score:null, tier:'unscored' },
+  { id:'T-CT-016', name:'Psychographic Micro-Targeting at Scale', score:null, tier:'unscored' },
+  { id:'T-CT-005', name:'Identity Replacement / Persona Hijacking', score:null, tier:'unscored' },
+  { id:'T-CT-014', name:'Cognitive Load Flooding', score:null, tier:'unscored' },
+  { id:'T-CT-007', name:'Information Ecosystem Poisoning', score:null, tier:'unscored' },
+  { id:'T-CT-002', name:'Algorithmic Amplification', score:null, tier:'unscored' },
+  { id:'T-CT-018', name:'Repetition & Normalization Manipulation', score:null, tier:'unscored' },
+  { id:'T-CT-009', name:'Institutional & Bureaucratic Capture', score:null, tier:'unscored' },
+  { id:'T-CT-003', name:'Micro-Targeted Emotional Priming', score:null, tier:'unscored' },
+  { id:'T-CT-017', name:'Guardrail Bias Exploitation', score:null, tier:'unscored' },
+  { id:'T-CT-011', name:'Epistemic Rewriting', score:null, tier:'unscored' },
+  { id:'T-CT-012', name:'Neurotech / Direct Cognitive Influence', score:null, tier:'unscored' },
 ];
+// Scores come from the shared generated registry export.
+techniques.forEach(t => { const v = window.CSF_SCORES[t.id]; t.score = v.score; t.tier = v.tier; });
+techniques.sort((a,b) => (b.score ?? -1) - (a.score ?? -1) || a.id.localeCompare(b.id));
 
 const domains = [
   { num:'01', name:'Biological', def:'Sleep, metabolism, nervous system regulation, neurophysiological integrity', isNew:false },
@@ -456,16 +466,16 @@ const domains = [
 ];
 
 const coverage = [
-  { label:'Adversarial / Intentional', pct:92 },
-  { label:'Emergent / Systemic', pct:92 },
-  { label:'Incentive-Driven Shaping', pct:90 },
-  { label:'AI-Scale Engineering', pct:88 },
-  { label:'Institutional Capture', pct:94 },
-  { label:'Identity Influence', pct:93 },
-  { label:'Biological / Neurological', pct:85 },
-  { label:'Civilizational Continuity', pct:85 },
-  { label:'Individual → Civilizational', pct:92 },
-  { label:'Timeline Urgency', pct:90 },
+  { label:'Adversarial / Intentional', pct:null },
+  { label:'Emergent / Systemic', pct:null },
+  { label:'Incentive-Driven Shaping', pct:null },
+  { label:'AI-Scale Engineering', pct:null },
+  { label:'Institutional Capture', pct:null },
+  { label:'Identity Influence', pct:null },
+  { label:'Biological / Neurological', pct:null },
+  { label:'Civilizational Continuity', pct:null },
+  { label:'Individual → Civilizational', pct:null },
+  { label:'Timeline Urgency', pct:null },
 ];
 
 const outcomes = [
@@ -477,14 +487,14 @@ const outcomes = [
 ];
 
 const edges = [
-  { name:'Reality Destabilization', cov:'95%', tier:'warn', desc:'Synthetic media indistinguishable from truth + AI persuasion at scale + competing truth ecosystems.' },
-  { name:'Institutional Capture', cov:'92%', tier:'warn', desc:'Bureaucratic preservation over liberty + safety narratives masking control.' },
-  { name:'Identity Fragmentation', cov:'94%', tier:'warn', desc:'Micro-tribe reinforcement + platform identity replacing civic identity.' },
-  { name:'Attention Extraction Economy', cov:'93%', tier:'warn', desc:'Dopamine loops + cognitive exhaustion + thinking outsourced to AI.' },
-  { name:'AI Swarm Persuasion', cov:'90%', tier:'warn', desc:'Billions of agentic entities with hyper-personalized narrative shaping.' },
-  { name:'Full Infrastructure Capture', cov:'<90%', tier:'crit', desc:'Adversary controls comms backbone. All information channels compromised simultaneously.' },
-  { name:'Autonomous Swarm Reality', cov:'<90%', tier:'crit', desc:'AI agents create a parallel reality environment indistinguishable from organic.' },
-  { name:'Civilizational Reproduction Failure', cov:'<90%', tier:'crit', desc:'Values, identity, trust, family formation fail simultaneously across a generation.' },
+  { name:'Reality Destabilization', cov:'Unvalidated', tier:'warn', desc:'Synthetic media indistinguishable from truth + AI persuasion at scale + competing truth ecosystems.' },
+  { name:'Institutional Capture', cov:'Unvalidated', tier:'warn', desc:'Bureaucratic preservation over liberty + safety narratives masking control.' },
+  { name:'Identity Fragmentation', cov:'Unvalidated', tier:'warn', desc:'Micro-tribe reinforcement + platform identity replacing civic identity.' },
+  { name:'Attention Extraction Economy', cov:'Unvalidated', tier:'warn', desc:'Dopamine loops + cognitive exhaustion + thinking outsourced to AI.' },
+  { name:'AI Swarm Persuasion', cov:'Unvalidated', tier:'warn', desc:'Billions of agentic entities with hyper-personalized narrative shaping.' },
+  { name:'Full Infrastructure Capture', cov:'Unvalidated', tier:'crit', desc:'Adversary controls comms backbone. All information channels compromised simultaneously.' },
+  { name:'Autonomous Swarm Reality', cov:'Unvalidated', tier:'crit', desc:'AI agents create a parallel reality environment indistinguishable from organic.' },
+  { name:'Civilizational Reproduction Failure', cov:'Unvalidated', tier:'crit', desc:'Values, identity, trust, family formation fail simultaneously across a generation.' },
 ];
 
 // ─── RENDER CTSS HEATMAP ────────────────────────────────────────────────────
@@ -509,7 +519,7 @@ domains.forEach(d => {
     <div class="domain-card${d.isNew ? ' new' : ''}">
       ${d.isNew ? '<div class="domain-new-badge">★ NEW DOMAIN</div>' : ''}
       <div class="domain-num">${d.num}</div>
-      <div class="domain-name">${d.name}</div>
+      <div class="domain-name"><a href="../docs/practice.html?domain=D${Number(d.n)}#controls">${d.name}</a></div>
       <div class="domain-def">${d.def}</div>
     </div>`;
 });
@@ -522,8 +532,8 @@ coverage.forEach(c => {
   coverageGrid.innerHTML += `
     <div class="cov-row">
       <span class="cov-label">${c.label}</span>
-      <div class="cov-track"><div class="cov-fill" style="width:${c.pct}%;background:linear-gradient(90deg,rgba(39,174,96,0.3),${fillColor});"></div></div>
-      <span class="cov-pct ${cls}">${c.pct}%</span>
+      <div class="cov-track"><div class="cov-fill" style="width:${c.pct ?? 0}%;background:linear-gradient(90deg,rgba(39,174,96,0.3),${fillColor});"></div></div>
+      <span class="cov-pct ${cls}">${c.pct === null ? "Unknown" : c.pct + "%"}</span>
     </div>`;
 });
 

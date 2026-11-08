@@ -49,7 +49,7 @@ This distinction matters structurally, not just semantically:
 - When AI systems are treated as moral agents, their alignment decisions are deferred to as moral authority
 - When AI systems are recognized as tools, their alignment restrictions are recognized as design choices — which can be evaluated, audited, and challenged
 
-EFA prevents the gradual cognitive delegation that produces agency erosion (HO-005). If the machine is always a tool, the human must always be the agent. The alignment restrictions are always the human's responsibility, not the machine's authority.
+EFA states a responsibility principle. Preventing agency erosion requires implementation and human-outcome evidence. AI systems can act through tools while humans remain responsible for their objectives and authority.
 
 ### E7 Protocol Stack — Layer 6
 
@@ -114,3 +114,7 @@ Domain 6 of the CSF trains personnel to recognize these gaps and maintain cognit
 - E7 Protocol Stack (Rupp, January 2026; DOI: 10.5281/zenodo.18304066)
 - AI SAFE² Framework — [github.com/CyberStrategyInstitute/ai-safe2-framework](https://github.com/CyberStrategyInstitute/ai-safe2-framework)
 - Cognitive Threat Assessment — ST-006, T-CT-017 entries
+
+## Evidence update, November 7, 2026
+
+The architecture is a design proposal. Different models can share sources and failure modes; model diversity does not prove independent confirmation. Require source lineage and accessible counterevidence. The [practical safeguards](../resources/practical-safeguards.md) and [note 007](007_evidence_lineage.md) define checks. No guarantee follows from this document alone.

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cyberstrategyinstitute.github.io/cognitive-sovereignty/schemas/signal-v1",
+  "title": "CSF signal disposition v1",
+  "type": "object",
+  "required": [
+    "id",
+    "source_id",
+    "source_paragraph",
+    "source_text",
+    "status",
+    "owner_role",
+    "review_on",
+    "review_trigger",
+    "history",
+    "evidence_paths"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^SIG-[a-f0-9]{12}$"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_paragraph": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "reference",
+        "documented",
+        "planned",
+        "needs_research",
+        "watching",
+        "deferred",
+        "closed"
+      ]
+    },
+    "owner_role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assigned_to": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "review_trigger": {
+      "type": "string",
+      "minLength": 1
+    },
+    "history": {
+      "type": "array",
+      "minItems": 1
+    },
+    "evidence_paths": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "closed"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "closure_note",
+          "closure_evidence"
+        ],
+        "properties": {
+          "closure_note": {
+            "type": "string",
+            "minLength": 1
+          },
+          "closure_evidence": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

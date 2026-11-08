@@ -1,5 +1,7 @@
 # Layer -1: Substrate Threats
 
+Coverage percentages and broad outcome claims in the legacy discussion below are unvalidated estimates unless linked to a specific evidence record. They are not measured CSF results. See [the research register](../research/README.md).
+
 > **These threats are not manipulation techniques. They are the pre-conditions that make manipulation succeed.** They operate before any adversary acts. If these conditions exist, the active manipulation layer will always find targets. Addressing the T-CT layer (active techniques) without addressing substrate threats is treating symptoms while the disease progresses.
 
 **The strategic center of gravity of this entire framework.** If the substrate is intact, new active techniques can be recognized and countered. If the substrate is degraded, no amount of tactical defense matters.

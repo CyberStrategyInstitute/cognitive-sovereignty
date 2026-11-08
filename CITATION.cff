@@ -1,22 +1,19 @@
 cff-version: 1.2.0
 message: "If you use this framework in research or operational contexts, please cite as below."
-title: "Cognitive Sovereignty Framework v2.0: A Six-Domain Model for Human Resilience in the AI Era"
+title: "Cognitive Sovereignty Framework v3.0.0: A Six-Domain Model for Human Resilience in the AI Era"
 authors:
   - name: "Cyber Strategy Institute"
     website: "https://cyberstrategyinstitute.com"
-version: "2.0.0"
-date-released: "2026-02-01"
-url: "https://github.com/CyberStrategyInstitute/cognitive-sovereignty-framework"
-repository-code: "https://github.com/CyberStrategyInstitute/cognitive-sovereignty-framework"
+version: "3.0.0"
+url: "https://github.com/CyberStrategyInstitute/cognitive-sovereignty"
+repository-code: "https://github.com/CyberStrategyInstitute/cognitive-sovereignty"
 abstract: >
-  The Cognitive Sovereignty Framework (CSF) is a six-domain resilience model designed to
-  protect human cognition against the full spectrum of AI-era threats. It addresses a
-  critical gap: every military branch in the Department of Defense operates a resilience
-  framework built for deployment-era stressors. None contain a domain for digital,
-  cognitive, or informational resilience. The CSF fills that gap and extends the model
-  to civilian populations, organizations, and society. The framework introduces Domain 6
-  (Digital & AI Symbiosis) as the missing pillar, backed by both human training and
-  technical enforcement architecture through the EFA paradigm and E7 Protocol Stack.
+  The Cognitive Sovereignty Framework is a six-domain model for examining human
+  capability, independent judgment, and authority in AI-mediated environments.
+  It connects a five-layer threat taxonomy with Cognitive Threat Severity Scores,
+  source-backed research, practical safeguards, and declared assessment lenses.
+  Cyber Strategy Institute maintains its assessments and preserves their inputs,
+  evidence, uncertainty, and revisions for review and future validation.
 keywords:
   - cognitive security
   - human resilience
@@ -32,7 +29,7 @@ keywords:
 license: "MIT AND CC-BY-SA-4.0"
 references:
   - type: software
-    title: "AI SAFE² Framework"
+    title: "AI SAFEÂ² Framework"
     authors:
       - name: "Cyber Strategy Institute"
     url: "https://github.com/CyberStrategyInstitute/ai-safe2-framework"

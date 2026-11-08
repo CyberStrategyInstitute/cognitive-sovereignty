@@ -2,7 +2,7 @@
 
 ## T-CT-008, DS-002, E1, E2 | Countermeasure: S1-S3 Detection Module, AI SAFE² Swarm Governance
 
-**Taxonomy Links:** T-CT-008 (Memetic Swarm Orchestration, CTSS 90), DS-002 (Bot/Swarm Automation), TC-06 (Synthetic Social Proof), E1 (Autonomous Swarm Reality Formation), E2 (Synthetic Consensus Economies)
+**Taxonomy Links:** T-CT-008 (Memetic Swarm Orchestration, CTSS 83), DS-002 (Bot/Swarm Automation), TC-06 (Synthetic Social Proof), E1 (Autonomous Swarm Reality Formation), E2 (Synthetic Consensus Economies)
 **Countermeasure:** Swarm and Agentic AI Detection Module (S1, S2, S3), AI SAFE² CP.9 (Agent Replication Governance), F3.3 (Swarm Quorum Abort)
 **CSF Domain:** Domain 4 (Social), Domain 2 (Cognitive), Domain 6 (Digital & AI Symbiosis)
 
@@ -10,9 +10,9 @@
 
 ## The Threat
 
-### Why T-CT-008 Scores Highest in the Entire Taxonomy
+### Why T-CT-008 remains a high-priority reference scenario
 
-Memetic Swarm Orchestration holds the top CTSS score (90) because every component of the score is already maxed or near-maxed: Likelihood 5 (operational today via UGC farms), Impact on Agency 4, Reach 5 (global), Recovery 4 (persistent narrative damage). The only favorable component is Detection at 2, and that advantage decays as swarms move from human-directed to autonomous phases.
+The existing inputs produce CTSS 83 after the arithmetic correction. This is an inherited estimate, not an observed campaign score or the highest ranking in the corrected table. The evidence for each input still needs review.
 
 The core mechanic: persuasion becomes evolutionary, not authored. Thousands of persona accounts run continuous A/B testing across messages, images, formats, and emotional triggers. Narratives survive because they maximize engagement or conversion. Truth is irrelevant to survival in this system. No propagandist wrote the winning message. The selection process did.
 
@@ -96,3 +96,11 @@ The CSF defends the human population against swarm-delivered narratives. AI SAFE
 - Cognitive Threat Taxonomy: S1-S3 Detection Module, E1/E2 edge domains, TC-06, Measurement Stack Layer A1
 - AI SAFE² Framework: CP.9 (Agent Replication Governance), CP.10 (HEAR), CP.3 (ACT Tiers), F3.3/F3.5 (swarm abort and cascade containment)
 - Research Note 001: Cognitive Offloading (the substrate condition swarms exploit)
+
+## Evidence update, November 7, 2026
+
+The S1-S3 sensors above are proposed concepts. This repository does not provide validated detection code or population telemetry for them. Majority-ratio warnings are hypotheses, not measured civilizational thresholds.
+
+Describe observed automation with provisional Swarm Operational Autonomy Levels: SAL-0 human-authored; SAL-1 generated content; SAL-2 automated distribution; SAL-3 persona/account operations; SAL-4 adaptive narrative testing; SAL-5 cross-platform orchestration. Record each observed function separately; the levels need not form a linear progression. This descriptive rubric does not change CTSS.
+
+For each case, distinguish production, distribution, exposure, effect, persistence, and recovery. Mark each stage observed, reported, inferred, or unknown. Account counts are not persuasion outcomes. For media tests, count both false-content acceptance and authentic-content rejection. See [note 007](007_evidence_lineage.md).

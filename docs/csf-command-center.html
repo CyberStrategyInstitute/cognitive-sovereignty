@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSF Command Center — Cognitive Sovereignty Framework</title>
+<title>CSF Command Center — Cognitive Sovereignty Framework | CSF v3.0.0</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -195,8 +195,13 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
 @media(max-width:1100px){.grid{grid-template-columns:1fr 1fr}.span-3c{grid-column:span 2}.doctrine-panel{grid-row:span 1}}
 @media(max-width:700px){.grid{grid-template-columns:1fr}.span-2c,.span-3c{grid-column:span 1}.domain-grid-mini{grid-template-columns:1fr 1fr}.swarm-phases-mini{grid-template-columns:1fr}.edge-mini{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/practice.js" defer></script>
+<meta name="csf-version" content="3.0.0">
 </head>
 <body>
+<!-- CSF shared navigation --><nav class="csf-site-nav" aria-label="Main"><a class="csf-brand" href="index.html"><img src="assets/brand/csi-shield-white-orange.svg" width="32" height="48" alt="Cyber Strategy Institute shield"><span>CSI / CSF v3.0.0</span></a><a href="index.html">Learn</a><a href="research.html">Research and scores</a><a href="csf-explorer.html">Taxonomy</a><a href="practice.html">Controls and readiness</a><a href="csf-command-center.html" aria-current="page">Command center</a><a href="guide.html">How to use it</a><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>
+<p style="padding:12px;background:#fff4df;color:#231b10;position:relative;z-index:101">Reference framework view. Scores are analyst estimates; coverage and human protection have not been validated. <a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty/blob/main/monitoring/README.md">Measurement method</a>.</p>
 
 <svg width="0" height="0" style="position:absolute;overflow:hidden">
 <defs>
@@ -228,16 +233,16 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
 
 <header>
   <div class="h-brand">
-    <svg width="32" height="32" viewBox="0 0 200 200" style="color:var(--gold)"><use href="#cseal"/></svg>
+    <img class="csf-shield" src="assets/brand/csi-shield-white-orange.svg" alt="CSI shield" width="42" height="54">
     <div>
       <div class="h-brand-name">Cognitive Sovereignty Framework</div>
-      <div class="h-brand-sub">Command Center · v2.0 · Cyber Strategy Institute</div>
+      <div class="h-brand-sub">Command Center · v3.0.0 · Cyber Strategy Institute</div>
     </div>
   </div>
   <div class="h-status">
     <span class="h-badge hb-live">● Doctrine Active</span>
     <span class="h-badge hb-red">🔴 41 Threats Classified</span>
-    <span class="h-badge hb-gold">⚠ 3 Edge Domains Below 90%</span>
+    <span class="h-badge hb-gold">⚠ Coverage requires validation</span>
     <span class="h-badge hb-gold">Sentinel + Architect</span>
   </div>
   <div class="h-links">
@@ -245,12 +250,13 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
     <a class="h-link" href="csf-explorer.html">Threat Explorer</a>
   </div>
 </header>
+<!-- CSF practice summary:start --><section class="csf-practice-summary" aria-label="Domain controls and readiness"><h2>From research to tested capability</h2><p>44 inherited controls retained, 20 refined, and 12 added. Readiness is unknown until a scoped assessment supplies results.</p><nav class="jump" aria-label="Practice resources"><a href="practice.html#domains">Six domains</a><a href="practice.html#controls">Control catalog</a><a href="practice.html#resources">Assessment resources</a><a href="practice.html#roadmap">Roadmap status</a></nav><div data-domain-summary></div></section><!-- CSF practice summary:end -->
 
 <div class="grid" id="grid">
 
   <!-- DOCTRINE PANEL — Column 1, Rows 1-2 -->
   <div class="doctrine-panel" style="grid-row:span 2">
-    <div class="dp-seal"><svg width="260" height="260" viewBox="0 0 200 200" style="color:var(--gold)"><use href="#cseal"/></svg></div>
+    <div class="dp-seal"><img class="csf-shield" src="assets/brand/csi-shield-white-orange.svg" alt="CSI shield" width="260" height="260"></div>
     <div>
       <div class="dp-kicker">Open-Source Doctrine · February 2026</div>
       <div class="dp-title">Cognitive<strong>Sovereignty</strong></div>
@@ -277,8 +283,8 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
   <div class="panel stat-panel">
     <div>
       <div style="font-family:var(--ff-m);font-size:8px;letter-spacing:0.16em;text-transform:uppercase;color:var(--wll);margin-bottom:4px">Taxonomy Coverage</div>
-      <div class="stat-num">92%</div>
-      <div class="stat-sub">Asymptotic target: 100% · Remaining gaps: 4 identified</div>
+      <div class="stat-num">Unknown</div>
+      <div class="stat-sub">Coverage has not been measured · Remaining gaps: 4 identified</div>
     </div>
     <div class="stat-accent sa-grn"></div>
   </div>
@@ -342,7 +348,7 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
   <div class="panel">
     <div class="panel-hdr">
       <div>
-        <div class="panel-kicker">T-CT-008 · CTSS 90 · Highest in Taxonomy</div>
+        <div class="panel-kicker">T-CT-008 · CTSS reference estimate: 83; not measured impact</div>
         <div class="panel-title">Swarm Threat Phases</div>
       </div>
       <div class="panel-meta">Phase A: Operational<br>Phase C: Near-Future</div>
@@ -385,7 +391,7 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
         <div class="panel-kicker">Framework Validation · Spectrum Coverage</div>
         <div class="panel-title">Coverage Matrix</div>
       </div>
-      <div class="panel-meta">Overall: ~92%</div>
+      <div class="panel-meta">Overall: unvalidated</div>
     </div>
     <div class="panel-body">
       <div class="cov-list" id="cov-list"></div>
@@ -399,7 +405,7 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
         <div class="panel-kicker">Wargaming Validated · Stress Testing</div>
         <div class="panel-title">Edge Case Matrix</div>
       </div>
-      <div class="panel-meta">3 Below 90%<br>Coverage Threshold</div>
+      <div class="panel-meta">Coverage unvalidated</div>
     </div>
     <div class="panel-body">
       <div class="edge-mini" id="edge-mini"></div>
@@ -410,12 +416,12 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
   <div class="quote-panel span-3c">
     <div class="qp-lbl">Doctrine Foundation — CSF Cognitive Threat Assessment</div>
     <div class="qp-quote">"The primary cognitive threat of the AI era is not deception. It is the gradual loss of autonomous human meaning-making. The threat is not that someone will lie to you. The threat is that you will lose the capacity to determine whether you are being lied to — and then lose the awareness that you ever had that capacity."</div>
-    <div class="qp-source">Cognitive Threat Assessment · Cyber Strategy Institute · February 2026 · v2.0</div>
+    <div class="qp-source">Cognitive Threat Assessment · Cyber Strategy Institute · February 2026 · source document v2.0</div>
   </div>
 
   <!-- FOOTER -->
   <div class="footer-panel">
-    <div class="fp-txt">© 2026 <a href="https://cyberstrategyinstitute.com">Cyber Strategy Institute</a> · Open-Source Doctrine · Dual License: MIT + CC-BY-SA 4.0 · Version 2.0</div>
+    <div class="fp-txt">© 2026 <a href="https://cyberstrategyinstitute.com">Cyber Strategy Institute</a> · Open-Source Doctrine · Dual License: MIT + CC-BY-SA 4.0 · Version 3.0.0</div>
     <div class="fp-links">
       <a href="index.html">Learning Hub</a>
       <a href="csf-explorer.html">Threat Explorer</a>
@@ -425,28 +431,32 @@ header{background:rgba(11,31,51,0.97);border-bottom:1px solid var(--gb);padding:
 
 </div><!-- /grid -->
 
+<script src="assets/csf-scores.js"></script>
 <script>
 // ── DATA ──────────────────────────────────────────────────────────────────────
 const CTSS=[
-  {id:'T-CT-008',name:'Memetic Swarm Orchestration',s:90,tier:'critical'},
-  {id:'T-CT-010',name:'Economic Coercion & Incentive Corruption',s:88,tier:'critical'},
-  {id:'T-CT-004',name:'Personalized Narrative Injection',s:85,tier:'critical'},
-  {id:'T-CT-013',name:'Social Scoring & Behavioral Governance',s:83,tier:'critical'},
-  {id:'T-CT-006',name:'Decision Automation Capture',s:82,tier:'critical'},
-  {id:'T-CT-015',name:'Legitimized Narrative Capture',s:81,tier:'critical'},
-  {id:'T-CT-001',name:'Attention Capture & Habituation',s:80,tier:'critical'},
-  {id:'T-CT-016',name:'Psychographic Micro-Targeting',s:79,tier:'high'},
-  {id:'T-CT-005',name:'Identity Replacement / Persona Hijacking',s:78,tier:'high'},
-  {id:'T-CT-014',name:'Cognitive Load Flooding',s:77,tier:'high'},
-  {id:'T-CT-007',name:'Information Ecosystem Poisoning',s:76,tier:'high'},
-  {id:'T-CT-002',name:'Algorithmic Amplification',s:75,tier:'high'},
-  {id:'T-CT-018',name:'Repetition & Normalization Manipulation',s:74,tier:'high'},
-  {id:'T-CT-009',name:'Institutional & Bureaucratic Capture',s:72,tier:'high'},
-  {id:'T-CT-003',name:'Micro-Targeted Emotional Priming',s:70,tier:'high'},
-  {id:'T-CT-017',name:'Guardrail Bias Exploitation',s:70,tier:'high'},
-  {id:'T-CT-011',name:'Epistemic Rewriting',s:65,tier:'elevated'},
-  {id:'T-CT-012',name:'Neurotech / Direct Cognitive Influence',s:60,tier:'elevated'},
+  {id:'T-CT-008',name:'Memetic Swarm Orchestration',s:null,tier:'unscored'},
+  {id:'T-CT-010',name:'Economic Coercion & Incentive Corruption',s:null,tier:'unscored'},
+  {id:'T-CT-004',name:'Personalized Narrative Injection',s:null,tier:'unscored'},
+  {id:'T-CT-013',name:'Social Scoring & Behavioral Governance',s:null,tier:'unscored'},
+  {id:'T-CT-006',name:'Decision Automation Capture',s:null,tier:'unscored'},
+  {id:'T-CT-015',name:'Legitimized Narrative Capture',s:null,tier:'unscored'},
+  {id:'T-CT-001',name:'Attention Capture & Habituation',s:null,tier:'unscored'},
+  {id:'T-CT-016',name:'Psychographic Micro-Targeting',s:null,tier:'unscored'},
+  {id:'T-CT-005',name:'Identity Replacement / Persona Hijacking',s:null,tier:'unscored'},
+  {id:'T-CT-014',name:'Cognitive Load Flooding',s:null,tier:'unscored'},
+  {id:'T-CT-007',name:'Information Ecosystem Poisoning',s:null,tier:'unscored'},
+  {id:'T-CT-002',name:'Algorithmic Amplification',s:null,tier:'unscored'},
+  {id:'T-CT-018',name:'Repetition & Normalization Manipulation',s:null,tier:'unscored'},
+  {id:'T-CT-009',name:'Institutional & Bureaucratic Capture',s:null,tier:'unscored'},
+  {id:'T-CT-003',name:'Micro-Targeted Emotional Priming',s:null,tier:'unscored'},
+  {id:'T-CT-017',name:'Guardrail Bias Exploitation',s:null,tier:'unscored'},
+  {id:'T-CT-011',name:'Epistemic Rewriting',s:null,tier:'unscored'},
+  {id:'T-CT-012',name:'Neurotech / Direct Cognitive Influence',s:null,tier:'unscored'},
 ];
+// Scores come from the shared generated registry export.
+CTSS.forEach(t => { const v = window.CSF_SCORES[t.id]; t.s = v.score; t.tier = v.tier; if (t.ctss) t.ctss = v.inputs; if (t.dom) t.dom = v.domains; });
+CTSS.sort((a,b) => (b.s ?? -1) - (a.s ?? -1) || a.id.localeCompare(b.id));
 
 const LAYERS=[
   {cls:'lv-l2',lbl:'LAYER −2',name:'Civilizational Drivers',count:'6'},
@@ -478,11 +488,11 @@ const SWARM=[
 ];
 
 const OUTCOMES=[
-  {id:'HO-001',name:'Attention Ownership Loss',det:4,pct:25,col:'#7dcca0'},
-  {id:'HO-002',name:'Belief Instability',det:3,pct:40,col:'#c3a06a'},
-  {id:'HO-003',name:'Identity Fragmentation',det:4,pct:60,col:'#7dcca0'},
-  {id:'HO-004',name:'Moral Disengagement',det:2,pct:70,col:'#e57e74'},
-  {id:'HO-005',name:'Agency Erosion',det:3,pct:75,col:'#c3a06a'},
+  {id:'HO-001',name:'Attention Ownership Loss',det:4,pct:null,col:'#7dcca0'},
+  {id:'HO-002',name:'Belief Instability',det:3,pct:null,col:'#c3a06a'},
+  {id:'HO-003',name:'Identity Fragmentation',det:4,pct:null,col:'#7dcca0'},
+  {id:'HO-004',name:'Moral Disengagement',det:2,pct:null,col:'#e57e74'},
+  {id:'HO-005',name:'Agency Erosion',det:3,pct:null,col:'#c3a06a'},
 ];
 
 const EVOS=[
@@ -492,18 +502,18 @@ const EVOS=[
 ];
 
 const COV=[
-  {l:'Adversarial / Intentional',p:92},{l:'Emergent / Systemic',p:92},{l:'Incentive-Driven',p:90},
-  {l:'AI-Scale Engineering',p:88},{l:'Institutional Capture',p:94},{l:'Identity Influence',p:93},
-  {l:'Biological / Neurological',p:85},{l:'Civilizational Continuity',p:85},
+  {l:'Adversarial / Intentional',p:null},{l:'Emergent / Systemic',p:null},{l:'Incentive-Driven',p:null},
+  {l:'AI-Scale Engineering',p:null},{l:'Institutional Capture',p:null},{l:'Identity Influence',p:null},
+  {l:'Biological / Neurological',p:null},{l:'Civilizational Continuity',p:null},
 ];
 
 const EDGES=[
-  {name:'Reality Destabilization',cov:'95%',ok:true,desc:'Synthetic media + AI persuasion + competing truth ecosystems.'},
-  {name:'Institutional Capture',cov:'92%',ok:true,desc:'The institutions responsible for defense are captured and turned against the population.'},
-  {name:'AI Swarm Persuasion',cov:'90%',ok:true,desc:'Billions of agentic entities with autonomous memetic warfare.'},
-  {name:'Full Infrastructure Capture',cov:'<90%',ok:false,desc:'Adversary controls all communication channels simultaneously.'},
-  {name:'Autonomous Swarm Reality',cov:'<90%',ok:false,desc:'AI agents create a parallel reality indistinguishable from organic.'},
-  {name:'Civilizational Reproduction Failure',cov:'<90%',ok:false,desc:'Values, identity, trust, family formation fail simultaneously across a generation.'},
+  {name:'Reality Destabilization',cov:'Unvalidated',ok:true,desc:'Synthetic media + AI persuasion + competing truth ecosystems.'},
+  {name:'Institutional Capture',cov:'Unvalidated',ok:true,desc:'The institutions responsible for defense are captured and turned against the population.'},
+  {name:'AI Swarm Persuasion',cov:'Unvalidated',ok:true,desc:'Billions of agentic entities with autonomous memetic warfare.'},
+  {name:'Full Infrastructure Capture',cov:'Unvalidated',ok:false,desc:'Adversary controls all communication channels simultaneously.'},
+  {name:'Autonomous Swarm Reality',cov:'Unvalidated',ok:false,desc:'AI agents create a parallel reality indistinguishable from organic.'},
+  {name:'Civilizational Reproduction Failure',cov:'Unvalidated',ok:false,desc:'Values, identity, trust, family formation fail simultaneously across a generation.'},
 ];
 
 // ── RENDER ────────────────────────────────────────────────────────────────────
@@ -526,7 +536,7 @@ LAYERS.forEach(l=>{
 // Domains
 const dg=document.getElementById('domain-grid');
 DOMAINS.forEach(d=>{
-  dg.innerHTML+=`<div class="dm-item${d.isNew?' is-new':''}"><div class="dm-num">${d.n}</div><div class="dm-name">${d.name}</div><div class="dm-line"></div>${d.isNew?'<div class="new-pip">★ NEW</div>':''}</div>`;
+  dg.innerHTML+=`<div class="dm-item${d.isNew?' is-new':''}"><div class="dm-num">${d.n}</div><div class="dm-name"><a href="practice.html?domain=D${Number(d.n)}#controls">${d.name}</a></div><div class="dm-line"></div>${d.isNew?'<div class="new-pip">★ NEW</div>':''}</div>`;
 });
 
 // Components
@@ -562,7 +572,7 @@ const cl=document.getElementById('cov-list');
 COV.forEach(c=>{
   const cls=c.p>=93?'pct-hi':c.p>=90?'pct-md':'pct-lo';
   const fc=c.p>=93?'#4a9e6e':c.p>=90?'#C6A75E':'#c0392b';
-  cl.innerHTML+=`<div class="cl-row"><div class="cl-lbl">${c.l}</div><div class="cl-track"><div class="cl-fill" data-w="${c.p}%" style="width:0%;background:linear-gradient(90deg,rgba(74,158,110,0.2),${fc});"></div></div><div class="cl-pct ${cls}">${c.p}%</div></div>`;
+  cl.innerHTML+=`<div class="cl-row"><div class="cl-lbl">${c.l}</div><div class="cl-track"><div class="cl-fill" data-w="${c.p === null ? "0%" : c.p + "%"}" style="width:0%;background:linear-gradient(90deg,rgba(74,158,110,0.2),${fc});"></div></div><div class="cl-pct ${cls}">${c.p === null ? "Unknown" : c.p + "%"}</div></div>`;
 });
 setTimeout(()=>document.querySelectorAll('.cl-fill').forEach(b=>{if(b.dataset.w)b.style.width=b.dataset.w;}),800);
 

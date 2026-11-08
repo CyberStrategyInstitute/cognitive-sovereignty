@@ -14,7 +14,7 @@
 
 Cognitive offloading is the voluntary transfer of cognitive work to external systems. Each individual trade is rational. GPS is more accurate than spatial memory. Autocomplete is faster than composing. An AI copilot reasons across more variables than a tired analyst. No single trade looks like a threat.
 
-The threat is the aggregate. Each offloaded function atrophies. Spatial memory declines with GPS dependence. Language construction declines with autocomplete dependence. Reasoning capacity declines with copilot dependence. Knowledge retention declines with search dependence. The population does not lose these capabilities through attack. It surrenders them through convenience.
+The threat is the aggregate. Loss of practice may affect some capabilities, but the effect depends on the task, person, and use of assistance. The current register does not establish inevitable atrophy for each offloaded function. The population does not lose these capabilities through attack. It surrenders them through convenience.
 
 This is why ST-003 sits at the substrate layer, not the technique layer. No adversary is required. The system produces the outcome on its own. An adversary who later wishes to exploit the outcome inherits a population that has already disarmed itself.
 
@@ -32,7 +32,7 @@ Phase 3 is the strategic failure point. In Phases 1 and 2, the human can still r
 
 ### T-CT-006: Decision Automation Capture (Active Technique)
 
-The weaponized version. Where ST-003 is drift, T-CT-006 is exploitation: seeding biased defaults, autopilot behaviors, and recommendation patterns into the AI copilots and automation a population already depends on. The substrate condition (dependence) makes the technique nearly free to execute. CTSS 82: Likelihood 4, Impact on Agency 5, Reach 4, Detection 4, Recovery 3.
+The weaponized version. Where ST-003 is drift, T-CT-006 is exploitation: seeding biased defaults, autopilot behaviors, and recommendation patterns into the AI copilots and automation a population already depends on. The substrate condition (dependence) makes the technique nearly free to execute. CTSS 84: Likelihood 4, Impact on Agency 5, Reach 4, Detection 4, Recovery 3.
 
 The technique does not need to change what the target believes. It needs only to shape the defaults the target no longer reviews.
 
@@ -82,7 +82,7 @@ Convenience is the delivery mechanism, so friction is a countermeasure. Domain 2
 
 ## Implementation Gap
 
-1. **No organization measures unassisted baselines.** Readiness assessments test assisted performance exclusively. The atrophy is structurally invisible to every existing metric.
+1. **Baseline measurement needs review.** This repository does not establish how widely organizations measure unassisted performance. Inspect the workflow before claiming its measurements are missing.
 2. **Productivity incentives run the wrong direction.** Every organizational incentive rewards Phase 1 adoption and punishes the friction that prevents Phase 3.
 3. **R/M/H classification is rare.** Most deployments treat all decision classes as Routine by default, which is exactly the condition T-CT-006 exploits.
 
@@ -105,3 +105,7 @@ Convenience is the delivery mechanism, so friction is a countermeasure. Domain 2
 - EFA Non-Delegation Playbook (Rupp, January 2026; DOI: 10.5281/zenodo.18390725): R/M/H classification
 - AI SAFE² Framework: CP.10 (HEAR Doctrine), CP.3 (ACT Capability Tiers)
 - Research Note 004: EFA Enforcement Architecture
+
+## Evidence update, November 7, 2026
+
+Read [note 006](006_independent_judgment.md) for newer evidence and contrary findings. The cycle above is a proposed mechanism, not a universal progression. Agreement, assistance, and offloading can be useful. Test immediate performance and retained capability separately.

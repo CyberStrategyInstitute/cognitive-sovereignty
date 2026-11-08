@@ -1,0 +1,20 @@
+# CSF evidence report
+
+Report date: 2026-11-07. Local draft for review.
+
+## What we checked
+
+- Repository: 18 reference technique scores checked; 0 registry errors.
+- Research: 7 source records, representing 7 source lineages. These are attributed findings, not CSF experiments.
+- Local observations: 0 measurement records.
+- Synthetic examples excluded from real results: 2.
+
+## Measured changes
+
+No local model or human-outcome measurements yet. Drift and control effectiveness are unknown. Repository checks do not measure human agency.
+
+## What happens next
+
+A drop of 10 percentage points or more requests human review. It does not establish harm or statistical significance. Check sample size, changed model versions, collection errors, and task conditions before explaining a change. Publish only after source, privacy, and wording review.
+
+Research intake is manual in this first version. No live feeds, model tests, or human studies run through this command. No framework severity score is changed automatically.

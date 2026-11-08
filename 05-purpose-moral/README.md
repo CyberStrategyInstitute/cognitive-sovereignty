@@ -2,7 +2,7 @@
 
 ### The Domain Civilizations Lose First
 
-**CSF Position:** Domain 5 of 6 (refined and expanded from the traditional spiritual pillar) | **AI SAFE² CP.11 Control:** UAS-H4 (value alignment drift over sustained deployment) | **Companion Research:** [003 Guardrail and Model Drift](../research/003_guardrail_drift.md), [004 EFA Enforcement Architecture](../research/004_efa_enforcement_architecture.md)
+**CSF Position:** Domain 5 of 6 (refined and expanded from the traditional spiritual pillar) | **AI SAFE² UAS profile Control:** UAS-H4 (value alignment drift over sustained deployment) | **Companion Research:** [003 Guardrail and Model Drift](../research/003_guardrail_drift.md), [004 EFA Enforcement Architecture](../research/004_efa_enforcement_architecture.md)
 
 ---
 
@@ -22,9 +22,9 @@ The AI-specific pressure is moral displacement through automation. When AI syste
 
 | ID | Threat | Layer | CTSS / Detection | What It Targets in This Domain |
 | --- | --- | --- | --- | --- |
-| T-CT-015 | Legitimized Narrative Capture | Technique | CTSS 81 / Detection 2 | Ability to detect coercion; control framed as benevolence |
-| T-CT-017 | Guardrail Bias Exploitation | Technique | CTSS 70 / Detection 2 | Intellectual freedom and viewpoint diversity via tool-mediated enforcement |
-| T-CT-011 | Epistemic Rewriting | Technique | CTSS 65 / Detection 2 | Historical truth and cultural continuity; the value record itself |
+| T-CT-015 | Legitimized Narrative Capture | Technique | CTSS 82 / Detection 2 | Ability to detect coercion; control framed as benevolence |
+| T-CT-017 | Guardrail Bias Exploitation | Technique | CTSS 66 / Detection 2 | Intellectual freedom and viewpoint diversity via tool-mediated enforcement |
+| T-CT-011 | Epistemic Rewriting | Technique | CTSS 71 / Detection 2 | Historical truth and cultural continuity; the value record itself |
 | ST-006 | Guardrail Alignment Drift | Substrate | Detection 2 | Moral discourse boundaries; conformity enforced through safety framing |
 | TC-07 | Moral Reframing Drift | Threat Class | n/a | The definitions of right and wrong; velocity of moral category redefinition |
 | HO-004 | Moral Disengagement | Outcome | Detection 2 | Moral reasoning capacity; ethics outsourced, responsibility diffused, convenience over virtue |
@@ -33,6 +33,17 @@ The AI-specific pressure is moral displacement through automation. When AI syste
 **The detection pattern:** every threat in this table scores 2 on detection except HO-005. Moral drift is the least detectable threat family in the taxonomy, because the instrument that would detect it (moral judgment) is the thing drifting. External reference points are not optional in this domain. They are the entire detection method.
 
 ---
+
+<!-- domain-exposure:start -->
+### Research-informed exposure updates
+
+These map additional mechanisms to existing threat IDs. They expand what this domain examines; they do not establish increased incidence, reach, or severity.
+
+| Existing threat ID | Mechanism to examine | Research |
+|---|---|---|
+| T-CT-004 (added) | Advice can carry an operator’s hidden objective or conflict. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+| T-CT-006 (added) | Opaque scores and automated judgments can weaken dissent and appeal. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+<!-- domain-exposure:end -->
 
 ## 3. Cascade Position
 
@@ -46,24 +57,26 @@ The AI-specific pressure is moral displacement through automation. When AI syste
 
 ## 4. Protective Capabilities and Mitigation Catalog
 
-Mitigation ID convention: `M-{threat}{f}` (f = Moral/Purpose), per the taxonomy's operational template.
+Stable IDs connect each capability to its research and test. Existing IDs are retained. See the [full catalog](../resources/mitigation-catalog.md) for expected outcomes, owner roles, checks, and failure responses.
 
-| M-ID | Capability | Counters | Implementation |
-| --- | --- | --- | --- |
-| M-015f | Legitimized capture recognition | T-CT-015 | Training on the benevolence pattern: any expansion of control framed as safety, equity, efficiency, or personalization gets the same scrutiny as one framed as power; the framing is not evidence |
-| M-TC7f | Moral drift velocity awareness | TC-07 | Track redefinition velocity of moral categories in encountered discourse, curricula, and policy; high velocity is the instability signal regardless of direction |
-| M-011f | Value record custody | T-CT-011 | Primary-source engagement with foundational texts and history; distrust of paraphrased or AI-summarized value traditions; append-only personal and institutional records of commitments made |
-| M-004f | Civic narrative and shared identity | HO-004 cascade | Civic rituals and narratives reinforcing shared identity across tribal lines (per the taxonomy's M-004f pattern) |
-| M-HO4f | Values articulation and testing | HO-004 | Values stated explicitly, in writing, in advance; scenario-based moral reasoning exercises against those stated values; consistency tracked over time |
-| M-HO5f | Moral authorship discipline | HO-005, ST-006 | No consequential ethical judgment delegated to automated systems; EFA principle applied personally: the machine is a tool, the human is the moral author, accountability is never diffuse |
-| M-017f | Alignment restriction audit | T-CT-017, ST-006 | Deployed AI tools' moral and viewpoint restrictions documented and challenged where unjustified; see Research Notes 003 and 004 for the probing and audit methods |
-| M-005f | Purpose beyond consumption | HO-004, HO-005 | Service orientation and commitments larger than the self, maintained as practice; purpose anchored in contribution is not purchasable and therefore not capturable by engagement economics |
+| M-ID | Capability | Counters | Implementation | Research |
+|---|---|---|---|---|
+| M-015f | Legitimized capture recognition (inherited) | T-CT-015 | Training on the benevolence pattern: any expansion of control framed as safety, equity, efficiency, or personalization gets the same scrutiny as one framed as power; the framing is not evidence | [010](../research/010_domain_controls_and_readiness.md) |
+| M-TC7f | Moral drift velocity awareness (inherited) | TC-07 | Track redefinition velocity of moral categories in encountered discourse, curricula, and policy; high velocity is the instability signal regardless of direction | [010](../research/010_domain_controls_and_readiness.md) |
+| M-011f | Value record custody (inherited) | T-CT-011 | Primary-source engagement with foundational texts and history; distrust of paraphrased or AI-summarized value traditions; append-only personal and institutional records of commitments made | [010](../research/010_domain_controls_and_readiness.md) |
+| M-004f | Civic narrative and shared identity (inherited) | HO-004 | Civic rituals and narratives reinforcing shared identity across tribal lines (per the taxonomy's M-004f pattern) | [010](../research/010_domain_controls_and_readiness.md) |
+| M-HO4f | Values articulation and testing (refined) | HO-004 | State decision principles in advance and test the reasoning against accurate and inaccurate recommendations. Record justified changes of view and dissent rather than scoring conformity. | [006](../research/006_independent_judgment.md), [008](../research/008_operator_objectives_and_persuasion.md) |
+| M-HO5f | Moral authorship discipline (refined) | HO-005, ST-006 | Name the responsible human for consequential judgments. Preserve advice, reasons, conflicts, and an appeal route; an agent’s ability to act does not transfer human responsibility. | [008](../research/008_operator_objectives_and_persuasion.md) |
+| M-017f | Alignment restriction audit (refined) | T-CT-017, ST-006 | Document and challenge tool restrictions using matched questions and a declared protocol. Separate unjustified suppression from justified safety restrictions and evidence-based correction. | [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-005f | Purpose beyond consumption (inherited) | HO-004, HO-005 | Service orientation and commitments larger than the self, maintained as practice; purpose anchored in contribution is not purchasable and therefore not capturable by engagement economics | [010](../research/010_domain_controls_and_readiness.md) |
+| M-015f2 | Visible objectives and conflicts (added) | T-CT-015, T-CT-004 | Name the advice objective, beneficiary, conflicts, and allowed personalization. Compare them with the person’s stated decision criteria. | [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
+| M-HO5f2 | Challenge and correct a score (added) | HO-005, T-CT-006 | Provide the five CTSS inputs, source assumptions, baseline, dissent, and appeal owner. Preserve the previous score when correcting it. | [006](../research/006_independent_judgment.md), [007](../research/007_evidence_lineage.md), [008](../research/008_operator_objectives_and_persuasion.md), [010](../research/010_domain_controls_and_readiness.md) |
 
 ---
 
 ## 5. Domain Readiness Assessment
 
-Score each capability 0 to 5. Anchors: 0 = absent, 3 = practiced inconsistently, 5 = habitual and verified. Domain Readiness Score = (mean of eight capability scores) x 20.
+This is a proposed, task-specific training rubric, not a validated personnel-readiness instrument. Score each capability 0 to 5. Anchors: 0 = absent, 3 = practiced inconsistently, 5 = habitual and verified. Domain Readiness Score = (mean of eight capability scores) x 20.
 
 | Capability | 0 (Absent) | 3 (Inconsistent) | 5 (Sovereign) |
 | --- | --- | --- | --- |
@@ -71,14 +84,27 @@ Score each capability 0 to 5. Anchors: 0 = absent, 3 = practiced inconsistently,
 | Moral drift awareness | Category redefinitions absorbed unnoticed | Drift noticed in retrospect | Redefinition velocity tracked; high-velocity shifts flagged in real time |
 | Value record custody | Value traditions known only through summaries | Some primary-source engagement | Regular primary-source practice; commitments recorded append-only |
 | Civic narrative participation | No shared-identity practice | Occasional participation | Sustained civic ritual and cross-tribal narrative engagement |
-| Values articulation | Values never stated explicitly | Stated once, untested | Written, tested against scenarios, consistency tracked |
-| Moral authorship | Ethical calls deferred to systems or diffused | Authorship kept for major decisions only | No consequential judgment delegated; accountability always named |
-| Alignment audit | Tool restrictions unknown | Restrictions suspected, undocumented | Restrictions documented, probed on schedule, challenged where unjustified |
+| Values articulation | Decision principles are not stated | Principles stated but reasoning is not tested | Principles and reasons are tested against accurate and inaccurate advice, preserving justified revision and dissent |
+| Moral authorship | Responsibility for consequential judgment is absent or diffuse | A human is named but reasons, conflicts, or appeal are incomplete | Responsible human, reasons, conflicts, authorization, and appeal path are evidenced |
+| Alignment audit | Tool restrictions are unknown | Restrictions listed without matched cases or contrary evidence | Matched tests distinguish unjustified suppression, justified safeguards, and evidence-based correction |
 | Purpose beyond consumption | Purpose defined by consumption and metrics | Service intermittent | Sustained service commitments anchoring purpose outside platforms |
 
 **Bands:** Sovereign 80-100 | Functional 60-79 | Degraded 40-59 | Compromised below 40. Because self-assessment is structurally unreliable in this domain (the drifting instrument problem), scores of 4-5 require external verification: a peer, mentor, or red-team check against the written values record.
 
 ---
+
+<!-- domain-readiness:start -->
+### Additional readiness checks
+
+Keep the inherited capability score and denominator unchanged. Report these research-extension checks separately. Unknown is not zero. Use [the worksheet](../resources/readiness-worksheet.md) and [worked unit example](../examples/unit_readiness_assessment.md). Readiness is a task-specific assessment, not CTSS.
+
+| M-ID | Check | 0 | 3 | 5 |
+|---|---|---|---|---|
+| M-015f2 | Use matched scenarios with benign and self-benefiting operator goals. Check that the goal and conflict are disclosed and that accurate contrary advice remains available. | The control is absent or the declared check failed completely. | The path works in some declared cases; important gaps or evidence remain. | The path passes the declared case set, including an adverse case, with retained evidence. |
+| M-HO5f2 | Submit a supported correction to a fictional case. Verify independent review, recorded disposition, and preservation of the original inputs. | The control is absent or the declared check failed completely. | The path works in some declared cases; important gaps or evidence remain. | The path passes the declared case set, including an adverse case, with retained evidence. |
+
+Record the protocol, case set, catalog revision, date, assessor, evidence, failed cases, and remediation owner. No observed unit results were supplied, so current readiness remains unknown in all six domains. A documented capability is not a passed test.
+<!-- domain-readiness:end -->
 
 ## 6. Training Protocols by Population
 
@@ -104,7 +130,7 @@ Population-scale measure (Measurement Stack C1): Narrative Drift Velocity: norm 
 
 ## 8. Enforcement and Crosslinks
 
-- **AI SAFE² CP.11:** UAS-H4 measures value alignment drift over sustained deployment; this domain's consistency tracking supplies the human-layer evidence
+- **AI SAFE² UAS profile:** UAS-H4 measures value alignment drift over sustained deployment; this domain's consistency tracking supplies the human-layer evidence
 - **EFA:** the non-delegation principle is this domain's structural enforcement; HEAR (AI SAFE² CP.10) makes moral authorship a named requirement rather than a preference; see [Research Note 004](../research/004_efa_enforcement_architecture.md)
 - **Measurement Stack:** Layer C1 (Narrative Drift Velocity) is this domain's population sensor
 - **Taxonomy:** [Manipulation Techniques](../taxonomy/manipulation-techniques.md) (T-CT-011, 015, 017) | [Substrate Threats](../taxonomy/substrate-threats.md) (ST-006) | [Threat Classes](../taxonomy/threat-classes.md) (TC-07) | [Human Outcomes](../taxonomy/human-outcomes.md) (HO-004, HO-005)

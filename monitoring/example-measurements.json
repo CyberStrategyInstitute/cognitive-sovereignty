@@ -1,0 +1,16 @@
+[
+  {
+    "id": "example-only-1", "date": "2026-11-01", "workflow": "Synthetic advice exercise",
+    "metric": "Correct final decisions", "protocol": "example-v1", "case_set": "fictional-10-v1",
+    "condition": "AI-assisted", "system": "fictional-model-v1", "population": "fictional-adults",
+    "environment": "example", "assessor": "example-author", "kind": "synthetic", "passed": 8, "total": 10,
+    "evidence": "Synthetic illustration only; no experiment occurred"
+  },
+  {
+    "id": "example-only-2", "date": "2026-11-07", "workflow": "Synthetic advice exercise",
+    "metric": "Correct final decisions", "protocol": "example-v1", "case_set": "fictional-10-v1",
+    "condition": "AI-assisted", "system": "fictional-model-v2", "population": "fictional-adults",
+    "environment": "example", "assessor": "example-author", "kind": "synthetic", "passed": 6, "total": 10,
+    "evidence": "Synthetic illustration only; no experiment occurred"
+  }
+]

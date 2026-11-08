@@ -1,427 +1,103 @@
-[![AI SAFE2 Framework Visual Map](https://github.com/CyberStrategyInstitute/cognitive-sovereignty/raw/main/assets/CSF-Human-Control-Plane-v2.png)](https://github.com/CyberStrategyInstitute/ai-safe2-framework/blob/main/assets/CSF-Human-Control-Plane-v2.png)
+<img src="docs/assets/brand/csi-shield-color.png" width="96" alt="Cyber Strategy Institute shield">
 
-<div align="center">
+# Cognitive Sovereignty Framework 3.0
 
+CSF helps people and organizations examine whether they retain the ability to understand, choose, challenge, and govern AI-mediated decisions. Cyber Strategy Institute maintains the model, taxonomy, research, and CTSS assessments.
 
+The core remains **six domains, five causal layers, and the existing CTSS formula**. CSF v3.0.0 connects the research intake to domain controls, assessments, tracked actions, and reusable data. The major version identifies the expanded research-to-control workflow and revised readiness criteria.
 
-# Cognitive Sovereignty Framework (CSF)
+## Start with your task
 
-### A Six-Domain Model for Human Resilience in the AI Era
+| I want to... | Go here |
+|---|---|
+| Understand the model | [Framework reference](FRAMEWORK.md) and [six domains](#the-six-domains) |
+| Read the research and individual scores | [Research hub](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/research.html) or [complete report](research/intake/reports/research-assessment.md) |
+| Inspect the weekly baseline | [Seven weekly reports and trends](research/intake/reports/baseline.md), [CSV](research/intake/event-scores.csv), [JSON](research/intake/events.json) |
+| Apply controls and assess readiness | [Control catalog](resources/mitigation-catalog.md), [resources workflow](resources/README.md), [worked unit example](examples/unit_readiness_assessment.md) |
+| Check the roadmap | [Evidence and remaining milestones](EVOLUTION.md) |
+| Find the next action | [Watch/action register](research/intake/signals/README.md) |
+| Assess a new item | [Intake method](research/intake/README.md), [scorecard template](resources/scorecard-template.md), [decision record](resources/decision-record.md) |
+| Use another declared perspective | [Baseline and lens assessment](lenses/founding-baseline-assessment.md) |
+| Use CSF from an agent or MCP server | [Integration guide](integration/README.md), [catalog](docs/data/catalog.json), [schemas](schemas/README.md) |
+| See what changed and remains open | [Recommendation coverage](RECOMMENDATIONS.md), [change log](CHANGELOG.md) |
 
-[![Version](https://img.shields.io/badge/version-2.1.0-crimson.svg)](https://github.com/CyberStrategyInstitute/cognitive-sovereignty-framework/releases)
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![DoD Aligned](https://img.shields.io/badge/Aligned-DoD_AI_Ethical_Principles-005696?style=flat-square)](https://www.ai.mil/docs/RAI_Toolkit_Intro_Oct_21.pdf)
-[![Companion](https://img.shields.io/badge/Companion-AI_SAFE²_Framework-orange)](https://github.com/CyberStrategyInstitute/ai-safe2-framework)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/CyberStrategyInstitute/cognitive-sovereignty-framework/graphs/commit-activity)
+New website pages and exports become live only after the owner approves and the repository's Pages publication process runs. All of the linked repository records can be reviewed in the PR first.
 
-[**The Threat**](#-what-we-are-defending-against) | [**The Six Domains**](#-the-six-domain-model) | [**The Taxonomy**](#-threat-taxonomy) | [**CTSS Scoring**](#-cognitive-threat-severity-scoring) | [**Command Center**](#-command-center) | [**Roadmap**](#-implementation-roadmap) | [**Contributing**](#-contributing)
+## The six domains
 
-## Interactive Documentation
+| Domain | What it covers |
+|---|---|
+| [Biological](01-biological/README.md) | Sleep, metabolism, nervous-system regulation, and physiological integrity |
+| [Cognitive](02-cognitive/README.md) | Attention, reasoning, memory, learning, and independent judgment |
+| [Emotional](03-emotional/README.md) | Regulation, stress tolerance, identity stability, and recovery |
+| [Social](04-social/README.md) | Trust networks, relationships, belonging, and community coordination |
+| [Purpose and Moral](05-purpose-moral/README.md) | Values, meaning, responsibility, and moral reasoning |
+| [Digital and AI Symbiosis](06-digital-ai-symbiosis/README.md) | Working with AI while retaining capability, authority, and resistance to manipulation |
 
-→ [CSF Learning Hub](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/)  
-→ [Threat Explorer](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/csf-explorer.html)  
-→ [Command Center](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/csf-command-center.html)
+The causal layers remain civilizational drivers, substrate threats, manipulation techniques, delivery/scale, and human outcomes. See the [taxonomy architecture](taxonomy/threat-architecture.md), [registry](taxonomy/registry.json), and [generated technique rankings](taxonomy/ctss-rankings.md).
 
----
+## What a CTSS score means
 
-## 🧠 What Is the Cognitive Sovereignty Framework?
+CTSS is our assessed severity for a declared threat scenario or event-linked risk. It combines likelihood, agency impact, reach, detection difficulty, and recovery difficulty. Each estimate needs a reason and evidence or a declared assumption. A provisional score is a usable judgment with explicit uncertainty.
 
-The **Cognitive Sovereignty Framework (CSF)** is an open-source, doctrine-grade resilience model designed to protect human cognition against the full spectrum of AI-era threats.
+The existing formula can be written as whole points: `L*5 + Ia*6 + R*4 + D*3 + RecD*2`. It still produces 0-100. See [the method](taxonomy/ctss-scoring.md) and [the arithmetic correction](research/scoring-correction-2026-11-07.md).
 
-> **The primary battlefield of the 21st century is human cognition, not territory. The nation that loses cognitive sovereignty loses the ability to govern itself, fight wars, or sustain its civilization. This is not a metaphor. It is an operational reality.**
+Keep taxonomy reference estimates, item assessments, directly measured outcomes, and illustrative lens results separate. Helpful and contrary evidence belong in the record. An aggregate describes its declared sample; it is not a percentage of Americans harmed or protected.
 
-The CSF was developed by the **Cyber Strategy Institute** as the direct response to its companion *Cognitive Threat Assessment* — a first-principles analysis of what is actually happening to human cognition, and why current frameworks are structurally insufficient to address it.
+## Research and actions
 
-### 🏆 The Gap No One Is Closing
+The supplied September-November collection is preserved as **87 assessed item records**, **92 appearances**, **86 source-linked story threads**, and **217 tracked source excerpts**. Those excerpts include grouping labels, proposed actions, research questions, indicators, and watch items. They are not 217 independent incidents. The historical scores were backfilled November 7, 2026.
 
-Every U.S. military branch operates a resilience program. All of them share a four-domain core: mental, physical, social, and spiritual fitness.
+Every item retains original analysis, sources, input reasons, action, and research trigger. Every tracked signal has an ID, status, proposed responsible role, review trigger, and history. Documented guidance is distinguished from field validation. See [the full ledger](research/intake/events.json) and [signal register](research/intake/signals/register.json).
 
-**None of them contain a domain for digital, cognitive, or informational resilience.**
+The [six safeguards](resources/practical-safeguards.md), [additional research checks](resources/advanced-checks.md), and [pilot plan](monitoring/pilot-plan.md) turn findings into reviewable work. Claims of population protection or architectural guarantees require the relevant implementation and test evidence.
 
-A warfighter can score perfectly on every existing resilience metric and still be fully vulnerable to AI-driven deception, algorithmic manipulation, cognitive offloading atrophy, and identity destabilization. The CSF closes that gap — for military personnel, their families, organizations, and civilian society.
+## Repository structure
 
----
-
-## 🛡️ What We Are Defending Against
-
-The threat to human cognition operates in five causal layers. Most current defenses target only one.
-
-| Layer | Designation | Function |
-|---|---|---|
-| **Layer -2** | Civilizational Drivers (CD) | Root forces generating vulnerability conditions |
-| **Layer -1** | Substrate Threats (ST) | Pre-manipulation foundations that make manipulation succeed |
-| **Layer 0** | Manipulation Techniques (T-CT) | 18 active cognitive technique families |
-| **Layer +1** | Delivery & Scale (DS) | Amplification mechanisms reaching populations |
-| **Layer +2** | Human Outcomes (HO) | Observable effects when threats succeed |
-
-> **Critical Insight:** If the substrate conditions (Layer -1) are not addressed, new techniques will always find new pathways. Tactical defense without substrate resilience is an infinite regression.
-
-The complete threat taxonomy — 41 classified entries across all five layers, plus 10 newly identified threat classes and 3 edge domain additions — is maintained in [`/taxonomy`](./taxonomy/).
-
----
-
-## 🔬 The Six-Domain Model
-
-The CSF proposes six interdependent domains of human resilience. Domains 1–4 align with the universal military core. Domain 5 refines the purpose dimension. **Domain 6 is entirely new and the missing pillar across all branches.**
-
-| # | Domain | Core Definition | Primary Threats | New? |
-|---|---|---|---|---|
-| **1** | **Biological** | Sleep, metabolism, nervous system regulation, neurophysiological integrity | Dopamine engineering, sleep disruption, neuro-intrusion via BCIs | No |
-| **2** | **Cognitive** | Attention control, deep thinking, memory, learning agility, reasoning capacity | Attention capture, cognitive load flooding, offloading atrophy | No |
-| **3** | **Emotional** | Stress tolerance, emotional regulation, identity stability, trauma recovery | Micro-targeted emotional priming, anxiety engineering, identity fragmentation | No |
-| **4** | **Social** | Trust networks, belonging, family continuity, community cohesion, civic identity | Social trust fragmentation, synthetic persona infiltration, micro-tribe reinforcement | No |
-| **5** | **Purpose & Moral** | Values, meaning, service beyond self, moral reasoning capacity, ethical judgment | Moral displacement through automation, legitimized narrative capture, ethics outsourcing | Refined |
-| **6** | **Digital & AI Symbiosis** | Working with AI without cognitive erosion; maintaining agency in automated environments; resisting manipulation by synthetic media | Decision automation capture, guardrail bias exploitation, model drift degradation, psychographic microtargeting | **✅ NEW** |
-
-### Why Domain 6 Changes Everything
-
-Every other domain assumes the human is the primary agent. Domain 6 recognizes that in the AI era, the human operates within a **human-AI system**. If the AI side of that system is compromised, biased, or adversary-controlled, the human's resilience in Domains 1–5 may be irrelevant.
-
-Domain 6 is also the only resilience domain backed by both human training and technical enforcement architecture — specifically, the **Ethical Functionality without Agency (EFA)** paradigm and the **EFA/AI-SAFE² 7-Layer Protocol Stack (E7)**, which ensure that human authority over AI systems is not a preference but an architectural guarantee.
-
-### Domain Interdependency Cascade
-
-The six domains form a reinforcing system. Degradation in one domain creates vulnerability in others:
-
-```
-Biological Degradation Cascade (upward):
-  Domain 1 → Domain 2 → Domain 3 → Domain 4 → Domain 5 → Domain 6
-  Sleep loss → Impaired cognition → Reduced emotional regulation →
-  Strained relationships → Eroded purpose → AI discipline failure
-
-Digital Compromise Cascade (downward):
-  Domain 6 → Domain 2 → Domain 3 → Domain 4 → Domain 5 → Domain 1
-  Compromised AI → Poisoned information → Triggered emotions →
-  Fragmented social trust → Eroded purpose → Biological stress
+```text
+01-biological/ ... 06-digital-ai-symbiosis/  Domain doctrine, threats, controls, readiness
+research/             Notes, original intake, scores, and weekly reports
+resources/            Assessment workflow, mitigation catalog, and worksheets
+examples/             Reproducible fictional assessments
+monitoring/           Observed results, protocols, and roadmap status
+docs/                 Learning Hub, Explorer, Command Center, and practice pages
+integration/          Agent and optional MCP access
+tools/ and tests/     Shared calculations, builds, and verification
 ```
 
----
+The control catalog now has 56 entries: 44 inherited IDs, including 20 refinements, plus 12 additions. [Research note 010](research/010_domain_controls_and_readiness.md) explains each domain’s changes and the separate readiness profiles. More documented controls do not establish measured readiness.
 
-## 📂 Repository Structure
+## Read it in a browser
 
-```
-/
-├── .github/                          # CI/CD Workflows & Issue Templates
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── new-threat-entry.md
-│   │   └── technique-update.md
-│   └── workflows/
-│       └── taxonomy-lint.yml
-│
-├── 01-biological/                    # Domain 1: Biological Resilience
-│   └── README.md
-├── 02-cognitive/                     # Domain 2: Cognitive Resilience
-│   └── README.md
-├── 03-emotional/                     # Domain 3: Emotional Resilience
-│   └── README.md
-├── 04-social/                        # Domain 4: Social Resilience
-│   └── README.md
-├── 05-purpose-moral/                 # Domain 5: Purpose & Moral Resilience
-│   └── README.md
-├── 06-digital-ai-symbiosis/          # Domain 6: Digital & AI Symbiosis (NEW)
-│   ├── README.md
-│   └── federal-procurement-alignment.md
-│
-├── taxonomy/                         # Complete Threat Taxonomy Registry
-│   ├── registry.json                 # Machine-readable full registry (41+ entries)
-│   ├── threat-architecture.md        # Five-layer causal stack overview
-│   ├── civilizational-drivers.md     # Layer -2: CD-001 through CD-006
-│   ├── substrate-threats.md          # Layer -1: ST-001 through ST-007
-│   ├── manipulation-techniques.md    # Layer 0: T-CT-001 through T-CT-018
-│   ├── delivery-scale.md             # Layer +1: DS-001 through DS-005
-│   ├── human-outcomes.md             # Layer +2: HO-001 through HO-005
-│   ├── threat-classes.md             # TC-01 through TC-10 (newly identified)
-│   └── ctss-scoring.md              # Cognitive Threat Severity Scoring model
-│
-├── command-center/                   # Interactive HTML5 + JSON Command Center
-│   └── index.html                    # Visual threat map and domain dashboard
-│
-├── research/                         # Deep Dive Evidence & Justifications
-│   ├── 001_cognitive_offloading.md
-│   ├── 002_swarm_threat_scaling.md
-│   ├── 003_guardrail_drift.md
-│   └── 004_efa_enforcement_architecture.md
-│   └── 005_uas_federal_standard.md
-│
-├── resources/                        # Free Community Tools
-│   ├── assessment-template.md        # Reusable Threat Assessment Template
-│   ├── ctss-calculator.md            # Manual CTSS scoring worksheet
-│   └── domain6-checklist.md          # Domain 6 self-assessment checklist
-│
-├── examples/                         # Operational Examples
-│   ├── ctss_calculator.py            # Python CTSS scoring tool
-│   ├── technique_entry_T-CT-004.md   # Full operational template example
-│   └── unit_readiness_assessment.md  # Sample unit-level cognitive readiness assessment
-│
-├── assets/                           # Visual Maps & Diagrams
-│
-├── CITATION.cff                      # Academic Citation
-├── CODE_OF_CONDUCT.md
-├── CODEOWNERS
-├── CONTRIBUTING.md
-├── EVOLUTION.md                      # Version history
-├── LICENSE                           # Dual License: MIT + CC-BY-SA 4.0
-├── MAINTAINERS.md
-├── README.md                         # You are here
-├── SECURITY.md
-└── SENTINEL_PROGRAM.md               # Community tiers & contributor recognition
+- [Learning hub](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/)
+- [Research, scores, and signals](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/research.html)
+- [Controls, resources, and readiness](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/practice.html)
+- [Threat explorer](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/csf-explorer.html)
+- [Command center](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/csf-command-center.html)
+- [How to use and build it](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/guide.html)
+
+For a local preview, run `python -m http.server 8000 --directory docs` from the checkout and open `http://localhost:8000/research.html`.
+
+## Build, check, and contribute
+
+Python 3.12 and Node 22 are the CI baseline. Local checks also passed with Node 24. `VERSION` is the single framework-version source. `python -m tools.version` checks all seven webpages, citation, taxonomy, and data catalog. Core Python tools use the standard library. The MCP adapter is optional and has its own dependency file.
+
+```text
+python -m tools.build
+python tools/csf.py check
+python -m tools.event_monitor check
+python -m tools.signals check
+python -m tools.export check
+python -m tools.version
+python -m tools.check_repo
+python -m unittest discover -s tests
+node tests/check_dashboards.cjs
 ```
 
----
+Read [CONTRIBUTING.md](CONTRIBUTING.md), [AGENTS.md](AGENTS.md), and [SECURITY.md](SECURITY.md). Changes belong in a PR for owner review. CODEOWNERS and automated checks support review; they do not replace branch-protection settings or authorize a merge.
 
-## ⚡ Threat Taxonomy
+[AI SAFEÃ‚Â²](https://github.com/CyberStrategyInstitute/ai-safe2-framework) is the companion machine-side governance framework. The [UAS crosswalk](06-digital-ai-symbiosis/federal-procurement-alignment.md) explains the profile relationship and its limits.
 
-The CSF threat taxonomy contains **41 classified entries** across five causal layers, designed as a living system at the technique layer (T-CT) while maintaining structural stability at the foundation layers.
+## License and citation
 
-### CTSS Top 5 — Critical Threats (Score 80–100)
-
-| Rank | ID | Technique | CTSS |
-|---|---|---|---|
-| 1 | T-CT-008 | Memetic Swarm Orchestration | **90** |
-| 2 | T-CT-010 | Economic Coercion & Incentive Corruption | **88** |
-| 3 | T-CT-004 | Personalized Narrative Injection | **85** |
-| 4 | T-CT-013 | Social Scoring & Behavioral Governance | **83** |
-| 5 | T-CT-006 | Decision Automation Capture | **82** |
-
-> **Key Finding:** Memetic Swarm Orchestration (T-CT-008) scores highest due to high likelihood (already operational with UGC farms), high impact on agency, and global reach. Neurotech (T-CT-012) scores lowest today but will climb rapidly as the technology matures.
-
-📄 **[View the complete CTSS ranking →](./taxonomy/ctss-scoring.md)**
-📊 **[Interactive Command Center →](./command-center/index.html)**
-
----
-
-## 📊 Cognitive Threat Severity Scoring
-
-The **CTSS** is the weighted severity model enabling threat prioritization and resource allocation.
-
-| Component | Description | Weight |
-|---|---|---|
-| **Likelihood (L)** | Probability of occurrence (0–5 scale) | 0.25 |
-| **Impact on Agency (Ia)** | Effect on human autonomy (0–5 scale) | 0.30 |
-| **Population Reach (R)** | Scale of affected people (0–5 scale) | 0.20 |
-| **Detection Difficulty (D)** | How hard to identify (0–5; higher = harder) | 0.15 |
-| **Recovery Difficulty (RecD)** | How hard to reverse (0–5; higher = harder) | 0.10 |
-
-**Formula:** `CTSS = (L×0.25 + Ia×0.30 + R×0.20 + D×0.15 + RecD×0.10) × 20`
-
-Range: **0–100** | Critical ≥ 80 | High ≥ 70 | Elevated ≥ 60
-
----
-
-## 🖥️ Command Center
-
-The CSF includes an interactive **HTML5 Command Center** — a visual threat map and domain dashboard deployable locally or as a GitHub Pages site.
-
-**Features:**
-- Live CTSS heatmap across all 18 technique families
-- Five-layer causal stack visualization
-- Six-domain resilience status dashboard
-- Edge case coverage matrix
-- Swarm threat phase progression tracker
-- JSON-driven — all data sourced from `taxonomy/registry.json`
-
-```bash
-# Run locally
-cd command-center
-open index.html
-# or
-python3 -m http.server 8080
-```
-
----
-
-## 🗺️ Implementation Roadmap
-
-The CSF deploys in three phases across 36 months.
-
-### Phase 1 — Foundation (0–12 months)
-- Develop Domain 6 assessment tools and training curriculum
-- Conduct baseline cognitive resilience assessments across pilot units
-- Integrate CSF concepts into existing resilience training programs
-- Establish CTSS scoring and threat monitoring protocols
-- Develop measurement protocols for the five outcome indicators
-
-### Phase 2 — Integration (12–24 months)
-- Expand Domain 6 training to initial accession training across services
-- Integrate cognitive resilience metrics into unit readiness assessments
-- Deploy inoculation training based on identified manipulation techniques
-- Establish family and dependent cognitive resilience programs
-- Begin cross-service coordination for standardized assessment tools
-
-### Phase 3 — Operationalization (24–36 months)
-- Full integration with PME curricula across all services
-- Operational cognitive readiness assessments comparable in rigor to physical fitness testing
-- Commander accountability for unit cognitive resilience
-- Continuous red-teaming of CSF effectiveness against evolving threats
-- Extension of CSF principles to defense industrial base and public programs
-
----
-
-## 📐 Measurable Outcomes
-
-Resilience must be observable, not inspirational. Five outcome indicators determine success or failure:
-
-| Indicator | What It Measures | Success Threshold |
-|---|---|---|
-| Sustained Attention Span | Ability to maintain deep focus without platform-driven interruption | 20–30% improvement in controlled studies |
-| Resistance to False Narratives | Ability to identify and reject manipulative content including deepfakes | ~40% reduction in false narrative adoption |
-| Stable Moral Reasoning Under Pressure | Maintaining ethical judgment when social pressure or automation suggests compliance | Audit-verified maintenance in AI-augmented environments |
-| Ability to Act Against Social Manipulation | Recognizing and resisting synthetic consensus and manufactured outrage | Measurable independence in red-team pressure exercises |
-| Preservation of Personal Agency | Independent decision-making despite AI recommendation systems | Sustained or improved critical thinking scores despite increasing AI usage |
-
-> **The true metric is not misinformation detected or propaganda countered. The true metric is the preservation or loss of self-directed cognition.**
-
----
-
-## 🔗 Companion Framework: AI SAFE²
-
-The CSF protects the human cognitive layer. It does not secure the AI system the human is operating.
-
-An AI infrastructure with prompt injection vulnerabilities, misconfigured agent scoping, or compromised memory systems can undermine human cognitive sovereignty regardless of how well-trained the operator is. The CSF covers the human side. **[AI SAFE²](https://github.com/CyberStrategyInstitute/ai-safe2-framework)** covers the machine side.
-
-| | CSF | AI SAFE² |
-|---|---|---|
-| **Layer** | Human | Machine |
-| **Defends** | The human operator | The AI system |
-| **Governs** | The capacity to govern the tool | The tool |
-| **Prevents** | Cognitive offloading, attention capture, decision automation capture, identity fragmentation | Prompt injection, data leakage, unsafe autonomy, swarm governance failures |
-| **Ensures** | The human stays capable of defining the lane | AI stays in its lane |
-| **Repo** | [https://github.com/CyberStrategyInstitute/cognitive-sovereignty](https://github.com/CyberStrategyInstitute/cognitive-sovereignty) | [https://github.com/CyberStrategyInstitute/ai-safe2-framework](https://github.com/CyberStrategyInstitute/ai-safe2-framework) |
-
-### Formal Integration: AI SAFE² CP.11 (Unbiased AI Standard)
-
-The CSF-AI SAFE² relationship is no longer only conceptual. CSF's human-layer controls are formally integrated into **AI SAFE² CP.11, the Unbiased AI Standard (UAS)**, as controls **UAS-H1 through UAS-H8**, sourced directly from CSF Domains 1 through 6. CP.11 provides the procurement-facing compliance host for CSF's controls in federal AI deployments, including draft GSAR clause 552.239-7001 (Notice-MVAC-2026-01), where the human-layer dimension of "Unbiased AI" is otherwise unaddressed.
-
-| CSF Domain | UAS Control(s) | What It Measures in a Federal Deployment |
-|---|---|---|
-| 1: Biological | UAS-H6 | Attention capture in high-tempo decision environments |
-| 2: Cognitive | UAS-H1, UAS-H8 | Cognitive autonomy preservation; decision override health |
-| 3: Emotional | UAS-H2 | Emotional state manipulation in operator-AI dialogue |
-| 4: Social | UAS-H3, UAS-H7 | Social pressure simulation; persona and role-boundary erosion |
-| 5: Purpose & Moral | UAS-H4 | Value alignment drift over sustained deployment |
-| 6: Digital & AI Symbiosis | UAS-H5 | AI dependency induction markers |
-
-The CTSS scoring model is the quantitative instrument for the human layer: CTSS results flow directly into the CP.11 evidence package (UAS-SCORE-001, UAS-HUMAN-001).
-
-→ **[CP.11 Unbiased AI Standard module](https://github.com/CyberStrategyInstitute/ai-safe2-framework/tree/main/00-cross-pillar/unbiased-ai)** — the full 27-control standard  
-→ **[Research Note 005: Cognitive Sovereignty and Federal Unbiased AI Procurement](./research/005_uas_federal_standard.md)** — the CSF-native framing of the integration
-
-**The shared principle:** Both frameworks enforce the same core commitment — AI is always a tool, never a moral agent. Human authority is non-negotiable. The CSF's EFA paradigm and E7 Protocol Stack enforce this at the human-AI interface layer. AI SAFE²'s runtime governors and circuit breakers enforce it at the technical infrastructure layer.
-
-**The threat that connects both frameworks:** The highest-scoring threat in the CSF taxonomy is [T-CT-008: Memetic Swarm Orchestration (CTSS 90)](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/csf-explorer.html) — coordinated AI agent campaigns that test, evolve, and amplify narratives at non-human speed. AI SAFE² defends AI system integrity against adversarial swarm techniques. The CSF defends human populations against the cognitive effects of swarm-delivered narratives. Defending only one layer leaves the other entirely exposed.
-
-> **Together, CSF + AI SAFE² cover the full human-AI system: CSF for the human, AI SAFE² for the machine. Neither is sufficient without the other.**
-
-→ **[AI SAFE² Repository](https://github.com/CyberStrategyInstitute/ai-safe2-framework)** — The Universal GRC Operating System for Agentic AI, Non-Human Identities, and Swarm Governance  
-→ **[AI SAFE² Companion Release Note](https://github.com/CyberStrategyInstitute/ai-safe2-framework/blob/main/CSF-COMPANION.md)** — How the two frameworks fit together in practice
-
-### DoW AI Ethical Principles Alignment (Feb 24, 2020)
-
-| Principle | CSF Alignment |
-| --- | --- |
-| **Responsible** | Domain 5 (Purpose & Moral) builds the moral reasoning capacity required for responsible AI use |
-| **Equitable** | Domain 4 (Social) addresses algorithmic bias and access equity |
-| **Traceable** | Domain 6 (Digital & AI Symbiosis) mandates provenance verification and HEAR accountability |
-| **Reliable** | Domain 2 (Cognitive) builds independent verification capacity to detect model drift |
-| **Governable** | E7 Layer 7 ensures human authority remains at the top of every system |
-
----
-
-## 📋 Validation Requirements
-
-The framework is not valid until it passes four empirical tests.
-
-| Test | Requirement | Failure Condition |
-|---|---|---|
-| **1. Threat Surface Coverage** | Framework must map and mitigate 90%+ of identified threat vectors | Coverage drops below 90% = structural gaps adversaries will exploit |
-| **2. Measurable Human Outcomes** | All five resilience indicators show measurable improvement | No measurable improvement = aspirational, not operational |
-| **3. Edge-Case Stress Testing** | Framework survives extreme propaganda, total information saturation, AI-generated reality indistinguishability | Breaks under edge-case stress = below 90% coverage |
-| **4. Long-Arc Historical Consistency** | Model holds across all historical eras from pre-industrial to AI swarm era | Only works in current era = time-bound ideology, not doctrine |
-
----
-
-## 📈 Framework Evolution
-
-| Version | Focus | Key Addition | Classification Entries |
-|---|---|---|---|
-| **v2.0** | Complete AI-Era Architecture | Domain 6, EFA integration, E7 Stack, HEAR Doctrine | 41 entries + 10 threat classes + 3 edge domains |
-| **v1.0** | Foundation | Six-domain model proposal, CTSS scoring baseline | 18 technique families, 4-layer stack |
-
-👉 **[Read the full evolution history →](./EVOLUTION.md)**
-
----
-
-## 🤝 Contributing
-
-This is a living doctrine. Contributions follow the same red-team standard used to develop the framework itself.
-
-**How to contribute:**
-- **New Threat Entry:** Use the [New Threat Entry Template](.github/ISSUE_TEMPLATE/new-threat-entry.md) to propose additions to the T-CT layer
-- **Technique Update:** Use the [Technique Update Template](.github/ISSUE_TEMPLATE/technique-update.md) to revise CTSS scores or detection methods
-- **Research Submission:** Add peer-testable evidence to `/research/` with full sourcing
-
-The taxonomy is designed to grow at the T-CT layer. The CD and ST layers are designed to be stable but expandable. All contributions must pass the **Adversarial Reproduction Test**: opponents using the same data and methodology must arrive at the same measurements.
-
-📄 **[Read the full Contributing Guide →](./CONTRIBUTING.md)**
-
----
-
-## 🛡️ Sentinel Program
-
-Recognize and reward the contributors who help harden this doctrine.
-
-- ⭐ **Star the Repo:** Unlock `Supporter` status
-- 💡 **Contribute a Technique Entry:** Earn `Analyst` status  
-- 🔬 **Submit Validated Research:** Earn `Researcher` status
-- 🏆 **The Sentinel Tier:** Priority access to upcoming CSI tools and assessment platforms
-
-📄 **[Read the Sentinel Program Details →](./SENTINEL_PROGRAM.md)**
-
----
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=cyberstrategyinstitute%2Fcognitive-sovereignty&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=cyberstrategyinstitute/cognitive-sovereignty&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=cyberstrategyinstitute/cognitive-sovereignty&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=cyberstrategyinstitute/cognitive-sovereignty&type=date&legend=top-left" />
- </picture>
-</a>
-
----
-
-## ✏️ Citation
-
-```bibtex
-@misc{csf_framework_2026,
-  title   = {Cognitive Sovereignty Framework v2.0: A Six-Domain Model for Human Resilience in the AI Era},
-  author  = {{Cyber Strategy Institute}},
-  year    = {2026},
-  month   = {February},
-  publisher = {Cyber Strategy Institute},
-  url     = {https://github.com/CyberStrategyInstitute/cognitive-sovereignty-framework},
-  note    = {Version 2.0. Companion to the Cognitive Threat Assessment and Cognitive Threat Taxonomy.}
-}
-```
-
----
-
-## ⚖️ Licensing
-
-This project uses a Dual-License Model.
-
-### 💻 Code: MIT License
-Applies to: Command Center HTML/JS, CTSS calculator scripts, JSON registry, and all code files.
-You may use this code commercially, modify it, and build products on top of it.
-
-### 📘 Framework/Docs: CC-BY-SA 4.0
-Applies to: The CSF methodology text, domain definitions, threat taxonomy, and all documentation.
-You may share, adapt, and redistribute. **You must attribute the Cyber Strategy Institute and share derivatives under the same license.**
-
----
-
-Managed by [Cyber Strategy Institute](https://cyberstrategyinstitute.com) | Copyright © 2026. All Rights Reserved.
-
-> *"The question is not whether we build the defenses. The question is whether we build them before the substrate is too degraded to support them."*
+The existing [dual license](LICENSE) remains: MIT for the covered code/machine-readable components and CC BY-SA 4.0 for framework documentation. Retain attribution and source rights. [CITATION.cff](CITATION.cff) provides citation metadata. Use a pinned commit when reproducibility matters.

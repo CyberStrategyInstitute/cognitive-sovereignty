@@ -1,6 +1,6 @@
 # CTSS Manual Scoring Worksheet
 
-> Use this worksheet when scoring a new or proposed technique entry. Complete one worksheet per technique. All five components must be scored before computing CTSS. Justification for each score is required — scores without rationale will not be accepted in taxonomy submissions.
+Use this worksheet for a technique reference, event-linked risk, or declared scenario. Record the assessment type, scope, sources, date, assessor, and reasons for all five inputs. Keep missing inputs unknown and the total unscored. A provisional estimate is allowed when its assumption is explicit. The inherited component anchors below remain unchanged.
 
 ---
 
@@ -8,7 +8,9 @@
 
 | Field | Value |
 |---|---|
-| **Technique ID (proposed)** | T-CT-0___ |
+| **Assessment type and ID** | Technique reference, event ID, or scenario ID |
+| **Scope and baseline/lens** | |
+| **Sources, assumptions, and review status** | |
 | **Technique Name** | |
 | **Analyst** | |
 | **Date** | |
@@ -22,7 +24,7 @@
 CTSS = (L × 0.25 + Ia × 0.30 + R × 0.20 + D × 0.15 + RecD × 0.10) × 20
 ```
 
-Range: **0–100**
+Range: **0–100**. The same formula in whole points is `L*5 + Ia*6 + R*4 + D*3 + RecD*2`. These are CSI assessment anchors, not empirically calibrated probabilities or a personal readiness scale. Use [the worked unit example](../examples/unit_readiness_assessment.md) and [readiness worksheet](readiness-worksheet.md) to connect severity with capability evidence.
 
 | Tier | Score |
 |---|---|

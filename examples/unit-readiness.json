@@ -1,0 +1,97 @@
+{
+  "id": "EX-UNIT-001",
+  "kind": "synthetic",
+  "assessment_date": "2026-11-07",
+  "scope": "Notional unit AI-assisted briefing workflow; fictional training cases only",
+  "protocol": "unit-research-extension-v1",
+  "case_set": "synthetic-unit-fixtures-v1",
+  "assessor": "CSI illustrative example",
+  "ratings": [
+    {
+      "control_id": "M-014b",
+      "rating": 1,
+      "evidence": "examples/readiness-fixtures.md#m-014b",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-016b",
+      "rating": 0,
+      "evidence": "examples/readiness-fixtures.md#m-016b",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-007c2",
+      "rating": 2,
+      "evidence": "examples/readiness-fixtures.md#m-007c2",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-008c",
+      "rating": 1,
+      "evidence": "examples/readiness-fixtures.md#m-008c",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-005d2",
+      "rating": 1,
+      "evidence": "examples/readiness-fixtures.md#m-005d2",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-016d2",
+      "rating": 1,
+      "evidence": "examples/readiness-fixtures.md#m-016d2",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-005e2",
+      "rating": 2,
+      "evidence": "examples/readiness-fixtures.md#m-005e2",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-008e2",
+      "rating": 1,
+      "evidence": "examples/readiness-fixtures.md#m-008e2",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-015f2",
+      "rating": 2,
+      "evidence": "examples/readiness-fixtures.md#m-015f2",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-HO5f2",
+      "rating": 1,
+      "evidence": "examples/readiness-fixtures.md#m-ho5f2",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-006g2",
+      "rating": 1,
+      "evidence": "examples/readiness-fixtures.md#m-006g2",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    },
+    {
+      "control_id": "M-005g",
+      "rating": 0,
+      "evidence": "examples/readiness-fixtures.md#m-005g",
+      "note": "Fictional outcome for learning the record format; not a personnel or unit measurement."
+    }
+  ],
+  "catalog_revision": "sha256-utf8-lf:0658756c41c78f160ffba1566a6d955dc7f5e622e3e24bbd4774c96bcccf91ff",
+  "threat_assessment": {
+    "kind": "synthetic",
+    "method": "CTSS-existing-v1",
+    "inputs": {
+      "L": 3,
+      "Ia": 4,
+      "R": 1,
+      "D": 3,
+      "RecD": 2
+    },
+    "ctss": 56,
+    "scope": "The notional team and its briefing recipients, fewer than 1,000 people; no population incidence claim"
+  }
+}

@@ -1,5 +1,7 @@
 # Newly Identified Threat Classes (TC-01 through TC-10)
 
+Coverage percentages and broad outcome claims in the legacy discussion below are unvalidated estimates unless linked to a specific evidence record. They are not measured CSF results. See [the research register](../research/README.md).
+
 > **Why these were missing:** These threat classes operate through incentive structures, environmental conditioning, and voluntary adoption rather than through deliberate adversary action. Traditional threat models focus on what someone does to you. These classes address what the system does to itself. That is why they accounted for the unmodeled **20 to 30 percent** of modern cognitive influence.
 
 ---

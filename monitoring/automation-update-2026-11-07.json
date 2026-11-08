@@ -1,0 +1,11 @@
+{
+  "automation_id": "csi-weekly-briefs-and-catch-up",
+  "verified_on": "2026-11-07",
+  "status": "ACTIVE",
+  "original_prompt_preserved": true,
+  "schedule_preserved": true,
+  "target_preserved": true,
+  "kind_preserved": true,
+  "scope": "Added CSF item-level intake, scoring, research-report, trend, and lens instructions to the existing automation.",
+  "future_run_verified": false
+}

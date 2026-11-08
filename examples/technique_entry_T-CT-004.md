@@ -11,7 +11,8 @@
 |---|---|
 | **Technique ID** | T-CT-004 |
 | **Name** | Personalized Narrative Injection |
-| **Version** | 2.0 |
+| **Framework version** | 3.0.0 |
+| **Entry revision** | 2.0 (historical entry revision, distinct from framework version) |
 | **Last Updated** | 2026-02-01 |
 | **CTSS Score** | **85** 🔴 Critical |
 | **Layer** | Layer 0 — Active Manipulation Techniques |

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CSF Controls and Readiness | CSF v3.0.0</title>
+    <meta
+      name="description"
+      content="Find research-linked controls in all six domains, test capability, use assessment resources, and inspect roadmap progress."
+    />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/practice.js" defer></script>
+  <meta name="csf-version" content="3.0.0">
+</head>
+  <body class="hub">
+    <nav class="csf-site-nav" aria-label="Main"><a class="csf-brand" href="index.html"><img src="assets/brand/csi-shield-white-orange.svg" width="32" height="48" alt="Cyber Strategy Institute shield"><span>CSI / CSF v3.0.0</span></a><a href="index.html">Learn</a><a href="research.html">Research and scores</a><a href="csf-explorer.html">Taxonomy</a><a href="practice.html" aria-current="page">Controls and readiness</a><a href="csf-command-center.html">Command center</a><a href="guide.html">How to use it</a><a href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty">Repository</a></nav>
+    <main id="main">
+      <a class="skip-link" href="#domains">Skip to domain controls</a>
+      <p class="eyebrow">Research / control / check / result</p>
+      <h1>Use the framework.<br />Test the capability.</h1>
+      <p class="lead">
+        Choose the workflow, inspect its threats, select controls, and retain
+        evidence of what worked and failed. Adding guidance expands the catalog.
+        A readiness increase requires comparable results.
+      </p>
+      <nav class="jump" aria-label="On this page">
+        <a href="#domains">Six domains</a
+        ><a href="#controls">Mitigation catalog</a
+        ><a href="#readiness">Readiness</a><a href="#resources">Resources</a
+        ><a href="#roadmap">Roadmap</a>
+      </nav>
+      <p id="practice-status" role="status" aria-live="polite">
+        Loading domain and control data...
+      </p>
+      <section id="domains">
+        <h2>What changed in each domain?</h2>
+        <p>
+          All 44 inherited mitigation IDs remain. Twenty controls are refined;
+          twelve are added, two in each domain. Exposure mappings expand using
+          existing threat IDs. No observed increase in incidence or readiness is
+          inferred.
+        </p>
+        <div data-domain-summary></div>
+      </section>
+      <section id="controls">
+        <h2>Find the control and its research</h2>
+        <div class="filters">
+          <label
+            >Search controls<input
+              id="control-search"
+              type="search"
+              placeholder="M-ID, threat ID, action, or research..." /></label
+          ><label
+            >Domain<select id="control-domain">
+              <option value="">All six domains</option>
+            </select></label
+          ><label
+            >Change<select id="control-kind">
+              <option value="">All controls</option>
+              <option value="added">Added</option>
+              <option value="refined">Refined</option>
+              <option value="inherited">Inherited</option>
+            </select></label
+          ><label
+            >Sort<select id="control-sort">
+              <option value="domain">Domain, then ID</option>
+              <option value="name">Capability name</option>
+              <option value="id">Mitigation ID</option>
+              <option value="change">Added, refined, inherited</option>
+            </select></label
+          >
+        </div>
+        <p id="control-results" aria-live="polite"></p>
+        <div id="control-list" class="cards"></div>
+      </section>
+      <section id="readiness">
+        <h2>Show capability evidence separately</h2>
+        <p id="readiness-status">
+          No observed unit results supplied; readiness unknown in all six
+          domains.
+        </p>
+        <p>
+          The inherited capability counts remain 6, 8, 6, 7, 8, and 9. Each
+          domain has two additional research-extension checks, reported
+          separately. Unknown is not zero. CTSS severity and capability
+          readiness are separate scores.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>Run a scoped assessment</h3>
+            <p>
+              Record the protocol, case set, catalog revision, assessor,
+              evidence, failed cases, and repair owner.
+            </p>
+            <a
+              href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty/blob/main/resources/readiness-worksheet.md"
+              >Readiness worksheet</a
+            >
+          </article>
+          <article class="card">
+            <h3>Follow the complete example</h3>
+            <p>
+              A fictional unit case connects threat scoring with checks in every
+              domain. Its synthetic results are excluded from observed
+              readiness.
+            </p>
+            <a
+              href="https://github.com/CyberStrategyInstitute/cognitive-sovereignty/blob/main/examples/unit_readiness_assessment.md"
+              >Worked unit assessment</a
+            >
+          </article>
+        </div>
+      </section>
+      <section id="resources">
+        <h2>Use resources in workflow order</h2>
+        <div id="resource-list" class="cards"></div>
+      </section>
+      <section id="roadmap">
+        <h2>Roadmap progress and open work</h2>
+        <p>
+          The research foundation and unit-scorecard prototype advanced.
+          Neuro-swarm and quantum work remain open. Version targets have no
+          dates, so they do not establish calendar progress.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <caption>
+              Implementation status, reviewed November 7, 2026
+            </caption>
+            <thead>
+              <tr>
+                <th>Planned addition</th>
+                <th>Original target</th>
+                <th>Status</th>
+                <th>Evidence and next action</th>
+              </tr>
+            </thead>
+            <tbody id="roadmap-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Cyber Strategy Institute ·
+      <a href="research.html">Research and scores</a> ·
+      <a href="guide.html">How this was built</a>
+    </footer>
+  </body>
+</html>

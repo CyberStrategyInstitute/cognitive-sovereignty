@@ -1,0 +1,19 @@
+# Proposed CSI proof updates
+
+Prepared November 7, 2026. Canonical brand files were not modified. No publication occurred.
+
+| ID | Supported wording | Evidence and method | Limits and permitted use |
+|---|---|---|---|
+| CSF-20261107-01 | Seventeen of 18 stored reference scores disagreed with the existing formula at main commit 6125cbd. The local branch corrects their arithmetic. | Pinned GitHub registry, existing formula, and the row-by-row scoring correction in this folder. Owner: CSI repository maintainer. | Deterministic source check. It does not validate the analyst inputs or framework efficacy. Use for repository maintenance. |
+| CSF-20261107-02 | The owning AI SAFE² UAS module describes a regulatory profile and retains core CP.1 through CP.10. | Owning module and human-layer table, reviewed November 7; linked from the federal-procurement crosswalk. Owner: CSI framework maintainer. | CSF wording was corrected locally. The companion control table still uses CTSS delta and override rate; method alignment needs review. No legal equivalence inferred. |
+| CSF-20261107-03 | The first local report contains seven reviewed source records and no local model or human-outcome observations. | Evidence register and dated report snapshot. Owner: CSI research maintainer, proposed role only. | Abstract/page review, no experiment reproduced. Use as an intake and coverage statement, not a finding of protection or drift. |
+| CSF-20261107-04 | The first U.S.-focused working assessment edition scores six scenarios with mean CTSS 53.2 using the existing formula. | Dated assessment inputs, source references, input reasons, and generated report; reviewed November 7. | CSI analytical judgments prepared with model assistance, pending owner review. Research-led sample, not measured national harm or a representative incident sample. Preserve the distinction between assessed severity and measured effects. |
+| CSF-20261107-05 | The expanded historical intake contains 87 scored item records from 92 appearances, linked to 86 story threads, across seven supplied collections. It also preserves 217 watch/action signals and all 16 originals. | Intake manifest, full original analysis, report receipt, score CSV, and source/archive hash comparison; reviewed November 7. | New provisional CSI assessments backfilled November 7, not scores issued in those historical weeks. The source collection was already curated. No October 16-23 edition or scoring images were found. The earlier six-scenario exercise is excluded from event trends. |
+
+Research notes 006-009 add distinct source-backed review questions and implementation decisions. They are local documentation drafts. A public article needs its own source and publication review; no publication-history entry is warranted yet.
+
+## Domain control documentation
+
+Proposed claim: the review branch retains 44 mitigation IDs, refines 20 controls and readiness anchors, and adds 12 research-linked controls. Sources: `resources/controls.json`, `resources/domains.json`, and research note 010. Evidence class: repository inventory and documentation checks, not field effectiveness. The synthetic unit record demonstrates calculation only. No observed readiness increase, population protection percentage, or government approval is established. The shield assets match the supplied package hashes. Publication remains limited to the unmerged review PR; no live Pages deployment is verified.
+
+Version update: the owner designated the review branch as CSF v3.0.0. `VERSION`, all seven page titles/navigation/version metadata, current documentation, citation, registry, and exported catalog are checked for agreement. This is version/inventory evidence, not a claim of live site publication or measured effectiveness. Historical source and method versions remain intact.

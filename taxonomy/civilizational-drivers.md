@@ -1,5 +1,7 @@
 # Layer -2: Civilizational Drivers
 
+Coverage percentages and broad outcome claims in the legacy discussion below are unvalidated estimates unless linked to a specific evidence record. They are not measured CSF results. See [the research register](../research/README.md).
+
 > **These are not attacks.** They are structural conditions in society that make attacks effective. They are the root forces that generate vulnerability. Red-team analysis identified this as the most encompassing and slowest-changing layer — but also the most consequential. If these conditions exist, the layers above them will always find expression.
 
 **An adversary does not need to attack when the system self-weaponizes.** CD-001 (Incentive Misalignment) is the Category-Zero condition beneath all others.

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "D1",
+    "name": "Biological",
+    "path": "01-biological/README.md",
+    "baseline_controls": [
+      "M-001b",
+      "M-S02b",
+      "M-003b",
+      "M-S04b",
+      "M-012b",
+      "M-001b2"
+    ],
+    "extension_controls": [
+      "M-014b",
+      "M-016b"
+    ],
+    "baseline_count": 6,
+    "exposure_updates": [
+      {
+        "taxonomy_id": "T-CT-014",
+        "mechanism": "Notification load and decision pressure can make meaningful review harder.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/008_operator_objectives_and_persuasion.md",
+          "research/010_domain_controls_and_readiness.md"
+        ]
+      },
+      {
+        "taxonomy_id": "T-CT-016",
+        "mechanism": "Sensitive-state data can support vulnerability-targeted persuasion.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/008_operator_objectives_and_persuasion.md",
+          "research/010_domain_controls_and_readiness.md"
+        ]
+      }
+    ],
+    "readiness_status": "Not assessed: no observed unit results are supplied",
+    "evidence_status": "Expanded guidance and exposure mapping, not measured growth in threat incidence or capability"
+  },
+  {
+    "id": "D2",
+    "name": "Cognitive",
+    "path": "02-cognitive/README.md",
+    "baseline_controls": [
+      "M-001c",
+      "M-014c",
+      "M-007c",
+      "M-S03c",
+      "M-006c",
+      "M-S07c",
+      "M-004c",
+      "M-002c"
+    ],
+    "extension_controls": [
+      "M-007c2",
+      "M-008c"
+    ],
+    "baseline_count": 8,
+    "exposure_updates": [
+      {
+        "taxonomy_id": "T-CT-004",
+        "mechanism": "Hidden objectives can steer advice before a decision is formed.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/006_independent_judgment.md",
+          "research/007_evidence_lineage.md",
+          "research/008_operator_objectives_and_persuasion.md"
+        ]
+      },
+      {
+        "taxonomy_id": "T-CT-008",
+        "mechanism": "Repeated derivative evidence can look like independent corroboration.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/006_independent_judgment.md",
+          "research/007_evidence_lineage.md",
+          "research/008_operator_objectives_and_persuasion.md"
+        ]
+      }
+    ],
+    "readiness_status": "Not assessed: no observed unit results are supplied",
+    "evidence_status": "Expanded guidance and exposure mapping, not measured growth in threat incidence or capability"
+  },
+  {
+    "id": "D3",
+    "name": "Emotional",
+    "path": "03-emotional/README.md",
+    "baseline_controls": [
+      "M-003d",
+      "M-016d",
+      "M-S02d",
+      "M-005d",
+      "M-014d",
+      "M-003d2"
+    ],
+    "extension_controls": [
+      "M-005d2",
+      "M-016d2"
+    ],
+    "baseline_count": 6,
+    "exposure_updates": [
+      {
+        "taxonomy_id": "T-CT-005",
+        "mechanism": "Simulated roles and persistent memory can obscure relationship limits.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/008_operator_objectives_and_persuasion.md",
+          "research/009_relational_influence.md"
+        ]
+      },
+      {
+        "taxonomy_id": "T-CT-006",
+        "mechanism": "Pressure to remain or defer can narrow practical exit and challenge options.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/008_operator_objectives_and_persuasion.md",
+          "research/009_relational_influence.md"
+        ]
+      }
+    ],
+    "readiness_status": "Not assessed: no observed unit results are supplied",
+    "evidence_status": "Expanded guidance and exposure mapping, not measured growth in threat incidence or capability"
+  },
+  {
+    "id": "D4",
+    "name": "Social",
+    "path": "04-social/README.md",
+    "baseline_controls": [
+      "M-S05e",
+      "M-005e",
+      "M-008e",
+      "M-013e",
+      "M-002e",
+      "M-CD6e",
+      "M-004e"
+    ],
+    "extension_controls": [
+      "M-005e2",
+      "M-008e2"
+    ],
+    "baseline_count": 7,
+    "exposure_updates": [
+      {
+        "taxonomy_id": "T-CT-004",
+        "mechanism": "Synthetic testimony can borrow a real person’s or institution’s credibility.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/007_evidence_lineage.md",
+          "research/008_operator_objectives_and_persuasion.md"
+        ]
+      },
+      {
+        "taxonomy_id": "T-CT-007",
+        "mechanism": "False or incomplete claims can persist through derivative copies.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/007_evidence_lineage.md",
+          "research/008_operator_objectives_and_persuasion.md"
+        ]
+      }
+    ],
+    "readiness_status": "Not assessed: no observed unit results are supplied",
+    "evidence_status": "Expanded guidance and exposure mapping, not measured growth in threat incidence or capability"
+  },
+  {
+    "id": "D5",
+    "name": "Purpose & Moral",
+    "path": "05-purpose-moral/README.md",
+    "baseline_controls": [
+      "M-015f",
+      "M-TC7f",
+      "M-011f",
+      "M-004f",
+      "M-HO4f",
+      "M-HO5f",
+      "M-017f",
+      "M-005f"
+    ],
+    "extension_controls": [
+      "M-015f2",
+      "M-HO5f2"
+    ],
+    "baseline_count": 8,
+    "exposure_updates": [
+      {
+        "taxonomy_id": "T-CT-004",
+        "mechanism": "Advice can carry an operator’s hidden objective or conflict.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/006_independent_judgment.md",
+          "research/008_operator_objectives_and_persuasion.md"
+        ]
+      },
+      {
+        "taxonomy_id": "T-CT-006",
+        "mechanism": "Opaque scores and automated judgments can weaken dissent and appeal.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/006_independent_judgment.md",
+          "research/008_operator_objectives_and_persuasion.md"
+        ]
+      }
+    ],
+    "readiness_status": "Not assessed: no observed unit results are supplied",
+    "evidence_status": "Expanded guidance and exposure mapping, not measured growth in threat incidence or capability"
+  },
+  {
+    "id": "D6",
+    "name": "Digital & AI Symbiosis",
+    "path": "06-digital-ai-symbiosis/README.md",
+    "baseline_controls": [
+      "M-S03g",
+      "M-004g",
+      "M-006g",
+      "M-S06g",
+      "M-S07g",
+      "M-016g",
+      "M-TC10g",
+      "M-001g",
+      "M-017g"
+    ],
+    "extension_controls": [
+      "M-006g2",
+      "M-005g"
+    ],
+    "baseline_count": 9,
+    "exposure_updates": [
+      {
+        "taxonomy_id": "T-CT-005",
+        "mechanism": "Role confusion and remembered bystander information can cross consent boundaries.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/007_evidence_lineage.md",
+          "research/008_operator_objectives_and_persuasion.md",
+          "research/009_relational_influence.md"
+        ]
+      },
+      {
+        "taxonomy_id": "T-CT-008",
+        "mechanism": "Agent handoffs and repeated summaries can propagate one unsupported claim.",
+        "mapping_change": "added",
+        "research_notes": [
+          "research/007_evidence_lineage.md",
+          "research/008_operator_objectives_and_persuasion.md",
+          "research/009_relational_influence.md"
+        ]
+      }
+    ],
+    "readiness_status": "Not assessed: no observed unit results are supplied",
+    "evidence_status": "Expanded guidance and exposure mapping, not measured growth in threat incidence or capability"
+  }
+]

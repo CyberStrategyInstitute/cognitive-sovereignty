@@ -6,20 +6,14 @@
 
 ---
 
-## CTSS Tier Summary
+## CTSS reference scores
 
-| Tier | Score | Techniques |
-|---|---|---|
-| 🔴 Critical | ≥ 80 | T-CT-008, T-CT-010, T-CT-004, T-CT-013, T-CT-006, T-CT-015, T-CT-001 |
-| 🟠 High | 70–79 | T-CT-016, T-CT-005, T-CT-014, T-CT-007, T-CT-002, T-CT-018, T-CT-009, T-CT-003, T-CT-017 |
-| ⚪ Elevated | 60–69 | T-CT-011, T-CT-012 |
-
----
+See the [generated rankings](ctss-rankings.md). These are inherited analyst estimates with corrected arithmetic. Narrative mechanisms below remain hypotheses or attributed claims unless supported by a linked evidence record.
 
 ## Technique Registry
 
 ### T-CT-001 — Attention Capture and Habituation
-**CTSS: 80** 🔴 Critical
+**CTSS: 75** High
 
 | Field | Value |
 |---|---|
@@ -43,7 +37,7 @@
 ---
 
 ### T-CT-002 — Algorithmic Amplification
-**CTSS: 75** 🟠 High
+**CTSS: 76** High
 
 | Field | Value |
 |---|---|
@@ -65,7 +59,7 @@
 ---
 
 ### T-CT-003 — Micro-Targeted Emotional Priming
-**CTSS: 70** 🟠 High
+**CTSS: 70** High
 
 | Field | Value |
 |---|---|
@@ -86,7 +80,7 @@
 ---
 
 ### T-CT-004 — Personalized Narrative Injection
-**CTSS: 85** 🔴 Critical
+**CTSS: 83** Critical
 
 | Field | Value |
 |---|---|
@@ -123,7 +117,7 @@
 ---
 
 ### T-CT-005 — Identity Replacement / Persona Hijacking
-**CTSS: 78** 🟠 High
+**CTSS: 74** High
 
 | Field | Value |
 |---|---|
@@ -140,7 +134,7 @@
 ---
 
 ### T-CT-006 — Decision Automation Capture
-**CTSS: 82** 🔴 Critical
+**CTSS: 84** Critical
 
 | Field | Value |
 |---|---|
@@ -159,14 +153,14 @@
 ---
 
 ### T-CT-007 — Information Ecosystem Poisoning
-**CTSS: 76** 🟠 High
+**CTSS: 73** High
 
 **Mechanism:** Data poisoning of recommendation algorithms and knowledge bases through coordinated engagement. If a sufficient volume of coordinated engagement trains the algorithm to associate certain queries with certain conclusions, subsequent users receive those conclusions as organic recommendations.
 
 ---
 
 ### T-CT-008 — Memetic Swarm Orchestration
-**CTSS: 90** 🔴 Critical — Highest in Taxonomy
+**CTSS: 83** Critical
 
 | Field | Value |
 |---|---|
@@ -178,7 +172,7 @@
 
 **Mechanism:** Coordinated campaigns using thousands of AI agents to test, evolve, and amplify narratives. Unlike traditional influence operations where a message is crafted and deployed, swarm orchestration is evolutionary — thousands of narrative variants are tested simultaneously, the most effective variants are amplified, and the process iterates continuously. No human author determines which message wins. The winning message is determined by what maximizes engagement or behavioral change.
 
-**Why CTSS = 90:** Likelihood = 5 (already fully operational with UGC farms), Population Reach = 5 (global by design), Recovery Difficulty = 4 (narratives established through evolutionary selection persist after detection because they were selected for maximum psychological adhesion).
+**Reference CTSS = 83:** Likelihood = 5 (already fully operational with UGC farms), Population Reach = 5 (global by design), Recovery Difficulty = 4 (narratives established through evolutionary selection persist after detection because they were selected for maximum psychological adhesion).
 
 **Swarm Detection Module:** S1 (Synthetic Consensus Scanner) and S2 (Autonomous Narrative Evolution Monitor) are the primary countermeasures.
 
@@ -187,63 +181,63 @@ See: [research/002_swarm_threat_scaling.md](../research/002_swarm_threat_scaling
 ---
 
 ### T-CT-009 — Institutional and Bureaucratic Capture
-**CTSS: 72** 🟠 High
+**CTSS: 69** Elevated
 
 **Mechanism:** Regulatory capture, legal weaponization, and bureaucratic self-preservation suppressing dissent. The institution that is responsible for cognitive defense becomes the instrument of cognitive constraint.
 
 ---
 
 ### T-CT-010 — Economic Coercion and Incentive Corruption
-**CTSS: 88** 🔴 Critical
+**CTSS: 86** Critical
 
 **Mechanism:** Financial penalties for non-conformity, monetization of specific viewpoints, funding tied to narrative compliance. Demonetization, deplatforming, defunding — economic tools that shape discourse without explicit censorship.
 
 ---
 
 ### T-CT-011 — Epistemic Rewriting
-**CTSS: 65** ⚪ Elevated
+**CTSS: 71** High
 
 **Mechanism:** Historical record alteration, selective erasure, and revision of foundational narratives. AI timestamping forgery and mass record tampering are emerging capabilities that make this technique more scalable than historical equivalents.
 
 ---
 
 ### T-CT-012 — Neurotech / Direct Cognitive Influence
-**CTSS: 60** ⚪ Elevated — Watch-List
+**CTSS: 71** High
 
-**Mechanism:** Brain-computer interfaces, neurostimulation, and neural data harvesting for persuasion or control. Currently scored low due to low Likelihood (L=2), but Impact on Agency is maximum (Ia=5). As BCI technology matures, this will become the highest-CTSS technique in the taxonomy.
+**Mechanism:** Brain-computer interfaces, neurostimulation, and neural data harvesting for persuasion or control. Currently scored low due to low Likelihood (L=2), but Impact on Agency is maximum (Ia=5). Future severity depends on evidence; no future ranking is established.
 
 ---
 
 ### T-CT-013 — Social Scoring and Behavioral Governance
-**CTSS: 83** 🔴 Critical
+**CTSS: 79** High
 
 **Mechanism:** Automated conformity enforcement through scoring systems rewarding compliant behavior. Social credit architectures, reputation scores, and behavioral governance systems replace explicit legal compulsion with automated social and economic pressure.
 
 ---
 
 ### T-CT-014 — Cognitive Load Flooding
-**CTSS: 77** 🟠 High
+**CTSS: 71** High
 
 **Mechanism:** Overwhelming attention with contradictory information until analytical capacity collapses. The target does not reach a false conclusion — they reach no conclusion. Analysis paralysis produces compliance with the status quo or default option.
 
 ---
 
 ### T-CT-015 — Legitimized Narrative Capture
-**CTSS: 81** 🔴 Critical
+**CTSS: 82** Critical
 
 **Mechanism:** Control framed as safety, equity, efficiency, or personalization so it appears benevolent. The most effective technique against individuals who would resist overt coercion — they accept the same control when it is framed as protection. The target cannot identify the operation as manipulation because it is indistinguishable from genuine care.
 
 ---
 
 ### T-CT-016 — Psychographic Micro-Targeting at Scale
-**CTSS: 79** 🟠 High
+**CTSS: 75** High
 
 **Mechanism:** AI-powered profiling and personalized persuasion based on psychological vulnerability mapping. Each individual receives persuasion content calibrated to their specific psychological profile — anxieties, aspirations, identity commitments, cognitive biases.
 
 ---
 
 ### T-CT-017 — Guardrail Bias Exploitation
-**CTSS: 70** 🟠 High
+**CTSS: 66** Elevated
 
 | Field | Value |
 |---|---|
@@ -262,7 +256,7 @@ See: [research/002_swarm_threat_scaling.md](../research/002_swarm_threat_scaling
 ---
 
 ### T-CT-018 — Repetition and Normalization Manipulation
-**CTSS: 74** 🟠 High
+**CTSS: 76** High
 
 | Field | Value |
 |---|---|
