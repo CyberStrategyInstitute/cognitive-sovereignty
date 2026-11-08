@@ -5,7 +5,7 @@ from unittest.mock import patch
 import xml.etree.ElementTree as ET
 from tools.csf import ROOT,read_json
 from tools.check_repo import markdown_anchors
-from tools.presentation import build,check,files,MODULES
+from tools.presentation import build,check,files,MODULES,release_highlights
 from tools.query import query
 from tools.version import VERSION
 
@@ -54,9 +54,26 @@ class PresentationTests(unittest.TestCase):
     def test_root_preserves_star_history_and_separates_license_and_mapping_claims(self):
         text=(ROOT/'README.md').read_text(encoding='utf-8')
         self.assertIn('FRAMEWORK.md#star-history',text)
+        star=text.split('## Star History',1)[1]
+        self.assertIn('<picture>',star)
+        self.assertIn('<img src="https://api.star-history.com/svg?repos=CyberStrategyInstitute/cognitive-sovereignty',star)
+        self.assertIn('prefers-color-scheme: dark',star)
+        self.assertIn('Open the interactive chart',star)
         self.assertIn('Code and machine-readable data: MIT',text)
         self.assertIn('not certification',text)
         self.assertIn('api.star-history.com',(ROOT/'FRAMEWORK.md').read_text(encoding='utf-8'))
+
+    def test_release_highlights_use_owning_control_counts(self):
+        controls=read_json(ROOT/'resources/controls.json')
+        text=release_highlights(controls)
+        self.assertIn(text,(ROOT/'README.md').read_text(encoding='utf-8'))
+        self.assertIn('already published in 3.0',text)
+        for label in ['NEW','UPDATED','RETAINED']:
+            self.assertIn(f'![{label} in 3.0]',text)
+        # A changed input must change the summary, rather than leave stale numbers.
+        sample=[{'kind':'added','domain_id':'D1'},{'kind':'inherited','domain_id':'D1'}]
+        generated=release_highlights(sample)
+        self.assertIn('| [Biological](01-biological/README.md) | 1 | 0 | 1 |',generated)
 
     def test_sitemap_covers_the_actual_pages_directory(self):
         links={node.text for node in ET.parse(ROOT/'docs/sitemap.xml').getroot().iter() if node.tag.endswith('}loc')}

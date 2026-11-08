@@ -123,6 +123,32 @@ def badge(label,value,color):
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="28" role="img" aria-label="{html.escape(label+": "+value)}"><rect width="{width}" height="28" rx="4" fill="#{color}"/><path d="M4 0h{left-4}v28H4Q0 28 0 24V4Q0 0 4 0" fill="#29343d"/><g fill="#fff" font-family="Arial,sans-serif" font-size="12"><text x="8" y="19">{html.escape(label)}</text><text x="{left+8}" y="19">{html.escape(value)}</text></g></svg>\n'
 
 
+def release_highlights(controls):
+    """Show published 3.0 changes where a first-time reader can find them."""
+    counts=Counter(STATUS_LABELS[c['kind']] for c in controls)
+    lines=['## What changed in v3.0', '',
+        'CSF 3.0 connects a news item to a score, a proposed action, a domain control, and a readiness check. You can trace why a judgment was made, repeat the assessment, and compare later results using the same method.', '',
+        '**Comparison:** published 3.0 versus the recorded [pre-3.0 baseline](REPOSITORY_REVIEW.md#change-labels). These capabilities were already published in 3.0; this README update makes them easier to find.', '',
+        '| Change | What changed | What you can do now |', '|---|---|---|',
+        '| ![NEW in 3.0](assets/badges/change-new.svg) | [Research intake and CTSS records](research/intake/README.md) preserve individual items, sources, input reasons, and revisions. | Review each assessment and compare the declared weekly sample over time. |',
+        f'| ![NEW in 3.0](assets/badges/change-new.svg) | {counts["NEW"]} research-linked controls added across all six domains. | Follow the [control catalog](resources/mitigation-catalog.md) to its research rationale, owner role, test, and failure response. |',
+        f'| ![UPDATED in 3.0](assets/badges/change-updated.svg) | {counts["UPDATED"]} inherited controls refined; prior wording remains in the records. | See what changed and why before updating your local implementation. |',
+        '| ![NEW in 3.0](assets/badges/change-new.svg) | [Signal tracking](research/intake/signals/README.md) links source excerpts to dispositions, proposed responsible roles, and review triggers. | Track watch items and research needs without counting every excerpt as a separate incident. |',
+        '| ![UPDATED in 3.0](assets/badges/change-updated.svg) | [Readiness criteria](resources/readiness-worksheet.md) separate inherited capabilities from research extensions. | Use the [worked unit assessment](examples/unit_readiness_assessment.md) and keep missing evidence unknown. Start a new comparison when criteria change. |',
+        '| ![NEW in 3.0](assets/badges/change-new.svg) | [Baseline and perspective documentation](lenses/founding-baseline-assessment.md), [schemas and agent/MCP access](integration/README.md), and linked web views. | Declare the lens behind a judgment and reuse structured records. Lens profiles remain draft templates. |',
+        f'| ![RETAINED in 3.0](assets/badges/change-retained.svg) | Six domains, five causal layers, CTSS weights, and stable inherited control IDs. {counts["RETAINED"]} controls retain their inherited implementation. | Keep the core model and trace earlier records. {counts["UPDATED"]} other inherited IDs have updated guidance. |', '',
+        '### Changes across the six domains', '',
+        'NEW means an added control. UPDATED means a refined inherited control. RETAINED means inherited guidance. None of these labels means a new domain or taxonomy class. No controls are DEPRECATED in this comparison.', '',
+        '| Domain | NEW controls | UPDATED controls | RETAINED controls |', '|---|---:|---:|---:|']
+    for module,(ident,label,_) in MODULES.items():
+        if not (ident.startswith('D') and ident[1:].isdigit()):continue
+        domain=Counter(STATUS_LABELS[c['kind']] for c in controls if c['domain_id']==ident)
+        lines.append(f'| [{label}]({module}/README.md) | {domain["NEW"]} | {domain["UPDATED"]} | {domain["RETAINED"]} |')
+    lines+=['', '**Evidence limits:** more documented controls do not establish better observed readiness. Event CTSS scores remain provisional CSI judgments. See [research note 010](research/010_domain_controls_and_readiness.md) for control rationale and comparison limits.', '',
+        '[Full change log](CHANGELOG.md) · [Release notes](https://cyberstrategyinstitute.github.io/cognitive-sovereignty/CSF-3.0.0-release-notes.html) · [Remaining roadmap work](EVOLUTION.md)', '']
+    return '\n'.join(lines)
+
+
 def build():
     baseline=read_json(ROOT/'docs/repository-baseline.json');controls=read_json(ROOT/'resources/controls.json')
     registry=read_json(ROOT/'taxonomy/registry.json')
@@ -131,6 +157,8 @@ def build():
     badge_specs={'version':('Framework',VERSION,'975100'),'docs-license':('Documentation','CC BY-SA 4.0','555E69'),'code-license':('Code and data','MIT','246C59'),'domains':('Scope','6 domains / 5 layers','126D87'),'controls':('Controls',str(len(controls))+' documented','975100'),'taxonomy':('Taxonomy',str(taxonomy)+' stable entries','7551A1'),'contracts':('Contracts',str(len(schemas))+' schemas','126D87'),'mapping':('UAS crosswalk','documented / not certification','555E69'),'scores':('Event CTSS','provisional judgments','820F1A')}
     for name,(label,value,color) in badge_specs.items():
         path=ROOT/'assets/badges'/f'{name}.svg';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(badge(label,value,color),encoding='utf-8',newline='\n')
+    for status,color in [('NEW','246C59'),('UPDATED','126D87'),('RETAINED','555E69')]:
+        (ROOT/'assets/badges'/f'change-{status.lower()}.svg').write_text(badge(status,'in 3.0',color),encoding='utf-8',newline='\n')
     for module,(ident,label,color) in MODULES.items():
         if module=='.github':continue
         ink='#101519' if color=='F6921E' else '#fff'
@@ -160,6 +188,7 @@ def build():
         where=text.index('\n\n',text.index('# Cognitive Sovereignty'))
         text=text[:where]+'\n\n<!-- csf-root-status:start -->\n<!-- csf-root-status:end -->'+text[where:]
     text=managed(text,'csf-root-status',header)
+    text=managed(text,'csf-release-highlights',release_highlights(controls))
     root.write_text(text,encoding='utf-8',newline='\n')
     # Create the page map itself before scanning, so coverage includes its own entry.
     map_path=ROOT/'PAGE_MAP.md'
